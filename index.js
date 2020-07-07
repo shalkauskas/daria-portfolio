@@ -18,7 +18,9 @@ app.get("/resume", function(req, res){
   res.sendFile(__dirname + "/resume.html");
 });
 
-
+app.get("/bloom-app", function(req, res){
+  res.sendFile(__dirname + "/bloom-app.html");
+});
 
 
 
