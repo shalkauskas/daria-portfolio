@@ -3,19 +3,26 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #212121;
 }
-
+h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
 h1 {
   font-weight: 700;
   font-size: 45px;
   font-style: italic;
   color: #61AEB0;
 }
-
-h2 {
-  font-weight: bold;
+h3 {
+  font-size: 25px;
 }
 
-/* Top & NavBar__________________________________________________________ */
+h4, p.mb-0 {
+  font-size: 20px;
+}
+.w-60 {
+  width: 60%;
+}
+/*______________________________________________ Top & NavBar__________________________________________________ */
 .top-section {
   padding: 50px 12%;
   font-size: 29px;
@@ -39,7 +46,7 @@ h2 {
 #text-nav:hover {
   color: #61AEB0;
 }
-#text-nav:active {
+.active {
   color: #61AEB0;
 }
 
@@ -92,7 +99,7 @@ h2 {
   margin-right: auto;
 }
 
-/* Middle section items___________________________________________________ */
+/*____________________________________ Middle section items__________________________________________ */
 /* Default container */
 .container-default {
   text-align: center;
@@ -150,7 +157,7 @@ h2 {
 }
 /* Bloom */
 .bloom {
-  background-color: #FFE3E0;
+  background-color: #FFEEEC;
   margin-top: 100px;
 }
 
@@ -169,7 +176,7 @@ h2 {
   background-color: #F6EEC7;
 }
 
-/* Footer_____________________________________________________________ */
+/*____________________________________ Footer_____________________________________________________________ */
 .footer {
   text-align: center;
   margin: 50px 0 30px;
@@ -186,7 +193,7 @@ h2 {
   display: inline-block !important;
 }
 
-/* Resume_______________________________________________________________ */
+/*____________________________________ Resume_______________________________________________________________ */
 embed {
   display: inline-block;
   margin-top: 50px;
@@ -194,4 +201,148 @@ embed {
 
 .embed {
   text-align: center;
+}
+/*____________________________________ Default case study styles ____________________________________*/
+.section-font_and-color {
+  color: rgb(47, 59, 56);
+  font-family: "Open Sans", sans-serif;
+  line-height: normal;
+  font-size: 17px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.border-style {
+  border-style: solid none;
+  border-width: 1px;
+  }
+  /*----------------- Nextcase feature --------------*/
+  .nextcase {
+    width: 450px;
+    background-color: #FFEBE9;
+    padding: 20px 15px;;
+    text-align: center;
+    margin-top: auto;
+    margin-left: 55%;
+    border-radius: 30px;
+  }
+  .view-next-button {
+    margin-top: 20px;
+  }
+  .nextcase-header {
+    text-align: center;
+    font-size: 15px;
+    line-height: normal;
+  }
+  .nextcase-image-laptop {
+    width: 220px;
+  }
+  .nextcase-image-phone {
+    width: 80px;
+  }
+
+/*-------------------------------------------- Modal -----------------------------------------------*/
+#flow1, #flow2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#flow1:hover {opacity: 0.8;}
+#flow2:hover {opacity: 0.8;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  margin-top: 150px;
+  display: block;
+  width: 90%;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }

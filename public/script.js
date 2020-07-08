@@ -1,3 +1,7 @@
+$(".nav .nav-link").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).addClass("active");
+});
 //____________________ Arrows slide_________________________//
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -54,7 +58,6 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 };
-
 
 // ----------------------Modal 2---------------------------------//
 // Get the modal

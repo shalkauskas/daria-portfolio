@@ -22,7 +22,9 @@ app.get("/bloom-app", function(req, res){
   res.sendFile(__dirname + "/bloom-app.html");
 });
 
-
+app.get("/learning-seeds", function(req, res){
+  res.sendFile(__dirname + "/learning-seeds.html");
+});
 
 
 
