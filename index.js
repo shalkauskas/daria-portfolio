@@ -26,6 +26,13 @@ app.get("/learning-seeds", function(req, res){
   res.sendFile(__dirname + "/learning-seeds.html");
 });
 
+app.get("/venmo", function(req, res){
+  res.sendFile(__dirname + "/venmo.html");
+});
+
+app.get("/kiki", function(req, res){
+  res.sendFile(__dirname + "/kiki.html");
+});
 
 
 

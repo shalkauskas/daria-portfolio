@@ -3,15 +3,18 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #212121;
 }
+
 h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
+
 h1 {
   font-weight: 700;
   font-size: 45px;
   font-style: italic;
   color: #61AEB0;
 }
+
 h3 {
   font-size: 25px;
 }
@@ -19,9 +22,61 @@ h3 {
 h4, p.mb-0 {
   font-size: 20px;
 }
-.w-60 {
-  width: 60%;
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+/*---------------------------- Videos --------------------------*/
+video.phone-video {
+  width: 218px;
+  position: absolute;
+  z-index: 1;
+  bottom: 58px;
+  left: 176px;
+}
+
+video.phone-video-prototype {
+  width: 218px;
+  position: absolute;
+  z-index: 1;
+  left: 461px;
+  bottom: 57px;
+}
+
+video.laptop-video {
+  width: 394px;
+  position: absolute;
+  left: 88px;
+  bottom: 162px;
+  border-radius: 8px;
+}
+
+video.laptop-video-kiki {
+  position: absolute;
+      left: 102px;
+      bottom: 187px;
+      border-radius: 8px;
+      height: 248px;
+}
+video.laptop-video-prototype {
+  width: 650px;
+  position: absolute;
+  left: 245px;
+  bottom: 107px;
+  border-radius: 8px;
+}
+video.laptop-video-prototype-kiki {
+  position: absolute;
+  width: 591px;
+  bottom: 155px;
+  left: 274px;
+  border-radius: 5px;
+}
+
+
+
 /*______________________________________________ Top & NavBar__________________________________________________ */
 .top-section {
   padding: 50px 12%;
@@ -46,6 +101,7 @@ h4, p.mb-0 {
 #text-nav:hover {
   color: #61AEB0;
 }
+
 .active {
   color: #61AEB0;
 }
@@ -155,6 +211,7 @@ h4, p.mb-0 {
   margin-top: 70px;
   margin-left: 30px;
 }
+
 /* Bloom */
 .bloom {
   background-color: #FFEEEC;
@@ -202,6 +259,7 @@ embed {
 .embed {
   text-align: center;
 }
+
 /*____________________________________ Default case study styles ____________________________________*/
 .section-font_and-color {
   color: rgb(47, 59, 56);
@@ -209,71 +267,111 @@ embed {
   line-height: normal;
   font-size: 17px;
 }
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.w-60 {
+  width: 60%;
 }
+
+.prototype-phone-width {
+  width: 250px;
+}
+
+.prototype-laptop-width {
+  width: 499px;
+  height: 316px;
+}
+.prototype-image-kiki {
+width: 807px;
+height: 516px;
+}
+
 .border-style {
   border-style: solid none;
   border-width: 1px;
-  }
-  /*----------------- Nextcase feature --------------*/
-  .nextcase {
-    width: 450px;
-    background-color: #FFEBE9;
-    padding: 20px 15px;;
-    text-align: center;
-    margin-top: auto;
-    margin-left: 55%;
-    border-radius: 30px;
-  }
-  .view-next-button {
-    margin-top: 20px;
-  }
-  .nextcase-header {
-    text-align: center;
-    font-size: 15px;
-    line-height: normal;
-  }
-  .nextcase-image-laptop {
-    width: 220px;
-  }
-  .nextcase-image-phone {
-    width: 80px;
-  }
+}
+
+.click-to-enlarge {
+  font-size: 14px;
+  margin-left: 40%;
+}
+
+.arrow-pointer {
+  /* Kiki's page */
+  position: absolute;
+  width: 75px;
+  top: 115px;
+}
+
+/*----------------- Nextcase feature --------------*/
+.nextcase {
+  width: 450px;
+  background-color: #FFEBE9;
+  padding: 20px 15px;
+  ;
+  text-align: center;
+  margin-top: auto;
+  margin-left: 55%;
+  border-radius: 30px;
+}
+
+.view-next-button {
+  margin-top: 20px;
+}
+
+.nextcase-header {
+  text-align: center;
+  font-size: 15px;
+  line-height: normal;
+}
+
+.nextcase-image-laptop {
+  width: 220px;
+}
+
+.nextcase-image-phone {
+  width: 80px;
+}
 
 /*-------------------------------------------- Modal -----------------------------------------------*/
-#flow1, #flow2 {
+.modal-image {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-#flow1:hover {opacity: 0.8;}
-#flow2:hover {opacity: 0.8;}
+.modal-image:hover {
+  opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
 .modal-content {
   margin: auto;
-  margin-top: 150px;
   display: block;
   width: 90%;
+  max-width: 1000px;
 }
 
 /* Caption of Modal Image */
@@ -297,13 +395,23 @@ img {
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)}
-  to {-webkit-transform:scale(1)}
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 /* The Close Button */
@@ -323,25 +431,9 @@ img {
   text-decoration: none;
   cursor: pointer;
 }
-.close2 {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close2:hover,
-.close2:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
   }

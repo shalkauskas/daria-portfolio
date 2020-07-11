@@ -12,15 +12,6 @@
   margin-top: 25px;
 }
 
-.use-test-container {
-  height: 420px;
-}
-
-.click-to-enlarge {
-  font-size: 14px;
-  margin-left: 47%;
-}
-
 /*------------------------- Images --------------------*/
 .arrow-down {
   width: 80px;
@@ -32,13 +23,6 @@
   width: 100px !important;
 }
 
-.cozy-work-picture {
-  width: 300px;
-}
-
-.research-chart {
-  width: 50%;
-}
 
 .target-icons {
   float: right;
@@ -46,32 +30,13 @@
   margin-right: 30px;
 }
 
-.proto-persona {
-  width: 300px;
-}
-
-.use-test {
-  width: 220px;
-}
 
 .right-arrow {
   width: 60px;
   position: relative;
   float: right;
-  bottom: 250px;
+  bottom: 330px;
   left: 40px;
-}
-
-.demo {
-  width: 200px;
-}
-
-.wire {
-  width: 150px;
-}
-
-.flow {
-  width: 1000px;
 }
 
 /*-------------------------- Comment-bubbles -----------------------*/
