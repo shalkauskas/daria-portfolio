@@ -4,12 +4,11 @@ body {
   color: #212121;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h5, h6 {
   font-weight: bold;
 }
 
 h1 {
-  font-weight: 700;
   font-size: 45px;
   font-style: italic;
   color: #61AEB0;
@@ -19,7 +18,7 @@ h3 {
   font-size: 25px;
 }
 
-h4, p.mb-0 {
+h4, p.mb-0, .overview {
   font-size: 20px;
 }
 
@@ -28,56 +27,54 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
 /*---------------------------- Videos --------------------------*/
-video.phone-video {
-  width: 218px;
+video {
   position: absolute;
   z-index: 1;
+}
+
+.phone-video {
+  width: 218px;
   bottom: 58px;
   left: 176px;
 }
 
-video.phone-video-prototype {
+.phone-video-prototype {
   width: 218px;
-  position: absolute;
-  z-index: 1;
   left: 461px;
   bottom: 57px;
 }
 
-video.laptop-video {
+.laptop-video {
   width: 394px;
-  position: absolute;
   left: 88px;
   bottom: 162px;
   border-radius: 8px;
 }
 
-video.laptop-video-kiki {
-  position: absolute;
-      left: 102px;
-      bottom: 187px;
-      border-radius: 8px;
-      height: 248px;
+.laptop-video-kiki {
+  left: 102px;
+  bottom: 187px;
+  border-radius: 8px;
+  height: 248px;
 }
-video.laptop-video-prototype {
+
+.laptop-video-prototype {
   width: 650px;
-  position: absolute;
   left: 245px;
   bottom: 107px;
   border-radius: 8px;
 }
-video.laptop-video-prototype-kiki {
-  position: absolute;
+
+.laptop-video-prototype-kiki {
   width: 591px;
   bottom: 155px;
   left: 274px;
   border-radius: 5px;
 }
 
-
-
-/*______________________________________________ Top & NavBar__________________________________________________ */
+/*------------------------------- Top & NavBar------------------------------- */
 .top-section {
   padding: 50px 12%;
   font-size: 29px;
@@ -86,7 +83,7 @@ video.laptop-video-prototype-kiki {
 .logo {
   width: 80px;
   margin-right: 20px;
-  display: inline-block !important;
+  display: inline-block;
 }
 
 .navbar-item {
@@ -121,10 +118,6 @@ video.laptop-video-prototype-kiki {
   font-size: 30px;
 }
 
-.daria-image {
-  width: 60%;
-}
-
 .circleOne {
   position: absolute;
   width: 300px;
@@ -133,8 +126,8 @@ video.laptop-video-prototype-kiki {
   border-radius: 50%;
   display: inline-block;
   z-index: -1;
-  bottom: 100px;
-  right: 100px;
+  bottom: 122px;
+  right: 115px;
 }
 
 .circleTwo {
@@ -142,17 +135,11 @@ video.laptop-video-prototype-kiki {
   z-index: -1;
   width: 125px;
   height: 125px;
-  top: 200px;
-  left: 400px;
+  top: 190px;
+  left: 384px;
   background: #C2F0FC;
   border-radius: 50%;
   display: inline-block;
-}
-
-.arrow-down {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*____________________________________ Middle section items__________________________________________ */
@@ -165,10 +152,6 @@ video.laptop-video-prototype-kiki {
   position: relative;
   z-index: 1;
   margin-bottom: 100px;
-}
-
-.view-footer {
-  padding: 40px 0;
 }
 
 .view-button {
@@ -215,7 +198,7 @@ video.laptop-video-prototype-kiki {
 /* Bloom */
 .bloom {
   background-color: #FFEEEC;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 /* Learning Seed */
@@ -250,16 +233,6 @@ video.laptop-video-prototype-kiki {
   display: inline-block !important;
 }
 
-/*____________________________________ Resume_______________________________________________________________ */
-embed {
-  display: inline-block;
-  margin-top: 50px;
-}
-
-.embed {
-  text-align: center;
-}
-
 /*____________________________________ Default case study styles ____________________________________*/
 .section-font_and-color {
   color: rgb(47, 59, 56);
@@ -267,6 +240,7 @@ embed {
   line-height: normal;
   font-size: 17px;
 }
+
 .w-60 {
   width: 60%;
 }
@@ -279,9 +253,10 @@ embed {
   width: 499px;
   height: 316px;
 }
+
 .prototype-image-kiki {
-width: 807px;
-height: 516px;
+  width: 807px;
+  height: 516px;
 }
 
 .border-style {
@@ -294,14 +269,24 @@ height: 516px;
   margin-left: 40%;
 }
 
+/*------- Kiki's page -------*/
 .arrow-pointer {
-  /* Kiki's page */
   position: absolute;
   width: 75px;
   top: 115px;
 }
 
-/*----------------- Nextcase feature --------------*/
+/*------- Learning Seed -----*/
+.captions {
+  margin-left: 8%;
+  font-size: 14px;
+}
+
+.persona-title {
+  margin-left: 19%;
+}
+
+/*------------------------------- Nextcase feature -------------------------*/
 .nextcase {
   width: 450px;
   background-color: #FFEBE9;
