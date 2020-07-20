@@ -14,7 +14,7 @@ font-size: 35px;
 padding-top: 50px;
 }
 
-.circleOne {
+.aboutMe-circleOne {
   position: absolute;
   width: 330px;
   height: 330px;
@@ -25,7 +25,7 @@ padding-top: 50px;
   right: 220px;
   top: 220px;
 }
-.circleTwo {
+.aboutMe-circleTwo {
   position: absolute;
   z-index: -1;
   width: 125px;

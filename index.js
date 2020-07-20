@@ -5,33 +5,34 @@ const request = require("request");
 
 const app = express();
 app.use(express.static("public"));
+app.set('view engine', 'ejs');
 
 app.get("/", function(req, res) {
-  res.sendFile(__dirname + "/index.html");
+  res.render("pages/index");
 });
 
 app.get("/about-me", function(req, res){
-  res.sendFile(__dirname + "/aboutme.html");
+  res.render("pages/aboutme");
 });
 
 app.get("/resume", function(req, res){
-  res.sendFile(__dirname + "/resume.html");
+  res.render("pages/resume");
 });
 
 app.get("/bloom-app", function(req, res){
-  res.sendFile(__dirname + "/bloom-app.html");
+  res.render("pages/bloom-app");
 });
 
 app.get("/learning-seeds", function(req, res){
-  res.sendFile(__dirname + "/learning-seeds.html");
+  res.render("pages/learning-seeds");
 });
 
 app.get("/venmo", function(req, res){
-  res.sendFile(__dirname + "/venmo.html");
+  res.render("pages/venmo");
 });
 
 app.get("/kiki", function(req, res){
-  res.sendFile(__dirname + "/kiki.html");
+  res.render("pages/kiki");
 });
 
 
