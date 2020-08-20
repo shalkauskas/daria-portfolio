@@ -232,6 +232,9 @@ video {
   width: 100px;
   display: inline-block !important;
 }
+.gmail {
+  width: 110px;
+}
 
 /*____________________________________ Default case study styles ____________________________________*/
 .section-font_and-color {
