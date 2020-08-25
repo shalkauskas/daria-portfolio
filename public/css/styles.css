@@ -215,6 +215,179 @@ video {
 .ecommerce {
   background-color: #F6EEC7;
 }
+/*____________________________________ Bloom page custom css ____________________________________*/
+/*------------------ Containers -----------------*/
+.takeaways-container {
+  padding: 0 100px;
+}
+
+.user-needs {
+  width: 400px;
+  height: 400px;
+  background-color: #B3D8D9;
+  border-radius: 200px;
+  padding: 40px 50px;
+  margin-top: 25px;
+}
+
+/*------------------------- Images --------------------*/
+.arrow-down {
+  width: 80px;
+}
+
+.proto-arrow {
+  position: relative;
+  bottom: 30px;
+  width: 100px !important;
+}
+
+.target-icons {
+  float: right;
+  width: 120px;
+  margin-right: 30px;
+}
+
+.right-arrow {
+  width: 60px;
+  position: absolute;
+  bottom: 230px;
+  left: 340px;
+}
+.right-arrow-center {
+  width: 60px;
+  position: absolute;
+  bottom: 350px;
+  left: 420px;
+}
+
+/*-------------------------- Comment-bubbles -----------------------*/
+.comment-bubble {
+  background: #FFEBE9;
+  position: relative;
+  -moz-border-radius: 32px;
+  -webkit-border-radius: 32px;
+  border-radius: 60px;
+}
+
+#comment_bubble {
+  width: 140px;
+  height: 440px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+#comment_bubble:before {
+  content: "";
+  width: 0;
+  height: 0;
+  left: 100%;
+  top: 200px;
+  position: absolute;
+  border-top: 33px solid transparent;
+  border-left: 46px solid #FFEBE9;
+  border-bottom: 33px solid transparent;
+  z-index: 1000;
+}
+
+#comment_bubble2 {
+  width: 250px;
+  height: 200px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+#comment_bubble2:before {
+  content: "";
+  width: 0;
+  height: 0;
+  right: 100%;
+  top: 110px;
+  position: absolute;
+  border-top: 23px solid transparent;
+  border-right: 36px solid #FFEBE9;
+  border-bottom: 13px solid transparent;
+  z-index: 1000;
+}
+
+#comment_bubble3 {
+  width: 350px;
+  height: 250px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-top: 50px;
+}
+
+#comment_bubble3:before {
+  content: "";
+  width: 0;
+  height: 0;
+  right: 98%;
+  top: 30px;
+  position: absolute;
+  border-top: 3px solid transparent;
+  border-right: 40px solid #FFEBE9;
+  border-bottom: 64px solid transparent;
+  z-index: 1000;
+}
+
+/*____________________________________About Me Page ______________________________________________________*/
+.about-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.about-paragraph {
+  text-align: left;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.container-about {
+  padding-top: 50px;
+}
+
+.aboutMe-circleOne {
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  background: #BEEBE9;
+  border-radius: 50%;
+  display: inline-block;
+  z-index: -1;
+  right: 220px;
+  top: 220px;
+}
+
+.aboutMe-circleTwo {
+  position: absolute;
+  z-index: -1;
+  width: 125px;
+  height: 125px;
+  top: 460px;
+  left: 350px;
+  background: #C2F0FC;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.daria-image {
+  width: 65%;
+  position: absolute;
+  left: 150px;
+  top: 60px;
+}
+
+.resume-button {
+  margin-top: 40px;
+  padding: 10px 45px;
+  border-radius: 100px;
+  float: right;
+}
+
+.resume-button:hover {
+  opacity: 0.6;
+}
 
 /*____________________________________ Footer_____________________________________________________________ */
 .footer {
@@ -232,6 +405,7 @@ video {
   width: 100px;
   display: inline-block !important;
 }
+
 .gmail {
   width: 110px;
 }
@@ -270,6 +444,10 @@ video {
 .click-to-enlarge {
   font-size: 14px;
   margin-left: 40%;
+}
+.click-to-enlarge-kiki {
+  font-size: 14px;
+  margin-left: 46%;
 }
 
 /*------- Kiki's page -------*/
