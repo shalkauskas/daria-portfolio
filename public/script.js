@@ -1,9 +1,9 @@
-$(".nav .nav-link").on("click", function(){
-   $(".nav").find(".active").removeClass("active");
-   $(this).addClass("active");
+$(".nav .nav-link").on("click", function() {
+  $(".nav").find(".active").removeClass("active");
+  $(this).addClass("active");
 });
 //____________________ Arrows slide_________________________//
-$(document).ready(function(){
+$(document).ready(function() {
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -18,7 +18,7 @@ $(document).ready(function(){
       // Using jQuery's animate() method to add smooth page scroll
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 800, function() {
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -28,11 +28,11 @@ $(document).ready(function(){
 });
 
 // ---------------------Fade In-----------------------------//
-$(document).ready(function(){
+$(document).ready(function() {
 
-/*! Fades in page on load */
-$('.fadein').css('display', 'none');
-$('.fadein').fadeIn(1000);
+  /*! Fades in page on load */
+  $('.fadein').css('display', 'none');
+  $('.fadein').fadeIn(1000);
 
 });
 
@@ -47,7 +47,7 @@ var captionText = document.getElementById("caption");
 // Go through all of the images with our custom class
 for (var i = 0; i < images.length; i++) {
   var img = images[i];
-// and attach our click listener for this image.
+  // and attach our click listener for this image.
   img.onclick = function(evt) {
     modal.style.display = "block";
     modalImg.src = this.src;

@@ -9,12 +9,9 @@
 *.jar
 *.war
 *.mp3
-*.mp4
 .gitignore
 .DS_Store
 npm-debug.log
 .gitignore/*
 /node_modules
 node_modules/*
-public/images*
-*public/images*
