@@ -45,6 +45,11 @@ video {
   left: 461px;
   bottom: 57px;
 }
+.phone-video-tete {
+  width: 218px;
+  left: 425px;
+  bottom: 107px;
+}
 
 .laptop-video {
   width: 394px;
@@ -64,6 +69,12 @@ video {
   width: 650px;
   left: 245px;
   bottom: 107px;
+  border-radius: 8px;
+}
+.laptop-video-tete {
+  width: 650px;
+  left: 208px;
+  bottom: 102px;
   border-radius: 8px;
 }
 
@@ -198,7 +209,6 @@ video {
 /* Bloom */
 .bloom {
   background-color: #FFEEEC;
-  margin-top: 80px;
 }
 
 /* Learning Seed */
@@ -214,6 +224,10 @@ video {
 /* E-commerce */
 .ecommerce {
   background-color: #F6EEC7;
+}
+.tete-a-tete {
+  margin-top: 80px;
+  background-color: #F7EEFF;
 }
 /*____________________________________ Bloom page custom css ____________________________________*/
 /*------------------ Containers -----------------*/
@@ -466,7 +480,12 @@ video {
 .persona-title {
   margin-left: 19%;
 }
-
+/*------- Tete-a-tete -----*/
+.arrow-top-right {
+  width: 30%;
+  left: 318px;
+  top: 40px;
+}
 /*------------------------------- Nextcase feature -------------------------*/
 .nextcase {
   width: 450px;

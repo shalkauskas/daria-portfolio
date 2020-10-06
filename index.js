@@ -34,7 +34,9 @@ app.get("/venmo", function(req, res){
 app.get("/kiki", function(req, res){
   res.render("pages/kiki");
 });
-
+app.get("/tete-a-tete", function(req, res){
+  res.render("pages/tete-a-tete");
+});
 
 
 
