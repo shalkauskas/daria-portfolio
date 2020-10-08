@@ -47,7 +47,7 @@ video {
 }
 .phone-video-tete {
   width: 218px;
-  left: 425px;
+  left: 461px;
   bottom: 107px;
 }
 
@@ -73,7 +73,7 @@ video {
 }
 .laptop-video-tete {
   width: 650px;
-  left: 208px;
+  left: 245px;
   bottom: 102px;
   border-radius: 8px;
 }
@@ -111,7 +111,7 @@ video {
 }
 
 .active {
-  color: #61AEB0;
+  color: #61AEB0 !important;
 }
 
 .container-greeter {
