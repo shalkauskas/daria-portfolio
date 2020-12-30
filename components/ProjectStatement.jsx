@@ -8,7 +8,7 @@ export default function ProjectStatement(props) {
             ? "Problem statement and benchmark criteria"
             : "Problem statement"}
         </h3>
-        <p>{props.statement}</p>
+        {props.statement}
       </div>
       {/* benchmark */}
       <div className={`${props.benchmark ? "block" : "hidden"} mb-8`}>

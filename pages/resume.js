@@ -2,7 +2,10 @@ import Layout from "@/components/Layout";
 export default function Resume() {
   return (
     <Layout title="Resume | daria@ux.com">
-      <div className="max-h-full">
+      <div
+        className="max-h-full"
+        style={{ fontFamily: `"Montserrat", sans-serif` }}
+      >
         <div
           class="text-center container mx-auto my-24"
           style={{ height: "1350px" }}

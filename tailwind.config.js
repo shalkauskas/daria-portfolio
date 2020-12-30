@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        51: "51%",
+        51: "55%",
       },
     },
     inset: {
@@ -19,6 +19,9 @@ module.exports = {
       full: "100%",
     },
 
-    purge: ["./pages/**/*.js", "./components/**/*.jsx"],
+    purge: [
+      "./components/**/*.{js,ts,jsx,tsx}",
+      "./pages/**/*.{js,ts,jsx,tsx}",
+    ],
   },
 };

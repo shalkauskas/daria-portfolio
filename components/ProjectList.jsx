@@ -23,6 +23,7 @@ export default function ProjectList(props) {
         feature1="Defines the list of plants recommended for your home enviroment"
         feature2="Enables notifications for watering and fertilizing your indoor plants"
         link="/bloom"
+        bloom={true}
       />
       <ProjectContainer
         title="Educational micro-course for Learning Seeds, Inc."
@@ -41,13 +42,6 @@ export default function ProjectList(props) {
         feature2="The donations made by friends and family became visible in the user feed."
         link="/venmo"
       />
-      {/* <ProjectContainer
-        title="E-commerce for a local grocery store (conceptual)"
-        image="images/kiki.png"
-        imageStyle="laptop"
-        color="#F6EEC7"
-        feature1="Up to 6 different ways to find a product on a website alongside the ability to shop without having an account."
-      /> */}
       <img
         onClick={scrollTop}
         className="w-20 my-20 h-16 mx-auto cursor-pointer"

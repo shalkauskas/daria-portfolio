@@ -5,7 +5,10 @@ export default function Header() {
   const router = useRouter();
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <div className="md:my-16 mt-8 mb-16 container mx-auto">
+    <div
+      className="md:my-16 mt-8 mb-16 container mx-auto"
+      style={{ fontFamily: `"Montserrat", sans-serif` }}
+    >
       <nav
         className={`relative flex flex-wrap items-center justify-between px-4 navbar-expand-lg`}
       >
@@ -22,7 +25,7 @@ export default function Header() {
                   className="sm:inline-block hidden w-20 mr-6"
                 />
                 <span
-                  className={`font-logo italic font-bold text-3xl xl:text-5xl sm:text-4xl align-middle xl:leading-4 lg:leading-4 md:leading-normal leading-relaxed whitespace-no-wrap`}
+                  className={`font-logo italic font-bold text-3xl xl:text-5xl sm:text-4xl align-middle xl:leading-4 lg:leading-4 md:leading-normal leading-relaxed whitespace-no-wrap cursor-pointer`}
                 >
                   Daria Khudiakova
                 </span>
@@ -115,9 +118,6 @@ export default function Header() {
           li span {
             color: white;
           }
-        }
-        li a {
-          padding-left: 4.75rem;
         }
       `}</style>
     </div>

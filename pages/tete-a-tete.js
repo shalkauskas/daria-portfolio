@@ -20,7 +20,6 @@ export const elements = {
 };
 
 export default function Tete() {
-  console.log(overview);
   return (
     <Layout title="Work | daria@ux.com">
       <ScrollNavigation elements={elements} offset={160}>
@@ -81,7 +80,7 @@ export default function Tete() {
             {/* Wireframing */}
             <div ref={refs.EL3}>
               <ProjectSectionHeader header="Wireframing" />
-              <div className="">
+              <div className="shadow-lg">
                 <video className="static" controls loop autoPlay muted>
                   <source
                     src="video/teteatete-wireframe.mp4"

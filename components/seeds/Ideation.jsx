@@ -10,7 +10,13 @@ export default function Ideation() {
         className="text-center cursor-pointer mx-auto"
         onClick={() => setImage(!image)}
       >
-        <div className={`relative ${image ? "absolute z-50 2xl:w-max" : ""}`}>
+        <div
+          className={`relative ${
+            image
+              ? "absolute z-50 2xl:w-max transform 2xl:scale-100 sm:scale-150 scale-150"
+              : ""
+          }`}
+        >
           <Image
             alt="Site map"
             src={props.src}
@@ -118,12 +124,11 @@ export default function Ideation() {
               questions directly to educators at Learning Seeds.
             </li>
           </ul>
-          <div className="flex">
+          <div className="flex justify-center">
             <div className="ml-auto mr-10">
               <Modal src="/images/learning-seeds/user-flow-big.png" />
             </div>
             <div className="mr-auto">
-              {" "}
               <Modal src="/images/learning-seeds/site-map-big.png" />
             </div>
           </div>

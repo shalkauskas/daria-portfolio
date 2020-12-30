@@ -2,7 +2,10 @@ import Layout from "@/components/Layout";
 export default function AboutMe() {
   return (
     <Layout title="About me | daria@ux.com">
-      <div className="container mx-auto flex md:flex-row flex-col my-32 xl:w-4/6 w-5/6">
+      <div
+        className="container mx-auto flex md:flex-row flex-col my-32 xl:w-4/6 w-5/6"
+        style={{ fontFamily: `"Montserrat", sans-serif` }}
+      >
         <div className="flex-none md:w-1/2 relative">
           <img
             className="w-4/6 ml-auto mr-16 md:mb-0 mb-20"

@@ -6,6 +6,10 @@ export default function ProjectProblemSolution(props) {
         {/* controls */}
         <div className="text-center py-12">
           <button
+            style={{
+              textDecorationColor: "#61aeb0",
+              textDecorationThickness: "3px",
+            }}
             className={`${
               slide === 0 ? "font-bold underline" : ""
             } mx-6 focus:outline-none`}
@@ -14,6 +18,10 @@ export default function ProjectProblemSolution(props) {
             Problem
           </button>
           <button
+            style={{
+              textDecorationColor: "#61aeb0",
+              textDecorationThickness: "3px",
+            }}
             className={`${
               slide === 1 ? "font-bold underline" : ""
             } mx-6 focus:outline-none`}

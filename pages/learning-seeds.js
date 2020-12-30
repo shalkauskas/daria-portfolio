@@ -56,7 +56,12 @@ export default function Seeds() {
               <img src="images/learnseed.png" className="mx-auto" alt="" />
               <video
                 className="mx-auto left-0 right-0 absolute"
-                style={{ width: "652px", bottom: "107px", borderRadius: "8px" }}
+                style={{
+                  width: "652px",
+                  bottom: "20.5%",
+                  borderRadius: "5px",
+                  maxWidth: "73%",
+                }}
                 controls
                 autoPlay
                 muted
@@ -109,7 +114,7 @@ export default function Seeds() {
                   boxShadow: "0 0 5px 10px #F5F2F0",
                 }}
               >
-                <h3 className="text-left font-bold pb-10">Key takeaways:</h3>
+                <h3 className="text-left font-bold pb-6">Key takeaways:</h3>
                 <ul className="list-disc list-inside">
                   <li>
                     “Chunking” the rich content of the method into digestible
@@ -142,6 +147,7 @@ export default function Seeds() {
             <div ref={refs.EL7}>
               <NextSteps
                 title={"Next steps:"}
+                style={true}
                 list={
                   <ul className="list-disc list-inside">
                     <li>Further usability testing.</li>
@@ -153,8 +159,7 @@ export default function Seeds() {
                       experiences with others.
                     </li>
                     <li>
-                      Create a more sophisticated way of documenting and
-                      visualizing progress beyond just numerical rating.
+                      Improve the way of documenting and visualizing progress.
                     </li>
                   </ul>
                 }

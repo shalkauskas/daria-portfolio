@@ -1,12 +1,9 @@
 import useDocumentScrollThrottled from "components/useDocumentScrollThrottled";
 export default function ScrollButton() {
   const [showScroll, setShowScroll] = React.useState(false);
-  // const [moveScroll, setMoveScroll] = React.useState(false);
   useDocumentScrollThrottled((callbackData) => {
     const { currentScrollTop } = callbackData;
-    // const bottom = document.body.scrollHeight - 1100;
     setShowScroll(currentScrollTop > 400);
-    // setMoveScroll(currentScrollTop > bottom);
   });
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -15,20 +12,16 @@ export default function ScrollButton() {
     <div>
       <img
         src="images/scrollToTop.png"
-        className={`scrollTop`}
+        className={`scrollTop cursor-pointer fixed z-50`}
         onClick={scrollTop}
         style={{
           height: 40,
-          // marginBottom: moveScroll ? "120px" : "",
           display: showScroll ? "flex" : "none",
         }}
       />
       <style jsx>{`
         .scrollTop {
-          position: fixed;
           bottom: 60px;
-          z-index: 1000;
-          cursor: pointer;
           animation: fadeIn 0.3s;
           transition: opacity 0.4s;
           opacity: 0.5;

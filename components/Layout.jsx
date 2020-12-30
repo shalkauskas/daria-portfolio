@@ -38,8 +38,8 @@ export default function Layout({ children, title }) {
       <Footer />
       <style global jsx>{`
         body {
-          font-family: "Montserrat", sans-serif;
           color: #212121;
+          font-family: "Open Sans";
         }
       `}</style>
     </div>

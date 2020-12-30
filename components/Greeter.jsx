@@ -1,4 +1,7 @@
 export default function Greeter() {
+  const scrollTop = () => {
+    window.scrollTo({ top: 850, behavior: "smooth" });
+  };
   return (
     <div className="container mx-auto 2xl:px-48 xl:px-36 lg:px-12 mt-48">
       <div className="flex md:flex-row flex-col relative">
@@ -103,12 +106,11 @@ export default function Greeter() {
             }
         }
       `}</style>
-      <a href="#work">
-        <img
-          className="w-20 mt-20 h-16 mx-auto"
-          src="images/chevron-double-down.png"
-        />
-      </a>
+      <img
+        onClick={scrollTop}
+        className="w-20 mt-20 h-16 mx-auto cursor-pointer"
+        src="images/chevron-double-down.png"
+      />
     </div>
   );
 }
