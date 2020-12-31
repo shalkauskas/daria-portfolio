@@ -17,6 +17,7 @@ export default function ButtonCheckbox() {
             quality={100}
             width={243}
             height={300}
+            loading={"eager"}
           />
         </div>
 
@@ -27,6 +28,7 @@ export default function ButtonCheckbox() {
             quality={100}
             width={243}
             height={300}
+            loading={"eager"}
           />
         </div>
       </div>

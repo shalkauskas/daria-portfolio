@@ -21,6 +21,7 @@ export default function ProjectOverview() {
           quality={100}
           width={262}
           height={460}
+          loading={"eager"}
         />
         <div className="my-auto sm:mx-8 mx-2">
           <Image
@@ -29,6 +30,7 @@ export default function ProjectOverview() {
             quality={100}
             width={60}
             height={42}
+            loading={"eager"}
           />
         </div>
 
@@ -38,6 +40,7 @@ export default function ProjectOverview() {
           quality={100}
           width={262}
           height={460}
+          loading={"eager"}
         />
         <div className="my-auto sm:mx-8 mx-2">
           <Image
@@ -46,6 +49,7 @@ export default function ProjectOverview() {
             quality={100}
             width={60}
             height={42}
+            loading={"eager"}
           />
         </div>
 
@@ -55,6 +59,7 @@ export default function ProjectOverview() {
           quality={100}
           width={262}
           height={460}
+          loading={"eager"}
         />
       </div>
       <hr className="mb-20" />
@@ -74,6 +79,7 @@ export default function ProjectOverview() {
           quality={100}
           width={308}
           height={802}
+          loading={"eager"}
         />
         <div className="my-auto sm:mx-8 mx-2">
           <Image
@@ -82,6 +88,7 @@ export default function ProjectOverview() {
             quality={100}
             width={60}
             height={42}
+            loading={"eager"}
           />
         </div>
         <div className="flex-grow-0 my-auto">
@@ -91,6 +98,7 @@ export default function ProjectOverview() {
             quality={100}
             width={308}
             height={535}
+            loading={"eager"}
           />
         </div>
       </div>
@@ -125,6 +133,7 @@ export default function ProjectOverview() {
           quality={100}
           width={262}
           height={460}
+          loading={"eager"}
         />
         <div className="my-auto sm:mx-8 mx-2">
           <Image
@@ -133,6 +142,7 @@ export default function ProjectOverview() {
             quality={100}
             width={60}
             height={42}
+            loading={"eager"}
           />
         </div>
 
@@ -142,6 +152,7 @@ export default function ProjectOverview() {
           quality={100}
           width={262}
           height={460}
+          loading={"eager"}
         />
         <div className="my-auto sm:mx-8 mx-2">
           <Image
@@ -150,6 +161,7 @@ export default function ProjectOverview() {
             quality={100}
             width={60}
             height={42}
+            loading={"eager"}
           />
         </div>
 
@@ -159,6 +171,7 @@ export default function ProjectOverview() {
           quality={100}
           width={262}
           height={460}
+          loading={"eager"}
         />
       </div>
     </div>

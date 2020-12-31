@@ -15,6 +15,7 @@ let problem = [
         quality={100}
         width={825}
         height={420}
+        loading={"eager"}
       />
     </div>
   </div>,
@@ -37,6 +38,7 @@ let problem = [
         quality={100}
         width={825}
         height={270}
+        loading={"eager"}
       />
     </div>
   </div>,
@@ -57,6 +59,7 @@ let problem = [
         quality={100}
         width={825}
         height={420}
+        loading={"eager"}
       />
     </div>
   </div>,
@@ -73,6 +76,7 @@ let problem = [
         quality={100}
         width={825}
         height={420}
+        loading={"eager"}
       />
     </div>
   </div>,

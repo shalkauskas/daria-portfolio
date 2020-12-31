@@ -13,6 +13,7 @@ export default function ButtonCheckbox() {
             quality={100}
             width={208}
             height={363}
+            loading={"eager"}
           />
         </div>
 
@@ -23,6 +24,7 @@ export default function ButtonCheckbox() {
             quality={100}
             width={208}
             height={363}
+            loading={"eager"}
           />
         </div>
         <div className="mr-auto shadow-lg">
@@ -32,6 +34,7 @@ export default function ButtonCheckbox() {
             quality={100}
             width={208}
             height={363}
+            loading={"eager"}
           />
         </div>
       </div>

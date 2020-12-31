@@ -23,6 +23,7 @@ export default function Ideation() {
             quality={100}
             width={width}
             height={height}
+            loading={"eager"}
           />
           <span
             className={`${
@@ -94,6 +95,7 @@ export default function Ideation() {
             quality={100}
             width={748}
             height={330}
+            loading={"eager"}
           />
         </div>
       </div>

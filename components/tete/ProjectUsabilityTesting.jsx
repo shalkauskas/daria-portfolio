@@ -38,6 +38,7 @@ export default function ProjectOverview() {
             width={358}
             height={312}
             alt="website usability testing"
+            loading={"eager"}
           />
         </div>
         <div className="mx-auto">
@@ -46,6 +47,7 @@ export default function ProjectOverview() {
             width={439}
             height={312}
             alt="website usability testing"
+            loading={"eager"}
           />
         </div>
       </div>
@@ -64,6 +66,7 @@ export default function ProjectOverview() {
               width={189}
               height={417}
               alt="website usability testing"
+              loading={"eager"}
             />
           </div>
           <div className="w-1/2 md:mr-32 md:ml-12 ml-auto mr-auto text-center">
@@ -72,6 +75,7 @@ export default function ProjectOverview() {
               width={189}
               height={417}
               alt="website usability testing"
+              loading={"eager"}
             />
           </div>
         </div>
@@ -97,6 +101,7 @@ export default function ProjectOverview() {
               width={218}
               height={448}
               alt="website usability testing"
+              loading={"eager"}
             />
           </div>
           <div className="md:mt-12 mt-3 mx-3">
@@ -105,6 +110,7 @@ export default function ProjectOverview() {
               width={90}
               height={20}
               alt="arrow right"
+              loading={"eager"}
             />
           </div>
           <div className="md:mt-3 mt-1">
@@ -113,6 +119,7 @@ export default function ProjectOverview() {
               width={30}
               height={30}
               alt="wrong"
+              loading={"eager"}
             />
           </div>
           <div className="md:mx-3 mx-1">
@@ -121,6 +128,7 @@ export default function ProjectOverview() {
               width={218}
               height={448}
               alt="website usability testing"
+              loading={"eager"}
             />
           </div>
           <div className="md:mt-3 mt-1">
@@ -129,6 +137,7 @@ export default function ProjectOverview() {
               width={30}
               height={30}
               alt="right"
+              loading={"eager"}
             />
           </div>
           <div className="ml-3 mr-auto">
@@ -137,6 +146,7 @@ export default function ProjectOverview() {
               width={218}
               height={448}
               alt="website usability testing"
+              loading={"eager"}
             />
           </div>
         </div>

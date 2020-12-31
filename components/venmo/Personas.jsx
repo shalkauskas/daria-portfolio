@@ -16,6 +16,7 @@ export default function Personas() {
                 quality={100}
                 width={206}
                 height={206}
+                loading={"eager"}
               />
             </div>
 
@@ -59,6 +60,7 @@ export default function Personas() {
                 quality={100}
                 width={206}
                 height={206}
+                loading={"eager"}
               />
             </div>
 

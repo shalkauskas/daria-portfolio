@@ -60,6 +60,7 @@ export default function Tete() {
                 quality={100}
                 width={950}
                 height={900}
+                loading={"eager"}
               />
             </div>
             {/* Our user */}
@@ -71,6 +72,7 @@ export default function Tete() {
                 quality={100}
                 width={1000}
                 height={1000}
+                loading={"eager"}
               />
             </div>
             {/* Analysis */}

@@ -21,6 +21,7 @@ export default function Venmo(props) {
             quality={100}
             width={259}
             height={419}
+            loading={"eager"}
           />
           <span
             className={`${

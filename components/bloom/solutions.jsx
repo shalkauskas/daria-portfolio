@@ -21,6 +21,7 @@ export default function Solutions(props) {
             quality={100}
             width={818}
             height={147}
+            loading={"eager"}
           />
           <span
             className={`${

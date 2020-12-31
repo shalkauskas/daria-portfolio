@@ -20,6 +20,7 @@ let solution = [
         quality={100}
         width={787}
         height={80}
+        loading={"eager"}
       />
     </div>
 
@@ -30,6 +31,7 @@ let solution = [
         quality={100}
         width={500}
         height={380}
+        loading={"eager"}
       />
     </div>
   </div>,
@@ -55,6 +57,7 @@ let solution = [
           quality={100}
           width={380}
           height={260}
+          loading={"eager"}
         />
       </div>
       <div className="md:ml-6 ml-auto mr-auto">
@@ -64,6 +67,7 @@ let solution = [
           quality={100}
           width={380}
           height={290}
+          loading={"eager"}
         />
       </div>
     </div>
@@ -85,6 +89,7 @@ let solution = [
         quality={100}
         width={500}
         height={380}
+        loading={"eager"}
       />
     </div>
   </div>,
@@ -106,6 +111,7 @@ let solution = [
         quality={100}
         width={500}
         height={380}
+        loading={"eager"}
       />
     </div>
   </div>,

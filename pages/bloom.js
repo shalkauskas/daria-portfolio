@@ -80,6 +80,7 @@ export default function Bloom() {
                 quality={100}
                 width={950}
                 height={900}
+                loading={"eager"}
               />
             </div>
             {/* Proto-persona */}
@@ -91,6 +92,7 @@ export default function Bloom() {
                 quality={100}
                 width={1000}
                 height={650}
+                loading={"eager"}
               />
             </div>
             {/* Solutions */}

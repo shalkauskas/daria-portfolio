@@ -25,6 +25,7 @@ export default function Interviews() {
           quality={100}
           width={618}
           height={618}
+          loading={"eager"}
         />
       </div>
       <p className="mt-20">
@@ -57,6 +58,7 @@ export default function Interviews() {
               quality={100}
               width={width}
               height={height}
+              loading={"eager"}
             />
             <span
               className={`${

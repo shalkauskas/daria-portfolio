@@ -14,6 +14,7 @@ export default function Wireframing() {
           quality={100}
           width={615}
           height={460}
+          loading={"eager"}
         />
       </div>
       <hr />
@@ -30,6 +31,7 @@ export default function Wireframing() {
           quality={100}
           width={262}
           height={456}
+          loading={"eager"}
         />
       </div>
       <hr />
@@ -44,6 +46,7 @@ export default function Wireframing() {
           quality={100}
           width={262}
           height={456}
+          loading={"eager"}
         />
       </div>
     </div>

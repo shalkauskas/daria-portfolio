@@ -98,6 +98,7 @@ export default function Seeds() {
                 quality={100}
                 width={954}
                 height={384}
+                loading={"eager"}
               />
             </div>
             {/* Content Research */}

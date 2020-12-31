@@ -28,6 +28,7 @@ export default function ExpertInterviews() {
               width={472}
               height={472}
               className="rounded-full"
+              loading={"eager"}
             />
           </div>
         </div>

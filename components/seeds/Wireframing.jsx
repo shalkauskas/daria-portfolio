@@ -24,6 +24,7 @@ export default function Wireframing() {
             quality={100}
             width={432}
             height={273}
+            loading={"eager"}
           />
         </div>
 
@@ -34,6 +35,7 @@ export default function Wireframing() {
             quality={100}
             width={432}
             height={273}
+            loading={"eager"}
           />
         </div>
       </div>
@@ -51,6 +53,7 @@ export default function Wireframing() {
             quality={100}
             width={432}
             height={273}
+            loading={"eager"}
           />
         </div>
 
@@ -61,6 +64,7 @@ export default function Wireframing() {
             quality={100}
             width={432}
             height={273}
+            loading={"eager"}
           />
         </div>
       </div>
@@ -77,6 +81,7 @@ export default function Wireframing() {
           quality={100}
           width={428}
           height={394}
+          loading={"eager"}
         />
       </div>
       <div className="mb-24">
@@ -102,6 +107,7 @@ export default function Wireframing() {
               quality={100}
               width={30}
               height={30}
+              loading={"eager"}
             />
           </div>
 
@@ -119,6 +125,7 @@ export default function Wireframing() {
                 quality={100}
                 width={819}
                 height={515}
+                loading={"eager"}
               />
             </div>
             <div
@@ -134,6 +141,7 @@ export default function Wireframing() {
                 quality={100}
                 width={819}
                 height={515}
+                loading={"eager"}
               />
             </div>
           </div>
@@ -150,6 +158,7 @@ export default function Wireframing() {
               quality={100}
               width={30}
               height={30}
+              loading={"eager"}
             />
           </div>
         </div>

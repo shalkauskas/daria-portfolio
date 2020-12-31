@@ -29,6 +29,7 @@ export default function ComparativeAnalysis() {
             quality={100}
             width={754}
             height={416}
+            loading={"eager"}
           />
           <span
             className={`${
