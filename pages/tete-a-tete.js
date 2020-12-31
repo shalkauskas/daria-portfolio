@@ -83,7 +83,7 @@ export default function Tete() {
               <div className="shadow-lg">
                 <video className="static" controls loop autoPlay muted>
                   <source
-                    src="video/teteatete-wireframe.mp4"
+                    src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-wireframe.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.

@@ -6,16 +6,18 @@ export default function Resume() {
         className="max-h-full"
         style={{ fontFamily: `"Montserrat", sans-serif` }}
       >
-        <div
-          class="text-center container mx-auto my-24"
-          style={{ height: "1350px" }}
-        >
+        <div className="text-center xl:w-3/6 mx-auto my-32">
           <iframe
-            src="resume.pdf#view=FitH"
-            class="mt-5 mx-auto 2xl:w-7/12 xl:w-9/12 lg:w-11/12 w-3/4"
-            height="100%"
+            src="https://onedrive.live.com/embed?cid=41AA7A153B5014EE&amp;resid=41AA7A153B5014EE%21105&amp;authkey=AJHecy1Su8zGw44&amp;em=2&amp;wdStartOn=1"
             width="100%"
-          />
+            height="1000px"
+            frameBorder="0"
+          ></iframe>
+          <a href="https://s3.us-east-2.amazonaws.com/daria-in-design.com/Resume_12.14docx.docx">
+            <button className="mt-12 rounded-full px-10 py-3 bg-gray-700 text-white float-right hover:opacity-75">
+              Download Resume
+            </button>
+          </a>
         </div>
       </div>
     </Layout>

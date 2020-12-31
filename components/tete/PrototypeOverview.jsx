@@ -20,7 +20,10 @@ export default function PrototypeOverview() {
           autoPlay
           muted
         >
-          <source src="video/teteatete-mobile.mp4" type="video/mp4" />
+          <source
+            src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-mobile.mp4"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -43,7 +46,10 @@ export default function PrototypeOverview() {
           autoPlay
           muted
         >
-          <source src="video/teteatete-desktop.mp4" type="video/mp4" />
+          <source
+            src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-desktop.mp4"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
       </div>
