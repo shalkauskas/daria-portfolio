@@ -8,8 +8,8 @@ export default function Wireframing() {
       <p>
         When our initial mid-fidelity wireframes were ready, we conducted 7
         usability tests. During these tests, we got valuable feedback that we
-        implemented making iterations and creating new version that eventually
-        used for a prototype.
+        implemented making iterations and creating new version that was
+        eventually used for a prototype.
       </p>
       <p className="my-12">
         1. Some of the users mentioned that they are often annoyed by having to

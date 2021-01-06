@@ -5,8 +5,8 @@ const overview = [
         Everyone loves plants. They improve air quality and humidity levels,
         absorb noise, reduce stress, and create a feeling of comfort. However,
         maintaining a plant requires regular care that we often fail to provide.
-        Have you ever happened to forget to water your plant? Has any of your
-        home favorites died from either lack of or excessive daylight?
+        Have you ever forgotten to water your plant? Has any of your home
+        favorites died from either lack of or excessive daylight?
       </div>
     ),
     solutions: (

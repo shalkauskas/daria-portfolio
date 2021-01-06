@@ -63,7 +63,7 @@ export default function ProjectOverview() {
         />
       </div>
       <hr className="mb-20" />
-      <p>
+      {/* <p>
         The initial design for the page of the plant that was already added in
         “my plants” list included only reminders settings and no information
         about the plant at all. I have no idea how could I missed it! I am
@@ -102,7 +102,7 @@ export default function ProjectOverview() {
           />
         </div>
       </div>
-      <hr className="mb-20" />
+      <hr className="mb-20" /> */}
       <p className="mb-6">
         Probably the biggest challenge I faced was the location and design of
         the “add to my plants” button. I made a few variations and had a new
@@ -174,6 +174,11 @@ export default function ProjectOverview() {
           loading={"eager"}
         />
       </div>
+      <style jsx>{`
+        .shadow-img {
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+        }
+      `}</style>
     </div>
   );
 }

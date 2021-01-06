@@ -12,8 +12,8 @@ const overview = [
     ),
     hypothesis: (
       <div>
-        We believe by creating a micro-course that scales the learnability of
-        the Enlightened Shadow Method, we will enable parents to successfully
+        We believe that by creating a micro-course that scales the learnability
+        of the Enlightened Shadow Method, we will enable parents to successfully
         implement this method as part of their own parenting toolkit.
       </div>
     ),

@@ -1,4 +1,5 @@
 module.exports = {
+  purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       width: {
@@ -18,10 +19,5 @@ module.exports = {
       90: "90%",
       full: "100%",
     },
-
-    purge: [
-      "./components/**/*.{js,ts,jsx,tsx}",
-      "./pages/**/*.{js,ts,jsx,tsx}",
-    ],
   },
 };

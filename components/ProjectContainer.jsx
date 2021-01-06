@@ -40,9 +40,9 @@ export default function ProjectContainer(props) {
             </ul>
           </div>
           {/* button */}
-          <div className="pb-6">
+          <div className="pb-6 md:text-right">
             <Link href={props.link} passHref>
-              <button className="rounded-full px-6 py-3 mt-8 md:mt-8 lg:mt-16 xl:mt-8 lg:ml-32 bg-gray-700 text-white hover:opacity-75 focus:outline-none">
+              <button className="rounded-full xl:px-10 md:px-6 px-10 py-3 mt-8 md:mt-8 lg:mt-16 xl:mt-8 md:mr-20 bg-gray-700 text-white hover:opacity-75 focus:outline-none">
                 View more
               </button>
             </Link>

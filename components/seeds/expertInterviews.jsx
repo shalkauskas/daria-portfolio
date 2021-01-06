@@ -7,7 +7,7 @@ export default function ExpertInterviews() {
       <p className="my-12">
         To learn more about Learning Seeds and find out what makes its method
         unique we also interviewed parents experienced in working with the
-        company, teachers and other educators. Then we created{" "}
+        company, teachers, and other educators. Then we created{" "}
         <b>an affinity map</b> that helped us track the following tendencies:
       </p>
       {/* affinity map */}

@@ -25,14 +25,19 @@ export default function Wireframing() {
         phone camera is technically involved in this feature.
       </p>
       <div className="text-center my-20">
-        <Image
-          alt="Demo"
-          src="/images/bloom/wire1.png"
-          quality={100}
-          width={262}
-          height={456}
-          loading={"eager"}
-        />
+        <div
+          style={{ width: "fit-content", height: "456px" }}
+          className="mx-auto shadow-img"
+        >
+          <Image
+            alt="Demo"
+            src="/images/bloom/wire1.png"
+            quality={100}
+            width={262}
+            height={456}
+            loading={"eager"}
+          />
+        </div>
       </div>
       <hr />
       <p className="mt-20">
@@ -40,15 +45,25 @@ export default function Wireframing() {
         works the same way as the regular iPhone settings.
       </p>
       <div className="text-center my-20">
-        <Image
-          alt="Demo"
-          src="/images/bloom/wire2.png"
-          quality={100}
-          width={262}
-          height={456}
-          loading={"eager"}
-        />
+        <div
+          style={{ width: "fit-content", height: "456px" }}
+          className="mx-auto shadow-img"
+        >
+          <Image
+            alt="Demo"
+            src="/images/bloom/wire2.png"
+            quality={100}
+            width={262}
+            height={456}
+            loading={"eager"}
+          />
+        </div>
       </div>
+      <style jsx>{`
+        .shadow-img {
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+        }
+      `}</style>
     </div>
   );
 }

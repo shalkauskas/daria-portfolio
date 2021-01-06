@@ -11,6 +11,8 @@ import ScrollNavigation from "react-single-page-navigation";
 import overview from "@/components/bloom/overview";
 import Solutions from "@/components/bloom/solutions";
 import Wireframing from "@/components/bloom/wireframing";
+import NextProjectCarousel from "@/components/NextProjectCarousel";
+import NextProjectItem from "@/components/NextProjectItem";
 export const elements = {
   EL1: {},
   EL2: {},
@@ -19,6 +21,41 @@ export const elements = {
   EL5: {},
 };
 export default function Bloom() {
+  const tete = (
+    <NextProjectItem
+      title="Tete-A-Tete salon website redesign"
+      image="images/tete-a-tete.png"
+      imageStyle="laptop"
+      color="#F7EEFF"
+      link="/tete-a-tete"
+    />
+  );
+  const bloom = (
+    <NextProjectItem
+      title='B2C application "Bloom"'
+      image="images/bloom.png"
+      color="#FFEEEC"
+      link="/bloom"
+      phone={true}
+    />
+  );
+  const seeds = (
+    <NextProjectItem
+      title="Educational micro-course for Learning Seeds, Inc."
+      image="images/learnseed.png"
+      color="#C2F0FC"
+      link="/learning-seeds"
+    />
+  );
+  const venmo = (
+    <NextProjectItem
+      title="Donation feature for Venmo app (conceptual)"
+      image="images/venmo.png"
+      color="#BEEBE9"
+      link="/venmo"
+      phone={true}
+    />
+  );
   return (
     <Layout title="Work | daria@ux.com">
       <ScrollNavigation elements={elements} offset={160}>
@@ -55,7 +92,6 @@ export default function Bloom() {
                 className="mx-auto left-0 right-0 absolute"
                 style={{ width: "218px", bottom: "60px" }}
                 controls
-                autoPlay
                 muted
               >
                 <source
@@ -128,6 +164,11 @@ export default function Bloom() {
         )}
       </ScrollNavigation>
       <ScrollButton />
+      <NextProjectCarousel
+        children={tete}
+        children2={seeds}
+        children3={venmo}
+      />
     </Layout>
   );
 }

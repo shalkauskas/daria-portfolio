@@ -55,9 +55,10 @@ export default function ProjectOverview() {
       {/* 3 */}
       <div className="my-24">
         <p className="pb-10">
-          <b>2. Sliding interaction</b> signifier represented by three dots
-          wasn’t clear for users. As a result, I got rid of dots and made menu
-          items clickable while still maintaining screens’ ability to slide.
+          <b>2. The signifier for sliding interaction</b> represented by three
+          dots wasn’t clear for users. As a result, I got rid of dots and made
+          menu items clickable while still maintaining screens’ ability to
+          slide.
         </p>
         <div className="flex md:flex-row flex-col">
           <div className="w-1/2 md:ml-32 text-center ml-auto mr-auto mb-6">
@@ -84,15 +85,15 @@ export default function ProjectOverview() {
       {/* 4 */}
       <div className="my-24">
         <p className="pb-10">
-          <b>3. The fixed header that folds in</b> when as you scroll down is a
-          great idea which I picked up from the original Tete-A-Tete website.
-          While it is providing constant access to site navigation it gets
-          thinner and saves the valuable space for the content. However,
-          according to user insights the fact that the name of the salon, its
-          logo, simply disappears when you scroll looks like a system error and
-          leaves users confused. To avoid poor readability caused by reducing
-          size of the logo I chose to make a transition from logo (initial
-          state) to a text title.
+          <b>3. The fixed header that folds in</b> as you scroll down is a great
+          idea which I picked up from the original Tete-A-Tete website. While it
+          is providing constant access to site navigation it gets thinner and
+          saves the valuable space for the content. However, according to user
+          insights the fact that the name of the salon, its logo, simply
+          disappears when you scroll looks like a system error and leaves users
+          confused. To avoid poor readability caused by reducing size of the
+          logo I chose to make a transition from logo (initial state) to a text
+          title.
         </p>
         <div className="flex flex-row">
           <div className="ml-auto">

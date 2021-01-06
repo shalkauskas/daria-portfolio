@@ -12,6 +12,8 @@ import Dollar from "@/components/venmo/Dollar";
 import Iterations from "@/components/venmo/Iterations";
 import Personas from "@/components/venmo/Personas";
 import ButtonCheckbox from "@/components/venmo/ButtonCheckbox";
+import NextProjectCarousel from "@/components/NextProjectCarousel";
+import NextProjectItem from "@/components/NextProjectItem";
 export const elements = {
   EL1: {},
   EL2: {},
@@ -22,6 +24,41 @@ export const elements = {
   EL7: {},
 };
 export default function Venmo() {
+  const tete = (
+    <NextProjectItem
+      title="Tete-A-Tete salon website redesign"
+      image="images/tete-a-tete.png"
+      imageStyle="laptop"
+      color="#F7EEFF"
+      link="/tete-a-tete"
+    />
+  );
+  const bloom = (
+    <NextProjectItem
+      title='B2C application "Bloom"'
+      image="images/bloom.png"
+      color="#FFEEEC"
+      link="/bloom"
+      phone={true}
+    />
+  );
+  const seeds = (
+    <NextProjectItem
+      title="Educational micro-course for Learning Seeds, Inc."
+      image="images/learnseed.png"
+      color="#C2F0FC"
+      link="/learning-seeds"
+    />
+  );
+  const venmo = (
+    <NextProjectItem
+      title="Donation feature for Venmo app (conceptual)"
+      image="images/venmo.png"
+      color="#BEEBE9"
+      link="/venmo"
+      phone={true}
+    />
+  );
   return (
     <Layout title="Work | daria@ux.com">
       <ScrollNavigation elements={elements} offset={160}>
@@ -62,7 +99,6 @@ export default function Venmo() {
                 className="mx-auto left-0 right-0 absolute"
                 style={{ width: "218px", bottom: "60px" }}
                 controls
-                autoPlay
                 muted
               >
                 <source
@@ -127,6 +163,11 @@ export default function Venmo() {
         )}
       </ScrollNavigation>
       <ScrollButton />
+      <NextProjectCarousel
+        children={tete}
+        children2={bloom}
+        children3={seeds}
+      />
     </Layout>
   );
 }

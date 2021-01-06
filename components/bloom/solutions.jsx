@@ -80,7 +80,7 @@ export default function Solutions(props) {
           As a plant location plays a significant role for user and affects
           plant’s well-being, it is crucial to start with. There are usually not
           many places in a house (apartment) where user would put his “new
-          friend”. As soon as this place is choosen, the list of plants narrows
+          friend”. As soon as this place is chosen, the list of plants narrows
           down to ones that can survive consuming the amount of sunlight at that
           location. From there, user can filter the list according to his
           preferences as size, diificulty of care, bloom and pet friendliness.

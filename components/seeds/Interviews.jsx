@@ -9,9 +9,9 @@ export default function Interviews() {
       <ProjectSectionHeader header="Novice user interviews" />
       <p>
         In order to find out the habits surrounding seeking parenting
-        information and resources we conducted 4 interviews with parents who are
-        not familiar with Learning Seeds and its methods. When we’ve collected
-        all of the data, we synthesized it in two different ways.
+        information and resources, we conducted 4 interviews with parents who
+        are not familiar with Learning Seeds and its methods. When we’ve
+        collected all of the data, we synthesized it in two different ways.
       </p>
       <p className="my-12">
         First, I used the <b>empathy map</b> to identify what our novice user
@@ -81,8 +81,8 @@ export default function Interviews() {
           <h3 className="text-left font-bold pb-10">Key points:</h3>
           <ul className="list-disc list-inside mb-12">
             <li>
-              People tend to use a phone for less than 20 minutes through day
-              and they use the computer for 0.5-2 hours in the evening
+              People tend to use a phone for less than 20 minutes throughout the
+              day and they use the computer for 0.5-2 hours in the evening
             </li>
             <li>
               Effective types of content for online learning: a mix of audio and

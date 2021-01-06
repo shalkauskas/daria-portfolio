@@ -11,6 +11,8 @@ import ScrollButton from "@/components/ScrollButton";
 import ProjectMenu from "@/components/ProjectMenu";
 import ScrollNavigation from "react-single-page-navigation";
 import overview from "@/components/tete/overview";
+import NextProjectCarousel from "@/components/NextProjectCarousel";
+import NextProjectItem from "@/components/NextProjectItem";
 export const elements = {
   EL1: {},
   EL2: {},
@@ -20,6 +22,32 @@ export const elements = {
 };
 
 export default function Tete() {
+  const bloom = (
+    <NextProjectItem
+      title='B2C application "Bloom"'
+      image="images/bloom.png"
+      color="#FFEEEC"
+      link="/bloom"
+      phone={true}
+    />
+  );
+  const seeds = (
+    <NextProjectItem
+      title="Educational micro-course for Learning Seeds, Inc."
+      image="images/learnseed.png"
+      color="#C2F0FC"
+      link="/learning-seeds"
+    />
+  );
+  const venmo = (
+    <NextProjectItem
+      title="Donation feature for Venmo app (conceptual)"
+      image="images/venmo.png"
+      color="#BEEBE9"
+      link="/venmo"
+      phone={true}
+    />
+  );
   return (
     <Layout title="Work | daria@ux.com">
       <ScrollNavigation elements={elements} offset={160}>
@@ -83,7 +111,7 @@ export default function Tete() {
             <div ref={refs.EL3}>
               <ProjectSectionHeader header="Wireframing" />
               <div className="shadow-lg">
-                <video className="static" controls loop autoPlay muted>
+                <video className="static" controls loop muted>
                   <source
                     src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-wireframe.mp4"
                     type="video/mp4"
@@ -119,6 +147,11 @@ export default function Tete() {
         )}
       </ScrollNavigation>
       <ScrollButton />
+      <NextProjectCarousel
+        children={bloom}
+        children2={seeds}
+        children3={venmo}
+      />
     </Layout>
   );
 }

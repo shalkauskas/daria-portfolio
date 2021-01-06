@@ -17,7 +17,6 @@ export default function PrototypeOverview() {
           className="mx-auto left-0 right-0 absolute"
           style={{ width: "218px", bottom: "60px" }}
           controls
-          autoPlay
           muted
         >
           <source
@@ -43,7 +42,6 @@ export default function PrototypeOverview() {
             maxWidth: "73%",
           }}
           controls
-          autoPlay
           muted
         >
           <source
