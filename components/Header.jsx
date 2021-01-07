@@ -22,7 +22,7 @@ export default function Header() {
                 <img
                   src="images/logo.png"
                   alt="Logo"
-                  className="sm:inline-block hidden w-20 mr-6"
+                  className="sm:inline-block hidden w-20 h-20 mr-6"
                 />
                 <span
                   className={`font-logo italic font-bold text-3xl xl:text-5xl sm:text-4xl align-middle xl:leading-4 lg:leading-4 md:leading-normal leading-relaxed whitespace-no-wrap cursor-pointer`}

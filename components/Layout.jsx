@@ -6,6 +6,11 @@ export default function Layout({ children, title }) {
     <div className="overflow-y-hidden relative pb-40">
       <Head>
         <title>{title}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content="Portfolio landing page of UX/UI designer Daria Khudiakova"
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"

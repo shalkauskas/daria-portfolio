@@ -7,12 +7,16 @@ export default function PrototypeOverview() {
           device === "mobile" ? "block" : "hidden"
         } container mx-auto relative`}
       >
-        <img
-          src="images/bloom.png"
-          className="mx-auto"
-          style={{ width: "250px" }}
-          alt=""
-        />
+        <picture>
+          <source type="image/webp" srcSet={`images/bloom.webp`} />
+          <source type="image/jpeg" srcSet={`images/bloom.png`} />
+          <img
+            src="images/bloom.png"
+            className="mx-auto"
+            style={{ width: "250px" }}
+            alt=""
+          />
+        </picture>
         <video
           className="mx-auto left-0 right-0 absolute"
           style={{ width: "218px", bottom: "60px" }}
@@ -32,7 +36,18 @@ export default function PrototypeOverview() {
           device === "desktop" ? "block" : "hidden"
         } container mx-auto relative`}
       >
-        <img src="images/tete-a-tete-desktop.png" alt="" className="mx-auto" />
+        <picture>
+          <source
+            type="image/webp"
+            srcSet={`images/tete-a-tete-desktop.webp`}
+          />
+          <source type="image/jpeg" srcSet={`images/tete-a-tete-desktop.png`} />
+          <img
+            src="images/tete-a-tete-desktop.png"
+            alt=""
+            className="mx-auto"
+          />
+        </picture>
         <video
           className="mx-auto left-0 right-0 absolute"
           style={{

@@ -8,22 +8,30 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="images/gmail_icon.png"
-            alt="gmail_icon"
-            className="inline-block w-16 mx-6 mb-6"
-          />
+          <picture>
+            <source type="image/webp" srcSet="images/gmail_icon.webp" />
+            <source type="image/png" srcSet="images/gmail_icon.png" />
+            <img
+              src="images/gmail_icon.png"
+              alt="gmail_icon"
+              className="inline-block w-16 mx-6 mb-6 h-16"
+            />
+          </picture>
         </a>
         <a
           href="https://www.linkedin.com/in/daria-in-ux"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="images/in_icon.png"
-            alt="in_icon"
-            className="inline-block w-14 mx-6 mb-6"
-          />
+          <picture>
+            <source type="image/webp" srcSet="images/in_icon.webp" />
+            <source type="image/png" srcSet="images/in_icon.png" />
+            <img
+              src="images/in_icon.png"
+              alt="in_icon"
+              className="inline-block w-14 mx-6 mb-6 h-14"
+            />
+          </picture>
         </a>
       </div>
     </footer>

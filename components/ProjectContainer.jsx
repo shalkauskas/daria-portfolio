@@ -19,16 +19,21 @@ export default function ProjectContainer(props) {
       <div className="flex md:flex-row flex-col">
         {/* left side */}
         <div className="w-full xl:w-4/6 lg:w-5/6">
-          <img
-            className={`
+          <picture>
+            <source type="image/webp" srcSet={`images/${props.image}.webp`} />
+            <source type="image/jpeg" srcSet={`images/${props.image}.png`} />
+            <img
+              className={`
               ${
                 props.imageStyle === "laptop"
                   ? laptopImageStyles
                   : mobileImageStyles
               }`}
-            src={props.image}
-            style={{ bottom: props.bloom ? "6%" : "11%" }}
-          />
+              src={`images/${props.image}.png`}
+              style={{ bottom: props.bloom ? "6%" : "11%" }}
+              alt="Project icon"
+            />
+          </picture>
         </div>
         {/* right side */}
         <div className="w-full">

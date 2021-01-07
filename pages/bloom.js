@@ -13,6 +13,7 @@ import Solutions from "@/components/bloom/solutions";
 import Wireframing from "@/components/bloom/wireframing";
 import NextProjectCarousel from "@/components/NextProjectCarousel";
 import NextProjectItem from "@/components/NextProjectItem";
+import smoothscroll from "smoothscroll-polyfill";
 export const elements = {
   EL1: {},
   EL2: {},
@@ -21,10 +22,11 @@ export const elements = {
   EL5: {},
 };
 export default function Bloom() {
+  React.useEffect(() => smoothscroll.polyfill());
   const tete = (
     <NextProjectItem
       title="Tete-A-Tete salon website redesign"
-      image="images/tete-a-tete.png"
+      image="tete-a-tete"
       imageStyle="laptop"
       color="#F7EEFF"
       link="/tete-a-tete"
@@ -33,7 +35,7 @@ export default function Bloom() {
   const bloom = (
     <NextProjectItem
       title='B2C application "Bloom"'
-      image="images/bloom.png"
+      image="bloom"
       color="#FFEEEC"
       link="/bloom"
       phone={true}
@@ -42,7 +44,7 @@ export default function Bloom() {
   const seeds = (
     <NextProjectItem
       title="Educational micro-course for Learning Seeds, Inc."
-      image="images/learnseed.png"
+      image="learnseed"
       color="#C2F0FC"
       link="/learning-seeds"
     />
@@ -50,7 +52,7 @@ export default function Bloom() {
   const venmo = (
     <NextProjectItem
       title="Donation feature for Venmo app (conceptual)"
-      image="images/venmo.png"
+      image="venmo"
       color="#BEEBE9"
       link="/venmo"
       phone={true}
@@ -82,12 +84,16 @@ export default function Bloom() {
             />
             {/* prototype */}
             <div className={`container mx-auto relative mb-20`}>
-              <img
-                src="images/bloom.png"
-                className="mx-auto"
-                alt=""
-                style={{ width: "250px" }}
-              />
+              <picture>
+                <source type="image/webp" srcSet={`images/bloom.webp`} />
+                <source type="image/jpeg" srcSet={`images/bloom.png`} />
+                <img
+                  src="images/bloom.png"
+                  className="mx-auto"
+                  alt=""
+                  style={{ width: "250px" }}
+                />
+              </picture>
               <video
                 className="mx-auto left-0 right-0 absolute"
                 style={{ width: "218px", bottom: "60px" }}

@@ -109,7 +109,6 @@ export default function Ideation() {
             boxShadow: "0 0 5px 10px #F5F2F0",
           }}
         >
-          <h3 className="text-center pb-10 font-bold">Solutions:</h3>
           <ul className="list-disc list-inside mb-12">
             <li>
               For the demo we decided to show 3 user flows that include

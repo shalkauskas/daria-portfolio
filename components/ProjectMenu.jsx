@@ -95,7 +95,7 @@ export default function ProjectMenu(props) {
       <div className="block xl:hidden cursor-pointer">
         <img
           src="images/menu-icon.png"
-          alt=""
+          alt="Project image"
           className="w-10 float-right mt-6 menu-icon"
           onClick={() => setMenuOpen(!menuOpen)}
         />

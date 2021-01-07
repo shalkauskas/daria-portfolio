@@ -16,6 +16,7 @@
     "react-dom": "16.13.1",
     "react-responsive-carousel": "^3.2.11",
     "react-single-page-navigation": "^1.0.1",
+    "smoothscroll-polyfill": "^0.4.4",
     "tailwindcss": "^2.0.1"
   }
 }

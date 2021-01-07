@@ -7,10 +7,15 @@ export default function AboutMe() {
         style={{ fontFamily: `"Montserrat", sans-serif` }}
       >
         <div className="flex-none md:w-1/2 relative">
-          <img
-            className="w-4/6 ml-auto mr-16 md:mb-0 mb-20"
-            src="images/daria_bw.png"
-          />
+          <picture>
+            <source type="image/webp" srcSet="images/daria_bw.webp" />
+            <source type="image/png" srcSet="images/daria_bw.png" />
+            <img
+              className="w-4/6 ml-auto mr-16 md:mb-0 mb-20"
+              src="images/daria_bw.png"
+            />
+          </picture>
+
           <span className="aboutMe-circleOne"></span>
           <span className="aboutMe-circleTwo"></span>
         </div>

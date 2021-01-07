@@ -1,5 +1,7 @@
+import smoothscroll from "smoothscroll-polyfill";
 export default function Greeter() {
   const scrollTop = () => {
+    smoothscroll.polyfill();
     window.scrollTo({ top: 850, behavior: "smooth" });
   };
   return (
@@ -11,10 +13,16 @@ export default function Greeter() {
           </h2>
         </div>
         <div className="relative">
-          <img
-            className="xl:w-3/5 md:w-4/5 w-2/5 lg:ml-0 ml-auto mr-auto"
-            src="images/daria.png"
-          />
+          <picture>
+            <source type="image/webp" srcSet="images/daria.webp" />
+            <source type="image/png" srcSet="images/daria.png" />
+            <img
+              className="xl:w-3/5 md:w-4/5 w-2/5 lg:ml-0 ml-auto mr-auto"
+              src="images/daria.png"
+              alt="Daria photo"
+            />
+          </picture>
+
           <span className="circleOne absolute"></span>
           <span className="circleTwo absolute"></span>
         </div>
@@ -110,6 +118,7 @@ export default function Greeter() {
         onClick={scrollTop}
         className="w-20 mt-20 h-16 mx-auto cursor-pointer"
         src="images/chevron-double-down.png"
+        alt="Slide down to projects"
       />
     </div>
   );

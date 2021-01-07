@@ -9,10 +9,15 @@ export default function NextProjectItem(props) {
         >
           <div className="w-3/4 mx-auto">
             <h2 className="font-bold mb-4">{props.title}</h2>
-            <img
-              src={props.image}
-              style={{ width: props.phone ? "60px" : "200px" }}
-            />
+            <picture>
+              <source type="image/webp" srcSet={`images/${props.image}.webp`} />
+              <source type="image/jpeg" srcSet={`images/${props.image}.png`} />
+              <img
+                src={`images/${props.image}.png`}
+                alt="Next project icon"
+                style={{ width: props.phone ? "60px" : "200px" }}
+              />
+            </picture>
           </div>
         </div>
       </Link>

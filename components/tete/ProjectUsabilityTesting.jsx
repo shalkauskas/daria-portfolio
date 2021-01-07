@@ -8,11 +8,16 @@ export default function ProjectOverview() {
       {/* 1 */}
       <div className="flex md:flex-row flex-col">
         <div className="w-1/2 mx-auto">
-          <img
-            src="images/tete-a-tete/challenge.gif"
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
             className="w-9/12 hidden md:block mx-auto"
-            alt="gif"
-          />
+          >
+            <source src="images/tete-a-tete/challenge.webm" type="video/webm" />
+            <source src="images/tete-a-tete/challenge.mp4" type="video/mp4" />
+          </video>
         </div>
         <div className="md:w-1/2">
           <h3 className="font-bold text-center pb-3">

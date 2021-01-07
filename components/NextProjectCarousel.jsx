@@ -6,7 +6,7 @@ export default function NextProjectCarousel(props) {
   const tete = (
     <NextProjectItem
       title="Tete-A-Tete salon website redesign"
-      image="images/tete-a-tete.png"
+      image="tete-a-tete"
       imageStyle="laptop"
       color="#F7EEFF"
       link="/tete-a-tete"
@@ -15,7 +15,7 @@ export default function NextProjectCarousel(props) {
   const bloom = (
     <NextProjectItem
       title='B2C application "Bloom"'
-      image="images/bloom.png"
+      image="bloom"
       color="#FFEEEC"
       link="/bloom"
       phone={true}
@@ -24,7 +24,7 @@ export default function NextProjectCarousel(props) {
   const seeds = (
     <NextProjectItem
       title="Educational micro-course for Learning Seeds, Inc."
-      image="images/learnseed.png"
+      image="learnseed"
       color="#C2F0FC"
       link="/learning-seeds"
     />
@@ -32,7 +32,7 @@ export default function NextProjectCarousel(props) {
   const venmo = (
     <NextProjectItem
       title="Donation feature for Venmo app (conceptual)"
-      image="images/venmo.png"
+      image="venmo"
       color="#BEEBE9"
       link="/venmo"
       phone={true}

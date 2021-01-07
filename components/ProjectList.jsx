@@ -8,7 +8,7 @@ export default function ProjectList(props) {
     <div className="mt-32">
       <ProjectContainer
         title="Tete-A-Tete salon website redesign"
-        image="images/tete-a-tete.png"
+        image="tete-a-tete"
         imageStyle="laptop"
         color="#F7EEFF"
         feature1="Responsive design."
@@ -18,7 +18,7 @@ export default function ProjectList(props) {
       />
       <ProjectContainer
         title='B2C application "Bloom"'
-        image="images/bloom.png"
+        image="bloom"
         color="#FFEEEC"
         feature1="Defines the list of plants recommended for your home enviroment"
         feature2="Enables notifications for watering and fertilizing your indoor plants"
@@ -27,7 +27,7 @@ export default function ProjectList(props) {
       />
       <ProjectContainer
         title="Educational micro-course for Learning Seeds, Inc."
-        image="images/learnseed.png"
+        image="learnseed"
         imageStyle="laptop"
         color="#C2F0FC"
         feature1="Utilizes various means of delivering information"
@@ -36,7 +36,7 @@ export default function ProjectList(props) {
       />
       <ProjectContainer
         title="Donation feature for Venmo app (conceptual)"
-        image="images/venmo.png"
+        image="venmo"
         color="#BEEBE9"
         feature1="The ability to donate a dollar while completing regular Venmo transactions."
         feature2="The donations made by friends and family became visible in the user feed."
@@ -46,6 +46,7 @@ export default function ProjectList(props) {
         onClick={scrollTop}
         className="w-20 my-20 h-16 mx-auto cursor-pointer"
         src="images/chevron-double-up.png"
+        alt="Scroll up"
       />
     </div>
   );
