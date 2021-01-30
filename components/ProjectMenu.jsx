@@ -1,4 +1,5 @@
 import useDocumentScrollThrottled from "components/useDocumentScrollThrottled";
+import Backdrop from "@/components/Backdrop";
 export default function ProjectMenu(props) {
   const [menuOpen, setMenuOpen] = React.useState(false);
   const [moveMenu, setMoveMenu] = React.useState(false);
@@ -100,6 +101,11 @@ export default function ProjectMenu(props) {
           onClick={() => setMenuOpen(!menuOpen)}
         />
       </div>
+      <Backdrop
+        toggle={menuOpen}
+        onClick={() => setMenuOpen((prevState) => !prevState)}
+        blur={false}
+      />
       <style jsx>{`
         .menu {
           transform: translateX(-250px);

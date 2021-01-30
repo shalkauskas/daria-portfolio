@@ -67,7 +67,7 @@ export default function PrototypeOverview() {
         </video>
       </div>
       {/* controls */}
-      <div className="text-center my-12">
+      <div className="text-center my-12 flex flex-wrap justify-center items-center">
         <button
           style={{
             textDecorationColor: "#61aeb0",
@@ -76,7 +76,7 @@ export default function PrototypeOverview() {
           }}
           className={`my-2 ${
             device === "desktop" ? "font-bold underline" : ""
-          } mx-6 focus:outline-none`}
+          } mx-6 mx-2 focus:outline-none`}
           onClick={() => setDevice("desktop")}
         >
           Desktop Prototype
@@ -89,11 +89,21 @@ export default function PrototypeOverview() {
           }}
           className={`${
             device === "mobile" ? "font-bold underline" : ""
-          } mx-6 focus:outline-none`}
+          } mx-6 mx-2 focus:outline-none my-2`}
           onClick={() => setDevice("mobile")}
         >
           Mobile Prototype
         </button>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://teteatetesalon.daria-in-design.com/"
+          style={{ color: "rgba(97, 174, 176, 1)" }}
+          className="underline mx-6 cursor-pointer mt-2 ml-3"
+        >
+          <img src="images/tete-a-tete/planet.svg" className="inline mr-1" />
+          View website
+        </a>
       </div>
     </div>
   );
