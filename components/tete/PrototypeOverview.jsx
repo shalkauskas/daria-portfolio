@@ -101,7 +101,11 @@ export default function PrototypeOverview() {
           style={{ color: "rgba(97, 174, 176, 1)" }}
           className="underline mx-6 cursor-pointer mt-2 ml-3"
         >
-          <img src="images/tete-a-tete/planet.svg" className="inline mr-1" />
+          <img
+            src="images/tete-a-tete/planet.svg"
+            className="inline mr-1"
+            alt="Website icon"
+          />
           View website
         </a>
       </div>

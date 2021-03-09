@@ -13,6 +13,7 @@ export default function AboutMe() {
             <img
               className="w-4/6 ml-auto mr-16 md:mb-0 mb-20"
               src="images/daria_bw.png"
+              alt="Daria's photo"
             />
           </picture>
 
