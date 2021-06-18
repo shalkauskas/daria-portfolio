@@ -1,4 +1,7 @@
 import Image from "next/image";
+import wire1 from "/public/images/bloom/wire1.png";
+import wire2 from "/public/images/bloom/wire2.png";
+import demo from "/public/images/bloom/demo.jpeg";
 export default function Wireframing() {
   return (
     <div className="">
@@ -10,11 +13,12 @@ export default function Wireframing() {
       <div className="text-center my-20">
         <Image
           alt="Demo"
-          src="/images/bloom/demo.jpeg"
+          src={demo}
           quality={100}
           width={615}
           height={460}
           loading={"eager"}
+          placeholder="blur"
         />
       </div>
       <hr />
@@ -31,11 +35,12 @@ export default function Wireframing() {
         >
           <Image
             alt="Demo"
-            src="/images/bloom/wire1.png"
+            src={wire1}
             quality={100}
             width={262}
             height={456}
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
       </div>
@@ -51,11 +56,12 @@ export default function Wireframing() {
         >
           <Image
             alt="Demo"
-            src="/images/bloom/wire2.png"
+            src={wire2}
             quality={100}
             width={262}
             height={456}
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
       </div>

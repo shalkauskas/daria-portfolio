@@ -1,5 +1,7 @@
 import ProjectSectionHeader from "../ProjectSectionHeader";
 import Image from "next/image";
+import React from "react";
+import compAnalysis from "public/images/learning-seeds/companalysis-big.png";
 export default function ComparativeAnalysis() {
   const [image, setImage] = React.useState(false);
   return (
@@ -25,11 +27,12 @@ export default function ComparativeAnalysis() {
         >
           <Image
             alt="Comparative analysis"
-            src="/images/learning-seeds/companalysis-big.png"
+            src={compAnalysis}
             quality={100}
             width={754}
             height={416}
             loading={"eager"}
+            placeholder="blur"
           />
           <span
             className={`${

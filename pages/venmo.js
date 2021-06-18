@@ -15,6 +15,7 @@ import ButtonCheckbox from "@/components/venmo/ButtonCheckbox";
 import NextProjectCarousel from "@/components/NextProjectCarousel";
 import NextProjectItem from "@/components/NextProjectItem";
 import smoothscroll from "smoothscroll-polyfill";
+import React from "react";
 export const elements = {
   EL1: {},
   EL2: {},

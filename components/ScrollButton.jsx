@@ -1,5 +1,6 @@
 import useDocumentScrollThrottled from "components/useDocumentScrollThrottled";
 import smoothscroll from "smoothscroll-polyfill";
+import React from "react";
 export default function ScrollButton() {
   const [showScroll, setShowScroll] = React.useState(false);
   useDocumentScrollThrottled((callbackData) => {

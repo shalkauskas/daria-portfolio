@@ -2,6 +2,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import NextProjectItem from "@/components/NextProjectItem";
 import ProjectSectionHeader from "@/components/ProjectSectionHeader";
+import React from "react";
 export default function NextProjectCarousel(props) {
   const tete = (
     <NextProjectItem
@@ -98,7 +99,7 @@ export default function NextProjectCarousel(props) {
             showStatus={false}
             swipeable={true}
             centerMode={mobileSize()}
-            centerSlidePercentage={30}
+            centerSlidePercentage={32}
             width={mobileWidth()}
             selectedItem={currentSlide}
           >

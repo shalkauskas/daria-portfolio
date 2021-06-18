@@ -1,7 +1,9 @@
 import Image from "next/image";
 import ProjectSectionHeader from "@/components/ProjectSectionHeader";
+import iteration1 from "public/images/venmo/iteration1.png";
+import iteration2 from "public/images/venmo/iteration2.png";
+import iteration3 from "public/images/venmo/iteration3.png";
 export default function ButtonCheckbox() {
-  const [slide, setSlide] = React.useState(1);
   return (
     <div className="mb-24">
       <ProjectSectionHeader header="Iterations" />
@@ -9,32 +11,35 @@ export default function ButtonCheckbox() {
         <div className="ml-auto shadow-lg">
           <Image
             alt="Iterations"
-            src="/images/venmo/iteration1.png"
+            src={iteration1}
             quality={100}
             width={208}
             height={363}
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
 
         <div className="mx-6 md:mx-16 shadow-lg">
           <Image
             alt="Iterations"
-            src="/images/venmo/iteration2.png"
+            src={iteration2}
             quality={100}
             width={208}
             height={363}
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
         <div className="mr-auto shadow-lg">
           <Image
             alt="Iterations"
-            src="/images/venmo/iteration3.png"
+            src={iteration3}
             quality={100}
             width={208}
             height={363}
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
       </div>

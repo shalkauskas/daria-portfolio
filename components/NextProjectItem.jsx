@@ -1,7 +1,10 @@
 import Link from "next/link";
 export default function NextProjectItem(props) {
   return (
-    <div style={{ backgroundColor: "white" }} className="px-2">
+    <div
+      style={{ backgroundColor: "white" }}
+      className="px-2 transition ease-out duration-700 hover:scale-105 transform p-3"
+    >
       <Link href={props.link} passHref>
         <div
           className="rounded-full h-72 w-72 flex flex-col justify-center cursor-pointer"

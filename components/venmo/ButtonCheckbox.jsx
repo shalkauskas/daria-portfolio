@@ -1,8 +1,10 @@
 import Image from "next/image";
 import ProjectSectionHeader from "@/components/ProjectSectionHeader";
+import sketch1 from "public/images/venmo/sketch1.jpg";
+import sketch2 from "public/images/venmo/sketch2.jpg";
 export default function ButtonCheckbox() {
   return (
-    <div className="">
+    <div>
       <ProjectSectionHeader header="Button VS Checkbox" />
       <p className="my-12">
         While drawing first sketches, I was hesitating whether “ donate $1”
@@ -13,22 +15,24 @@ export default function ButtonCheckbox() {
         <div className="ml-auto mr-12 shadow-lg border">
           <Image
             alt="Sketch"
-            src="/images/venmo/sketch1.jpg"
+            src={sketch1}
             quality={100}
             width={243}
             height={300}
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
 
         <div className="mr-auto ml-12 shadow-lg border">
           <Image
             alt="Sketch"
-            src="/images/venmo/sketch2.jpg"
+            src={sketch2}
             quality={100}
             width={243}
             height={300}
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
       </div>

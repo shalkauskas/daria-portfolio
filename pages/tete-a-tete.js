@@ -14,6 +14,9 @@ import overview from "@/components/tete/overview";
 import NextProjectCarousel from "@/components/NextProjectCarousel";
 import NextProjectItem from "@/components/NextProjectItem";
 import smoothscroll from "smoothscroll-polyfill";
+import React from "react";
+import activities from "public/images/tete-a-tete/activities.png";
+import userScenario from "public/images/tete-a-tete/user-scenario.png";
 export const elements = {
   EL1: {},
   EL2: {},
@@ -95,11 +98,12 @@ export default function Tete() {
               <ProjectSectionHeader header="Key activities" />
               <Image
                 alt="Key activities"
-                src="/images/tete-a-tete/activities.png"
+                src={activities}
                 quality={100}
                 width={950}
                 height={900}
                 loading={"eager"}
+                placeholder="blur"
               />
             </div>
             {/* Our user */}
@@ -107,11 +111,12 @@ export default function Tete() {
               <ProjectSectionHeader header="Our user" />
               <Image
                 alt="Key activities"
-                src="/images/tete-a-tete/user-scenario.png"
+                src={userScenario}
                 quality={100}
                 width={1000}
                 height={1000}
                 loading={"eager"}
+                placeholder="blur"
               />
             </div>
             {/* Analysis */}

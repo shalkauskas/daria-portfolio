@@ -1,5 +1,6 @@
 import ProjectSectionHeader from "../ProjectSectionHeader";
 import Image from "next/image";
+import affinityMap from "public/images/learning-seeds/affinity-map.png";
 export default function ExpertInterviews() {
   return (
     <div>
@@ -23,12 +24,13 @@ export default function ExpertInterviews() {
           <div className={`relative mx-auto`}>
             <Image
               alt="Affinity map"
-              src="/images/learning-seeds/affinity-map.png"
+              src={affinityMap}
               quality={100}
               width={472}
               height={472}
               className="rounded-full"
               loading={"eager"}
+              placeholder="blur"
             />
           </div>
         </div>

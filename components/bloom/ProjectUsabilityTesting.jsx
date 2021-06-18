@@ -1,5 +1,12 @@
 import ProjectSectionHeader from "../ProjectSectionHeader";
 import Image from "next/image";
+import usetest1 from "/public/images/bloom/use-test1.png";
+import usetest2 from "/public/images/bloom/use-test2.png";
+import usetest3 from "/public/images/bloom/use-test3.png";
+import usetest6 from "/public/images/bloom/use-test6.png";
+import usetest7 from "/public/images/bloom/use-test7.png";
+import usetest8 from "/public/images/bloom/use-test8.png";
+import rightarrow from "/public/images/right-arrow.png";
 export default function ProjectOverview() {
   return (
     <div className="text-justify pb-20">
@@ -17,49 +24,54 @@ export default function ProjectOverview() {
       <div className="flex flex-row justify-center my-20">
         <Image
           alt="Usability testing"
-          src="/images/bloom/use-test1.png"
+          src={usetest1}
           quality={100}
           width={262}
           height={460}
           loading={"eager"}
+          placeholder="blur"
         />
         <div className="my-auto sm:mx-8 mx-2">
           <Image
             alt="right arrow"
-            src="/images/right-arrow.png"
+            src={rightarrow}
             quality={100}
             width={60}
             height={42}
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
 
         <Image
           alt="Usability testing"
-          src="/images/bloom/use-test2.png"
+          src={usetest2}
           quality={100}
           width={262}
           height={460}
           loading={"eager"}
+          placeholder="blur"
         />
         <div className="my-auto sm:mx-8 mx-2">
           <Image
             alt="right arrow"
-            src="/images/right-arrow.png"
+            src={rightarrow}
             quality={100}
             width={60}
             height={42}
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
 
         <Image
           alt="Usability testing"
-          src="/images/bloom/use-test3.png"
+          src={usetest3}
           quality={100}
           width={262}
           height={460}
           loading={"eager"}
+          placeholder="blur"
         />
       </div>
       <hr className="mb-20" />
@@ -129,49 +141,54 @@ export default function ProjectOverview() {
       <div className="flex flex-row justify-center my-20">
         <Image
           alt="Usability testing"
-          src="/images/bloom/use-test6.png"
+          src={usetest6}
           quality={100}
           width={262}
           height={460}
           loading={"eager"}
+          placeholder="blur"
         />
         <div className="my-auto sm:mx-8 mx-2">
           <Image
             alt="right arrow"
-            src="/images/right-arrow.png"
+            src={rightarrow}
             quality={100}
             width={60}
             height={42}
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
 
         <Image
           alt="Usability testing"
-          src="/images/bloom/use-test7.png"
+          src={usetest7}
           quality={100}
           width={262}
           height={460}
           loading={"eager"}
+          placeholder="blur"
         />
         <div className="my-auto sm:mx-8 mx-2">
           <Image
             alt="right arrow"
-            src="/images/right-arrow.png"
+            src={rightarrow}
             quality={100}
             width={60}
             height={42}
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
 
         <Image
           alt="Usability testing"
-          src="/images/bloom/use-test8.png"
+          src={usetest8}
           quality={100}
           width={262}
           height={460}
           loading={"eager"}
+          placeholder="blur"
         />
       </div>
       <style jsx>{`

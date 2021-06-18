@@ -1,5 +1,9 @@
 import ProjectSectionHeader from "../ProjectSectionHeader";
 import Image from "next/image";
+import React from "react";
+import ideation2 from "public/images/learning-seeds/ideation2.png";
+import userFlowBig from "public/images/learning-seeds/user-flow-big.png";
+import siteMapBig from "public/images/learning-seeds/site-map-big.png";
 export default function Ideation() {
   function Modal(props) {
     const [image, setImage] = React.useState(false);
@@ -24,6 +28,7 @@ export default function Ideation() {
             width={width}
             height={height}
             loading={"eager"}
+            placeholder="blur"
           />
           <span
             className={`${
@@ -91,11 +96,12 @@ export default function Ideation() {
         <div className="w-3/4 md:px-12 md:py-8 mx-auto">
           <Image
             alt="Comparative analysis"
-            src="/images/learning-seeds/ideation2.png"
+            src={ideation2}
             quality={100}
             width={748}
             height={330}
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
       </div>
@@ -127,10 +133,10 @@ export default function Ideation() {
           </ul>
           <div className="flex justify-center">
             <div className="ml-auto mr-10">
-              <Modal src="/images/learning-seeds/user-flow-big.png" />
+              <Modal src={userFlowBig} />
             </div>
             <div className="mr-auto">
-              <Modal src="/images/learning-seeds/site-map-big.png" />
+              <Modal src={siteMapBig} />
             </div>
           </div>
         </div>

@@ -1,5 +1,14 @@
 import Image from "next/image";
 import ProjectSectionHeader from "@/components/ProjectSectionHeader";
+import React from "react";
+import wire1 from "public/images/learning-seeds/wire1.png";
+import wire2 from "public/images/learning-seeds/wire2.png";
+import wire3 from "public/images/learning-seeds/wire3.png";
+import wire4 from "public/images/learning-seeds/wire4.png";
+import wire5 from "public/images/learning-seeds/wire5.png";
+import arrow from "public/images/arrow_icon.png";
+import mockup1 from "public/images/learning-seeds/mockup1-big.png";
+import mockup2 from "public/images/learning-seeds/mockup2-big.png";
 export default function Wireframing() {
   const [slide, setSlide] = React.useState(1);
   return (
@@ -20,22 +29,24 @@ export default function Wireframing() {
         <div className="ml-auto">
           <Image
             alt="Wireframe"
-            src="/images/learning-seeds/wire1.png"
+            src={wire1}
             quality={100}
             width={432}
             height={273}
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
 
         <div className="mr-auto sm:ml-12 ml-2">
           <Image
             alt="Wireframe"
-            src="/images/learning-seeds/wire2.png"
+            src={wire2}
             quality={100}
             width={432}
             height={273}
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
       </div>
@@ -49,22 +60,24 @@ export default function Wireframing() {
         <div className="ml-auto">
           <Image
             alt="Wireframe"
-            src="/images/learning-seeds/wire3.png"
+            src={wire3}
             quality={100}
             width={432}
             height={273}
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
 
         <div className="mr-auto sm:ml-12 ml-2">
           <Image
             alt="Wireframe"
-            src="/images/learning-seeds/wire4.png"
+            src={wire4}
             quality={100}
             width={432}
             height={273}
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
       </div>
@@ -77,11 +90,12 @@ export default function Wireframing() {
       <div className="my-16 text-center">
         <Image
           alt="Wireframe"
-          src="/images/learning-seeds/wire5.png"
+          src={wire5}
           quality={100}
           width={428}
           height={394}
           loading={"eager"}
+          placeholder="blur"
         />
       </div>
       <div className="mb-24">
@@ -103,11 +117,12 @@ export default function Wireframing() {
           >
             <Image
               alt="Arrow left"
-              src="/images/arrow_icon.png"
+              src={arrow}
               quality={100}
               width={30}
               height={30}
               loading={"eager"}
+              placeholder="blur"
             />
           </div>
 
@@ -121,11 +136,12 @@ export default function Wireframing() {
             >
               <Image
                 alt="Mockup"
-                src="/images/learning-seeds/mockup1-big.png"
+                src={mockup1}
                 quality={100}
                 width={819}
                 height={515}
                 loading={"eager"}
+                placeholder="blur"
               />
             </div>
             <div
@@ -137,11 +153,12 @@ export default function Wireframing() {
             >
               <Image
                 alt="Mockup"
-                src="/images/learning-seeds/mockup2-big.png"
+                src={mockup2}
                 quality={100}
                 width={819}
                 height={515}
                 loading={"eager"}
+                placeholder="blur"
               />
             </div>
           </div>
@@ -154,11 +171,12 @@ export default function Wireframing() {
           >
             <Image
               alt="Arrow right"
-              src="/images/arrow_icon.png"
+              src={arrow}
               quality={100}
               width={30}
               height={30}
               loading={"eager"}
+              placeholder="blur"
             />
           </div>
         </div>

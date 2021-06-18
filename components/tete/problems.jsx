@@ -1,4 +1,8 @@
 import Image from "next/image";
+import analysis1 from "/public/images/tete-a-tete/analysis1.png";
+import analysis2 from "/public/images/tete-a-tete/analysis2.png";
+import analysis3 from "/public/images/tete-a-tete/analysis3.png";
+import analysis4 from "/public/images/tete-a-tete/analysis4.png";
 let problem = [
   // problem1
   <div>
@@ -11,11 +15,12 @@ let problem = [
     <div className="text-center">
       <Image
         alt="Problem analysis"
-        src="/images/tete-a-tete/analysis1.png"
+        src={analysis1}
         quality={100}
         width={825}
         height={420}
         loading={"eager"}
+        placeholder="blur"
       />
     </div>
   </div>,
@@ -34,11 +39,12 @@ let problem = [
     <div className="text-center">
       <Image
         alt="Problem analysis"
-        src="/images/tete-a-tete/analysis2.png"
+        src={analysis2}
         quality={100}
         width={825}
         height={270}
         loading={"eager"}
+        placeholder="blur"
       />
     </div>
   </div>,
@@ -55,11 +61,12 @@ let problem = [
     <div className="text-center">
       <Image
         alt="Problem analysis"
-        src="/images/tete-a-tete/analysis3.png"
+        src={analysis3}
         quality={100}
         width={825}
         height={420}
         loading={"eager"}
+        placeholder="blur"
       />
     </div>
   </div>,
@@ -72,11 +79,12 @@ let problem = [
     <div className="text-center">
       <Image
         alt="Problem analysis"
-        src="/images/tete-a-tete/analysis4.png"
+        src={analysis4}
         quality={100}
         width={825}
         height={420}
         loading={"eager"}
+        placeholder="blur"
       />
     </div>
   </div>,

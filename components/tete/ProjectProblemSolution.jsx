@@ -1,3 +1,4 @@
+import React from "react";
 export default function ProjectProblemSolution(props) {
   const [slide, setSlide] = React.useState(0);
   return (

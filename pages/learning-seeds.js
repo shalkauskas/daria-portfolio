@@ -16,6 +16,8 @@ import Ideation from "@/components/seeds/Ideation";
 import NextProjectCarousel from "@/components/NextProjectCarousel";
 import NextProjectItem from "@/components/NextProjectItem";
 import smoothscroll from "smoothscroll-polyfill";
+import React from "react";
+import persona from "public/images/learning-seeds/persona.png";
 export const elements = {
   EL1: {},
   EL2: {},
@@ -132,7 +134,7 @@ export default function Seeds() {
               <ProjectSectionHeader header="Persona" />
               <Image
                 alt="Comparative analysis"
-                src="/images/learning-seeds/persona.png"
+                src={persona}
                 quality={100}
                 width={954}
                 height={384}

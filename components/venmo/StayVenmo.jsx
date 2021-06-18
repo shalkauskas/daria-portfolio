@@ -1,5 +1,7 @@
 import ProjectSectionHeader from "@/components/ProjectSectionHeader";
 import Image from "next/image";
+import React from "react";
+import appmap from "public/images/venmo/appmap.png";
 export default function Venmo(props) {
   function Modal(props) {
     const [image, setImage] = React.useState(false);
@@ -21,7 +23,7 @@ export default function Venmo(props) {
             quality={100}
             width={259}
             height={419}
-            loading={"eager"}
+            placeholder="blur"
           />
           <span
             className={`${
@@ -86,7 +88,7 @@ export default function Venmo(props) {
           the button “donate to a charity” to the sidebar menu leaving the home
           page of the app untouched.
         </p>
-        <Modal src="/images/venmo/appmap.png" />
+        <Modal src={appmap} />
       </div>
     </div>
   );

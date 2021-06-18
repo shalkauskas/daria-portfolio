@@ -1,6 +1,9 @@
 import ProjectSectionHeader from "@/components/ProjectSectionHeader";
 import Image from "next/image";
-export default function Solutions(props) {
+import React from "react";
+import solutionFlow1 from "/public/images/bloom/solution-flow1.png";
+import solutionFlow2 from "/public/images/bloom/solution-flow2.png";
+export default function Solutions() {
   function Modal(props) {
     const [image, setImage] = React.useState(false);
     return (
@@ -22,6 +25,7 @@ export default function Solutions(props) {
             width={818}
             height={147}
             loading={"eager"}
+            placeholder="blur"
           />
           <span
             className={`${
@@ -85,7 +89,7 @@ export default function Solutions(props) {
           location. From there, user can filter the list according to his
           preferences as size, diificulty of care, bloom and pet friendliness.
         </p>
-        <Modal src="/images/bloom/solution-flow1.png" />
+        <Modal src={solutionFlow1} />
       </div>
       {/* soulution2 */}
       <div
@@ -104,7 +108,7 @@ export default function Solutions(props) {
           single plant in the list and programmed by user depending on his
           personal schedule.
         </p>
-        <Modal src="/images/bloom/solution-flow2.png" />
+        <Modal src={solutionFlow2} />
       </div>
     </div>
   );

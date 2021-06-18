@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
+import React from "react";
 import ProjectOverview from "@/components/ProjectOverview";
 import ProjectSectionHeader from "@/components/ProjectSectionHeader";
 import ProjectStatement from "@/components/ProjectStatement";
@@ -14,6 +15,8 @@ import Wireframing from "@/components/bloom/wireframing";
 import NextProjectCarousel from "@/components/NextProjectCarousel";
 import NextProjectItem from "@/components/NextProjectItem";
 import smoothscroll from "smoothscroll-polyfill";
+import activities from "/public/images/bloom/activities.png";
+import protoPersona from "/public/images/bloom/proto-persona.png";
 export const elements = {
   EL1: {},
   EL2: {},
@@ -118,11 +121,12 @@ export default function Bloom() {
               <ProjectSectionHeader header="Key activities" />
               <Image
                 alt="Key activities"
-                src="/images/bloom/activities.png"
+                src={activities}
                 quality={100}
                 width={950}
                 height={900}
                 loading={"eager"}
+                placeholder="blur"
               />
             </div>
             {/* Proto-persona */}
@@ -130,11 +134,12 @@ export default function Bloom() {
               <ProjectSectionHeader header="Proto-persona" />
               <Image
                 alt="Key activities"
-                src="/images/bloom/proto-persona.png"
+                src={protoPersona}
                 quality={100}
                 width={1000}
                 height={650}
                 loading={"eager"}
+                placeholder="blur"
               />
             </div>
             {/* Solutions */}

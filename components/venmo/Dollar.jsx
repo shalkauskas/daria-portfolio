@@ -1,5 +1,7 @@
 import ProjectSectionHeader from "@/components/ProjectSectionHeader";
 import Image from "next/image";
+import React from "react";
+import flow from "public/images/venmo/flow1.png";
 export default function Venmo(props) {
   function Modal(props) {
     const [image, setImage] = React.useState(false);
@@ -10,9 +12,8 @@ export default function Venmo(props) {
       >
         <div
           className={`relative ${
-            image
-              ? "transform xl:scale-150 sm:scale-125 scale-150 absolute z-50 2xl:w-max mx-auto"
-              : ""
+            image &&
+            "transform xl:scale-150 sm:scale-125 scale-150 absolute z-50 2xl:w-max mx-auto"
           }`}
         >
           <Image
@@ -21,7 +22,7 @@ export default function Venmo(props) {
             quality={100}
             width={259}
             height={419}
-            loading={"eager"}
+            placeholder="blur"
           />
           <span
             className={`${
@@ -92,7 +93,7 @@ export default function Venmo(props) {
             impressive. huh?
           </li>
         </ul>
-        <Modal src="/images/venmo/flow1.png" />
+        <Modal src={flow} />
       </div>
     </div>
   );

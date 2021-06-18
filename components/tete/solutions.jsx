@@ -1,4 +1,10 @@
 import Image from "next/image";
+import userFlow from "public/images/tete-a-tete/user-flow.png";
+import solution1 from "public/images/tete-a-tete/solution1.png";
+import solution2 from "public/images/tete-a-tete/solution2.png";
+import solution3 from "public/images/tete-a-tete/solution3.png";
+import solution4 from "public/images/tete-a-tete/solution4.png";
+import siteMap from "public/images/tete-a-tete/site-map.png";
 let solution = [
   // solution1
   <div>
@@ -16,22 +22,24 @@ let solution = [
     <div className="text-center">
       <Image
         alt="User flow"
-        src="/images/tete-a-tete/user-flow.png"
+        src={userFlow}
         quality={100}
         width={787}
         height={80}
         loading={"eager"}
+        placeholder="blur"
       />
     </div>
 
     <div className="text-center mt-12">
       <Image
         alt="Problem solution"
-        src="/images/tete-a-tete/solution1.png"
+        src={solution1}
         quality={100}
         width={500}
         height={380}
         loading={"eager"}
+        placeholder="blur"
       />
     </div>
   </div>,
@@ -53,21 +61,23 @@ let solution = [
       <div className="md:mb-auto mt-auto md:mr-6 mr-auto ml-auto mb-8">
         <Image
           alt="User flow"
-          src="/images/tete-a-tete/site-map.png"
+          src={siteMap}
           quality={100}
           width={380}
           height={260}
           loading={"eager"}
+          placeholder="blur"
         />
       </div>
       <div className="md:ml-6 ml-auto mr-auto">
         <Image
           alt="Problem solution"
-          src="/images/tete-a-tete/solution2.png"
+          src={solution2}
           quality={100}
           width={380}
           height={290}
           loading={"eager"}
+          placeholder="blur"
         />
       </div>
     </div>
@@ -85,11 +95,12 @@ let solution = [
     <div className="text-center">
       <Image
         alt="Problem solution"
-        src="/images/tete-a-tete/solution3.png"
+        src={solution3}
         quality={100}
         width={500}
         height={380}
         loading={"eager"}
+        placeholder="blur"
       />
     </div>
   </div>,
@@ -107,11 +118,12 @@ let solution = [
     <div className="text-center">
       <Image
         alt="Problem solution"
-        src="/images/tete-a-tete/solution4.png"
+        src={solution4}
         quality={100}
         width={500}
         height={380}
         loading={"eager"}
+        placeholder="blur"
       />
     </div>
   </div>,

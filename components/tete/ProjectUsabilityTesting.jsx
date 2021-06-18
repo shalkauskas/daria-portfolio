@@ -1,5 +1,15 @@
 import ProjectSectionHeader from "../ProjectSectionHeader";
 import Image from "next/image";
+import test1 from "/public/images/tete-a-tete/test1.png";
+import test2 from "/public/images/tete-a-tete/test2.png";
+import test3 from "/public/images/tete-a-tete/test3.png";
+import test4 from "/public/images/tete-a-tete/test4.png";
+import test5 from "/public/images/tete-a-tete/test5.png";
+import test6 from "/public/images/tete-a-tete/test6.png";
+import test7 from "/public/images/tete-a-tete/test7.png";
+import arrowTopRight from "public/images/tete-a-tete/arrow-top-right.png";
+import cross from "public/images/tete-a-tete/cross.png";
+import v from "public/images/tete-a-tete/v.png";
 export default function ProjectOverview() {
   return (
     <div>
@@ -39,20 +49,22 @@ export default function ProjectOverview() {
       <div className="flex md:flex-row flex-col my-20">
         <div className="mb-12 mx-auto">
           <Image
-            src="/images/tete-a-tete/test1.png"
+            src={test1}
             width={358}
             height={312}
             alt="website usability testing"
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
         <div className="mx-auto">
           <Image
-            src="/images/tete-a-tete/test2.png"
+            src={test2}
             width={439}
             height={312}
             alt="website usability testing"
             loading={"eager"}
+            placeholder="blur"
           />
         </div>
       </div>
@@ -68,20 +80,22 @@ export default function ProjectOverview() {
         <div className="flex md:flex-row flex-col">
           <div className="w-1/2 md:ml-32 text-center ml-auto mr-auto mb-6">
             <Image
-              src="/images/tete-a-tete/test3.png"
+              src={test3}
               width={189}
               height={417}
               alt="website usability testing"
               loading={"eager"}
+              placeholder="blur"
             />
           </div>
           <div className="w-1/2 md:mr-32 md:ml-12 ml-auto mr-auto text-center">
             <Image
-              src="/images/tete-a-tete/test4.png"
+              src={test4}
               width={189}
               height={417}
               alt="website usability testing"
               loading={"eager"}
+              placeholder="blur"
             />
           </div>
         </div>
@@ -103,25 +117,27 @@ export default function ProjectOverview() {
         <div className="flex flex-row">
           <div className="ml-auto">
             <Image
-              src="/images/tete-a-tete/test5.png"
+              src={test5}
               width={218}
               height={448}
               alt="website usability testing"
               loading={"eager"}
+              placeholder="blur"
             />
           </div>
           <div className="md:mt-12 mt-3 mx-3">
             <Image
-              src="/images/tete-a-tete/arrow-top-right.png"
+              src={arrowTopRight}
               width={90}
               height={20}
               alt="arrow right"
               loading={"eager"}
+              placeholder="blur"
             />
           </div>
           <div className="md:mt-3 mt-1">
             <Image
-              src="/images/tete-a-tete/cross.png"
+              src={cross}
               width={30}
               height={30}
               alt="wrong"
@@ -130,16 +146,17 @@ export default function ProjectOverview() {
           </div>
           <div className="md:mx-3 mx-1">
             <Image
-              src="/images/tete-a-tete/test6.png"
+              src={test6}
               width={218}
               height={448}
               alt="website usability testing"
               loading={"eager"}
+              placeholder="blur"
             />
           </div>
           <div className="md:mt-3 mt-1">
             <Image
-              src="/images/tete-a-tete/v.png"
+              src={v}
               width={30}
               height={30}
               alt="right"
@@ -148,11 +165,12 @@ export default function ProjectOverview() {
           </div>
           <div className="ml-3 mr-auto">
             <Image
-              src="/images/tete-a-tete/test7.png"
+              src={test7}
               width={218}
               height={448}
               alt="website usability testing"
               loading={"eager"}
+              placeholder="blur"
             />
           </div>
         </div>

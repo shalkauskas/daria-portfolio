@@ -1,5 +1,8 @@
 import ProjectSectionHeader from "../ProjectSectionHeader";
 import Image from "next/image";
+import React from "react";
+import user from "public/images/learning-seeds/user.png";
+import criteriaMatrix from "public/images/learning-seeds/criteria-matrix-big.png";
 export default function Interviews() {
   const [image, setImage] = React.useState(false);
   const width = image ? 600 : 217;
@@ -21,11 +24,12 @@ export default function Interviews() {
       <div className="text-center">
         <Image
           alt="User"
-          src="/images/learning-seeds/user.png"
+          src={user}
           quality={100}
           width={618}
           height={618}
           loading={"eager"}
+          placeholder="blur"
         />
       </div>
       <p className="mt-20">
@@ -54,11 +58,12 @@ export default function Interviews() {
           >
             <Image
               alt="Comparative analysis"
-              src="/images/learning-seeds/criteria-matrix-big.png"
+              src={criteriaMatrix}
               quality={100}
               width={width}
               height={height}
               loading={"eager"}
+              placeholder="blur"
             />
             <span
               className={`${

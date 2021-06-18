@@ -1,5 +1,7 @@
 import ProjectSectionHeader from "../ProjectSectionHeader";
 import Image from "next/image";
+import persona1 from "public/images/venmo/persona1.png";
+import persona2 from "public/images/venmo/persona2.png";
 export default function Personas() {
   return (
     <div>
@@ -12,11 +14,12 @@ export default function Personas() {
             <div className="w-1/2 text-right mt-auto">
               <Image
                 alt="Superuser"
-                src="/images/venmo/persona1.png"
+                src={persona1}
                 quality={100}
                 width={206}
                 height={206}
                 loading={"eager"}
+                placeholder="blur"
               />
             </div>
 
@@ -56,7 +59,7 @@ export default function Personas() {
             <div className="w-1/2 text-right mt-auto">
               <Image
                 alt="Superuser"
-                src="/images/venmo/persona2.png"
+                src={persona2}
                 quality={100}
                 width={206}
                 height={206}

@@ -14,7 +14,7 @@ export default function Footer() {
             <img
               src="images/gmail_icon.png"
               alt="gmail_icon"
-              className="inline-block w-16 mx-6 mb-6 h-16"
+              className="inline-block w-16 mx-6 mb-6 h-16 transition ease-out duration-700 hover:scale-105 transform"
             />
           </picture>
         </a>
@@ -29,7 +29,7 @@ export default function Footer() {
             <img
               src="images/in_icon.png"
               alt="in_icon"
-              className="inline-block w-14 mx-6 mb-6 h-14"
+              className="inline-block w-14 mx-6 mb-6 h-14 transition ease-out duration-700 hover:scale-105 transform"
             />
           </picture>
         </a>
