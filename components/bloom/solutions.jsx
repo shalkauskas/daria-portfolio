@@ -1,4 +1,4 @@
-import ProjectSectionHeader from "@/components/ProjectSectionHeader";
+import ProjectSectionHeader from "@/components/projectDefaults/ProjectSectionHeader";
 import Image from "next/image";
 import React from "react";
 import solutionFlow1 from "/public/images/bloom/solution-flow1.png";

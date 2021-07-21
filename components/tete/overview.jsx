@@ -13,7 +13,7 @@ const overview = [
     ),
     benchmark: (
       <div>
-        <p className="">
+        <p>
           After redesigning the website we expect Tete-A-Tete salon to have:
         </p>
         <ul className="list-disc list-inside">
@@ -25,7 +25,6 @@ const overview = [
     ),
     solutions: (
       <div>
-        {" "}
         <ul className="list-disc list-inside">
           <li>Change information architecture of the website. </li>
           <li>Eliminate distractions and unnecessary data.</li>

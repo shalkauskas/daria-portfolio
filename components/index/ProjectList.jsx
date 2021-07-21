@@ -1,11 +1,21 @@
-import ProjectContainer from "./ProjectContainer";
+import ProjectContainer from "../projectDefaults/ProjectContainer";
 
-export default function ProjectList(props) {
+export default function ProjectList() {
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
     <div className="mt-32">
+      <ProjectContainer
+        title="Nassan's Place"
+        image="tete-a-tete"
+        imageStyle="laptop"
+        color="#C9E1FE"
+        feature1="Responsive design."
+        feature2="Offers more digestible price lists as well as user-oriented
+        information."
+        link="/nassans-place"
+      />
       <ProjectContainer
         title="Tete-A-Tete salon website redesign"
         image="tete-a-tete"

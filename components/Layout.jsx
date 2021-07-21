@@ -9,7 +9,12 @@ export default function Layout({ children, title }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="description"
-          content="Portfolio landing page of UX/UI designer Daria Khudiakova"
+          content="Portfolio landing page of UX/UI designer Daria Khudiakova. Case studies & examples of work."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="keywords"
+          content="ux, designer, ui, case study, figma, boston, wireframes, user, experience, interface"
         />
         <link
           rel="apple-touch-icon"

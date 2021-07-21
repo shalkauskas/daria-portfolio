@@ -1,4 +1,4 @@
-import ProjectSectionHeader from "@/components/ProjectSectionHeader";
+import ProjectSectionHeader from "@/components/projectDefaults/ProjectSectionHeader";
 import Image from "next/image";
 import React from "react";
 import flow from "public/images/venmo/flow1.png";

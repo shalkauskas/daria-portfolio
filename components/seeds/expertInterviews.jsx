@@ -1,4 +1,4 @@
-import ProjectSectionHeader from "../ProjectSectionHeader";
+import ProjectSectionHeader from "../projectDefaults/ProjectSectionHeader";
 import Image from "next/image";
 import affinityMap from "public/images/learning-seeds/affinity-map.png";
 export default function ExpertInterviews() {

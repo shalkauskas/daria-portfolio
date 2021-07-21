@@ -1,11 +1,14 @@
 import React from "react";
-export default function PrototypeOverview() {
-  const [device, setDevice] = React.useState("desktop");
+export default function PrototypeOverview(props) {
+  const devices = { desktop: `desktop`, mobile: `mobile` };
+  const [device, setDevice] = React.useState(devices.desktop);
+  const { desktop, mobile, link } = props;
+  console.log(device);
   return (
     <div className="container mx-auto">
       <div
         className={`${
-          device === "mobile" ? "block" : "hidden"
+          device === devices.mobile ? "block" : "hidden"
         } container mx-auto relative`}
       >
         <picture>
@@ -24,17 +27,14 @@ export default function PrototypeOverview() {
           controls
           muted
         >
-          <source
-            src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-mobile.mp4"
-            type="video/mp4"
-          />
+          <source src={mobile} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
 
       <div
         className={`${
-          device === "desktop" ? "block" : "hidden"
+          device === devices.desktop ? "block" : "hidden"
         } container mx-auto relative`}
       >
         <picture>
@@ -60,10 +60,7 @@ export default function PrototypeOverview() {
           controls
           muted
         >
-          <source
-            src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-desktop.mp4"
-            type="video/mp4"
-          />
+          <source src={desktop} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -76,9 +73,9 @@ export default function PrototypeOverview() {
             textUnderlineOffset: "5px",
           }}
           className={`my-2 ${
-            device === "desktop" ? "font-bold underline" : ""
+            device === devices.desktop ? "font-bold underline" : ""
           } mx-6 mx-2 focus:outline-none`}
-          onClick={() => setDevice("desktop")}
+          onClick={() => setDevice(devices.desktop)}
         >
           Desktop Prototype
         </button>
@@ -89,16 +86,16 @@ export default function PrototypeOverview() {
             textUnderlineOffset: "5px",
           }}
           className={`${
-            device === "mobile" ? "font-bold underline" : ""
+            device === devices.mobile ? "font-bold underline" : ""
           } mx-6 mx-2 focus:outline-none my-2`}
-          onClick={() => setDevice("mobile")}
+          onClick={() => setDevice(devices.mobile)}
         >
           Mobile Prototype
         </button>
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://teteatetesalon.daria-in-design.com/"
+          href={link}
           style={{ color: "rgba(97, 174, 176, 1)" }}
           className="underline mx-6 cursor-pointer mt-2 ml-3"
         >

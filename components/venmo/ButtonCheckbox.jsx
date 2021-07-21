@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ProjectSectionHeader from "@/components/ProjectSectionHeader";
+import ProjectSectionHeader from "@/components/projectDefaults/ProjectSectionHeader";
 import sketch1 from "public/images/venmo/sketch1.jpg";
 import sketch2 from "public/images/venmo/sketch2.jpg";
 export default function ButtonCheckbox() {

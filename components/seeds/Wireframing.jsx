@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ProjectSectionHeader from "@/components/ProjectSectionHeader";
+import ProjectSectionHeader from "@/components/projectDefaults/ProjectSectionHeader";
 import React from "react";
 import wire1 from "public/images/learning-seeds/wire1.png";
 import wire2 from "public/images/learning-seeds/wire2.png";

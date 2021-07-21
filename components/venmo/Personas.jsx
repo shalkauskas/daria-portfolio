@@ -1,4 +1,4 @@
-import ProjectSectionHeader from "../ProjectSectionHeader";
+import ProjectSectionHeader from "../projectDefaults/ProjectSectionHeader";
 import Image from "next/image";
 import persona1 from "public/images/venmo/persona1.png";
 import persona2 from "public/images/venmo/persona2.png";

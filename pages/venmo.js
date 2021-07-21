@@ -1,10 +1,10 @@
 import Layout from "@/components/Layout";
-import ProjectOverview from "@/components/ProjectOverview";
+import ProjectOverview from "@/components/projectDefaults/ProjectOverview";
 import StayVenmo from "@/components/venmo/StayVenmo";
-import ProjectStatement from "@/components/ProjectStatement";
-import NextSteps from "@/components/ProjectNextSteps";
+import ProjectStatementParagraph from "@/components/projectDefaults/ProjectStatementParagraph";
+import NextSteps from "@/components/projectDefaults/ProjectNextSteps";
 import ScrollButton from "@/components/ScrollButton";
-import ProjectMenu from "@/components/ProjectMenu";
+import ProjectMenu from "@/components/projectDefaults/ProjectMenu";
 import ScrollNavigation from "react-single-page-navigation";
 import overview from "@/components/venmo/overview";
 import Interviews from "@/components/venmo/Interviews";
@@ -12,8 +12,12 @@ import Dollar from "@/components/venmo/Dollar";
 import Iterations from "@/components/venmo/Iterations";
 import Personas from "@/components/venmo/Personas";
 import ButtonCheckbox from "@/components/venmo/ButtonCheckbox";
-import NextProjectCarousel from "@/components/NextProjectCarousel";
-import NextProjectItem from "@/components/NextProjectItem";
+import NextProjectCarousel from "@/components/projectDefaults/NextProjectCarousel";
+import {
+  bloom,
+  seeds,
+  tete,
+} from "@/components/projectDefaults/NextProjectList";
 import smoothscroll from "smoothscroll-polyfill";
 import React from "react";
 export const elements = {
@@ -27,34 +31,8 @@ export const elements = {
 };
 export default function Venmo() {
   React.useEffect(() => smoothscroll.polyfill());
-  const tete = (
-    <NextProjectItem
-      title="Tete-A-Tete salon website redesign"
-      image="tete-a-tete"
-      imageStyle="laptop"
-      color="#F7EEFF"
-      link="/tete-a-tete"
-    />
-  );
-  const bloom = (
-    <NextProjectItem
-      title='B2C application "Bloom"'
-      image="bloom"
-      color="#FFEEEC"
-      link="/bloom"
-      phone={true}
-    />
-  );
-  const seeds = (
-    <NextProjectItem
-      title="Educational micro-course for Learning Seeds, Inc."
-      image="learnseed"
-      color="#C2F0FC"
-      link="/learning-seeds"
-    />
-  );
   return (
-    <Layout title="Work | daria@ux.com">
+    <Layout title="Venmo | Daria Khudiakova">
       <ScrollNavigation elements={elements} offset={160}>
         {({ refs, activeElement, goTo }) => (
           <div className="relative xl:max-w-4/6 md:max-w-3/4 max-w-90 mx-auto">
@@ -107,12 +85,16 @@ export default function Venmo() {
               </video>
             </div>
 
-            <ProjectStatement
-              statementBenchmark={true}
-              statement={overview[0].statement}
-              solutions={overview[0].solutions}
-              outcomes={overview[0].outcomes}
-            />
+            <ProjectStatementParagraph title="Problem statement and benchmark criteria">
+              {overview[0].statement}
+            </ProjectStatementParagraph>
+            <ProjectStatementParagraph title="Solutions">
+              {overview[0].solutions}
+            </ProjectStatementParagraph>
+            <ProjectStatementParagraph title="Outcomes">
+              {overview[0].outcomes}
+            </ProjectStatementParagraph>
+
             {/* 1. User interviews */}
             <div ref={refs.EL1}>
               <Interviews />
@@ -161,11 +143,11 @@ export default function Venmo() {
         )}
       </ScrollNavigation>
       <ScrollButton />
-      <NextProjectCarousel
-        children={tete}
-        children2={bloom}
-        children3={seeds}
-      />
+      <NextProjectCarousel>
+        {tete}
+        {bloom}
+        {seeds}
+      </NextProjectCarousel>
     </Layout>
   );
 }

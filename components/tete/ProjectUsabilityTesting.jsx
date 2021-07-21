@@ -1,4 +1,4 @@
-import ProjectSectionHeader from "../ProjectSectionHeader";
+import ProjectSectionHeader from "../projectDefaults/ProjectSectionHeader";
 import Image from "next/image";
 import test1 from "/public/images/tete-a-tete/test1.png";
 import test2 from "/public/images/tete-a-tete/test2.png";

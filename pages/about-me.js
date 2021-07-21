@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 export default function AboutMe() {
   return (
-    <Layout title="About me | daria@ux.com">
+    <Layout title="About me | Daria Khudiakova">
       <div
         className="container mx-auto flex md:flex-row flex-col my-32 xl:w-4/6 w-5/6"
         style={{ fontFamily: `"Montserrat", sans-serif` }}

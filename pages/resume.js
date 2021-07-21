@@ -6,7 +6,7 @@ export default function Resume() {
     setLoading(false);
   };
   return (
-    <Layout title="Resume | daria@ux.com">
+    <Layout title="Resume | Daria Khudiakova">
       <div
         className="max-h-full"
         style={{ fontFamily: `"Montserrat", sans-serif` }}

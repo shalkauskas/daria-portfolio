@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ProjectSectionHeader from "@/components/ProjectSectionHeader";
+import ProjectSectionHeader from "@/components/projectDefaults/ProjectSectionHeader";
 import iteration1 from "public/images/venmo/iteration1.png";
 import iteration2 from "public/images/venmo/iteration2.png";
 import iteration3 from "public/images/venmo/iteration3.png";

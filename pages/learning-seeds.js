@@ -1,11 +1,11 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
-import ProjectOverview from "@/components/ProjectOverview";
-import ProjectSectionHeader from "@/components/ProjectSectionHeader";
-import ProjectStatement from "@/components/ProjectStatement";
-import NextSteps from "@/components/ProjectNextSteps";
+import ProjectOverview from "@/components/projectDefaults/ProjectOverview";
+import ProjectSectionHeader from "@/components/projectDefaults/ProjectSectionHeader";
+import ProjectStatementParagraph from "@/components/projectDefaults/ProjectStatementParagraph";
+import NextSteps from "@/components/projectDefaults/ProjectNextSteps";
 import ScrollButton from "@/components/ScrollButton";
-import ProjectMenu from "@/components/ProjectMenu";
+import ProjectMenu from "@/components/projectDefaults/ProjectMenu";
 import ScrollNavigation from "react-single-page-navigation";
 import overview from "@/components/seeds/overview";
 import Wireframing from "@/components/seeds/Wireframing";
@@ -13,8 +13,12 @@ import ComparativeAnalysis from "@/components/seeds/ComparativeAnalysis";
 import Interviews from "@/components/seeds/Interviews";
 import ExpertInterviews from "@/components/seeds/expertInterviews";
 import Ideation from "@/components/seeds/Ideation";
-import NextProjectCarousel from "@/components/NextProjectCarousel";
-import NextProjectItem from "@/components/NextProjectItem";
+import NextProjectCarousel from "@/components/projectDefaults/NextProjectCarousel";
+import {
+  bloom,
+  venmo,
+  tete,
+} from "@/components/projectDefaults/NextProjectList";
 import smoothscroll from "smoothscroll-polyfill";
 import React from "react";
 import persona from "public/images/learning-seeds/persona.png";
@@ -29,35 +33,8 @@ export const elements = {
 };
 export default function Seeds() {
   React.useEffect(() => smoothscroll.polyfill());
-  const tete = (
-    <NextProjectItem
-      title="Tete-A-Tete salon website redesign"
-      image="tete-a-tete"
-      imageStyle="laptop"
-      color="#F7EEFF"
-      link="/tete-a-tete"
-    />
-  );
-  const bloom = (
-    <NextProjectItem
-      title='B2C application "Bloom"'
-      image="bloom"
-      color="#FFEEEC"
-      link="/bloom"
-      phone={true}
-    />
-  );
-  const venmo = (
-    <NextProjectItem
-      title="Donation feature for Venmo app (conceptual)"
-      image="venmo"
-      color="#BEEBE9"
-      link="/venmo"
-      phone={true}
-    />
-  );
   return (
-    <Layout title="Work | daria@ux.com">
+    <Layout title="Learning Seeds | Daria Khudiakova">
       <ScrollNavigation elements={elements} offset={160}>
         {({ refs, activeElement, goTo }) => (
           <div className="relative xl:max-w-4/6 md:max-w-3/4 max-w-90 mx-auto">
@@ -114,11 +91,15 @@ export default function Seeds() {
               </video>
             </div>
 
-            <ProjectStatement
-              statement={overview[0].statement}
-              hypothesis={overview[0].hypothesis}
-              outcomes={overview[0].outcomes}
-            />
+            <ProjectStatementParagraph title="Problem statement">
+              {overview[0].statement}
+            </ProjectStatementParagraph>
+            <ProjectStatementParagraph title="Hypothesis">
+              {overview[0].hypothesis}
+            </ProjectStatementParagraph>
+            <ProjectStatementParagraph title="Outcomes">
+              {overview[0].outcomes}
+            </ProjectStatementParagraph>
             {/* 1. Comparative analysis */}
             <div ref={refs.EL1}>
               <ComparativeAnalysis />
@@ -213,11 +194,11 @@ export default function Seeds() {
         )}
       </ScrollNavigation>
       <ScrollButton />
-      <NextProjectCarousel
-        children={tete}
-        children2={bloom}
-        children3={venmo}
-      />
+      <NextProjectCarousel>
+        {tete}
+        {bloom}
+        {venmo}
+      </NextProjectCarousel>
     </Layout>
   );
 }

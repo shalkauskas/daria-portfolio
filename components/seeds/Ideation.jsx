@@ -1,4 +1,4 @@
-import ProjectSectionHeader from "../ProjectSectionHeader";
+import ProjectSectionHeader from "../projectDefaults/ProjectSectionHeader";
 import Image from "next/image";
 import React from "react";
 import ideation2 from "public/images/learning-seeds/ideation2.png";

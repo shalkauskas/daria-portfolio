@@ -1,4 +1,4 @@
-import ProjectSectionHeader from "../ProjectSectionHeader";
+import ProjectSectionHeader from "../projectDefaults/ProjectSectionHeader";
 import Image from "next/image";
 import usetest1 from "/public/images/bloom/use-test1.png";
 import usetest2 from "/public/images/bloom/use-test2.png";

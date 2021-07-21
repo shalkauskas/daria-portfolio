@@ -1,18 +1,22 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
-import ProjectOverview from "@/components/ProjectOverview";
-import ProjectSectionHeader from "@/components/ProjectSectionHeader";
-import ProjectStatement from "@/components/ProjectStatement";
-import PrototypeOverview from "@/components/tete/PrototypeOverview";
-import ProjectAnalysis from "@/components/ProjectAnalysis";
+import ProjectOverview from "@/components/projectDefaults/ProjectOverview";
+import ProjectSectionHeader from "@/components/projectDefaults/ProjectSectionHeader";
+import ProjectStatementParagraph from "@/components/projectDefaults/ProjectStatementParagraph";
+import PrototypeOverview from "@/components/projectDefaults/PrototypeOverview";
+import ProjectAnalysis from "@/components/projectDefaults/ProjectAnalysis";
 import ProjectUsabilityTesting from "@/components/tete/ProjectUsabilityTesting";
-import NextSteps from "@/components/ProjectNextSteps";
+import NextSteps from "@/components/projectDefaults/ProjectNextSteps";
 import ScrollButton from "@/components/ScrollButton";
-import ProjectMenu from "@/components/ProjectMenu";
+import ProjectMenu from "@/components/projectDefaults/ProjectMenu";
 import ScrollNavigation from "react-single-page-navigation";
 import overview from "@/components/tete/overview";
-import NextProjectCarousel from "@/components/NextProjectCarousel";
-import NextProjectItem from "@/components/NextProjectItem";
+import NextProjectCarousel from "@/components/projectDefaults/NextProjectCarousel";
+import {
+  bloom,
+  seeds,
+  venmo,
+} from "@/components/projectDefaults/NextProjectList";
 import smoothscroll from "smoothscroll-polyfill";
 import React from "react";
 import activities from "public/images/tete-a-tete/activities.png";
@@ -26,44 +30,9 @@ export const elements = {
 };
 
 export default function Tete() {
-  const tete = (
-    <NextProjectItem
-      title="Tete-A-Tete salon website redesign"
-      image="tete-a-tete"
-      imageStyle="laptop"
-      color="#F7EEFF"
-      link="/tete-a-tete"
-    />
-  );
-  const bloom = (
-    <NextProjectItem
-      title='B2C application "Bloom"'
-      image="bloom"
-      color="#FFEEEC"
-      link="/bloom"
-      phone={true}
-    />
-  );
-  const seeds = (
-    <NextProjectItem
-      title="Educational micro-course for Learning Seeds, Inc."
-      image="learnseed"
-      color="#C2F0FC"
-      link="/learning-seeds"
-    />
-  );
-  const venmo = (
-    <NextProjectItem
-      title="Donation feature for Venmo app (conceptual)"
-      image="venmo"
-      color="#BEEBE9"
-      link="/venmo"
-      phone={true}
-    />
-  );
   React.useEffect(() => smoothscroll.polyfill());
   return (
-    <Layout title="Work | daria@ux.com">
+    <Layout title="Tete-a-Tete | Daria Khudiakova">
       <ScrollNavigation elements={elements} offset={160}>
         {({ refs, activeElement, goTo }) => (
           <div className="relative xl:max-w-4/6 md:max-w-3/4 max-w-90 mx-auto">
@@ -86,13 +55,23 @@ export default function Tete() {
               team="2 (1 designer, 1 engineer)"
               tools="Figma, InVision"
             />
-            <PrototypeOverview />
-            <ProjectStatement
-              statement={overview[0].statement}
-              benchmark={overview[0].benchmark}
-              solutions={overview[0].solutions}
-              outcomes={overview[0].outcomes}
+            <PrototypeOverview
+              desktop="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-desktop.mp4"
+              mobile="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-mobile.mp4"
+              link="https://teteatetesalon.daria-in-design.com/"
             />
+            <ProjectStatementParagraph title="Problem statement">
+              {overview[0].statement}
+            </ProjectStatementParagraph>
+            <ProjectStatementParagraph title="Benchmark criteria">
+              {overview[0].benchmark}
+            </ProjectStatementParagraph>
+            <ProjectStatementParagraph title="Solutions">
+              {overview[0].solutions}
+            </ProjectStatementParagraph>
+            <ProjectStatementParagraph title="Outcomes">
+              {overview[0].outcomes}
+            </ProjectStatementParagraph>
             {/* Key activities */}
             <div className="text-center">
               <ProjectSectionHeader header="Key activities" />
@@ -127,7 +106,7 @@ export default function Tete() {
             <div ref={refs.EL3}>
               <ProjectSectionHeader header="Wireframing" />
               <div className="shadow-lg">
-                <video className="static" controls loop muted>
+                <video className="static w-full" controls loop muted>
                   <source
                     src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-wireframe.mp4"
                     type="video/mp4"
@@ -163,11 +142,11 @@ export default function Tete() {
         )}
       </ScrollNavigation>
       <ScrollButton />
-      <NextProjectCarousel
-        children={bloom}
-        children2={seeds}
-        children3={venmo}
-      />
+      <NextProjectCarousel>
+        {bloom}
+        {seeds}
+        {venmo}
+      </NextProjectCarousel>
     </Layout>
   );
 }

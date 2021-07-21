@@ -1,10 +1,10 @@
 import Layout from "@/components/Layout";
-import Greeter from "../components/Greeter";
-import ProjectList from "../components/ProjectList";
+import Greeter from "../components/index/Greeter";
+import ProjectList from "../components/index/ProjectList";
 export default function Home() {
   return (
     <div style={{ fontFamily: `"Montserrat", sans-serif` }}>
-      <Layout title="Work | daria@ux.com">
+      <Layout title="Work | Daria Khudiakova">
         <Greeter />
         <ProjectList />
       </Layout>
