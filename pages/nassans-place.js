@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "@/components/Layout";
-import Image from "next/image";
 import smoothscroll from "smoothscroll-polyfill";
 import ScrollNavigation from "react-single-page-navigation";
 import ProjectMenu from "@/components/projectDefaults/ProjectMenu";
@@ -16,6 +15,12 @@ import PrototypeOverview from "@/components/projectDefaults/PrototypeOverview";
 import ProjectStatementParagraph from "@/components/projectDefaults/ProjectStatementParagraph";
 import overview from "@/components/nassans/overview";
 import OurUser from "../components/nassans/OurUser";
+import InformationArchitecture from "@/components/nassans/InformationArchitecture";
+import WebsiteAnalysis from "@/components/projectDefaults/WebsiteAnalysis";
+import { problem, titles } from "@/components/nassans/problems";
+import solution from "@/components/nassans/solutions";
+import ComparativeAnalysis from "@/components/nassans/ComparativeAnalysis";
+import Wireframing from "@/components/nassans/Wireframing";
 export const elements = {
   EL1: {},
   EL2: {},
@@ -35,9 +40,9 @@ export default function Nassans() {
               go2={() => goTo("EL2")}
               go3={() => goTo("EL3")}
               go4={() => goTo("EL4")}
-              title1="Our user"
-              title2="Analysis & solutions"
-              title3="Wireframing"
+              title1="Our users"
+              title2="Information architecture"
+              title3="Analysis & solutions"
               title4="Usability Tests"
             />
             <ProjectOverview
@@ -59,11 +64,24 @@ export default function Nassans() {
             <ProjectStatementParagraph title="Challenges & constraints:">
               {overview[0].challenges}
             </ProjectStatementParagraph>
-            <OurUser />
-            <div ref={refs.EL1}></div>
-            <div ref={refs.EL2}></div>
-            <div ref={refs.EL3}></div>
-            <div ref={refs.EL4}></div>
+            <div ref={refs.EL1}>
+              <OurUser />
+            </div>
+            <div ref={refs.EL2}>
+              <InformationArchitecture />
+            </div>
+            <div ref={refs.EL3}>
+              <WebsiteAnalysis
+                problem={problem}
+                solution={solution}
+                titles={titles}
+                header={"Website analysis"}
+              />
+            </div>
+            <ComparativeAnalysis />
+            <div ref={refs.EL4}>
+              <Wireframing />
+            </div>
           </div>
         )}
       </ScrollNavigation>

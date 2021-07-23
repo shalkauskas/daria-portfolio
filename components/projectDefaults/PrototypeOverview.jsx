@@ -3,7 +3,6 @@ export default function PrototypeOverview(props) {
   const devices = { desktop: `desktop`, mobile: `mobile` };
   const [device, setDevice] = React.useState(devices.desktop);
   const { desktop, mobile, link } = props;
-  console.log(device);
   return (
     <div className="container mx-auto">
       <div

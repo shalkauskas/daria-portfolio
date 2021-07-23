@@ -5,7 +5,7 @@ import solution2 from "public/images/tete-a-tete/solution2.png";
 import solution3 from "public/images/tete-a-tete/solution3.png";
 import solution4 from "public/images/tete-a-tete/solution4.png";
 import siteMap from "public/images/tete-a-tete/site-map.png";
-let solution = [
+const solution = [
   // solution1
   <div>
     <ul className="list-disc list-inside mb-12">

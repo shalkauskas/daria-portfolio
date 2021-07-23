@@ -4,8 +4,8 @@ import Border from "components/nassans/Border";
 export default function OurUser() {
   return (
     <div>
-      <ProjectSectionHeader header="Our user" />
-      <p>
+      <ProjectSectionHeader header="Our users" />
+      <p className="mb-10">
         During the contextual interviews I explored how users interact with the
         website, what goals they try to achieve, what they do to complete the
         task and how they think. Besides, the interviews not only helped me to
@@ -13,7 +13,6 @@ export default function OurUser() {
         users’ expectations.
       </p>
       <Border>
-        {" "}
         <UserNeeds />
       </Border>
 

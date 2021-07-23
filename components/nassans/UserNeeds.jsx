@@ -1,11 +1,10 @@
+import SubHeader from "./SubHeader";
 import User from "./User";
 import { parent, donor, sponsor, volunteer } from "./userContent";
 export default function UserNeeds() {
   return (
     <div className="p-8 mt-12">
-      <h1 className="text-center text-2xl" style={{ color: `#104D8D` }}>
-        User needs:
-      </h1>
+      <SubHeader>User needs:</SubHeader>
       <div className="flex flex-wrap">
         {/* parent */}
         <User

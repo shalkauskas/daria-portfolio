@@ -1,10 +1,12 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
+import smoothscroll from "smoothscroll-polyfill";
+import React from "react";
 import ProjectOverview from "@/components/projectDefaults/ProjectOverview";
 import ProjectSectionHeader from "@/components/projectDefaults/ProjectSectionHeader";
 import ProjectStatementParagraph from "@/components/projectDefaults/ProjectStatementParagraph";
 import PrototypeOverview from "@/components/projectDefaults/PrototypeOverview";
-import ProjectAnalysis from "@/components/projectDefaults/ProjectAnalysis";
+import WebsiteAnalysis from "@/components/projectDefaults/WebsiteAnalysis";
 import ProjectUsabilityTesting from "@/components/tete/ProjectUsabilityTesting";
 import NextSteps from "@/components/projectDefaults/ProjectNextSteps";
 import ScrollButton from "@/components/ScrollButton";
@@ -17,8 +19,8 @@ import {
   seeds,
   venmo,
 } from "@/components/projectDefaults/NextProjectList";
-import smoothscroll from "smoothscroll-polyfill";
-import React from "react";
+import problem from "@/components/tete/problems";
+import solution from "@/components/tete/solutions";
 import activities from "public/images/tete-a-tete/activities.png";
 import userScenario from "public/images/tete-a-tete/user-scenario.png";
 export const elements = {
@@ -100,7 +102,11 @@ export default function Tete() {
             </div>
             {/* Analysis */}
             <div ref={refs.EL2}>
-              <ProjectAnalysis />
+              <WebsiteAnalysis
+                problem={problem}
+                solution={solution}
+                header={"Website analysis and solutions"}
+              />
             </div>
             {/* Wireframing */}
             <div ref={refs.EL3}>

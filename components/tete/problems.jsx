@@ -3,7 +3,7 @@ import analysis1 from "/public/images/tete-a-tete/analysis1.png";
 import analysis2 from "/public/images/tete-a-tete/analysis2.png";
 import analysis3 from "/public/images/tete-a-tete/analysis3.png";
 import analysis4 from "/public/images/tete-a-tete/analysis4.png";
-let problem = [
+const problem = [
   // problem1
   <div>
     <ul className="list-disc list-inside mb-12">
