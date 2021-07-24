@@ -64,8 +64,8 @@ export default function Nassans() {
               {overview[0].client}
             </ProjectStatementParagraph>
             <WaveBox>
-              <div className="flex">
-                <div className="flex-1 pr-8">
+              <div className="flex sm:flex-row flex-col">
+                <div className="flex-1 sm:pr-8">
                   <h2 className="font-bold py-4">Problem:</h2>
                   <p>
                     Initially Nadine Wright-Arbubakkr reached out to me with the
@@ -127,16 +127,16 @@ export default function Nassans() {
                 </li>
                 <li>Provide a way to contact directors by email.</li>
               </NextSteps>
+              <NextProjectCarousel>
+                {tete}
+                {bloom}
+                {seeds}
+              </NextProjectCarousel>
             </div>
           </div>
         )}
       </ScrollNavigation>
       <ScrollButton />
-      <NextProjectCarousel>
-        {tete}
-        {bloom}
-        {seeds}
-      </NextProjectCarousel>
     </Layout>
   );
 }

@@ -1,6 +1,7 @@
 import ProjectSectionHeader from "../projectDefaults/ProjectSectionHeader";
 import UserNeeds from "components/nassans/UserNeeds";
 import Border from "components/nassans/Border";
+import WaveBox from "./WaveBox";
 export default function OurUser() {
   return (
     <div>
@@ -15,50 +16,27 @@ export default function OurUser() {
       <Border>
         <UserNeeds />
       </Border>
-
-      <div className="pain p-12">
-        <h1 className="text-center text-2xl">Pain points:</h1>
-        <ul className="list-disc list-inside">
-          <li>
-            “I don’t use the website a whole lot because usually what I’m
-            looking for I can’t find”
-          </li>
-          <li>
-            “When you click on the tabs like Resources or How you can help,
-            there is no information there. When you click on How you can help,
-            the page is just blank. You can’t see anything.”
-          </li>
-          <li>
-            “If that’s a current event that they are having, you would go to the
-            website and try to pull it up, and won’t find it there. You would
-            just see past events there.”
-          </li>
-        </ul>
-      </div>
-      <style jsx>{`
-        .pain {
-          background: #f0eae7;
-          padding-bottom: 130px;
-          clip-path: polygon(
-            100% 81%,
-            100% 0%,
-            0% 0%,
-            0% 81%,
-            9% 89%,
-            16% 92%,
-            22% 94%,
-            30% 95%,
-            38% 95%,
-            47% 94%,
-            60% 93%,
-            73% 91%,
-            85% 88%
-          );
-        }
-        li {
-          margin: 2rem;
-        }
-      `}</style>
+      <WaveBox>
+        <div>
+          <h1 className="text-center text-2xl pt-6 sm:pt-0">Pain points:</h1>
+          <ul className="list-disc list-inside">
+            <li className="my-6">
+              “I don’t use the website a whole lot because usually what I’m
+              looking for I can’t find”
+            </li>
+            <li className="my-6">
+              “When you click on the tabs like Resources or How you can help,
+              there is no information there. When you click on How you can help,
+              the page is just blank. You can’t see anything.”
+            </li>
+            <li className="my-6">
+              “If that’s a current event that they are having, you would go to
+              the website and try to pull it up, and won’t find it there. You
+              would just see past events there.”
+            </li>
+          </ul>
+        </div>
+      </WaveBox>
     </div>
   );
 }

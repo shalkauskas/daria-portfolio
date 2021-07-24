@@ -16,7 +16,7 @@ export default function Wireframing() {
         preparing wireframes in editors like Figma or Sketch for the following
         reasons:
       </p>
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row justify-between">
         <WireframingAB
           text={
             <span>
@@ -64,7 +64,7 @@ export default function Wireframing() {
               height={327}
             />
           </div>
-          <div className={`absolute bottom-0 w-max`} style={{ left: "35%" }}>
+          <div className={`sm:absolute bottom-0 w-max`} style={{ left: "35%" }}>
             <Image
               alt="Sketch"
               src={sketch4}

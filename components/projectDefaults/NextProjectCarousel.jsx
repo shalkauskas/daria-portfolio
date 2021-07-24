@@ -38,7 +38,7 @@ export default function NextProjectCarousel(props) {
   const mobileWidth = () => (isMobile ? "300px" : "950px");
 
   return (
-    <div className="mx-auto overflow-hidden">
+    <div className="mx-auto">
       <ProjectSectionHeader header="View next..." />
 
       <div className="flex mr-auto ml-auto justify-center">

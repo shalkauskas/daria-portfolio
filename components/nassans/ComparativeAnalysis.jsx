@@ -8,7 +8,7 @@ export default function ComparativeAnalysis() {
   return (
     <>
       <ProjectSectionHeader header="Comparative analysis takeaways:" />
-      <ul className="list-disc list-inside mb-12 mx-auto w-4/6">
+      <ul className="list-disc list-inside mb-12 mx-auto sm:w-4/6 w-5/6">
         <li>
           A short introductory text helps to explain first time visitors what
           the organization is about.
@@ -24,33 +24,39 @@ export default function ComparativeAnalysis() {
         <li>A newsletter wraps up the home page.</li>
       </ul>
       <WaveBox>
-        <Image
-          alt="Logo"
-          src={logo1}
-          quality={75}
-          loading={"lazy"}
-          placeholder="blur"
-          width="200px"
-          height="100px"
-        />
-        <Image
-          alt="Logo"
-          src={logo2}
-          quality={75}
-          loading={"lazy"}
-          placeholder="blur"
-          width="200px"
-          height="100px"
-        />
-        <Image
-          alt="Logo"
-          src={logo3}
-          quality={75}
-          loading={"lazy"}
-          placeholder="blur"
-          width="200px"
-          height="100px"
-        />
+        <div className="py-4 sm:px-4 mx-auto">
+          <Image
+            alt="Logo"
+            src={logo1}
+            quality={75}
+            loading={"lazy"}
+            placeholder="blur"
+            width="200px"
+            height="100px"
+          />
+        </div>
+        <div className="py-4 sm:px-4 mx-auto">
+          <Image
+            alt="Logo"
+            src={logo2}
+            quality={75}
+            loading={"lazy"}
+            placeholder="blur"
+            width="200px"
+            height="100px"
+          />
+        </div>
+        <div className="py-4 sm:px-4 mx-auto">
+          <Image
+            alt="Logo"
+            src={logo3}
+            quality={75}
+            loading={"lazy"}
+            placeholder="blur"
+            width="200px"
+            height="100px"
+          />
+        </div>
       </WaveBox>
 
       <style jsx>{`
@@ -71,6 +77,9 @@ export default function ComparativeAnalysis() {
             73% 91%,
             85% 88%
           );
+        }
+        li {
+          margin: 0.5rem;
         }
       `}</style>
     </>

@@ -3,9 +3,9 @@ import User from "./User";
 import { parent, donor, sponsor, volunteer } from "./userContent";
 export default function UserNeeds() {
   return (
-    <div className="p-8 mt-12">
+    <div className="sm:p-6 mt-6">
       <h1 className="text-center text-2xl">User needs:</h1>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap flex-col sm:flex-row">
         {/* parent */}
         <User
           title="Parent"
