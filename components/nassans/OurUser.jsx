@@ -20,9 +20,8 @@ export default function OurUser() {
         <h1 className="text-center text-2xl">Pain points:</h1>
         <ul className="list-disc list-inside">
           <li>
-            “If I need to look for some information, I will go to the website,
-            but I don’t use the website the whole lot because usually what I’m
-            looking for I can’t find.”
+            “I don’t use the website a whole lot because usually what I’m
+            looking for I can’t find”
           </li>
           <li>
             “When you click on the tabs like Resources or How you can help,
@@ -38,7 +37,7 @@ export default function OurUser() {
       </div>
       <style jsx>{`
         .pain {
-          background: rgba(201, 225, 254, 0.22);
+          background: #f0eae7;
           padding-bottom: 130px;
           clip-path: polygon(
             100% 81%,
@@ -58,9 +57,6 @@ export default function OurUser() {
         }
         li {
           margin: 2rem;
-        }
-        h1 {
-          color: #104d8d;
         }
       `}</style>
     </div>

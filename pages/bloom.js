@@ -131,19 +131,14 @@ export default function Bloom() {
             </div>
             {/* Next steps */}
             <div ref={refs.EL5}>
-              <NextSteps
-                title={"My takeaways"}
-                list={
-                  <ul className="list-disc list-inside">
-                    <li>If conventions exist, follow them.</li>
-                    <li>
-                      Wearing unusual features in familiar designs is also a
-                      good way introduce them to the user.
-                    </li>
-                    <li>Do not make your user think.</li>
-                  </ul>
-                }
-              />
+              <NextSteps title={"My takeaways"}>
+                <li>If conventions exist, follow them.</li>
+                <li>
+                  Wearing unusual features in familiar designs is also a good
+                  way introduce them to the user.
+                </li>
+                <li>Do not make your user think.</li>
+              </NextSteps>
             </div>
           </div>
         )}

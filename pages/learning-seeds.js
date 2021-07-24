@@ -170,25 +170,19 @@ export default function Seeds() {
             </div>
             {/* Next steps */}
             <div ref={refs.EL7}>
-              <NextSteps
-                title={"Next steps:"}
-                style={true}
-                list={
-                  <ul className="list-disc list-inside">
-                    <li>Further usability testing.</li>
-                    <li>Design mobile component to the micro-course.</li>
-                    <li>More tailored content.</li>
-                    <li>Build out a Q & A section.</li>
-                    <li>
-                      Add social functionality or the ability to share
-                      experiences with others.
-                    </li>
-                    <li>
-                      Improve the way of documenting and visualizing progress.
-                    </li>
-                  </ul>
-                }
-              />
+              <NextSteps title={"Next steps:"} style={true}>
+                <li>Further usability testing.</li>
+                <li>Design mobile component to the micro-course.</li>
+                <li>More tailored content.</li>
+                <li>Build out a Q & A section.</li>
+                <li>
+                  Add social functionality or the ability to share experiences
+                  with others.
+                </li>
+                <li>
+                  Improve the way of documenting and visualizing progress.
+                </li>
+              </NextSteps>
             </div>
           </div>
         )}

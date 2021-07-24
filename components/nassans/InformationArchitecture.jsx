@@ -24,6 +24,8 @@ export default function InformationArchitecture() {
         src="images/nassans/arrow-down.svg"
         alt=""
         className="mx-auto p-12"
+        width="170px"
+        height="170px"
       />
       <Border>
         <div className="p-8">

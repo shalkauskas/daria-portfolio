@@ -122,22 +122,16 @@ export default function Venmo() {
             </div>
             {/* Next steps */}
             <div ref={refs.EL7}>
-              <NextSteps
-                title={"My takeaways"}
-                list={
-                  <ul className="list-disc list-inside">
-                    <li>
-                      Good communication is an integral part of a successful
-                      team.
-                    </li>
-                    <li>
-                      It is important to have short-cuts and several approaches
-                      to have things done.
-                    </li>
-                    <li>If you do not know what works better, go test!</li>
-                  </ul>
-                }
-              />
+              <NextSteps title={"My takeaways"}>
+                <li>
+                  Good communication is an integral part of a successful team.
+                </li>
+                <li>
+                  It is important to have short-cuts and several approaches to
+                  have things done.
+                </li>
+                <li>If you do not know what works better, go test!</li>
+              </NextSteps>
             </div>
           </div>
         )}

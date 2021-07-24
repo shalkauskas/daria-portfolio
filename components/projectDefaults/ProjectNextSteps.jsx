@@ -1,16 +1,15 @@
 export default function NextSteps(props) {
+  const { style, title, children } = props;
   return (
     <div
       className="mx-auto rounded-full text-center circle flex"
       style={{ backgroundColor: "#F5F2F0" }}
     >
       <div
-        className={`max-w-max px-10 mx-auto my-auto ${
-          props.style ? "margin" : ""
-        }`}
+        className={`max-w-max px-10 mx-auto my-auto ${style ? "margin" : ""}`}
       >
-        <h3 className="font-bold text-xl mb-3">{props.title}</h3>
-        {props.list}
+        <h3 className="font-bold text-xl mb-3">{title}</h3>
+        <ul className="list-disc list-inside">{children}</ul>
       </div>
       <style jsx>{`
         .circle {

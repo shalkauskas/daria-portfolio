@@ -5,6 +5,7 @@ import sketch1 from "../../public/images/nassans/sketch1.png";
 import sketch2 from "../../public/images/nassans/sketch2.png";
 import sketch3 from "../../public/images/nassans/sketch3.png";
 import sketch4 from "../../public/images/nassans/sketch4.png";
+import WireframingSketches from "./WireframingSketches";
 export default function Wireframing() {
   return (
     <>
@@ -76,11 +77,12 @@ export default function Wireframing() {
           </div>
         </WireframingAB>
       </div>
-      <p>
+      <p className="my-12">
         However, for pages with major changes required wireframing was
         absolutely necessary as it helped to focus on layout and not worry about
         styling just yet.
       </p>
+      <WireframingSketches />
     </>
   );
 }

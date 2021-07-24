@@ -3,6 +3,7 @@ import Image from "next/image";
 import logo1 from "../../public/images/nassans/logo1.png";
 import logo2 from "../../public/images/nassans/logo2.png";
 import logo3 from "../../public/images/nassans/logo3.png";
+import WaveBox from "./WaveBox";
 export default function ComparativeAnalysis() {
   return (
     <>
@@ -22,7 +23,7 @@ export default function ComparativeAnalysis() {
         </li>
         <li>A newsletter wraps up the home page.</li>
       </ul>
-      <div className="flex p-8 justify-evenly pain pb-24">
+      <WaveBox>
         <Image
           alt="Logo"
           src={logo1}
@@ -32,7 +33,6 @@ export default function ComparativeAnalysis() {
           width="200px"
           height="100px"
         />
-
         <Image
           alt="Logo"
           src={logo2}
@@ -42,7 +42,6 @@ export default function ComparativeAnalysis() {
           width="200px"
           height="100px"
         />
-
         <Image
           alt="Logo"
           src={logo3}
@@ -52,10 +51,11 @@ export default function ComparativeAnalysis() {
           width="200px"
           height="100px"
         />
-      </div>
+      </WaveBox>
+
       <style jsx>{`
         .pain {
-          background: rgba(201, 225, 254, 0.22);
+          background: rgba(240, 234, 231, 0.6);
           clip-path: polygon(
             100% 81%,
             100% 0%,

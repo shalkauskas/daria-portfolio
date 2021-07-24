@@ -127,22 +127,15 @@ export default function Tete() {
             </div>
             {/* Next steps */}
             <div ref={refs.EL5}>
-              <NextSteps
-                title={"Next steps:"}
-                list={
-                  <ul className="list-disc list-inside">
-                    <li>
-                      Keep up to date online appearance on the social networks
-                      such as Instagram and Facebook.
-                    </li>
-                    <li>Add online booking feature.</li>
-                    <li>
-                      Launch new marketing campaigns via Constant Contact.
-                    </li>
-                    <li>Collaborate with Groupon.</li>
-                  </ul>
-                }
-              />
+              <NextSteps title={"Next steps:"}>
+                <li>
+                  Keep up to date online appearance on the social networks such
+                  as Instagram and Facebook.
+                </li>
+                <li>Add online booking feature.</li>
+                <li>Launch new marketing campaigns via Constant Contact.</li>
+                <li>Collaborate with Groupon.</li>
+              </NextSteps>
             </div>
           </div>
         )}
