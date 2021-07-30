@@ -57,15 +57,15 @@ export default function Nassans() {
             />
             <PrototypeOverview
               link="https://www.nassansplace.org/"
-              desktop=""
-              mobile=""
+              desktop="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/nassans-desktop.mp4"
+              mobile="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/nassans-mobile.mp4"
             />
             <ProjectStatementParagraph title="The client:">
               {overview[0].client}
             </ProjectStatementParagraph>
             <WaveBox>
               <div className="flex sm:flex-row flex-col">
-                <div className="flex-1 sm:pr-8">
+                <div className="flex-1 sm:pr-28">
                   <h2 className="font-bold py-4">Problem:</h2>
                   <p>
                     Initially Nadine Wright-Arbubakkr reached out to me with the

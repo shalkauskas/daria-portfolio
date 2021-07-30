@@ -1,6 +1,6 @@
 export default function Border(props) {
   return (
-    <div className="shadow-lg">
+    <div>
       {props.children}
       <style jsx>{`
         div {

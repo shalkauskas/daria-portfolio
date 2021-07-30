@@ -7,10 +7,10 @@ export default function ProjectList() {
   return (
     <div className="mt-32">
       <ProjectContainer
-        title="Nassan's Place"
-        image="tete-a-tete"
+        title="Nassan’s Place website redesign"
+        image="nassans"
         imageStyle="laptop"
-        color="#C9E1FE"
+        color="#FFFBE6"
         feature1="Responsive design."
         feature2="Offers more digestible price lists as well as user-oriented
         information."

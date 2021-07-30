@@ -45,7 +45,7 @@ const problem = [
         pictures in headers tend to be used as profile pictures for accounts.
       </li>
     </ul>
-    <WebsiteAnalysisPics pics={[problem21, problem22]} />
+    <WebsiteAnalysisPics pics={[problem21, problem22]} height={"350px"} />
   </div>,
   //   problem3
   <div>
@@ -57,7 +57,7 @@ const problem = [
       </li>
       <li>Linear layout makes “In the media” page too long.</li>
     </ul>
-    <WebsiteAnalysisPics pics={[problem31, problem32]} />
+    <WebsiteAnalysisPics pics={[problem31, problem32]} height={"500px"} />
   </div>,
   //   problem4
   <div>
@@ -84,6 +84,7 @@ const problem = [
     <WebsiteAnalysisPics
       pics={[problem41, problem42]}
       title={["Newsltetter", "Resources"]}
+      height={"500px"}
     />
   </div>,
 ];

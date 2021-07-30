@@ -25,7 +25,7 @@ export default function Wireframing() {
           }
           className="mr-6"
         >
-          <div className={`mr-6`}>
+          <div className={`sm:mr-6`}>
             <Image
               alt="Sketch"
               src={sketch1}
@@ -34,7 +34,7 @@ export default function Wireframing() {
               placeholder="blur"
             />
           </div>
-          <div className={`ml-6`}>
+          <div className={`sm:ml-6`}>
             <Image
               alt="Sketch"
               src={sketch2}
@@ -51,9 +51,9 @@ export default function Wireframing() {
               customizable enough.
             </span>
           }
-          className="ml-6"
+          className="sm:ml-6"
         >
-          <div className={`mr-6`}>
+          <div className={`sm:mr-6`}>
             <Image
               alt="Sketch"
               src={sketch3}

@@ -1,6 +1,6 @@
 export default function WaveBox(props) {
   return (
-    <div className="flex pt-12 pb-28 sm:px-24 px-6 justify-evenly pain mb-12 flex-col sm:flex-row">
+    <div className="flex pt-8 pb-20 sm:px-16 px-6 justify-evenly pain mb-12 flex-col sm:flex-row">
       {props.children}
       <style jsx>{`
         .pain {

@@ -34,7 +34,7 @@ const solution = [
       </li>
     </ul>
 
-    <WebsiteAnalysisPics pics={[solution21, solution22]} />
+    <WebsiteAnalysisPics pics={[solution21, solution22]} height={"350px"} />
   </div>,
   //   solution3
   <div>
@@ -45,7 +45,10 @@ const solution = [
       </li>
       <li>Use a grid layout.</li>
     </ul>
-    <WebsiteAnalysisPics pics={[solution31, solution32, solution33]} />
+    <WebsiteAnalysisPics
+      pics={[solution31, solution32, solution33]}
+      height={"500px"}
+    />
   </div>,
   //   solution4
   <div>
@@ -68,6 +71,7 @@ const solution = [
     <WebsiteAnalysisPics
       pics={[solution41, solution42]}
       title={["Newsltetter", "Resources"]}
+      height={"500px"}
     />
   </div>,
 ];

@@ -32,7 +32,7 @@ export default function ComparativeAnalysis() {
             loading={"lazy"}
             placeholder="blur"
             width="200px"
-            height="100px"
+            height="80px"
           />
         </div>
         <div className="py-4 sm:px-4 mx-auto">
@@ -42,8 +42,8 @@ export default function ComparativeAnalysis() {
             quality={75}
             loading={"lazy"}
             placeholder="blur"
-            width="200px"
-            height="100px"
+            width="219px"
+            height="91px"
           />
         </div>
         <div className="py-4 sm:px-4 mx-auto">
@@ -53,8 +53,8 @@ export default function ComparativeAnalysis() {
             quality={75}
             loading={"lazy"}
             placeholder="blur"
-            width="200px"
-            height="100px"
+            width="212px"
+            height="91px"
           />
         </div>
       </WaveBox>
