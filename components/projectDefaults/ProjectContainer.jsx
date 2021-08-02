@@ -4,8 +4,17 @@ export default function ProjectContainer(props) {
     "w-4/6 2xl:w-96 xl:mb-12 2xl:absolute xl:w-10/12 lg:w-5/6 md:w-full lg:ml-12 md:ml-4 ml-20 mt-6 lg:mt-0 md:mt-12";
   const mobileImageStyles =
     "w-1/5 2xl:w-44 xl:w-40 lg:w-1/5 md:w-2/5 2xl:ml-40 xl:ml-32 lg:ml-32 md:ml-24 ml-auto mr-auto mt-6 md:mt-10 xl:mt-12 lg:absolute";
-  const { color, link, title, image, imageStyle, bloom, feature1, feature2 } =
-    props;
+  const {
+    color,
+    link,
+    title,
+    image,
+    imageStyle,
+    bloom,
+    feature1,
+    feature2,
+    feature3,
+  } = props;
   return (
     <div
       className="relative mx-auto container-default text-center mb-24 2xl:w-4/6 2xl:py-10 sm:w-4/6 w-full"
@@ -44,6 +53,7 @@ export default function ProjectContainer(props) {
             <ul className="2xl:pr-16 list-disc sm:mt-10 mt-6 ml-8 text-left text-lg w-auto sm:mr-0 md:mr-2">
               <li>{feature1}</li>
               <li>{feature2}</li>
+              {feature3 && <li>{feature3}</li>}
             </ul>
           </div>
           {/* button */}

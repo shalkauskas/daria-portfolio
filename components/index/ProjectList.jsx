@@ -11,9 +11,9 @@ export default function ProjectList() {
         image="nassans"
         imageStyle="laptop"
         color="#FFFBE6"
-        feature1="Responsive design."
-        feature2="Offers more digestible price lists as well as user-oriented
-        information."
+        feature1="Improved site architecture based on user needs."
+        feature2="Enhanced usability and accessibility."
+        feature3="More prominent CTA button."
         link="/nassans-place"
       />
       <ProjectContainer

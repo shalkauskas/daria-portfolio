@@ -57,7 +57,7 @@ export default function Nassans() {
             />
             <PrototypeOverview
               link="https://www.nassansplace.org/"
-              desktop="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/nassans-desktop.mp4"
+              desktop="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/nassans-desktop-new.mp4"
               mobile="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/nassans-mobile.mp4"
             />
             <ProjectStatementParagraph title="The client:">

@@ -11,10 +11,10 @@ export default function PrototypeOverview(props) {
         } container mx-auto relative`}
       >
         <picture>
-          <source type="image/webp" srcSet={`images/bloom.webp`} />
-          <source type="image/jpeg" srcSet={`images/bloom.png`} />
+          <source type="image/webp" srcSet={`images/iphone.webp`} />
+          <source type="image/jpeg" srcSet={`images/iphone.png`} />
           <img
-            src="images/bloom.png"
+            src="images/iphone.png"
             className="mx-auto"
             style={{ width: "250px" }}
             alt=""
@@ -37,21 +37,14 @@ export default function PrototypeOverview(props) {
         } container mx-auto relative`}
       >
         <picture>
-          <source
-            type="image/webp"
-            srcSet={`images/tete-a-tete-desktop.webp`}
-          />
-          <source type="image/jpeg" srcSet={`images/tete-a-tete-desktop.png`} />
-          <img
-            src="images/tete-a-tete-desktop.png"
-            alt=""
-            className="mx-auto"
-          />
+          <source type="image/webp" srcSet={`images/desktop.webp`} />
+          <source type="image/jpeg" srcSet={`images/desktop.png`} />
+          <img src="images/desktop.png" alt="" className="mx-auto" />
         </picture>
         <video
           className="mx-auto left-0 right-0 absolute"
           style={{
-            width: "650px",
+            width: "655px",
             bottom: "20%",
             borderRadius: "5px",
             maxWidth: "73%",
