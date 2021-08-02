@@ -29,6 +29,7 @@ export const elements = {
   EL3: {},
   EL4: {},
   EL5: {},
+  EL6: {},
 };
 export default function Nassans() {
   React.useEffect(() => smoothscroll.polyfill());
@@ -44,11 +45,13 @@ export default function Nassans() {
               go3={() => goTo("EL3")}
               go4={() => goTo("EL4")}
               go5={() => goTo("EL5")}
+              go6={() => goTo("EL6")}
               title1="Our users"
               title2="Information architecture"
-              title3="Analysis & solutions"
-              title4="Sketching & Wireframing"
-              title5="Next steps"
+              title3="Website analysis"
+              title4="Comparative Analysis"
+              title5="Sketching & Wireframing"
+              title6="Next steps"
             />
             <ProjectOverview
               title="The Nassan’s Place website redesign"
@@ -65,7 +68,7 @@ export default function Nassans() {
             </ProjectStatementParagraph>
             <WaveBox>
               <div className="flex sm:flex-row flex-col">
-                <div className="flex-1 sm:pr-28">
+                <div className="flex-1 sm:pr-28 sm:pl-6">
                   <h2 className="font-bold py-4">Problem:</h2>
                   <p>
                     Initially Nadine Wright-Arbubakkr reached out to me with the
@@ -77,10 +80,10 @@ export default function Nassans() {
                 </div>
                 <div className="flex-1">
                   <h2 className="font-bold py-4">Objectives:</h2>
-                  <ul className="list-disc list-inside">
-                    <li>Improve overall site architecture and navigation</li>
+                  <ul className="list-disc list-outside">
+                    <li>Improve overall site architecture and navigation.</li>
                     <li>
-                      Enable easier browsing and a more frictionless experience
+                      Enable easier browsing and a more frictionless experience.
                     </li>
                     <li>
                       Create a more user-friendly website based on user needs
@@ -111,11 +114,14 @@ export default function Nassans() {
                 header={"Website analysis"}
               />
             </div>
-            <ComparativeAnalysis />
             <div ref={refs.EL4}>
+              <ComparativeAnalysis />
+            </div>
+
+            <div ref={refs.EL5}>
               <Wireframing />
             </div>
-            <div ref={refs.EL5}>
+            <div ref={refs.EL6}>
               <NextSteps title={"Next steps"}>
                 <li>
                   Add descriptions and pictures to the list of programs Nassan’s

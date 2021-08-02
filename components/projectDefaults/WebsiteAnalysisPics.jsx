@@ -9,7 +9,7 @@ export default function WebsiteAnalysisPics(props) {
   };
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col sm:flex-row relative">
+      <div className="flex flex-col sm:flex-row relative gap-4">
         {pics &&
           pics.map((pic, index) => (
             <div
@@ -44,7 +44,6 @@ export default function WebsiteAnalysisPics(props) {
                       : `relative`
                   } `}
                 >
-                  {" "}
                   <Image
                     alt="Problem analysis"
                     src={pic}

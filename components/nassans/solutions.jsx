@@ -11,7 +11,7 @@ import solution42 from "public/images/nassans/solution4-2.png";
 const solution = [
   // solution1
   <div>
-    <ul className="list-disc list-inside mb-12">
+    <ul className="list-disc list-inside mb-4">
       <li>
         Use either white or lighter colors for background in order to make the
         text pop.
@@ -26,7 +26,7 @@ const solution = [
   </div>,
   //   solution2
   <div>
-    <ul className="list-disc list-inside mb-12">
+    <ul className="list-disc list-inside mb-4">
       <li>Make the logo smaller and put the company’s name next to it.</li>
       <li>
         Remove an introductory text and a human’s picture from the header and
@@ -38,26 +38,23 @@ const solution = [
   </div>,
   //   solution3
   <div>
-    <ul className="list-disc list-inside mb-12">
+    <ul className="list-disc list-inside mb-4">
       <li>
         Separate different types of content, create categories, and put them on
         different pages.
       </li>
       <li>Use a grid layout.</li>
     </ul>
-    <WebsiteAnalysisPics
-      pics={[solution31, solution32, solution33]}
-      height={"500px"}
-    />
+    <WebsiteAnalysisPics pics={[solution32, solution33]} height={"500px"} />
   </div>,
   //   solution4
   <div>
-    <ul className="list-disc list-inside mb-12">
+    <ul className="list-disc list-inside mb-4">
       <b>Newsltetter:</b>
       <li>Use animation on hover to show clickable components.</li>
       <li>Use pictures asscociated with news articles.</li>
     </ul>
-    <ul className="list-disc list-inside mb-12">
+    <ul className="list-disc list-inside mb-4">
       <b>Resoures:</b>
       <li>
         Visiually divide the links and add logos of organizations they are

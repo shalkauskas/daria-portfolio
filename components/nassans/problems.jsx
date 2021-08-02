@@ -16,7 +16,7 @@ const titles = [
 const problem = [
   // problem1
   <div>
-    <ul className="list-disc list-inside mb-12">
+    <ul className="list-disc list-inside mb-3">
       <li>
         A solid bright background color makes it harder to read the dark text
         because of the lack of contrast.
@@ -35,7 +35,7 @@ const problem = [
   </div>,
   //   problem2
   <div>
-    <ul className="list-disc list-inside mb-12">
+    <ul className="list-disc list-inside mb-3">
       <li>
         The header takes up too much space on the desktop screen and 100% of the
         space on the mobile screen.
@@ -49,7 +49,7 @@ const problem = [
   </div>,
   //   problem3
   <div>
-    <ul className="list-disc list-inside mb-12">
+    <ul className="list-disc list-inside mb-3">
       <li>
         Media resources are piled up on a single page in different formats and
         ways of access that confuse users about what is going to happen after
@@ -61,7 +61,7 @@ const problem = [
   </div>,
   //   problem4
   <div>
-    <ul className="list-disc list-inside mb-4">
+    <ul className="list-disc list-inside mb-6">
       <b>Newsltetter:</b>
       <li>
         Links to the news articles do not look like links. There is no
@@ -69,7 +69,7 @@ const problem = [
         clickable either.
       </li>
     </ul>
-    <ul className="list-disc list-inside mb-4">
+    <ul className="list-disc list-inside mb-6">
       <b>Resources:</b>
       <li>The list of resources is not scannable.</li>
       <li>

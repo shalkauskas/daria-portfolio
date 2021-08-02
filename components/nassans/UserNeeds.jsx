@@ -11,20 +11,28 @@ export default function UserNeeds() {
           title="Parent"
           image="images/nassans/parent.svg"
           content={parent}
+          style={"mr-4"}
         />
         {/* donor */}
-        <User title="Donor" image="images/nassans/donor.svg" content={donor} />
+        <User
+          title="Donor"
+          image="images/nassans/donor.svg"
+          content={donor}
+          style="p-4"
+        />
         {/* sponsor */}
         <User
           title="Sponsor"
           image="images/nassans/sponsor.svg"
           content={sponsor}
+          style={"mr-4"}
         />
         {/* volunteer */}
         <User
           title="Volunteer"
           image="images/nassans/volunteer.svg"
           content={volunteer}
+          style="p-5"
         />
       </div>
     </div>

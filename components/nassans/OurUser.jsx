@@ -19,10 +19,10 @@ export default function OurUser() {
       <WaveBox>
         <div>
           <h1 className="text-center text-2xl pt-6 sm:pt-0">Pain points:</h1>
-          <ul className="list-disc list-inside">
+          <ul className="list-disc list-outside">
             <li className="my-6">
               “I don’t use the website a whole lot because usually what I’m
-              looking for I can’t find”
+              looking for I can’t find.”
             </li>
             <li className="my-6">
               “When you click on the tabs like Resources or How you can help,
