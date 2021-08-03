@@ -11,7 +11,7 @@ export default function UserNeeds() {
           title="Parent"
           image="images/nassans/parent.svg"
           content={parent}
-          style={"mr-4"}
+          style={"sm:mr-4"}
         />
         {/* donor */}
         <User
@@ -25,7 +25,7 @@ export default function UserNeeds() {
           title="Sponsor"
           image="images/nassans/sponsor.svg"
           content={sponsor}
-          style={"mr-4"}
+          style={"sm:mr-4"}
         />
         {/* volunteer */}
         <User

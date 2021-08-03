@@ -14,7 +14,7 @@ export default function User(props) {
         <div className="p-1 ml-4 flex-1">
           {content &&
             content.map((item, index) => (
-              <ul key={index} className="list-disc list-outside">
+              <ul key={index} className="list-disc sm:list-outside list-inside">
                 <li>{item}</li>
               </ul>
             ))}

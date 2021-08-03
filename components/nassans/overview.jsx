@@ -35,7 +35,7 @@ const overview = [
     ),
     challenges: (
       <div>
-        <ul className="list-disc list-outside">
+        <ul className="list-disc sm:list-outside list-inside">
           <li>
             Faced multiple technical constraints of Wix along the process that
             basically dictated some of the design solutions.

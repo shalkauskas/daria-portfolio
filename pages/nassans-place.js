@@ -80,7 +80,7 @@ export default function Nassans() {
                 </div>
                 <div className="flex-1">
                   <h2 className="font-bold py-4">Objectives:</h2>
-                  <ul className="list-disc list-outside">
+                  <ul className="list-disc sm:list-outside list-inside">
                     <li>Improve overall site architecture and navigation.</li>
                     <li>
                       Enable easier browsing and a more frictionless experience.

@@ -9,7 +9,7 @@ export default function WebsiteAnalysisPics(props) {
   };
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col sm:flex-row relative gap-4">
+      <div className="flex flex-col sm:flex-row relative sm:gap-4">
         {pics &&
           pics.map((pic, index) => (
             <div
@@ -18,17 +18,16 @@ export default function WebsiteAnalysisPics(props) {
               }`}
               key={index}
             >
-              <h1 className="text-center font-bold p-2">
+              <h1 className="text-center font-bold sm:p-2">
                 {title && title[index]}
               </h1>
               <div
+                className="pic-wrapper"
                 style={{
                   height:
                     zoom.active && zoom.id === index
                       ? "800px"
-                      : height
-                      ? height
-                      : "400px",
+                      : height && height,
                 }}
               >
                 <div
@@ -63,6 +62,18 @@ export default function WebsiteAnalysisPics(props) {
             </div>
           ))}
       </div>
+      <style jsx>
+        {`
+          .pic-wrapper {
+            height: 400px;
+          }
+          @media screen and (max-width: 600px) {
+            .pic-wrapper {
+              height: 250px;
+            }
+          }
+        `}
+      </style>
     </div>
   );
 }
