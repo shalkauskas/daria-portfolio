@@ -8,6 +8,7 @@ import {
   bloom,
   seeds,
   tete,
+  venmo,
 } from "@/components/projectDefaults/NextProjectList";
 import ScrollButton from "@/components/ScrollButton";
 import ProjectOverview from "@/components/projectDefaults/ProjectOverview";
@@ -62,6 +63,10 @@ export default function Nassans() {
               link="https://www.nassansplace.org/"
               desktop="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/nassans-desktop-new.mp4"
               mobile="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/nassans-mobile.mp4"
+              poster={{
+                desktop: "images/nassans/nassans-poster-desktop.png",
+                mobile: "images/nassans/nassans-poster-mobile.png",
+              }}
             />
             <ProjectStatementParagraph title="The client:">
               {overview[0].client}
@@ -137,6 +142,7 @@ export default function Nassans() {
                 {tete}
                 {bloom}
                 {seeds}
+                {venmo}
               </NextProjectCarousel>
             </div>
           </div>

@@ -1,7 +1,12 @@
 @tailwind base;
 
 /* Write your own custom base styles here */
-
+.slide {
+     background: white !important
+}
+.cursor-pointer {
+     cursor: pointer
+}
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */

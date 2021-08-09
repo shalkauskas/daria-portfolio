@@ -33,13 +33,11 @@ export default function Header() {
             </Link>
             {/* Mini nav expand button */}
             <button
-              className={`text-white cursor-pointer text-xl leading-none px-3 pt-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none`}
+              className={`text-white cursor-pointer text-xl leading-none px-3 sm:pt-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none`}
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              <span className="text-5xl text-gray-600 border border-gray-400">
-                &#9776;
-              </span>
+              <span className="text-5xl text-gray-600">&#9776;</span>
             </button>
           </div>
           <div

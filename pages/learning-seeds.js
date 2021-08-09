@@ -18,6 +18,7 @@ import {
   bloom,
   venmo,
   tete,
+  nassans,
 } from "@/components/projectDefaults/NextProjectList";
 import smoothscroll from "smoothscroll-polyfill";
 import React from "react";
@@ -192,6 +193,7 @@ export default function Seeds() {
         {tete}
         {bloom}
         {venmo}
+        {nassans}
       </NextProjectCarousel>
     </Layout>
   );

@@ -44,8 +44,8 @@ export default function AboutMe() {
             free time, you also can find me hiking in New Hampshire or kayaking
             down the Charles River as I love being active and keep moving!
           </p>
-          <a href="https://s3.us-east-2.amazonaws.com/daria-in-design.com/Resume_12.14docx.docx">
-            <button className="mt-12 rounded-full px-10 py-3 bg-gray-700 text-white float-right hover:opacity-75">
+          <a href="https://s3.us-east-2.amazonaws.com/daria-in-design.com/Daria_Khudiakova_CV.docx">
+            <button className="mt-12 rounded-full px-10 py-3 bg-gray-700 text-white hover:opacity-75 mx-auto block">
               Download Resume
             </button>
           </a>

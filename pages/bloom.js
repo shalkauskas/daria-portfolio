@@ -17,6 +17,7 @@ import {
   seeds,
   venmo,
   tete,
+  nassans,
 } from "@/components/projectDefaults/NextProjectList";
 import smoothscroll from "smoothscroll-polyfill";
 import activities from "/public/images/bloom/activities.png";
@@ -148,6 +149,7 @@ export default function Bloom() {
         {tete}
         {seeds}
         {venmo}
+        {nassans}
       </NextProjectCarousel>
     </Layout>
   );

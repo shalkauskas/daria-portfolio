@@ -6,17 +6,21 @@ export default function NextProjectCarousel(props) {
   // carousel controls
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const next = () => {
-    if (currentSlide == 2) {
+    if (currentSlide >= 3) {
       setCurrentSlide(0);
     } else {
-      setCurrentSlide(currentSlide + 1);
+      isMobile
+        ? setCurrentSlide(currentSlide + 1)
+        : setCurrentSlide(currentSlide + 3);
     }
   };
   const prev = () => {
-    if (currentSlide == 0) {
-      setCurrentSlide(2);
+    if (currentSlide <= 0) {
+      setCurrentSlide(3);
     } else {
-      setCurrentSlide(currentSlide - 1);
+      isMobile
+        ? setCurrentSlide(currentSlide - 1)
+        : setCurrentSlide(currentSlide - 3);
     }
   };
   // responsive carousel
@@ -43,9 +47,7 @@ export default function NextProjectCarousel(props) {
 
       <div className="flex mr-auto ml-auto justify-center">
         <div
-          className={`${
-            isMobile ? "inline-block" : "hidden"
-          } my-auto min-w-content`}
+          className={`${isMobile ? "inline-block" : ""} my-auto min-w-content`}
         >
           <img
             onClick={prev}
@@ -63,7 +65,7 @@ export default function NextProjectCarousel(props) {
             showStatus={false}
             swipeable={true}
             centerMode={mobileSize()}
-            centerSlidePercentage={32}
+            centerSlidePercentage={33}
             width={mobileWidth()}
             selectedItem={currentSlide}
           >
@@ -72,9 +74,7 @@ export default function NextProjectCarousel(props) {
         </div>
 
         <div
-          className={`${
-            isMobile ? "inline-block" : "hidden"
-          } my-auto min-w-content`}
+          className={`${isMobile ? "inline-block" : ""} my-auto min-w-content`}
         >
           <img
             onClick={next}

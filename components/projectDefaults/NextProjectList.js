@@ -1,4 +1,13 @@
 import NextProjectItem from "@/components/projectDefaults/NextProjectItem";
+const nassans = (
+  <NextProjectItem
+    title="Nassan’s Place website redesign"
+    image="nassans"
+    imageStyle="laptop"
+    color="#FFFBE6"
+    link="/nassans-place"
+  />
+);
 const tete = (
   <NextProjectItem
     title="Tete-A-Tete salon website redesign"
@@ -34,4 +43,4 @@ const venmo = (
     phone={true}
   />
 );
-export { tete, bloom, seeds, venmo };
+export { tete, bloom, seeds, venmo, nassans };

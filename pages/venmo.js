@@ -15,6 +15,7 @@ import ButtonCheckbox from "@/components/venmo/ButtonCheckbox";
 import NextProjectCarousel from "@/components/projectDefaults/NextProjectCarousel";
 import {
   bloom,
+  nassans,
   seeds,
   tete,
 } from "@/components/projectDefaults/NextProjectList";
@@ -141,6 +142,7 @@ export default function Venmo() {
         {tete}
         {bloom}
         {seeds}
+        {nassans}
       </NextProjectCarousel>
     </Layout>
   );

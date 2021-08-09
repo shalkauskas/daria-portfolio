@@ -2,7 +2,7 @@ import React from "react";
 export default function PrototypeOverview(props) {
   const devices = { desktop: `desktop`, mobile: `mobile` };
   const [device, setDevice] = React.useState(devices.desktop);
-  const { desktop, mobile, link } = props;
+  const { desktop, mobile, link, poster } = props;
   return (
     <div className="container mx-auto">
       <div
@@ -25,6 +25,7 @@ export default function PrototypeOverview(props) {
           style={{ width: "218px", bottom: "60px" }}
           controls
           muted
+          poster={poster && poster.mobile}
         >
           <source src={mobile} type="video/mp4" />
           Your browser does not support the video tag.
@@ -51,6 +52,7 @@ export default function PrototypeOverview(props) {
           }}
           controls
           muted
+          poster={poster && poster.desktop}
         >
           <source src={desktop} type="video/mp4" />
           Your browser does not support the video tag.
@@ -99,6 +101,10 @@ export default function PrototypeOverview(props) {
           View website
         </a>
       </div>
+      <style jsx>{`
+        video[poster] {
+        }
+      `}</style>
     </div>
   );
 }
