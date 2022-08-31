@@ -5,6 +5,7 @@ export default function Resume() {
   const iframeReady = () => {
     setLoading(false);
   };
+  const resume = process.env.NEXT_PUBLIC_resume;
   return (
     <Layout title="Resume | Daria Khudiakova">
       <div
@@ -14,7 +15,7 @@ export default function Resume() {
         <div className="text-center xl:w-3/6 mx-auto my-32">
           {loading && <div className="loader" />}
           <iframe
-            src="https://onedrive.live.com/embed?cid=41AA7A153B5014EE&amp;resid=41AA7A153B5014EE%21122&amp;authkey=AOW3PkaRESO44us&amp;em=2&wdStartOn=1"
+            src={resume}
             width="100%"
             height="1000px"
             frameBorder="0"
