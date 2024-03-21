@@ -61,7 +61,7 @@ export default function Tete() {
             <PrototypeOverview
               desktop="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-desktop.mp4"
               mobile="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-mobile.mp4"
-              link="https://teteatetesalon.daria-in-design.com/"
+              link="https://teteatetesalon.com/"
               poster={{
                 desktop: "images/tete-a-tete/tete-poster-desktop.png",
                 mobile: "images/tete-a-tete/tete-poster-mobile.png",
