@@ -1,0 +1,38 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/jsx-runtime"
+
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "plugins": ["react"],
+
+    "rules": {
+      "sort-keys": [
+        "error",
+        "asc",
+        {
+          "allowLineSeparatedGroups": true,
+          "caseSensitive": true,
+          "natural": false,
+          "minKeys": 2
+        }
+      ],
+      "@typescript-eslint/no-empty-function": "off"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  }
