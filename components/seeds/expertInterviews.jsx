@@ -4,7 +4,7 @@ import affinityMap from "public/images/learning-seeds/affinity-map.png";
 export default function ExpertInterviews() {
   return (
     <div>
-      <ProjectSectionHeader header="Expert user interviews" />
+      <ProjectSectionHeader>Expert user interviews</ProjectSectionHeader>
       <p className="my-12">
         To learn more about Learning Seeds and find out what makes its method
         unique we also interviewed parents experienced in working with the

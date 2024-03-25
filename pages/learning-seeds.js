@@ -113,7 +113,7 @@ export default function Seeds() {
             </div>
             {/* Persona */}
             <div ref={refs.EL3} className="text-center">
-              <ProjectSectionHeader header="Persona" />
+              <ProjectSectionHeader>Persona</ProjectSectionHeader>
               <Image
                 alt="Comparative analysis"
                 src={persona}
@@ -125,7 +125,7 @@ export default function Seeds() {
             </div>
             {/* Content Research */}
             <div ref={refs.EL4}>
-              <ProjectSectionHeader header="Content Research" />
+              <ProjectSectionHeader>Content Research</ProjectSectionHeader>
               <p>
                 The big part of our research process was familiarizing ourselves
                 with the Enlightened Shadowing Method invented and actively used

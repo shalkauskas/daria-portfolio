@@ -7,7 +7,9 @@ import WaveBox from "./WaveBox";
 export default function ComparativeAnalysis() {
   return (
     <>
-      <ProjectSectionHeader header="Comparative analysis takeaways:" />
+      <ProjectSectionHeader>
+        Comparative analysis takeaways:
+      </ProjectSectionHeader>
       <ul className="list-disc list-inside mb-12 mx-auto sm:w-4/6 w-5/6">
         <li>
           A short introductory text helps to explain first time visitors what

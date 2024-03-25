@@ -5,7 +5,7 @@ import sketch2 from "public/images/venmo/sketch2.jpg";
 export default function ButtonCheckbox() {
   return (
     <div>
-      <ProjectSectionHeader header="Button VS Checkbox" />
+      <ProjectSectionHeader>Button VS Checkbox</ProjectSectionHeader>
       <p className="my-12">
         While drawing first sketches, I was hesitating whether “ donate $1”
         should be a button that changes color/opacity after click or a checkbox.

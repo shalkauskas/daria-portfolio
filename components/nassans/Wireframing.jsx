@@ -9,7 +9,7 @@ import WireframingSketches from "./WireframingSketches";
 export default function Wireframing() {
   return (
     <>
-      <ProjectSectionHeader header="Sketching & Wireframing" />
+      <ProjectSectionHeader>Sketching & Wireframing</ProjectSectionHeader>
       <p>
         Because I was working with the Wix, most of the pages I redesigned right
         at the CMS using a copy of the original website. It was easier than

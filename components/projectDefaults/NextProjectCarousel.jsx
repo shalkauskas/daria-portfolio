@@ -43,7 +43,7 @@ export default function NextProjectCarousel(props) {
 
   return (
     <div className="mx-auto">
-      <ProjectSectionHeader header="View next..." />
+      <ProjectSectionHeader>View next...</ProjectSectionHeader>
 
       <div className="flex mr-auto ml-auto justify-center">
         <div

@@ -81,7 +81,7 @@ export default function Tete() {
             </ProjectStatementParagraph>
             {/* Key activities */}
             <div className="text-center">
-              <ProjectSectionHeader header="Key activities" />
+              <ProjectSectionHeader>Key activities</ProjectSectionHeader>
               <Image
                 alt="Key activities"
                 src={activities}
@@ -94,7 +94,7 @@ export default function Tete() {
             </div>
             {/* Our user */}
             <div className="text-center" ref={refs.EL1}>
-              <ProjectSectionHeader header="Our user" />
+              <ProjectSectionHeader>Our user</ProjectSectionHeader>
               <Image
                 alt="Key activities"
                 src={userScenario}
@@ -115,7 +115,7 @@ export default function Tete() {
             </div>
             {/* Wireframing */}
             <div ref={refs.EL3}>
-              <ProjectSectionHeader header="Wireframing" />
+              <ProjectSectionHeader>Wireframing</ProjectSectionHeader>
               <div className="shadow-lg">
                 <video className="static w-full" controls loop muted>
                   <source

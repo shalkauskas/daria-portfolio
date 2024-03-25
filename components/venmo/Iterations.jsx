@@ -6,7 +6,7 @@ import iteration3 from "public/images/venmo/iteration3.png";
 export default function ButtonCheckbox() {
   return (
     <div className="mb-24">
-      <ProjectSectionHeader header="Iterations" />
+      <ProjectSectionHeader>Iterations</ProjectSectionHeader>
       <div className="my-16 flex">
         <div className="ml-auto shadow-lg">
           <Image

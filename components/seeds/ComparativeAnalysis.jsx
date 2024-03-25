@@ -6,7 +6,7 @@ export default function ComparativeAnalysis() {
   const [image, setImage] = React.useState(false);
   return (
     <div>
-      <ProjectSectionHeader header="Comparative analysis" />
+      <ProjectSectionHeader>Comparative analysis</ProjectSectionHeader>
       <p className="mb-20">
         For the comparative analysis I reviewed other micro-courses at
         educational platforms like Udemy, Skillshare and GA along with the tip

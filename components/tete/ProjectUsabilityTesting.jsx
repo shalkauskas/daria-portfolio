@@ -14,7 +14,7 @@ export default function ProjectOverview() {
   return (
     <div>
       {/* usability tesing */}
-      <ProjectSectionHeader header="Usability testing" />
+      <ProjectSectionHeader>Usability testing</ProjectSectionHeader>
       {/* 1 */}
       <div className="flex md:flex-row flex-col">
         <div className="w-1/2 mx-auto">

@@ -7,7 +7,7 @@ import newmap from "../../public/images/nassans/Newmap.png";
 export default function InformationArchitecture() {
   return (
     <>
-      <ProjectSectionHeader header="Information architecture" />
+      <ProjectSectionHeader>Information architecture</ProjectSectionHeader>
       <Border>
         <div className="p-8">
           <SubHeader>Discovered issues</SubHeader>

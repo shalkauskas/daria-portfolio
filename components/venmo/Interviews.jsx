@@ -12,7 +12,7 @@ export default function Interviews() {
         className="sm:w-8/12 w-11/12 sm:px-12 px-2 py-8 mx-auto my-10"
         style={{ backgroundColor: "rgba(255, 255, 255, 0.7)" }}
       >
-        <ProjectSectionHeader header="User interviews takeaways:" />
+        <ProjectSectionHeader>User interviews takeaways:</ProjectSectionHeader>
         <ul className="list-disc list-inside mb-12">
           <li>Everyone wants the donation process to be quick and easy.</li>
           <li>

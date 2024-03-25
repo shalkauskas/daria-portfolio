@@ -5,7 +5,7 @@ import WaveBox from "./WaveBox";
 export default function OurUser() {
   return (
     <div>
-      <ProjectSectionHeader header="Our users" />
+      <ProjectSectionHeader>Our users</ProjectSectionHeader>
       <p className="mb-10">
         During the contextual interviews I explored how users interact with the
         website, what goals they try to achieve, what they do to complete the

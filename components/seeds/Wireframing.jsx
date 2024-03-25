@@ -13,7 +13,9 @@ export default function Wireframing() {
   const [slide, setSlide] = React.useState(1);
   return (
     <div className="">
-      <ProjectSectionHeader header="Wireframing & Usability testing" />
+      <ProjectSectionHeader>
+        Wireframing & Usability testing
+      </ProjectSectionHeader>
       <p>
         When our initial mid-fidelity wireframes were ready, we conducted 7
         usability tests. During these tests, we got valuable feedback that we
@@ -99,7 +101,7 @@ export default function Wireframing() {
         />
       </div>
       <div className="mb-24">
-        <ProjectSectionHeader header="Mock-ups" />
+        <ProjectSectionHeader>Mock-ups</ProjectSectionHeader>
         <p className="my-12">
           Due to the time constraints, we did not have enough usability tests to
           bring the whole prototype to high fidelity. However, some of the

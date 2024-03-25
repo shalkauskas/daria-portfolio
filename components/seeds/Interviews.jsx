@@ -9,7 +9,7 @@ export default function Interviews() {
   const height = image ? 800 : 319;
   return (
     <div>
-      <ProjectSectionHeader header="Novice user interviews" />
+      <ProjectSectionHeader>Novice user interviews</ProjectSectionHeader>
       <p>
         In order to find out the habits surrounding seeking parenting
         information and resources, we conducted 4 interviews with parents who

@@ -72,7 +72,7 @@ export default function Ideation() {
   }
   return (
     <div className="mb-20">
-      <ProjectSectionHeader header="Ideation" />
+      <ProjectSectionHeader>Ideation</ProjectSectionHeader>
       <div
         className="py-10"
         style={{
@@ -107,7 +107,7 @@ export default function Ideation() {
       </div>
 
       <div className="max-w-screen-2xl">
-        <ProjectSectionHeader header="Solutions" />
+        <ProjectSectionHeader>Solutions</ProjectSectionHeader>
         <div
           className="sm:px-16 px-4 py-16"
           style={{

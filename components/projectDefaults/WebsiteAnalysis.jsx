@@ -5,7 +5,7 @@ export default function ProjectAnalysis(props) {
   const { problem, titles, solution, header } = props;
   return (
     <div>
-      <ProjectSectionHeader header={header && header} />
+      <ProjectSectionHeader>{header}</ProjectSectionHeader>
       {problem &&
         problem.map((prob, index) => {
           const sol = solution && solution[index];

@@ -74,7 +74,7 @@ export default function Venmo(props) {
           boxShadow: "0 0 5px 10px #F5F2F0",
         }}
       >
-        <ProjectSectionHeader header=" Let Venmo stay Venmo!" />
+        <ProjectSectionHeader>Let Venmo stay Venmo!</ProjectSectionHeader>
         <p className="mb-8">
           During our first team brainstorming, we had a bunch of discussions on
           where user can find the donation feature. First, we tried to switch it

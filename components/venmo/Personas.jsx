@@ -5,7 +5,7 @@ import persona2 from "public/images/venmo/persona2.png";
 export default function Personas() {
   return (
     <div>
-      <ProjectSectionHeader header="Personas" />
+      <ProjectSectionHeader>Personas</ProjectSectionHeader>
       <div className="flex flex-col lg:flex-row mb-12">
         {/* left */}
         <div className="lg:w-1/2 lg:border-r border-black mb-12 pr-6 ">

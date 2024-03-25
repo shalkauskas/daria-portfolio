@@ -93,7 +93,7 @@ export default function Bloom() {
 
             {/* Key activities */}
             <div className="text-center">
-              <ProjectSectionHeader header="Key activities" />
+              <ProjectSectionHeader>Key activities</ProjectSectionHeader>
               <Image
                 alt="Key activities"
                 src={activities}
@@ -106,7 +106,7 @@ export default function Bloom() {
             </div>
             {/* Proto-persona */}
             <div className="text-center" ref={refs.EL1}>
-              <ProjectSectionHeader header="Proto-persona" />
+              <ProjectSectionHeader>Proto-persona</ProjectSectionHeader>
               <Image
                 alt="Key activities"
                 src={protoPersona}
@@ -123,7 +123,9 @@ export default function Bloom() {
             </div>
             {/* Wireframing */}
             <div ref={refs.EL3}>
-              <ProjectSectionHeader header="Sketching and wireframing" />
+              <ProjectSectionHeader>
+                Sketching and wireframing
+              </ProjectSectionHeader>
               <Wireframing />
             </div>
             {/* Usability testing */}

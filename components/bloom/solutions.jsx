@@ -69,7 +69,7 @@ export default function Solutions() {
   }
   return (
     <div className="max-w-screen-2xl">
-      <ProjectSectionHeader header="Solutions" />
+      <ProjectSectionHeader>Solutions</ProjectSectionHeader>
       <div
         className="sm:px-16 px-2 py-16"
         style={{

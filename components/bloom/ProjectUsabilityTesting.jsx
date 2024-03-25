@@ -10,7 +10,7 @@ import rightarrow from "/public/images/right-arrow.png";
 export default function ProjectOverview() {
   return (
     <div className="text-justify pb-20">
-      <ProjectSectionHeader header="Usability testing" />
+      <ProjectSectionHeader>Usability testing</ProjectSectionHeader>
 
       <p>
         The very first issue in the prototype I noticed was in the demo. Three

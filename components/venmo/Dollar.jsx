@@ -73,7 +73,7 @@ export default function Venmo(props) {
           boxShadow: "0 0 5px 10px #F5F2F0",
         }}
       >
-        <ProjectSectionHeader header="The “1$” concept" />
+        <ProjectSectionHeader>The “1$” concept</ProjectSectionHeader>
         <ul className="list-disc list-inside mb-10">
           <li>One dollar is the amount that wouldn’t hurt anyone’s budget.</li>
           <li>
