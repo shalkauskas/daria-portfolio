@@ -7,6 +7,10 @@
 .cursor-pointer {
      cursor: pointer
 }
+
+.boxShadow {
+     box-shadow: 0px 4px 16px 0px #00000033;
+}
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
@@ -19,3 +23,9 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+
+@layer base {
+ p, li, h2, h1, h3, h4 {
+     color: #343434
+ }
+   }

@@ -2,10 +2,10 @@ import Image from "next/image";
 
 import surveys_overview from "public/images/surveys/surveys_overview.png";
 
-export default function ProjectOverview() {
+export function ProjectOverview() {
   return (
-    <div className="container mx-auto flex flex-row boxShadow justify-between rounded-xl">
-      <div className="p-10 flex flex-col gap-6">
+    <div className="container mx-auto flex lg:flex-row flex-col boxShadow justify-between rounded-xl">
+      <div className="p-10 lg:w-1/2 flex flex-col gap-6">
         <h2 className="text-center font-bold text-2xl">Project Overview</h2>
         <div>
           <p className="text-lg font-bold">Timeline:</p>
@@ -30,13 +30,13 @@ export default function ProjectOverview() {
           </ul>
         </div>
       </div>
-      <div className="flex rounded-r-xl overflow-hidden	">
+      <div className="flex rounded-r-xl overflow-hidden">
         <Image
           alt="Project overview"
           src={surveys_overview}
           quality={100}
-          width={600}
-          height={500}
+          width={720}
+          height={550}
           loading={"eager"}
           placeholder="blur"
         />
