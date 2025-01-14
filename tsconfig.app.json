@@ -14,6 +14,13 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+      "tests/*": ["../__tests__/*"],
+      "mocks/*": ["../__mocks__/*"]
+    },
 
     /* Linting */
     "strict": true,
