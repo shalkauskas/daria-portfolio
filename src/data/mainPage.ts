@@ -1,3 +1,5 @@
+import nassan from '@/assets/images/nassans.webp';
+
 export const intro = {
   title: 'Hi, I’m Daria!',
   statement: ' I am a Boston based UX/UI designer with a passion for understanding people’s needs.',
@@ -23,6 +25,7 @@ export const workProjects = [
       'Added more prominent CTA button that boosts user’s engagement.',
       'Reorganized resources to help users easier to scan and find information relevant to their needs.'
     ],
+    image: nassan,
     link: ''
   },
   {
