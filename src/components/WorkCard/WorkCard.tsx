@@ -1,6 +1,12 @@
 import { CardWrapper, Image, ImageContainer, InfoContainer, ListItem } from './styles';
 
-export function WorkCard({ image, title, info, link }) {
+type Props = {
+  image?: string;
+  info?: string[];
+  title: string;
+  link?: string;
+};
+export function WorkCard({ image, title, info, link }: Props) {
   return (
     <CardWrapper>
       <ImageContainer>
