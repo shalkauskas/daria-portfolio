@@ -1,8 +1,13 @@
 import './App.css';
+import { Layout } from './components';
 import { Routing } from './navigation/Routing';
 
 function App() {
-  return <Routing />;
+  return (
+    <Layout>
+      <Routing />
+    </Layout>
+  );
 }
 
 export default App;
