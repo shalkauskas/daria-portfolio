@@ -1,13 +1,13 @@
 import styled from '@emotion/styled';
 
-export const CardWrapper = styled.div({
-  border: '1px solid #C6C6C9',
+export const CardWrapper = styled.div(({ theme }) => ({
+  border: `1px solid ${theme.colors.grey1}`,
   borderRadius: '1rem',
   display: 'flex',
   flex: 1,
   flexDirection: 'row',
-  maxWidth: '80rem' //1280px
-});
+  maxWidth: theme.utility.pxToRem(1280)
+}));
 
 export const ImageContainer = styled.div({});
 export const Image = styled.img({
