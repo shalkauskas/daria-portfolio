@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 
 export const CardWrapper = styled.div({
-  border: '1px solid black',
+  border: '1px solid #C6C6C9',
+  borderRadius: '1rem',
   display: 'flex',
   flex: 1,
   flexDirection: 'row',
@@ -17,7 +18,16 @@ export const Image = styled.img({
 export const InfoContainer = styled.div({
   display: 'flex',
   flexDirection: 'column',
-  padding: '1.5rem'
+  gap: '1rem',
+  padding: '2rem'
 });
 
-export const ListItem = styled.li({});
+export const ListItem = styled.li({
+  fontSize: '1.25rem',
+  lineHeight: '2rem'
+});
+
+export const Title = styled.h6({
+  fontSize: '1.625rem',
+  lineHeight: '2.25rem'
+});

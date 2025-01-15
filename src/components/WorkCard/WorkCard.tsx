@@ -1,4 +1,4 @@
-import { CardWrapper, Image, ImageContainer, InfoContainer, ListItem } from './styles';
+import { CardWrapper, Image, ImageContainer, InfoContainer, ListItem, Title } from './styles';
 
 type Props = {
   image?: string;
@@ -13,7 +13,7 @@ export function WorkCard({ image, title, info, link }: Props) {
         <Image src={image} />
       </ImageContainer>
       <InfoContainer>
-        <h6>{title}</h6>
+        <Title>{title}</Title>
         {info && (
           <ul>
             {info.map((item, index) => (
