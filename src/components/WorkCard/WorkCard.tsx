@@ -12,11 +12,11 @@ export function WorkCard({ image, title, info, link, index }: Props) {
   return (
     <CardWrapper
       style={{
-        flexDirection: index % 2 ? 'row' : 'row-reverse'
+        flexDirection: index % 2 ? 'row-reverse' : 'row'
       }}>
       <ImageContainer
         style={{
-          backgroundColor: index % 2 ? theme.colors.purple5 : theme.colors.blue1
+          backgroundColor: index % 2 ? theme.colors.blue1 : theme.colors.purple5
         }}>
         <Image src={image} />
       </ImageContainer>

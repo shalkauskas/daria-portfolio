@@ -19,6 +19,14 @@ export const workProjects = [
     link: ''
   },
   {
+    title: 'Likert Scale Group UX',
+    info: [
+      'Designed a solution that provides more focused experience, allows users to easily validate their answers by scanning through the page and requires minimum scrolling.',
+      'Saved 50% of development and QA time for the company as the same component solves the problems for both mobile and desktop screen sizes. '
+    ],
+    link: ''
+  },
+  {
     title: 'Nassan’s Place Website redesign',
     info: [
       'Improved site architecture based on user needs.',
