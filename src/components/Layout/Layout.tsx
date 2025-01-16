@@ -1,10 +1,11 @@
 import { Header } from '@/components';
+import { LayoutPageContainer } from './styles';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div>
+    <LayoutPageContainer>
       <Header />
       <main>{children}</main>
-    </div>
+    </LayoutPageContainer>
   );
 }
