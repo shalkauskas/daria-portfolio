@@ -1,15 +1,23 @@
+import { theme } from '@/shared/theme';
 import { CardWrapper, Image, ImageContainer, InfoContainer, ListItem, Title } from './styles';
 
 type Props = {
   image?: string;
+  index: number;
   info?: string[];
   title: string;
   link?: string;
 };
-export function WorkCard({ image, title, info, link }: Props) {
+export function WorkCard({ image, title, info, link, index }: Props) {
   return (
-    <CardWrapper>
-      <ImageContainer>
+    <CardWrapper
+      style={{
+        flexDirection: index % 2 ? 'row' : 'row-reverse'
+      }}>
+      <ImageContainer
+        style={{
+          backgroundColor: index % 2 ? theme.colors.purple5 : theme.colors.blue1
+        }}>
         <Image src={image} />
       </ImageContainer>
       <InfoContainer>

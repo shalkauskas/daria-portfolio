@@ -1,4 +1,5 @@
-import nassan from '@/assets/images/nassans.webp';
+import nassanDesktop from '@/assets/images/nassans.webp';
+import teteDesktop from '@/assets/images/tete-a-tete-desktop.webp';
 
 export const intro = {
   title: 'Hi, I’m Daria!',
@@ -25,7 +26,7 @@ export const workProjects = [
       'Added more prominent CTA button that boosts user’s engagement.',
       'Reorganized resources to help users easier to scan and find information relevant to their needs.'
     ],
-    image: nassan,
+    image: nassanDesktop,
     link: ''
   },
   {
@@ -34,6 +35,7 @@ export const workProjects = [
       'Created new responsive design that allows users to learn more about the salon using mobile phones and tablets.',
       'The redesigned website offers more digestible price lists as well as user-oriented information.'
     ],
-    link: ''
+    link: '',
+    image: teteDesktop
   }
 ];

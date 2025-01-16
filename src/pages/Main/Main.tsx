@@ -1,13 +1,16 @@
-import { WorkCard } from '@/components';
+import { Title, WorkCard } from '@/components';
 import { workProjects } from '@/data/mainPage';
-import { WorkList } from './styles';
+import { PageContainer, WorkList } from './styles';
 
 export function Main() {
   return (
-    <WorkList>
-      {workProjects.map((project) => (
-        <WorkCard {...project} />
-      ))}
-    </WorkList>
+    <PageContainer>
+      <WorkList>
+        <Title>My Work</Title>
+        {workProjects.map((project, index) => (
+          <WorkCard {...project} key={index} index={index} />
+        ))}
+      </WorkList>
+    </PageContainer>
   );
 }
