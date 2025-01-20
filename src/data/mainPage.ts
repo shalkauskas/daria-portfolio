@@ -1,5 +1,8 @@
 import nassanDesktop from '@/assets/images/nassans.webp';
 import teteDesktop from '@/assets/images/tete-a-tete-desktop.webp';
+import userReseach from '@/assets/images/userResearch/user_research_main_page.png';
+import likertScaleDesktop from '@/assets/images/likertScale/likertScale_desktop_main_page.png';
+import likertScaleMobile from '@/assets/images/likertScale/likertScale_mobile_main_page.png';
 
 export const intro = {
   title: 'Hi, I’m Daria!',
@@ -16,7 +19,8 @@ export const workProjects = [
       'Deep dived into the weeds of each problem and collected details via user interviews.',
       'Synthesized the data and put together the prioritized list of must-have changes and nice-to-have enhancements.'
     ],
-    link: ''
+    link: '',
+    desktop: userReseach
   },
   {
     title: 'Likert Scale Group UX',
@@ -24,7 +28,8 @@ export const workProjects = [
       'Designed a solution that provides more focused experience, allows users to easily validate their answers by scanning through the page and requires minimum scrolling.',
       'Saved 50% of development and QA time for the company as the same component solves the problems for both mobile and desktop screen sizes. '
     ],
-    link: ''
+    desktop: likertScaleDesktop,
+    mobile: likertScaleMobile
   },
   {
     title: 'Nassan’s Place Website redesign',
@@ -34,7 +39,8 @@ export const workProjects = [
       'Added more prominent CTA button that boosts user’s engagement.',
       'Reorganized resources to help users easier to scan and find information relevant to their needs.'
     ],
-    image: nassanDesktop,
+    desktop: nassanDesktop,
+    mobile: likertScaleMobile,
     link: ''
   },
   {
@@ -44,6 +50,7 @@ export const workProjects = [
       'The redesigned website offers more digestible price lists as well as user-oriented information.'
     ],
     link: '',
-    image: teteDesktop
+    desktop: teteDesktop,
+    mobile: likertScaleMobile
   }
 ];

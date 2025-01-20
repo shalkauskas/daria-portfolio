@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const PageContainer = styled.div(({ theme }) => ({
   background: `linear-gradient(${theme.colors.purpleBg1},${theme.colors.purpleBg1});`,
-  height: '100vh'
+  minHeight: '100vh'
 }));
 
 export const WorkList = styled.div({
@@ -10,5 +10,5 @@ export const WorkList = styled.div({
   display: 'flex',
   flexDirection: 'column',
   gap: '3rem',
-  paddingTop: '2rem'
+  padding: '2rem 0'
 });
