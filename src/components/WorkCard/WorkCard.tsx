@@ -1,24 +1,30 @@
-import { theme } from '@/shared/theme';
+import { Button } from '@/components';
 import { CardWrapper, Image, ImageContainer, InfoContainer, ListItem, Title } from './styles';
+import { Images } from './Images';
 
 type Props = {
-  image?: string;
+  desktop?: string;
+  mobile?: string;
   index: number;
   info?: string[];
   title: string;
   link?: string;
 };
-export function WorkCard({ image, title, info, link, index }: Props) {
+export function WorkCard({ desktop, title, info, mobile, link, index }: Props) {
   return (
     <CardWrapper
-      style={{
+      css={{
         flexDirection: index % 2 ? 'row-reverse' : 'row'
       }}>
       <ImageContainer
-        style={{
+        css={(theme) => ({
           backgroundColor: index % 2 ? theme.colors.blue1 : theme.colors.purple5
-        }}>
-        <Image src={image} />
+        })}>
+        {desktop && mobile ? (
+          <Images desktop={desktop} mobile={mobile} />
+        ) : (
+          <Image src={desktop || mobile} />
+        )}
       </ImageContainer>
       <InfoContainer>
         <Title>{title}</Title>
@@ -29,6 +35,7 @@ export function WorkCard({ image, title, info, link, index }: Props) {
             ))}
           </ul>
         )}
+        <Button>LEARN MORE</Button>
       </InfoContainer>
     </CardWrapper>
   );
