@@ -9,6 +9,7 @@ export const theme = {
     purple5: '#D2AAFF',
     purpleBg1: '#FDFBFF',
     purpleBg2: '#F5E8FF',
+    purpleBgAboutMe: '#E2D7FF',
     purpleButton: '#703BB5',
     white: '#FFFFFF'
   },

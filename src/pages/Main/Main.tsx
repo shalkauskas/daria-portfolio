@@ -1,4 +1,4 @@
-import { MainIntro, Title, WorkCard } from '@/components';
+import { AboutMe, MainIntro, Title, WorkCard } from '@/components';
 import { workProjects } from '@/data/mainPage';
 import { PageContainer, WorkList } from './styles';
 
@@ -12,6 +12,7 @@ export function Main() {
           <WorkCard {...project} key={index} index={index} />
         ))}
       </WorkList>
+      <AboutMe />
     </PageContainer>
   );
 }
