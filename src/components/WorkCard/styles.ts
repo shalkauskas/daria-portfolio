@@ -43,7 +43,7 @@ export const ListItem = styled.li({
   lineHeight: '2rem'
 });
 
-export const Title = styled.h6({
+export const Title = styled.h5({
   fontSize: '1.625rem',
   lineHeight: '2.25rem',
   fontWeight: 700

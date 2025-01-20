@@ -9,6 +9,5 @@ export const WorkList = styled.div({
   alignItems: 'center',
   display: 'flex',
   flexDirection: 'column',
-  gap: '3rem',
-  padding: '2rem 0'
+  gap: '3rem'
 });

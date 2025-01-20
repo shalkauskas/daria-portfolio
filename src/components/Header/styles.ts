@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header(({ theme }) => ({
   position: 'relative'
 }));
 
-export const HeaderTitle = styled.h5(({ theme }) => ({
+export const HeaderTitle = styled.h3(({ theme }) => ({
   color: theme.colors.purple4,
   fontFamily: '"Agbalumo", serif;',
   fontSize: '2rem',
