@@ -1,9 +1,13 @@
-import { HeaderContainer, HeaderNav, HeaderTitle, NavContainer } from './styles';
+import { Logo } from '../Logo/Logo';
+import { HeaderContainer, HeaderNav, HeaderTitle, LogoContainer, NavContainer } from './styles';
 
 export function Header() {
   return (
     <HeaderContainer>
-      <HeaderTitle>Daria Khuidakova</HeaderTitle>
+      <LogoContainer>
+        <Logo />
+        <HeaderTitle>Daria Khuidakova</HeaderTitle>
+      </LogoContainer>
       <NavContainer>
         <HeaderNav>Home</HeaderNav>
         <HeaderNav>My Work</HeaderNav>

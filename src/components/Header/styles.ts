@@ -15,15 +15,21 @@ export const HeaderTitle = styled.h3(({ theme }) => ({
   lineHeight: '2rem'
 }));
 
-export const NavContainer = styled.div(() => ({
-  display: 'flex',
-  gap: '2rem'
-}));
-
 export const HeaderNav = styled.nav(({ theme }) => ({
   color: theme.colors.grey7,
   fontFamily: '"Lato", serif;',
   fontSize: '1.5rem',
   lineHeight: '1.5rem',
   fontWeight: 600
+}));
+
+export const NavContainer = styled.div(() => ({
+  display: 'flex',
+  gap: '2rem'
+}));
+
+export const LogoContainer = styled.div(() => ({
+  alignItems: 'center',
+  display: 'flex',
+  gap: '0.75rem'
 }));
