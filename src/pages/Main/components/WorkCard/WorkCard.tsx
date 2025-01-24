@@ -1,4 +1,5 @@
 import { Button, Image } from '@/components';
+
 import { CardWrapper, ImageContainer, InfoContainer, ListItem, Title } from './styles';
 import { Images } from './Images';
 

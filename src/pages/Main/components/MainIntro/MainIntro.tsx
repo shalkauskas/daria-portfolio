@@ -1,4 +1,7 @@
+import { dariaBw } from '@/assets/main';
+import { Image } from '@/components';
 import { intro } from '@/data/mainPage';
+
 import {
   Circle1,
   Circle2,
@@ -10,8 +13,6 @@ import {
   Title,
   Wrapper
 } from './styles';
-import dariaBw from '@/assets/main/daria_bw.webp';
-import { Image } from '../styledComponents';
 
 export function MainIntro() {
   return (

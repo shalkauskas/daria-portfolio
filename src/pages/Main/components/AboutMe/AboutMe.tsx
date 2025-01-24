@@ -1,6 +1,6 @@
-import { Button } from '../Button/Button';
-import { IconButton } from '../IconButton/IconButton';
-import { Image, Title } from '../styledComponents';
+import { Button, IconButton, Image, Title } from '@/components';
+import { aboutMe, linkedIn } from '@/assets/main';
+
 import {
   ImageContainer,
   TextContainer,
@@ -9,8 +9,6 @@ import {
   Text,
   ButtonsContainer
 } from './styles';
-import aboutMe from '@/assets/main/aboutMe_coffee.png';
-import linkedIn from '@/assets/main/in_icon.webp';
 
 export function AboutMe() {
   return (

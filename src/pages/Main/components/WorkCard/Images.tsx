@@ -1,4 +1,4 @@
-import { Image } from '../styledComponents';
+import { Image } from '@/components';
 import { ImagesContainer, ImagesWrapperContainer } from './styles';
 
 type Props = {

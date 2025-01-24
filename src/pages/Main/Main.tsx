@@ -1,9 +1,7 @@
-import React from 'react';
-
-import { AboutMe, MainIntro, Title, WorkCard } from '@/components';
+import { AboutMe, MainIntro, WorkCard } from '@/pages/Main/components';
 import { workProjects } from '@/data/mainPage';
 import { PageContainer, WorkList } from './styles';
-import { useLocation } from 'react-router';
+import { Title } from '@/components';
 
 export function Main() {
   return (
