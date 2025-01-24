@@ -4,7 +4,7 @@ export const HeaderContainer = styled.header(({ theme }) => ({
   display: 'flex',
   boxShadow: `0 0.25rem ${theme.utility.pxToRem(10)} 0 ${theme.colors.purple1}`,
   justifyContent: 'space-between',
-  padding: '1.5rem 2rem 1rem 2rem',
+  padding: '0.75rem 2rem 0.75rem 2rem',
   position: 'relative'
 }));
 
@@ -24,6 +24,7 @@ export const HeaderNav = styled.nav(({ theme }) => ({
 }));
 
 export const NavContainer = styled.div(() => ({
+  alignItems: 'center',
   display: 'flex',
   gap: '2rem'
 }));

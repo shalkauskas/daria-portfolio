@@ -1,5 +1,15 @@
 import { intro } from '@/data/mainPage';
-import { Description, ImageContainer, Statement, TextContainer, Title, Wrapper } from './styles';
+import {
+  Circle1,
+  Circle2,
+  Circle3,
+  Description,
+  ImageContainer,
+  Statement,
+  TextContainer,
+  Title,
+  Wrapper
+} from './styles';
 import { Image } from '../WorkCard/styles';
 import dariaBw from '@/assets/main/daria_bw.webp';
 
@@ -14,6 +24,9 @@ export function MainIntro() {
       <ImageContainer>
         <Image src={dariaBw} />
       </ImageContainer>
+      <Circle1 />
+      <Circle2 />
+      <Circle3 />
     </Wrapper>
   );
 }
