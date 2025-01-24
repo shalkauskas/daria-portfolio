@@ -5,6 +5,10 @@ export const ButtonsContainer = styled.div(({ theme }) => ({
   gap: '1.5rem',
   width: '100%'
 }));
+export const ButtonsSocialContainer = styled.div(({ theme }) => ({
+  display: 'flex',
+  gap: '0.75rem'
+}));
 export const ContentWrapper = styled.div(({ theme }) => ({
   alignItems: 'center',
   display: 'flex',
@@ -31,7 +35,7 @@ export const ImageContainer = styled.div(({ theme }) => ({
 }));
 export const Wrapper = styled.div(({ theme }) => ({
   alignItems: 'center',
-  backgroundImage: `url(src/components/AboutMe/bgVector.svg), linear-gradient(to bottom, transparent 70%, ${theme.colors.purpleBgAboutMe} 30%)`,
+  backgroundImage: `url(src/pages/Main/components/AboutMe/bgVector.svg), linear-gradient(to bottom, transparent 70%, ${theme.colors.purpleBgAboutMe} 30%)`,
   backgroundPositionY: '60%',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'contain',

@@ -4,10 +4,9 @@ export const Wrapper = styled.div(({ theme }) => ({
   alignItems: 'center',
   display: 'flex',
   gap: theme.utility.pxToRem(88),
-  paddingBottom: theme.utility.pxToRem(250),
-  paddingTop: theme.utility.pxToRem(200),
   margin: 'auto',
   maxWidth: theme.utility.pxToRem(1280),
+  padding: `${theme.utility.pxToRem(200)} 1rem ${theme.utility.pxToRem(250)}`,
   position: 'relative'
 }));
 export const TextContainer = styled.div(({ theme }) => ({
@@ -39,31 +38,31 @@ export const Description = styled.h6(({ theme }) => ({
 }));
 export const Circle1 = styled.div(({ theme }) => ({
   backgroundColor: '#F1EDFC',
-  boxShadow: '0 0.25rem 0.25rem 0 rgba(217, 203, 253, 0.35)',
   borderRadius: '100%',
+  bottom: '22%',
+  boxShadow: '0 0.25rem 0.25rem 0 rgba(217, 203, 253, 0.35)',
+  height: theme.utility.pxToRem(354),
   position: 'absolute',
   right: '42%',
-  bottom: '22%',
-  height: theme.utility.pxToRem(354),
   width: theme.utility.pxToRem(354)
 }));
 export const Circle2 = styled.div(({ theme }) => ({
   backgroundColor: theme.colors.purple1,
-  boxShadow: `0 0.25rem 0.25rem 0 ${theme.colors.purple1}`,
   borderRadius: '100%',
+  bottom: '55%',
+  boxShadow: `0 0.25rem 0.25rem 0 ${theme.colors.purple1}`,
+  height: theme.utility.pxToRem(240),
   position: 'absolute',
   right: '25%',
-  bottom: '55%',
-  height: theme.utility.pxToRem(240),
   width: theme.utility.pxToRem(240)
 }));
 export const Circle3 = styled.div(({ theme }) => ({
   backgroundColor: '#BBA9E8',
-  boxShadow: `0 0.25rem 0.25rem 0 #E7DEFC`,
   borderRadius: '100%',
+  bottom: '28%',
+  boxShadow: `0 0.25rem 0.25rem 0 #E7DEFC`,
+  height: theme.utility.pxToRem(120),
   position: 'absolute',
   right: '29%',
-  bottom: '28%',
-  height: theme.utility.pxToRem(120),
   width: theme.utility.pxToRem(120)
 }));

@@ -3,10 +3,11 @@ import { CSSInterpolation } from '@emotion/serialize';
 
 type Props = {
   children?: React.ReactNode;
+  onClick?: () => void;
   sx?: CSSInterpolation;
   variant?: 'primary' | 'secondary';
 };
-export function Button({ children, sx, variant = 'primary' }: Props) {
+export function Button({ children, onClick, sx, variant = 'primary' }: Props) {
   const variantMap = {
     primary: PrimaryButton,
     secondary: SecondaryButton
@@ -15,7 +16,9 @@ export function Button({ children, sx, variant = 'primary' }: Props) {
 
   return (
     <ButtonContainer>
-      <Button css={sx}>{children}</Button>
+      <Button onClick={onClick} css={sx}>
+        {children}
+      </Button>
     </ButtonContainer>
   );
 }

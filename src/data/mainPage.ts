@@ -54,3 +54,9 @@ export const workProjects = [
     mobile: likertScaleMobile
   }
 ];
+
+export const links = {
+  gmail: 'https://www.linkedin.com/in/daria-in-ux/',
+  linkedIn: 'mailto:hudechka22@gmail.com?subject=portfolio',
+  resume: ''
+};

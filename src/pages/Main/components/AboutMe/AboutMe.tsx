@@ -1,5 +1,6 @@
 import { Button, IconButton, Image, Title } from '@/components';
-import { aboutMe, linkedIn } from '@/assets/main';
+import { aboutMe, gmail, linkedIn } from '@/assets/main';
+import { links } from '@/data/mainPage';
 
 import {
   ImageContainer,
@@ -7,10 +8,21 @@ import {
   ContentWrapper,
   Wrapper,
   Text,
-  ButtonsContainer
+  ButtonsContainer,
+  ButtonsSocialContainer
 } from './styles';
 
 export function AboutMe() {
+  function handleLinkedIn() {
+    window.open(links.linkedIn, '_blank')?.focus();
+  }
+  function handleGmail() {
+    window.open(links.gmail, '_blank')?.focus();
+  }
+  function handleResume() {
+    window.open(links.resume, '_blank')?.focus();
+  }
+
   return (
     <Wrapper>
       <Title>About Me</Title>
@@ -35,12 +47,16 @@ export function AboutMe() {
           </Text>
           <ButtonsContainer>
             <Button
+              onClick={handleResume}
               sx={{
                 fontSize: '1.2rem'
               }}>
               Resume PDF
             </Button>
-            <IconButton icon={linkedIn} />
+            <ButtonsSocialContainer>
+              <IconButton icon={linkedIn} onClick={handleLinkedIn} />
+              <IconButton icon={gmail} onClick={handleGmail} />
+            </ButtonsSocialContainer>
           </ButtonsContainer>
         </TextContainer>
       </ContentWrapper>
