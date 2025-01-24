@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 
 export const PageContainer = styled.div(({ theme }) => ({
-  background: `linear-gradient(to right, ${theme.colors.purpleBg2} 0%,${theme.colors.purpleBg1} 100%)`
+  background: `linear-gradient(to right, ${theme.colors.purpleBg2} 0%,${theme.colors.purpleBg1} 100%)`,
+  padding: '0 1rem'
 }));
 
 export const WorkList = styled.div({

@@ -6,3 +6,7 @@ export const Title = styled.h4({
   lineHeight: '2rem',
   fontWeight: 600
 });
+export const Image = styled.img({
+  height: '100%',
+  width: '100%'
+});

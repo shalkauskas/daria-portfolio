@@ -1,5 +1,10 @@
 import styled from '@emotion/styled';
 
+export const ButtonsContainer = styled.div(({ theme }) => ({
+  display: 'flex',
+  gap: '1.5rem',
+  width: '100%'
+}));
 export const ContentWrapper = styled.div(({ theme }) => ({
   alignItems: 'center',
   display: 'flex',

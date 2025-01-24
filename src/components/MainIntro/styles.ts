@@ -43,7 +43,7 @@ export const Circle1 = styled.div(({ theme }) => ({
   borderRadius: '100%',
   position: 'absolute',
   right: '42%',
-  bottom: '33%',
+  bottom: '22%',
   height: theme.utility.pxToRem(354),
   width: theme.utility.pxToRem(354)
 }));
@@ -52,8 +52,8 @@ export const Circle2 = styled.div(({ theme }) => ({
   boxShadow: `0 0.25rem 0.25rem 0 ${theme.colors.purple1}`,
   borderRadius: '100%',
   position: 'absolute',
-  right: '32%',
-  bottom: '57%',
+  right: '25%',
+  bottom: '55%',
   height: theme.utility.pxToRem(240),
   width: theme.utility.pxToRem(240)
 }));
@@ -62,8 +62,8 @@ export const Circle3 = styled.div(({ theme }) => ({
   boxShadow: `0 0.25rem 0.25rem 0 #E7DEFC`,
   borderRadius: '100%',
   position: 'absolute',
-  right: '32%',
-  bottom: '35%',
+  right: '29%',
+  bottom: '28%',
   height: theme.utility.pxToRem(120),
   width: theme.utility.pxToRem(120)
 }));

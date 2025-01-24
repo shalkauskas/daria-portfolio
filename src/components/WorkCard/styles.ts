@@ -16,10 +16,6 @@ export const ImageContainer = styled.div({
   flex: 1,
   padding: '2rem'
 });
-export const Image = styled.img({
-  height: '100%',
-  width: '100%'
-});
 
 // Images ***
 export const ImagesContainer = styled.div({

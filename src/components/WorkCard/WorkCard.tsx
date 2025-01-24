@@ -1,5 +1,5 @@
-import { Button } from '@/components';
-import { CardWrapper, Image, ImageContainer, InfoContainer, ListItem, Title } from './styles';
+import { Button, Image } from '@/components';
+import { CardWrapper, ImageContainer, InfoContainer, ListItem, Title } from './styles';
 import { Images } from './Images';
 
 type Props = {
@@ -35,7 +35,7 @@ export function WorkCard({ desktop, title, info, mobile, link, index }: Props) {
             ))}
           </ul>
         )}
-        <Button>LEARN MORE</Button>
+        <Button variant="secondary">LEARN MORE</Button>
       </InfoContainer>
     </CardWrapper>
   );

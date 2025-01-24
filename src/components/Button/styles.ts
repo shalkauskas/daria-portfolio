@@ -1,7 +1,10 @@
 import styled from '@emotion/styled';
 
 const button = {
+  boxShadow:
+    '0 0.25rem 0.25rem -1px rgba(12, 12, 13, 0.05), 0 0.25rem 0.25rem -1px rgba(12, 12, 13, 0.1)',
   borderRadius: '0.5rem',
+  border: 0,
   display: 'flex',
   fontFamily: '"Open Sans", sans-serif',
   fontWeight: 700,
@@ -11,9 +14,16 @@ const button = {
 
 export const ButtonContainer = styled.div({});
 
+export const PrimaryButton = styled.button(({ theme }) => ({
+  ...button,
+  backgroundColor: theme.colors.purpleButton,
+  color: theme.colors.white
+}));
+
 export const SecondaryButton = styled.button(({ theme }) => ({
+  ...button,
   backgroundColor: 'transparent',
   color: theme.colors.purpleButton,
   borderColor: theme.colors.purpleButton,
-  ...button
+  border: `1px solid ${theme.colors.purpleButton}`
 }));
