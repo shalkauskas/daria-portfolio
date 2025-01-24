@@ -1,7 +1,16 @@
-import { Title } from '../styledComponents';
-import { Image } from '../WorkCard/styles';
-import { ImageContainer, TextContainer, ContentWrapper, Wrapper, Text } from './styles';
+import { Button } from '../Button/Button';
+import { IconButton } from '../IconButton/IconButton';
+import { Image, Title } from '../styledComponents';
+import {
+  ImageContainer,
+  TextContainer,
+  ContentWrapper,
+  Wrapper,
+  Text,
+  ButtonsContainer
+} from './styles';
 import aboutMe from '@/assets/main/aboutMe_coffee.png';
+import linkedIn from '@/assets/main/in_icon.webp';
 
 export function AboutMe() {
   return (
@@ -26,6 +35,15 @@ export function AboutMe() {
             hiking in New Hampshire or kayaking down the Charles River as I love being active and
             keep moving!
           </Text>
+          <ButtonsContainer>
+            <Button
+              sx={{
+                fontSize: '1.2rem'
+              }}>
+              Resume PDF
+            </Button>
+            <IconButton icon={linkedIn} />
+          </ButtonsContainer>
         </TextContainer>
       </ContentWrapper>
     </Wrapper>

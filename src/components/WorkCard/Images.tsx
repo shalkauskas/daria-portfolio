@@ -1,4 +1,5 @@
-import { Image, ImagesContainer, ImagesWrapperContainer } from './styles';
+import { Image } from '../styledComponents';
+import { ImagesContainer, ImagesWrapperContainer } from './styles';
 
 type Props = {
   desktop: string;

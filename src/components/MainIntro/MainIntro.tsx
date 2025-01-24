@@ -10,8 +10,8 @@ import {
   Title,
   Wrapper
 } from './styles';
-import { Image } from '../WorkCard/styles';
 import dariaBw from '@/assets/main/daria_bw.webp';
+import { Image } from '../styledComponents';
 
 export function MainIntro() {
   return (

@@ -5,6 +5,7 @@ const button = {
     '0 0.25rem 0.25rem -1px rgba(12, 12, 13, 0.05), 0 0.25rem 0.25rem -1px rgba(12, 12, 13, 0.1)',
   borderRadius: '0.5rem',
   border: 0,
+  cursor: 'pointer',
   display: 'flex',
   fontFamily: '"Open Sans", sans-serif',
   fontWeight: 700,
