@@ -9,9 +9,15 @@ export function Header() {
         <HeaderTitle>Daria Khuidakova</HeaderTitle>
       </LogoContainer>
       <NavContainer>
-        <HeaderNav>Home</HeaderNav>
-        <HeaderNav>My Work</HeaderNav>
-        <HeaderNav>About Me</HeaderNav>
+        <HeaderNav>
+          <a href="#intro">Home</a>
+        </HeaderNav>
+        <HeaderNav>
+          <a href="#work">My Work</a>
+        </HeaderNav>
+        <HeaderNav>
+          <a href="#aboutMe">About Me</a>
+        </HeaderNav>
       </NavContainer>
     </HeaderContainer>
   );

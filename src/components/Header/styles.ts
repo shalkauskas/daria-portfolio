@@ -2,10 +2,13 @@ import styled from '@emotion/styled';
 
 export const HeaderContainer = styled.header(({ theme }) => ({
   display: 'flex',
+  background: theme.colors.white,
   boxShadow: `0 0.25rem ${theme.utility.pxToRem(10)} 0 ${theme.colors.purple1}`,
   justifyContent: 'space-between',
   padding: '0.75rem 2rem 0.75rem 2rem',
-  position: 'relative'
+  position: 'sticky',
+  top: 0,
+  zIndex: 10
 }));
 
 export const HeaderTitle = styled.h3(({ theme }) => ({
@@ -20,7 +23,12 @@ export const HeaderNav = styled.nav(({ theme }) => ({
   fontFamily: '"Lato", serif;',
   fontSize: '1.5rem',
   lineHeight: '1.5rem',
-  fontWeight: 600
+  fontWeight: 600,
+
+  a: {
+    color: 'inherit',
+    textDecoration: 'none'
+  }
 }));
 
 export const NavContainer = styled.div(() => ({

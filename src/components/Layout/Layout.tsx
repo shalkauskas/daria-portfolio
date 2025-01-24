@@ -5,7 +5,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <LayoutPageContainer>
       <Header />
-      <main>{children}</main>
+      {children}
     </LayoutPageContainer>
   );
 }
