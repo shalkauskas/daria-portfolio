@@ -1,7 +1,7 @@
 import { intro } from '@/data/mainPage';
 import { Description, ImageContainer, Statement, TextContainer, Title, Wrapper } from './styles';
 import { Image } from '../WorkCard/styles';
-import dariaBw from '@/assets/images/daria_bw.webp';
+import dariaBw from '@/assets/main/daria_bw.webp';
 
 export function MainIntro() {
   return (

@@ -1,8 +1,7 @@
 import { Title } from '../styledComponents';
 import { Image } from '../WorkCard/styles';
 import { ImageContainer, TextContainer, ContentWrapper, Wrapper, Text } from './styles';
-import aboutMe from '@/assets/images/aboutMe_coffee.png';
-import bgVector from './bgVector.svg';
+import aboutMe from '@/assets/main/aboutMe_coffee.png';
 
 export function AboutMe() {
   return (

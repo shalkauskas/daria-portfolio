@@ -1,8 +1,8 @@
-import nassanDesktop from '@/assets/images/nassans.webp';
-import teteDesktop from '@/assets/images/tete-a-tete-desktop.webp';
-import userReseach from '@/assets/images/userResearch/user_research_main_page.png';
-import likertScaleDesktop from '@/assets/images/likertScale/likertScale_desktop_main_page.png';
-import likertScaleMobile from '@/assets/images/likertScale/likertScale_mobile_main_page.png';
+import nassanDesktop from '@/assets/nassans/nassans.webp';
+import teteDesktop from '@/assets/tete/tete-a-tete.webp';
+import userReseach from '@/assets/userResearch/user_research_main_page.png';
+import likertScaleDesktop from '@/assets/likertScale/likertScale_desktop_main_page.png';
+import likertScaleMobile from '@/assets/likertScale/likertScale_mobile_main_page.png';
 
 export const intro = {
   title: 'Hi, I’m Daria!',
