@@ -6,7 +6,7 @@ import { Title } from '@/components';
 export function Main() {
   return (
     <PageContainer>
-      <div id="intro">
+      <div>
         <MainIntro />
       </div>
       <WorkList id="work">

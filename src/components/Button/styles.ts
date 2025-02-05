@@ -17,14 +17,14 @@ export const ButtonContainer = styled.div({});
 
 export const PrimaryButton = styled.button(({ theme }) => ({
   ...button,
-  backgroundColor: theme.colors.purpleButton,
+  backgroundColor: theme.colors.primary,
   color: theme.colors.white
 }));
 
 export const SecondaryButton = styled.button(({ theme }) => ({
   ...button,
   backgroundColor: 'transparent',
-  color: theme.colors.purpleButton,
-  borderColor: theme.colors.purpleButton,
-  border: `1px solid ${theme.colors.purpleButton}`
+  color: theme.colors.primary,
+  borderColor: theme.colors.primary,
+  border: `1px solid ${theme.colors.primary}`
 }));
