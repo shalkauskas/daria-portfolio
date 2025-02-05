@@ -1,23 +1,51 @@
 import { AboutMe, MainIntro, WorkCard } from '@/pages/Main/components';
 import { workProjects } from '@/data/mainPage';
 import { PageContainer, WorkList } from './styles';
-import { Title } from '@/components';
+import { Header, Layout, Title } from '@/components';
+import { useElementOnScreen } from '@/hooks';
+import { sections } from './constants';
 
 export function Main() {
+  const { elementRef: workRef, isVisible: isWorkVisible } = useElementOnScreen({
+    enabled: true,
+    options: {
+      threshold: 0.4
+    }
+  });
+  const { elementRef: aboutMeRef, isVisible: isAboutMeVisible } = useElementOnScreen({
+    enabled: true,
+    options: {
+      threshold: 0.4
+    }
+  });
+
+  function getActiveSection() {
+    if (isWorkVisible) {
+      return sections.WORK;
+    }
+    if (isAboutMeVisible) {
+      return sections.ABOUT;
+    }
+    return sections.INTRO;
+  }
+
   return (
-    <PageContainer>
-      <div>
-        <MainIntro />
-      </div>
-      <WorkList id="work">
-        <Title>My Work</Title>
-        {workProjects.map((project, index) => (
-          <WorkCard {...project} key={index} index={index} />
-        ))}
-      </WorkList>
-      <div id="aboutMe">
-        <AboutMe />
-      </div>
-    </PageContainer>
+    <Layout>
+      <Header activeSection={getActiveSection()} />
+      <PageContainer>
+        <div>
+          <MainIntro />
+        </div>
+        <WorkList id={sections.WORK} ref={workRef}>
+          <Title>My Work</Title>
+          {workProjects.map((project, index) => (
+            <WorkCard {...project} key={index} index={index} />
+          ))}
+        </WorkList>
+        <div id={sections.ABOUT} ref={aboutMeRef}>
+          <AboutMe />
+        </div>
+      </PageContainer>
+    </Layout>
   );
 }
