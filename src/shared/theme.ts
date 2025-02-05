@@ -11,6 +11,9 @@ export const theme = {
     purpleBgAboutMe: '#E2D7FF',
     white: '#FFFFFF',
 
+    primaryButtonHover: '#4F1B93',
+    secondaryButtonHover: '#F3E8FF',
+
     primary: '#703BB5',
 
     primaryText: '#343434',

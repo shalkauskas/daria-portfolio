@@ -13,7 +13,7 @@ export const TabContainer = styled.span<{ isActive?: boolean }>(({ theme, isActi
     textUnderlineOffset: '0.4rem',
 
     '&:hover': {
-      color: '#4F1B93'
+      color: theme.colors.secondaryButtonHover
     }
   }
 }));

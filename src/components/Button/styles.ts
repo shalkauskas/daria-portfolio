@@ -18,7 +18,10 @@ export const ButtonContainer = styled.div({});
 export const PrimaryButton = styled.button(({ theme }) => ({
   ...button,
   backgroundColor: theme.colors.primary,
-  color: theme.colors.white
+  color: theme.colors.white,
+  '&:hover': {
+    backgroundColor: theme.colors.primaryButtonHover
+  }
 }));
 
 export const SecondaryButton = styled.button(({ theme }) => ({
@@ -26,5 +29,8 @@ export const SecondaryButton = styled.button(({ theme }) => ({
   backgroundColor: 'transparent',
   color: theme.colors.primary,
   borderColor: theme.colors.primary,
-  border: `1px solid ${theme.colors.primary}`
+  border: `1px solid ${theme.colors.primary}`,
+  '&:hover': {
+    backgroundColor: theme.colors.secondaryButtonHover
+  }
 }));
