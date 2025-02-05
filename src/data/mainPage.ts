@@ -3,6 +3,7 @@ import teteDesktop from '@/assets/tete/tete-a-tete.webp';
 import userReseach from '@/assets/userResearch/user_research_main_page.png';
 import likertScaleDesktop from '@/assets/likertScale/likertScale_desktop_main_page.png';
 import likertScaleMobile from '@/assets/likertScale/likertScale_mobile_main_page.png';
+import { ROUTES } from '@/navigation/routes';
 
 export const intro = {
   title: 'Hi, I’m Daria!',
@@ -29,7 +30,8 @@ export const workProjects = [
       'Saved 50% of development and QA time for the company as the same component solves the problems for both mobile and desktop screen sizes. '
     ],
     desktop: likertScaleDesktop,
-    mobile: likertScaleMobile
+    mobile: likertScaleMobile,
+    link: ROUTES.likertScale
   },
   {
     title: 'Nassan’s Place Website redesign',

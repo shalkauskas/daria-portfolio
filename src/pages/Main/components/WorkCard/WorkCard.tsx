@@ -2,6 +2,7 @@ import { Button, Image } from '@/components';
 
 import { CardWrapper, ImageContainer, InfoContainer, ListItem, Title } from './styles';
 import { Images } from './Images';
+import { useNavigate } from 'react-router';
 
 type Props = {
   desktop?: string;
@@ -12,6 +13,12 @@ type Props = {
   link?: string;
 };
 export function WorkCard({ desktop, title, info, mobile, link, index }: Props) {
+  const navigate = useNavigate();
+
+  function handleLearnMoreClick() {
+    if (!link) return;
+    navigate(link);
+  }
   return (
     <CardWrapper
       css={{
@@ -36,7 +43,9 @@ export function WorkCard({ desktop, title, info, mobile, link, index }: Props) {
             ))}
           </ul>
         )}
-        <Button variant="secondary">LEARN MORE</Button>
+        <Button variant="secondary" onClick={() => handleLearnMoreClick()}>
+          LEARN MORE
+        </Button>
       </InfoContainer>
     </CardWrapper>
   );
