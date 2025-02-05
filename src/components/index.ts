@@ -4,3 +4,4 @@ export * from './IconButton/IconButton';
 export * from './Layout/Layout';
 export * from './Logo/Logo';
 export * from './styledComponents';
+export * from './Tab/Tab';
