@@ -31,7 +31,8 @@ export const StyledH4 = styled.h4(({ theme }) => ({
   lineHeight: theme.utility.pxToRem(28)
 }));
 export const StyledBody18 = styled.p(({ theme }) => ({
-  ...shared(theme),
+  color: theme.colors.primaryText,
+  fontFamily: '"Open Sans", serif;',
   fontSize: theme.utility.pxToRem(18),
   fontWeight: 400,
   lineHeight: theme.utility.pxToRem(31)
@@ -42,7 +43,7 @@ export const StyledBody16 = styled.p(({ theme }) => ({
   fontWeight: 400,
   lineHeight: theme.utility.pxToRem(31)
 }));
-export const subtitle18 = styled.p(({ theme }) => ({
+export const Subtitle18 = styled.p(({ theme }) => ({
   ...shared(theme),
   fontSize: theme.utility.pxToRem(18),
   fontWeight: 700,

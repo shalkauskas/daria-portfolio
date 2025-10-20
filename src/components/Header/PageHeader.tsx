@@ -1,7 +1,7 @@
-import { IconButton } from '@/components';
+import { IconButton, Typography } from '@/components';
 import arrowLeft from '@/assets/shared/arrowLeft.svg';
 
-import { FeatureTitle, HeaderContainer, LogoContainer } from './styles';
+import { HeaderContainer, LogoContainer } from './styles';
 import { useNavigate } from 'react-router';
 
 export default function PageHeader({ title }: { title: string }) {
@@ -16,7 +16,7 @@ export default function PageHeader({ title }: { title: string }) {
           padding: '0.25rem 0'
         }}>
         <IconButton icon={arrowLeft} onClick={() => navigate(-1)} />
-        <FeatureTitle>{title}</FeatureTitle>
+        <Typography variant="h2">{title}</Typography>
       </LogoContainer>
     </HeaderContainer>
   );
