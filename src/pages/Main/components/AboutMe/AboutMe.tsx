@@ -12,17 +12,17 @@ import {
   ButtonsSocialContainer
 } from './styles';
 
-export function AboutMe() {
-  function handleLinkedIn() {
-    window.open(links.linkedIn, '_blank')?.focus();
-  }
-  function handleGmail() {
-    window.open(links.gmail, '_blank')?.focus();
-  }
-  function handleResume() {
-    window.open(links.resume, '_blank')?.focus();
-  }
+function handleLinkedIn() {
+  window.open(links.linkedIn, '_blank')?.focus();
+}
+function handleGmail() {
+  window.open(links.gmail, '_blank')?.focus();
+}
+function handleResume() {
+  window.open(links.resume, '_blank')?.focus();
+}
 
+export function AboutMe() {
   return (
     <Wrapper>
       <Title>About Me</Title>
@@ -54,8 +54,8 @@ export function AboutMe() {
               Resume PDF
             </Button>
             <ButtonsSocialContainer>
-              <IconButton icon={linkedIn} onClick={handleLinkedIn} />
-              <IconButton icon={gmail} onClick={handleGmail} />
+              <IconButton icon={linkedIn} onClick={handleLinkedIn} variant="round" />
+              <IconButton icon={gmail} onClick={handleGmail} variant="round" />
             </ButtonsSocialContainer>
           </ButtonsContainer>
         </TextContainer>

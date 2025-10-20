@@ -5,8 +5,8 @@ import { ROUTES } from './routes';
 export function Routing() {
   return (
     <Routes>
-      <Route path={'/'} element={<Main />}></Route>
-      <Route path={ROUTES.likertScale} element={<LikertScale />}></Route>
+      <Route path={'/'} element={<Main />} />
+      <Route path={ROUTES.likertScale} element={<LikertScale />} />
     </Routes>
   );
 }

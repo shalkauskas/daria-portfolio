@@ -1,16 +1,18 @@
 import styled from '@emotion/styled';
 
-export const ButtonBase = styled.button(({ theme }) => ({
+const baseButton = {
   backgroundColor: 'transparent',
   border: 0,
   borderRadius: '100%',
   cursor: 'pointer',
   display: 'flex',
   padding: '0.5rem'
-}));
+};
+
+export const ButtonBase = styled.button(() => ({ ...baseButton }));
 
 export const ButtonRound = styled.button(({ theme }) => ({
-  ...ButtonBase,
+  ...baseButton,
   backgroundColor: theme.colors.white,
   borderRadius: '100%',
   boxShadow:

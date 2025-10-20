@@ -6,8 +6,8 @@ export const CardWrapper = styled.div(({ theme }) => ({
   borderRadius: '1rem',
   boxShadow: `0 0.25rem ${theme.utility.pxToRem(4)} -1px rgba(12, 12, 13, 0.05), 0 0.25rem ${theme.utility.pxToRem(4)} -1px rgba(12, 12, 13, 0.1)`,
   display: 'flex',
-  minHeight: theme.utility.pxToRem(400),
-  minWidth: theme.utility.pxToRem(1280),
+  height: theme.utility.pxToRem(400),
+  width: theme.utility.pxToRem(1280),
   maxWidth: theme.utility.pxToRem(1280),
   overflow: 'hidden'
 }));
