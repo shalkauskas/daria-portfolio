@@ -2,6 +2,7 @@ import { sections } from '@/pages/Main/constants';
 import { Logo, Tab } from '@/components';
 import { HeaderContainer, HeaderTitle, LogoContainer, NavContainer } from './styles';
 import { ValueOf } from '@/models';
+import PageHeader from './PageHeader';
 
 export function Header({ activeSection }: { activeSection: ValueOf<typeof sections> }) {
   return (
@@ -24,3 +25,4 @@ export function Header({ activeSection }: { activeSection: ValueOf<typeof sectio
     </HeaderContainer>
   );
 }
+Header.Feature = PageHeader;

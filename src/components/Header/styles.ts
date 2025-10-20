@@ -1,5 +1,12 @@
 import styled from '@emotion/styled';
 
+export const FeatureTitle = styled.h3(({ theme }) => ({
+  color: theme.colors.primaryText,
+  fontFamily: '"Lato", serif;',
+  fontSize: theme.utility.pxToRem(28),
+  lineHeight: theme.utility.pxToRem(34)
+}));
+
 export const HeaderContainer = styled.header(({ theme }) => ({
   display: 'flex',
   background: theme.colors.white,

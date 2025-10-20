@@ -1,3 +1,10 @@
+import { Header, Layout } from '@/components';
+import { likertScaleData } from '@/data/likertScale';
+
 export function LikertScale() {
-  return <div></div>;
+  return (
+    <Layout>
+      <Header.Feature title={likertScaleData.title} />
+    </Layout>
+  );
 }
