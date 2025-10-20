@@ -4,6 +4,7 @@ import {
   Layout,
   Stack,
   StepTitle,
+  Title,
   Typography
 } from '@/components';
 import { likertScaleContent, likertScaleTitles } from '@/data/likertScale';
@@ -24,14 +25,7 @@ export function LikertScale() {
           }}>
           {likertScaleContent.problem}
         </Typography>
-        <Typography
-          variant="h1"
-          sx={{
-            textAlign: 'center',
-            margin: '2rem 0'
-          }}>
-          UX Process
-        </Typography>
+        <Title>UX Process</Title>
         <StepTitle no={1}>{likertScaleTitles.tableOfContent.define}</StepTitle>
         <FlexContainer>
           <Typography>{likertScaleContent.define1}</Typography>
@@ -114,12 +108,7 @@ export function LikertScale() {
           answers and make sure they are making selection at the correct row.
         </Typography>
         <StepTitle no={3}>{likertScaleTitles.tableOfContent.ideate}</StepTitle>
-        <Stack
-          css={{
-            flexDirection: 'column',
-            gap: '1.5rem',
-            marginBottom: '2rem'
-          }}>
+        <FlexContainer>
           <Stack css={{ gap: '1.5rem' }}>
             <img src="https://placehold.co/506x300" />
             <Typography>
@@ -145,7 +134,7 @@ export function LikertScale() {
             </Typography>
             <img src="https://placehold.co/507x300" />
           </Stack>
-        </Stack>
+        </FlexContainer>
         <StepTitle no={4}>{likertScaleTitles.tableOfContent.iterate}</StepTitle>
         <Stack css={{ flexDirection: 'column', gap: '1.5rem' }}>
           <Typography>
@@ -180,14 +169,7 @@ export function LikertScale() {
             updated other product as well.
           </Typography>
         </Stack>
-        <Typography
-          variant="h1"
-          sx={{
-            textAlign: 'center',
-            margin: '2rem 0'
-          }}>
-          {likertScaleTitles.tableOfContent.outcomes}
-        </Typography>
+        <Title>{likertScaleTitles.tableOfContent.outcomes}</Title>
         <Typography variant="h3" sx={{ marginBottom: '1rem' }}>
           Conclusions
         </Typography>

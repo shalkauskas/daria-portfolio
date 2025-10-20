@@ -7,7 +7,8 @@ import { ROUTES } from '@/navigation/routes';
 
 export const intro = {
   title: 'Hi, I’m Daria!',
-  statement: ' I am a Boston based UX/UI designer with a passion for understanding people’s needs.',
+  statement:
+    ' I am a Boston based UX/UI designer with a passion for understanding people’s needs.',
   description:
     'Meeting like-minded professionals, brainstorming new features and getting “Aha” moments together that’s what I love about my work. Let me share my latest projects with you.'
 };
@@ -20,7 +21,7 @@ export const workProjects = [
       'Deep dived into the weeds of each problem and collected details via user interviews.',
       'Synthesized the data and put together the prioritized list of must-have changes and nice-to-have enhancements.'
     ],
-    link: '',
+    link: ROUTES.userResearch,
     desktop: userReseach
   },
   {

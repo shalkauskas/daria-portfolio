@@ -1,6 +1,12 @@
-import { Button, Image } from '@/components';
+import { Button, Image, Typography } from '@/components';
 
-import { CardWrapper, ImageContainer, InfoContainer, ListItem, Title } from './styles';
+import {
+  CardWrapper,
+  ImageContainer,
+  InfoContainer,
+  ListItem,
+  Title
+} from './styles';
 import { Images } from './Images';
 import { useNavigate } from 'react-router';
 
@@ -35,7 +41,7 @@ export function WorkCard({ desktop, title, info, mobile, link, index }: Props) {
         )}
       </ImageContainer>
       <InfoContainer>
-        <Title>{title}</Title>
+        <Typography variant="h2">{title}</Typography>
         {info && (
           <ul>
             {info.map((item, index) => (

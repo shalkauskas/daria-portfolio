@@ -1,7 +1,7 @@
 import { AboutMe, MainIntro, WorkCard } from '@/pages/Main/components';
 import { workProjects } from '@/data/mainPage';
 import { PageContainer, WorkList } from './styles';
-import { Header, Layout, Title } from '@/components';
+import { Header, Layout, Title, Typography } from '@/components';
 import { useElementOnScreen } from '@/hooks';
 import { sections } from './constants';
 
@@ -12,12 +12,13 @@ export function Main() {
       threshold: 0.4
     }
   });
-  const { elementRef: aboutMeRef, isVisible: isAboutMeVisible } = useElementOnScreen({
-    enabled: true,
-    options: {
-      threshold: 0.4
-    }
-  });
+  const { elementRef: aboutMeRef, isVisible: isAboutMeVisible } =
+    useElementOnScreen({
+      enabled: true,
+      options: {
+        threshold: 0.4
+      }
+    });
 
   function getActiveSection() {
     if (isWorkVisible) {
@@ -37,7 +38,7 @@ export function Main() {
           <MainIntro />
         </div>
         <WorkList id={sections.WORK} ref={workRef}>
-          <Title>My Work</Title>
+          <Typography variant="h1">My Work</Typography>
           {workProjects.map((project, index) => (
             <WorkCard {...project} key={index} index={index} />
           ))}
