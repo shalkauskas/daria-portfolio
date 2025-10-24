@@ -41,7 +41,7 @@ export function UserResearch() {
           }}
         />
         <Title>{tableOfContent.surveys}</Title>
-        <Stack css={{ flexDirection: 'column', gap: '1.5rem' }}>
+        <Stack direction="column" gap="1.5rem">
           <img src="https://placehold.co/1037x281" />
           <div>
             <StepTitle no={1}>Send Surveys</StepTitle>
@@ -86,7 +86,7 @@ export function UserResearch() {
         </Stack>
         {/*  -------- USER INTERVIEWS -------- */}
         <Title>{tableOfContent.interviews}</Title>
-        <Stack css={{ flexDirection: 'column', gap: '1.5rem' }}>
+        <Stack direction="column" gap="1.5rem">
           <StepTitle no={1}>Preparation</StepTitle>
           <Typography>
             We started the second phase of our research with defining the areas
@@ -134,7 +134,7 @@ export function UserResearch() {
         </Stack>
         {/*  -------- OUTCOMES -------- */}
         <Title>{tableOfContent.outcomes}</Title>
-        <Stack css={{ flexDirection: 'column', gap: '1rem' }}>
+        <Stack direction="column" gap="1rem">
           <Typography variant="h3">Conclusions</Typography>
           <Typography>
             The lesson that I have learned during our research is to always stay

@@ -9,6 +9,12 @@ export const Image = styled.img({
   height: '100%',
   width: '100%'
 });
-export const Stack = styled.div({
-  display: 'flex'
-});
+export const Stack = styled('div', {
+  shouldForwardProp: (prop) => !['direction', 'gap'].includes(prop)
+})<{ direction?: 'row' | 'column'; gap?: string }>(
+  ({ direction = 'row', gap }) => ({
+    display: 'flex',
+    flexDirection: direction,
+    gap
+  })
+);

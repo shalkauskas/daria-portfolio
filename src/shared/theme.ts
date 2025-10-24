@@ -4,6 +4,8 @@ export const theme = {
     blue1: '#9B95F0',
     grey1: '#C6C6C9',
     purple1: '#D9CBFD',
+    purple2: '#D7D3EB',
+    purple3: '#EFEEF4',
     purple4: '#7343B2',
     purple5: '#D2AAFF',
     purpleBg1: '#FDFBFF',
