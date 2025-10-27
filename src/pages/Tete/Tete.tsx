@@ -1,15 +1,7 @@
-import {
-  CaseContainer,
-  Header,
-  Layout,
-  Stack,
-  StepTitle,
-  Title,
-  Typography
-} from '@/components';
-import { ImageContainer } from '../LikertScale/components';
-import { ActivityBoxBig, ActivityBoxSmall, ActivityGrid } from './styles';
-import { activities } from '@/data/tete';
+import { CaseContainer, Header, Layout, Stack, Typography } from '@/components';
+
+import { UserPersona } from './components/UserPersona/UserPersona';
+import { Analysis, KeyActivities } from './components';
 
 const tableOfContent = {
   problem: 'Problem',
@@ -100,30 +92,11 @@ export function Tete() {
         </Stack>
         <Stack gap="2.5rem" direction="column">
           {/* KEYS ACTIVITIES */}
-          <Stack gap="2rem" direction="column" css={{ alignItems: 'center' }}>
-            <Typography variant="h1">{tableOfContent.activities}</Typography>
-            <Stack gap="0.5rem" direction="column">
-              {activities.map(({ title, description }) => (
-                <ActivityGrid key={title}>
-                  <ActivityBoxSmall>
-                    <Typography sx={{ fontWeight: 700 }}>{title}</Typography>
-                  </ActivityBoxSmall>
-                  <ActivityBoxBig>
-                    <Typography>{description}</Typography>
-                  </ActivityBoxBig>
-                </ActivityGrid>
-              ))}
-
-              <Stack gap="0.5rem"></Stack>
-              <Stack gap="0.5rem"></Stack>
-              <Stack gap="0.5rem"></Stack>
-              <Stack gap="0.5rem"></Stack>
-            </Stack>
-          </Stack>
+          <KeyActivities title={tableOfContent.activities} />
           {/* USER PERSONA */}
-          <Stack gap="2rem" direction="column" css={{ alignItems: 'center' }}>
-            <Typography variant="h1">{tableOfContent.persona}</Typography>
-          </Stack>
+          <UserPersona title={tableOfContent.persona} />
+          {/* ANALYSIS */}
+          <Analysis title={tableOfContent.analysis} />
         </Stack>
       </CaseContainer>
     </Layout>

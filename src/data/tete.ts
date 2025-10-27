@@ -30,3 +30,61 @@ export const activities = [
       'Usability tests helped me to answer all the questions I got regarding layout and interactions. The iterations were made incrementally.'
   }
 ];
+
+export const personaCards = [
+  {
+    title: 'Motivations',
+    items: [
+      'Tina still wants to look nice even if she’s mostly staying at home now.',
+      'She has to look presentable for Zoom work meetings.'
+    ]
+  },
+  {
+    title: 'Habits',
+    items: [
+      'Prior to pandemic she used to come in to the salon every few weeks to get color done and every couple months to get a haircut.',
+      'Prefers going to the same stylist she can trust.'
+    ]
+  },
+  {
+    title: 'Needs',
+    items: [
+      'To know what precautions the place implemented to keep customers safe.',
+      'To be sure that the stylist is qualified.',
+      'Salons be open about the products they use as some dye components can cause severe allergic reactions.'
+    ]
+  },
+  {
+    title: 'Frustrations',
+    items: [
+      'Pandemic makes a salon visit a pretty stressful experience.',
+      'Coronavirus made her look for a new stylist who’d work in her local area.',
+      'As a quarantine affected her family income, the price for the services plays even more significant role.'
+    ]
+  }
+];
+
+export const personaBio: { title: string; description: string }[] = [
+  { title: 'Age', description: '45' },
+  {
+    title: 'Occupation',
+    description:
+      'Project Manager for a software developing company, currently works from home'
+  },
+  {
+    title: 'Marital status',
+    description: 'Married'
+  },
+  {
+    title: 'Location',
+    description: 'Newton, MA'
+  },
+  {
+    title: 'Devices',
+    description: 'Laptop, mobile phone'
+  },
+  {
+    title: 'Internet usage',
+    description: 'About 9 h per day'
+  }
+];

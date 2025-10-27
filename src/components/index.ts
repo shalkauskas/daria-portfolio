@@ -8,3 +8,4 @@ export * from './StepTitle/StepTitle';
 export * from './styledComponents';
 export * from './Tab/Tab';
 export * from './Typography/Typography';
+export * from './Tabs/Tabs';
