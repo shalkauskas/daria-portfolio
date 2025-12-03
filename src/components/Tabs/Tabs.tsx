@@ -2,6 +2,7 @@ import { cloneElement, isValidElement, useState } from 'react';
 import { Tab } from '../Tab/Tab';
 import { Typography } from '../Typography/Typography';
 import { Stack } from '../styledComponents';
+import { TabsContainer } from './styles';
 
 type TabContentProps = {
   children: React.ReactNode;
@@ -14,11 +15,10 @@ type TabsProps = {
 };
 export function Tabs({ children, tabs }: TabsProps) {
   const [activeTab, setActiveTab] = useState(tabs[0].value);
-  console.log('activeTab', activeTab);
-  console.log(children);
+
   return (
-    <div>
-      <Stack gap="1rem">
+    <TabsContainer>
+      <Stack gap="1rem" css={{ justifyContent: 'center' }}>
         {tabs.map(({ label, value }) => (
           <Tab
             size="small"
@@ -36,7 +36,7 @@ export function Tabs({ children, tabs }: TabsProps) {
             })
           : null
       )}
-    </div>
+    </TabsContainer>
   );
 }
 Tabs.Content = TabContent;

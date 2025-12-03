@@ -1,20 +1,17 @@
-import { Stack, Tabs, Typography } from '@/components';
+import { Stack, Typography } from '@/components';
+import { Tab1 } from './Tab1';
+import { Tab2 } from './Tab2';
+import { Tab3 } from './Tab3';
+import { Tab4 } from './Tab4';
 
 export function Analysis({ title }: { title: string }) {
   return (
     <Stack gap="2rem" direction="column" css={{ alignItems: 'center' }}>
       <Typography variant="h1">{title}</Typography>
-      <Tabs
-        tabs={[
-          { label: 'Problems', value: 'problems' },
-          {
-            label: 'Solutions',
-            value: 'solutions'
-          }
-        ]}>
-        <Tabs.Content value="problems">problems</Tabs.Content>
-        <Tabs.Content value="solutions">solutions</Tabs.Content>
-      </Tabs>
+      <Tab1 />
+      <Tab2 />
+      <Tab3 />
+      <Tab4 />
     </Stack>
   );
 }
