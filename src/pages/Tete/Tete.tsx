@@ -1,4 +1,11 @@
-import { CaseContainer, Header, Layout, Stack, Typography } from '@/components';
+import {
+  CaseContainer,
+  Header,
+  Layout,
+  List,
+  Stack,
+  Typography
+} from '@/components';
 
 import { UserPersona } from './components/UserPersona/UserPersona';
 import { Analysis, KeyActivities } from './components';
@@ -41,53 +48,51 @@ export function Tete() {
                 After redesigning the website we expect Tete-A-Tete salon to
                 have:
               </Typography>
-              <ul style={{ marginLeft: '1rem' }}>
-                <Typography as={'li'}>
+              <List>
+                <List.Item>
                   at least %50 more first-time appointments in a book;
-                </Typography>
-                <Typography as={'li'}>
-                  up to %80 less information inquiry calls;
-                </Typography>
-                <Typography as={'li'}>
+                </List.Item>
+                <List.Item>up to %80 less information inquiry calls;</List.Item>
+                <List.Item>
                   at least %70 of clients’ trust in competency of stylists.
-                </Typography>
-              </ul>
+                </List.Item>
+              </List>
             </Stack>
             <Stack direction="column" css={{ flex: '1 1 50%' }}>
               <Typography variant="h3" sx={{ marginBottom: '1rem' }}>
                 Solutions
               </Typography>
-              <ul style={{ marginLeft: '1rem' }}>
-                <Typography as={'li'}>
+              <List>
+                <List.Item>
                   Change information architecture of the website.
-                </Typography>
-                <Typography as={'li'}>
+                </List.Item>
+                <List.Item>
                   Eliminate distractions and unnecessary data.
-                </Typography>
-                <Typography as={'li'}>
+                </List.Item>
+                <List.Item>
                   Chunk and logically group the information.
-                </Typography>
-                <Typography as={'li'}>
+                </List.Item>
+                <List.Item>
                   Provide lacking information based on user’s insights.
-                </Typography>
-              </ul>
+                </List.Item>
+              </List>
             </Stack>
           </Stack>
           {/* Outcomes */}
           <Stack gap="1rem" direction="column">
             <Typography variant="h3">Outcomes</Typography>
-            <ul style={{ marginLeft: '1rem' }}>
-              <Typography as={'li'}>
+            <List>
+              <List.Item>
                 The updated design was well received within Tete-A-Tete company.
-              </Typography>
-              <Typography as={'li'}>
+              </List.Item>
+              <List.Item>
                 It increased communication within the company.
-              </Typography>
-              <Typography as={'li'}>
+              </List.Item>
+              <List.Item>
                 It inspired stylists to document their best works in order to
                 showcase their skills and expertise.
-              </Typography>
-            </ul>
+              </List.Item>
+            </List>
           </Stack>
         </Stack>
         <Stack gap="2.5rem" direction="column">

@@ -1,4 +1,4 @@
-import { Stack, Typography } from '@/components';
+import { List, Stack, Typography } from '@/components';
 import {
   PersonaCard,
   PersonaContainer,
@@ -61,13 +61,11 @@ export function UserPersona({ title }: { title: string }) {
                 }}>
                 {title.toUpperCase()}
               </Typography>
-              <ul style={{ marginLeft: '1rem' }}>
+              <List>
                 {items.map((i) => (
-                  <Typography as="li" key={i}>
-                    {i}
-                  </Typography>
+                  <List.Item key={i}>{i}</List.Item>
                 ))}
-              </ul>
+              </List>
             </PersonaCard>
           ))}
         </PersonaGrid>
