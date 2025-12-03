@@ -26,8 +26,10 @@ export function LikertScale() {
           {likertScaleContent.problem}
         </Typography>
         <Title>UX Process</Title>
-        <StepTitle no={1}>{likertScaleTitles.tableOfContent.define}</StepTitle>
         <FlexContainer>
+          <StepTitle no={1}>
+            {likertScaleTitles.tableOfContent.define}
+          </StepTitle>
           <Typography>{likertScaleContent.define1}</Typography>
           <ol style={{ marginLeft: '1rem' }}>
             {likertScaleContent.defineList.map((item, i) => (
@@ -39,15 +41,17 @@ export function LikertScale() {
           <Typography>{likertScaleContent.define2}</Typography>
           <Typography>{likertScaleContent.define3}</Typography>
         </FlexContainer>
-        <StepTitle no={2}>
-          {likertScaleTitles.tableOfContent.research}
-        </StepTitle>
-        <Typography
-          sx={{
-            marginBottom: '1.5rem'
-          }}>
-          {likertScaleContent.research1}
-        </Typography>
+        <Stack direction="column" gap="1.5rem">
+          <StepTitle no={2}>
+            {likertScaleTitles.tableOfContent.research}
+          </StepTitle>
+          <Typography
+            sx={{
+              marginBottom: '1.5rem'
+            }}>
+            {likertScaleContent.research1}
+          </Typography>
+        </Stack>
         <ImageContainer subtitle="Google Docs">
           <img src="https://placehold.co/450x350" />
           <Stack css={{ gap: '1.5rem' }}>
@@ -107,8 +111,10 @@ export function LikertScale() {
           have to constantly scroll in both directions to read the questions and
           answers and make sure they are making selection at the correct row.
         </Typography>
-        <StepTitle no={3}>{likertScaleTitles.tableOfContent.ideate}</StepTitle>
         <FlexContainer>
+          <StepTitle no={3}>
+            {likertScaleTitles.tableOfContent.ideate}
+          </StepTitle>
           <Stack css={{ gap: '1.5rem' }}>
             <img src="https://placehold.co/506x300" />
             <Typography>
@@ -135,8 +141,10 @@ export function LikertScale() {
             <img src="https://placehold.co/507x300" />
           </Stack>
         </FlexContainer>
-        <StepTitle no={4}>{likertScaleTitles.tableOfContent.iterate}</StepTitle>
         <Stack css={{ flexDirection: 'column', gap: '1.5rem' }}>
+          <StepTitle no={4}>
+            {likertScaleTitles.tableOfContent.iterate}
+          </StepTitle>
           <Typography>
             Once I presented designs to the internal teams, we received very
             positive feedback. My colleagues also suggested me an awesome idea

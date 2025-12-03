@@ -1,4 +1,4 @@
-import { Stack, Typography } from '@/components';
+import { Stack, StepTitle, Typography } from '@/components';
 import { Tab1 } from './Tab1';
 import { Tab2 } from './Tab2';
 import { Tab3 } from './Tab3';
@@ -12,6 +12,10 @@ export function Analysis({ title }: { title: string }) {
       <Tab2 />
       <Tab3 />
       <Tab4 />
+      <Stack direction="column" css={{ alignItems: 'start' }}>
+        <StepTitle>Wireframing</StepTitle>
+        <img src="https://placehold.co/1038x711" />
+      </Stack>
     </Stack>
   );
 }

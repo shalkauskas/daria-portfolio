@@ -8,9 +8,8 @@ export const Ellipse = styled.div(({ theme }) => ({
   width: theme.utility.pxToRem(12)
 }));
 
-export const StyledTitle = styled(StyledH4)(({ theme }) => ({
+export const StyledTitle = styled(StyledH4)(() => ({
   alignItems: 'center',
   display: 'flex',
-  gap: '0.5rem',
-  marginBottom: theme.utility.pxToRem(24)
+  gap: '0.5rem'
 }));

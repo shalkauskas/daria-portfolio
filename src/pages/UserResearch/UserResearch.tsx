@@ -43,7 +43,7 @@ export function UserResearch() {
         <Title>{tableOfContent.surveys}</Title>
         <Stack direction="column" gap="1.5rem">
           <img src="https://placehold.co/1037x281" />
-          <div>
+          <Stack direction="column" gap="1.5rem">
             <StepTitle no={1}>Send Surveys</StepTitle>
             <Typography>
               Based on the list of objectives we crafted 5 survey questions and
@@ -51,9 +51,9 @@ export function UserResearch() {
               can see the questions we asked our users in order to nail each one
               of our objectives.
             </Typography>
-          </div>
+          </Stack>
           <img src="https://placehold.co/1037x629" />
-          <div>
+          <Stack direction="column" gap="1.5rem">
             <StepTitle no={2}>Analyze Quantitative Data</StepTitle>
             <Typography>
               Once we received the answers from the surveys we compared the data
@@ -64,9 +64,9 @@ export function UserResearch() {
               our research. Down the road, they also helped us to define the
               priorities of the final research findings.
             </Typography>
-          </div>
+          </Stack>
           <img src="https://placehold.co/1037x460" />
-          <div>
+          <Stack direction="column" gap="1.5rem">
             <StepTitle no={3}>Analyze Qualitative Data</StepTitle>
             <Typography>
               To synthesize the answers from the open question, we consolidated
@@ -78,7 +78,7 @@ export function UserResearch() {
               relative feedback. Based on that we defined the main areas of
               concern that we further studied during the user interviews.
             </Typography>
-          </div>
+          </Stack>
           <ImageContainer>
             <img src="https://placehold.co/500x319" />
             <img src="https://placehold.co/500x319" />

@@ -9,6 +9,7 @@ import {
 
 import { UserPersona } from './components/UserPersona/UserPersona';
 import { Analysis, KeyActivities } from './components';
+import { UsabilityTesting } from './components/UsabilityTesting/UsabilityTesting';
 
 const tableOfContent = {
   problem: 'Problem',
@@ -102,6 +103,22 @@ export function Tete() {
           <UserPersona title={tableOfContent.persona} />
           {/* ANALYSIS */}
           <Analysis title={tableOfContent.analysis} />
+          {/* USABILITY TESTING */}
+          <UsabilityTesting title={'Usability Testing'} />
+          <Typography variant="h1" sx={{ margin: 'auto' }}>
+            Outcomes
+          </Typography>
+          <Typography variant="h3">Next Steps</Typography>
+          <List>
+            <List.Item>
+              Keep up to date online appearance (Instagram and Facebook).
+            </List.Item>
+            <List.Item>Add online booking feature.</List.Item>
+            <List.Item>
+              Launch new marketing campaigns via Constant Contact.
+            </List.Item>
+            <List.Item>Collaborate with Groupon.</List.Item>
+          </List>
         </Stack>
       </CaseContainer>
     </Layout>
