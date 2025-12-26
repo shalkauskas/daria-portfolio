@@ -3,6 +3,7 @@ import { Tab } from '../Tab/Tab';
 import { Typography } from '../Typography/Typography';
 import { Stack } from '../styledComponents';
 import { TabContentLayout, TabsContainer } from './styles';
+import { CSSInterpolation } from '@emotion/serialize';
 
 type TabContentProps = {
   children: React.ReactNode;
@@ -12,12 +13,21 @@ type TabContentProps = {
 type TabsProps = {
   children: React.ReactNode[];
   tabs: { label: string; value: string }[];
+  variant?: 'default' | 'unstyled';
+  sx?: CSSInterpolation;
 };
-export function Tabs({ children, tabs }: TabsProps) {
+
+const variantMap = {
+  default: TabsContainer,
+  unstyled: Stack
+};
+export function Tabs({ children, tabs, variant = 'default', sx }: TabsProps) {
   const [activeTab, setActiveTab] = useState(tabs[0].value);
 
+  const Container = variantMap[variant];
+
   return (
-    <TabsContainer>
+    <Container css={sx}>
       <Stack gap="1rem" css={{ justifyContent: 'center' }}>
         {tabs.map(({ label, value }) => (
           <Tab
@@ -36,7 +46,7 @@ export function Tabs({ children, tabs }: TabsProps) {
             })
           : null
       )}
-    </TabsContainer>
+    </Container>
   );
 }
 Tabs.Content = TabContent;

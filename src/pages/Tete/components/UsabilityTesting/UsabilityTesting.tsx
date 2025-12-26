@@ -1,11 +1,17 @@
 import { Image, Stack, StepTitle, Typography } from '@/components';
 import { forwardRef } from 'react';
+import arrowright from '@/pages/Tete/assets/arrowright.png';
+import checkmark from '@/pages/Tete/assets/checkmark.png';
+import cross from '@/pages/Tete/assets/cross.png';
 import test1 from '@/pages/Tete/assets/test1.png';
 import test2 from '@/pages/Tete/assets/test2.png';
 import test3 from '@/pages/Tete/assets/test3.png';
 import test4 from '@/pages/Tete/assets/test4.png';
-import cross from '@/pages/Tete/assets/cross.png';
-import checkmark from '@/pages/Tete/assets/checkmark.png';
+import test5 from '@/pages/Tete/assets/test5.png';
+import test6 from '@/pages/Tete/assets/test6.png';
+import test7 from '@/pages/Tete/assets/test7.png';
+import test8 from '@/pages/Tete/assets/test8.png';
+import test9 from '@/pages/Tete/assets/test9.png';
 type Props = {
   title: string;
 };
@@ -29,15 +35,35 @@ export const UsabilityTesting = forwardRef<HTMLDivElement, Props>(
           <Stack gap="0.5rem" alignItems="start">
             <Image src={cross} height="24px" />
             <Stack gap="1.5rem">
-              <Image src={test1} height="312px" canEnlarge />
-              <Image src={test2} height="312px" canEnlarge />
+              <Image
+                src={test1}
+                height="312px"
+                canEnlarge
+                containerStyle={{ border: '1px solid #E2D7D2' }}
+              />
+              <Image
+                src={test2}
+                height="312px"
+                canEnlarge
+                containerStyle={{ border: '1px solid #E2D7D2' }}
+              />
             </Stack>
           </Stack>
           <Stack gap="0.5rem" alignItems="start">
             <Image src={checkmark} height="24px" />
             <Stack gap="1.5rem">
-              <Image src={test3} height="312px" canEnlarge />
-              <Image src={test4} height="312px" canEnlarge />
+              <Image
+                src={test3}
+                height="312px"
+                canEnlarge
+                containerStyle={{ border: '1px solid #E2D7D2' }}
+              />
+              <Image
+                src={test4}
+                height="312px"
+                canEnlarge
+                containerStyle={{ border: '1px solid #E2D7D2' }}
+              />
             </Stack>
           </Stack>
         </Stack>
@@ -49,8 +75,18 @@ export const UsabilityTesting = forwardRef<HTMLDivElement, Props>(
           clickable while still maintaining screens’ ability to slide.
         </Typography>
         <Stack css={{ justifyContent: 'space-evenly' }}>
-          <img src="https://placehold.co/184x417" />
-          <img src="https://placehold.co/184x417" />
+          <Image
+            src={test5}
+            height="417px"
+            canEnlarge
+            containerStyle={{ border: '1px solid #E2D7D2' }}
+          />
+          <Image
+            src={test6}
+            height="417px"
+            canEnlarge
+            containerStyle={{ border: '1px solid #E2D7D2' }}
+          />
         </Stack>
 
         <StepTitle>Fixed Header</StepTitle>
@@ -65,7 +101,37 @@ export const UsabilityTesting = forwardRef<HTMLDivElement, Props>(
           logo I chose to make a transition from logo (initial state) to a text
           title.
         </Typography>
-        <img src="https://placehold.co/1032x454" />
+        <Stack justifyContent="space-evenly">
+          <Stack gap="0.5rem" alignItems="start">
+            <Image src={cross} height="24px" />
+            <Stack gap="1.5rem">
+              <Image
+                src={test7}
+                height="454px"
+                canEnlarge
+                containerStyle={{ border: '1px solid #E2D7D2' }}
+              />
+              <Image
+                src={test8}
+                height="454px"
+                canEnlarge
+                containerStyle={{ border: '1px solid #E2D7D2' }}
+              />
+              <Image src={arrowright} height="30px" />
+            </Stack>
+          </Stack>
+          <Stack gap="0.5rem" alignItems="start">
+            <Image src={checkmark} height="24px" />
+            <Stack gap="1.5rem">
+              <Image
+                src={test9}
+                height="454px"
+                canEnlarge
+                containerStyle={{ border: '1px solid #E2D7D2' }}
+              />
+            </Stack>
+          </Stack>
+        </Stack>
       </Stack>
     );
   }

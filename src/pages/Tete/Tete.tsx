@@ -9,7 +9,7 @@ import {
 } from '@/components';
 
 import { UserPersona } from './components/UserPersona/UserPersona';
-import { Analysis, KeyActivities } from './components';
+import { Analysis, KeyActivities, Preview } from './components';
 import { UsabilityTesting } from './components/UsabilityTesting/UsabilityTesting';
 import { ProgressTracker } from '@/components/ProgressTracker';
 import { ProgressTrackerContainer } from '@/components/ProgressTracker/styles';
@@ -54,6 +54,7 @@ export function Tete() {
           tableOfContent={tableOfContent}
         />
         <CaseContainer>
+          <Preview />
           {/* PROBLEM */}
           <Stack gap="2rem" direction="column">
             {/* Problem */}

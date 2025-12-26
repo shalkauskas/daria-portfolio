@@ -16,8 +16,8 @@ export function Image({
   containerStyle,
   src,
   style,
-  width = '100%',
-  height = '100%',
+  width = 'auto',
+  height = 'auto',
   alt = '',
 
   canEnlarge = false
@@ -35,16 +35,16 @@ export function Image({
 
   return (
     <>
-      <div style={containerStyle}>
+      <div style={containerStyle} css={{ height: height, width: width }}>
         <img
           src={src}
           style={{
             ...style,
             cursor: canEnlarge ? 'pointer' : 'default'
           }}
-          width={width}
-          height={height}
           alt={alt}
+          height={'100%'}
+          width={'100%'}
           onClick={handleClick}
         />
       </div>
