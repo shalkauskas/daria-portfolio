@@ -40,12 +40,13 @@ export function Tab2() {
           </List>
           <ImageGrid>
             <Image
+              canEnlarge
               src={sitemap}
               height="257px"
               width="479px"
               containerStyle={{ margin: 'auto' }}
             />
-            <Image src={sol2} />
+            <Image src={sol2} canEnlarge />
             <Typography>Click to enlarge</Typography>
             <Typography>Click to enlarge</Typography>
           </ImageGrid>
