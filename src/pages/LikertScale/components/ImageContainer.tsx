@@ -18,6 +18,7 @@ export function ImageContainer({ children, subtitle }: Props) {
       <div
         style={{
           display: 'flex',
+          justifyContent: 'space-between',
           gap: '1.5rem'
         }}>
         {children}
