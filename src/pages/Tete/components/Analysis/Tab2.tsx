@@ -47,8 +47,12 @@ export function Tab2() {
               containerStyle={{ margin: 'auto' }}
             />
             <Image src={sol2} canEnlarge />
-            <Typography>Click to enlarge</Typography>
-            <Typography>Click to enlarge</Typography>
+            <Typography sx={{ fontStyle: 'italic' }}>
+              Click to enlarge
+            </Typography>
+            <Typography sx={{ fontStyle: 'italic' }}>
+              Click to enlarge
+            </Typography>
           </ImageGrid>
         </Tabs.ContentLayout>
       </Tabs.Content>

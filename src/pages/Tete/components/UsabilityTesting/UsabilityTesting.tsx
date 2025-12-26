@@ -1,6 +1,11 @@
-import { Stack, StepTitle, Typography } from '@/components';
+import { Image, Stack, StepTitle, Typography } from '@/components';
 import { forwardRef } from 'react';
-
+import test1 from '@/pages/Tete/assets/test1.png';
+import test2 from '@/pages/Tete/assets/test2.png';
+import test3 from '@/pages/Tete/assets/test3.png';
+import test4 from '@/pages/Tete/assets/test4.png';
+import cross from '@/pages/Tete/assets/cross.png';
+import checkmark from '@/pages/Tete/assets/checkmark.png';
 type Props = {
   title: string;
 };
@@ -21,13 +26,19 @@ export const UsabilityTesting = forwardRef<HTMLDivElement, Props>(
           mobile versions.
         </Typography>
         <Stack css={{ justifyContent: 'space-between' }}>
-          <Stack gap="2rem">
-            <img src="https://placehold.co/147x312" />
-            <img src="https://placehold.co/147x312" />
+          <Stack gap="0.5rem" alignItems="start">
+            <Image src={cross} height="24px" />
+            <Stack gap="1.5rem">
+              <Image src={test1} height="312px" canEnlarge />
+              <Image src={test2} height="312px" canEnlarge />
+            </Stack>
           </Stack>
-          <Stack gap="2rem">
-            <img src="https://placehold.co/147x312" />
-            <img src="https://placehold.co/147x312" />
+          <Stack gap="0.5rem" alignItems="start">
+            <Image src={checkmark} height="24px" />
+            <Stack gap="1.5rem">
+              <Image src={test3} height="312px" canEnlarge />
+              <Image src={test4} height="312px" canEnlarge />
+            </Stack>
           </Stack>
         </Stack>
 
