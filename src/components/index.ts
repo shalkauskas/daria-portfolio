@@ -11,3 +11,4 @@ export * from './styledComponents';
 export * from './Tab/Tab';
 export * from './Tabs/Tabs';
 export * from './Typography/Typography';
+export * from './ViewNext';

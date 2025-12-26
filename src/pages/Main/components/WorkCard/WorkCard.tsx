@@ -1,12 +1,6 @@
 import { Button, Image, Typography } from '@/components';
 
-import {
-  CardWrapper,
-  ImageContainer,
-  InfoContainer,
-  ListItem,
-  Title
-} from './styles';
+import { CardWrapper, ImageContainer, InfoContainer, ListItem } from './styles';
 import { Images } from './Images';
 import { useNavigate } from 'react-router';
 

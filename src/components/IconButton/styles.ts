@@ -4,6 +4,7 @@ const baseButton = {
   backgroundColor: 'transparent',
   border: 0,
   borderRadius: '100%',
+  flexShrink: 0,
   cursor: 'pointer',
   display: 'flex',
   padding: '0.5rem'

@@ -5,7 +5,8 @@ import {
   Layout,
   List,
   Stack,
-  Typography
+  Typography,
+  ViewNext
 } from '@/components';
 
 import { UserPersona } from './components/UserPersona/UserPersona';
@@ -160,6 +161,7 @@ export function Tete() {
               </List.Item>
               <List.Item>Collaborate with Groupon.</List.Item>
             </List>
+            <ViewNext />
           </Stack>
         </CaseContainer>
       </ProgressTrackerContainer>

@@ -4,7 +4,7 @@ import { Overlay, ModalContent, EnlargedImage, CloseButton } from './styles';
 
 type Props = {
   containerStyle?: React.CSSProperties;
-  src: string;
+  src?: string;
   style?: React.CSSProperties;
   width?: string;
   height?: string;
@@ -32,6 +32,8 @@ export function Image({
     e.stopPropagation();
     setIsOpen(false);
   };
+
+  if (!src) return null;
 
   return (
     <>

@@ -1,15 +1,20 @@
-import { CSSInterpolation } from '@emotion/serialize';
-
 import { Image } from '../Image';
 import { ButtonBase, ButtonRound } from './styles';
 
 type Props = {
-  css?: CSSInterpolation;
+  className?: string;
+  css?: React.CSSProperties;
   icon: string;
   onClick?: () => void;
   variant?: 'base' | 'round';
 };
-export function IconButton({ css, icon, onClick, variant = 'base' }: Props) {
+export function IconButton({
+  className,
+  css,
+  icon,
+  onClick,
+  variant = 'base'
+}: Props) {
   const variantMap = {
     base: ButtonBase,
     round: ButtonRound
@@ -18,7 +23,7 @@ export function IconButton({ css, icon, onClick, variant = 'base' }: Props) {
   const ButtonWrapper = variantMap[variant];
 
   return (
-    <ButtonWrapper onClick={onClick} css={css}>
+    <ButtonWrapper className={className} onClick={onClick} style={css}>
       <Image src={icon} />
     </ButtonWrapper>
   );
