@@ -1,4 +1,5 @@
-import { List, Stack, Tabs } from '@/components';
+import { Image, List, Tabs } from '@/components';
+import webprob1 from '@/pages/Tete/assets/webprob1.png';
 
 export function Tab1() {
   return (
@@ -11,7 +12,7 @@ export function Tab1() {
         }
       ]}>
       <Tabs.Content value="problems">
-        <Stack direction="column" gap="1.5rem">
+        <Tabs.ContentLayout>
           <List>
             <List.Item>The home page that feels too cluttered. </List.Item>
             <List.Item>
@@ -19,11 +20,11 @@ export function Tab1() {
               layout.
             </List.Item>
           </List>
-          <img src="https://placehold.co/990x494" />
-        </Stack>
+          <Image src={webprob1} />
+        </Tabs.ContentLayout>
       </Tabs.Content>
       <Tabs.Content value="solutions">
-        <Stack direction="column" gap="1.5rem">
+        <Tabs.ContentLayout>
           <List>
             <List.Item> Get rid of an unnecessary block of text.</List.Item>
             <List.Item>
@@ -37,7 +38,7 @@ export function Tab1() {
           </List>
           <img src="https://placehold.co/787x80" />
           <img src="https://placehold.co/990x663" />
-        </Stack>
+        </Tabs.ContentLayout>
       </Tabs.Content>
     </Tabs>
   );

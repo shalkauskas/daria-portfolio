@@ -1,4 +1,5 @@
-import { List, Stack, Tabs } from '@/components';
+import { Image, List, Stack, Tabs } from '@/components';
+import webprob2 from '@/pages/Tete/assets/webprob2.png';
 
 export function Tab2() {
   return (
@@ -11,7 +12,7 @@ export function Tab2() {
         }
       ]}>
       <Tabs.Content value="problems">
-        <Stack direction="column" gap="1.5rem">
+        <Tabs.ContentLayout>
           <List>
             <List.Item>
               The navigation bar has way too many menu items (8) while all they
@@ -22,11 +23,11 @@ export function Tab2() {
               fully explain what this page is about.
             </List.Item>
           </List>
-          <img src="https://placehold.co/990x320" />
-        </Stack>
+          <Image src={webprob2} />
+        </Tabs.ContentLayout>
       </Tabs.Content>
       <Tabs.Content value="solutions">
-        <Stack direction="column" gap="1.5rem">
+        <Tabs.ContentLayout>
           <List>
             <List.Item>
               Cut down the menu items of low significance and keep only the most
@@ -38,7 +39,7 @@ export function Tab2() {
             <img src="https://placehold.co/479x392" />
             <img src="https://placehold.co/479x349" />
           </Stack>
-        </Stack>
+        </Tabs.ContentLayout>
       </Tabs.Content>
     </Tabs>
   );

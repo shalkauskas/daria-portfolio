@@ -2,7 +2,7 @@ import { cloneElement, isValidElement, useState } from 'react';
 import { Tab } from '../Tab/Tab';
 import { Typography } from '../Typography/Typography';
 import { Stack } from '../styledComponents';
-import { TabsContainer } from './styles';
+import { TabContentLayout, TabsContainer } from './styles';
 
 type TabContentProps = {
   children: React.ReactNode;
@@ -40,6 +40,7 @@ export function Tabs({ children, tabs }: TabsProps) {
   );
 }
 Tabs.Content = TabContent;
+Tabs.ContentLayout = TabContentLayout;
 
 function TabContent({ children, value }: TabContentProps) {
   return <div aria-value={value}>{children}</div>;

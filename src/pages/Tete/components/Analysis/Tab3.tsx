@@ -1,4 +1,5 @@
-import { List, Stack, Tabs } from '@/components';
+import { Image, List, Stack, Tabs } from '@/components';
+import webprob3 from '@/pages/Tete/assets/webprob3.png';
 
 export function Tab3() {
   return (
@@ -11,7 +12,7 @@ export function Tab3() {
         }
       ]}>
       <Tabs.Content value="problems">
-        <Stack direction="column" gap="1.5rem">
+        <Tabs.ContentLayout>
           <List>
             <List.Item>The price list looks visually overwhelming.</List.Item>
             <List.Item>
@@ -22,11 +23,11 @@ export function Tab3() {
               Small pictures look funny on a desktop version.
             </List.Item>
           </List>
-          <img src="https://placehold.co/990x469" />
-        </Stack>
+          <Image src={webprob3} />
+        </Tabs.ContentLayout>
       </Tabs.Content>
       <Tabs.Content value="solutions">
-        <Stack direction="column" gap="1.5rem">
+        <Tabs.ContentLayout>
           <List>
             <List.Item>
               Chunk the extensive price lists into smaller and visually divided
@@ -36,7 +37,7 @@ export function Tab3() {
             <List.Item>Make pictures responsive.</List.Item>
           </List>
           <img src="https://placehold.co/990x751" />
-        </Stack>
+        </Tabs.ContentLayout>
       </Tabs.Content>
     </Tabs>
   );
