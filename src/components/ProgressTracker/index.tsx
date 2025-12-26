@@ -40,7 +40,7 @@ export function ProgressTracker({ overview, tableOfContent }: Props) {
         });
       },
       {
-        rootMargin: '-20% 0px -60% 0px',
+        rootMargin: '-10% 0px -60% 0px',
         threshold: 0
       }
     );

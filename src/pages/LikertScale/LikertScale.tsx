@@ -3,6 +3,7 @@ import {
   Header,
   Image,
   Layout,
+  Preview,
   Stack,
   StepTitle,
   Title,
@@ -28,7 +29,7 @@ import ideate1 from '@/pages/LikertScale/assets/ideate1.png';
 import ideate2 from '@/pages/LikertScale/assets/ideate2.png';
 import iterate1 from '@/pages/LikertScale/assets/iterate1.png';
 import iterate2 from '@/pages/LikertScale/assets/iterate2.png';
-
+import desktop from '@/pages/LikertScale/assets/desktop.png';
 export function LikertScale() {
   const problemRef = useRef<HTMLDivElement>(null);
   const defineRef = useRef<HTMLDivElement>(null);
@@ -52,6 +53,7 @@ export function LikertScale() {
   return (
     <Layout>
       <Header.Feature title={likertScaleTitles.title} />
+
       <ProgressTrackerContainer>
         <ProgressTracker
           overview={{
@@ -64,6 +66,11 @@ export function LikertScale() {
         />
         <CaseContainer>
           <div ref={problemRef}>
+            <Preview
+              desktop={<Image src={desktop} height="364px" />}
+              mobile={<Image src={desktop} height="364px" />}
+            />
+
             <Typography variant="h3" sx={{ marginBottom: '1rem' }}>
               {likertScaleTitles.tableOfContent.problem}
             </Typography>
@@ -108,7 +115,6 @@ export function LikertScale() {
               <Image src={res3} />
             </Stack>
           </ImageContainer>
-
           <Typography
             sx={{
               margin: '1rem 0 1.5rem'

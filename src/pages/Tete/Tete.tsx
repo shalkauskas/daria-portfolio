@@ -2,6 +2,7 @@ import {
   Button,
   CaseContainer,
   Header,
+  Image,
   Layout,
   List,
   Stack,
@@ -10,12 +11,15 @@ import {
 } from '@/components';
 
 import { UserPersona } from './components/UserPersona/UserPersona';
-import { Analysis, KeyActivities, Preview } from './components';
+import { Analysis, KeyActivities } from './components';
 import { UsabilityTesting } from './components/UsabilityTesting/UsabilityTesting';
-import { ProgressTracker } from '@/components/ProgressTracker';
+import { ProgressTracker, Preview } from '@/components';
 import { ProgressTrackerContainer } from '@/components/ProgressTracker/styles';
 import { useMemo, useRef } from 'react';
 import { OutcomesContainer } from './styles';
+
+import desktop from '@/pages/Tete/assets/tete-a-tete.webp';
+import mobile from '@/pages/Tete/assets/mobile.png';
 
 export function Tete() {
   const problemRef = useRef<HTMLDivElement>(null);
@@ -55,7 +59,10 @@ export function Tete() {
           tableOfContent={tableOfContent}
         />
         <CaseContainer>
-          <Preview />
+          <Preview
+            desktop={<Image src={desktop} height="364px" />}
+            mobile={<Image src={mobile} height="364px" width="200px" />}
+          />
           {/* PROBLEM */}
           <Stack gap="2rem" direction="column">
             {/* Problem */}
