@@ -1,4 +1,4 @@
-import { List, Stack, Typography } from '@/components';
+import { Image, List, Stack, Typography } from '@/components';
 import {
   PersonaCard,
   PersonaContainer,
@@ -10,6 +10,7 @@ import { personaBio, personaCards } from '@/data/tete';
 import { theme } from '@/shared/theme';
 import { GradientContainer } from '../../styles';
 import { forwardRef } from 'react';
+import tinaJones from '@/pages/Tete/assets/tina.png';
 
 type Props = {
   title: string;
@@ -35,7 +36,7 @@ export const UserPersona = forwardRef<HTMLDivElement, Props>(
             </Typography>
           </GradientContainer>
           <PersonaGrid>
-            <img src="https://placehold.co/487x325" />
+            <Image src={tinaJones} />
             <Stack direction="column" gap="1.5rem">
               <Typography variant="h4">
                 “Picking a new stylist is a very intimate process”.

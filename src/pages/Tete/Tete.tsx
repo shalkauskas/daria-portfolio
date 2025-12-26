@@ -14,6 +14,7 @@ import { UsabilityTesting } from './components/UsabilityTesting/UsabilityTesting
 import { ProgressTracker } from '@/components/ProgressTracker';
 import { ProgressTrackerContainer } from '@/components/ProgressTracker/styles';
 import { useMemo, useRef } from 'react';
+import { OutcomesContainer } from './styles';
 
 export function Tete() {
   const problemRef = useRef<HTMLDivElement>(null);
@@ -110,7 +111,7 @@ export function Tete() {
               </Stack>
             </Stack>
             {/* Outcomes */}
-            <Stack gap="1rem" direction="column">
+            <OutcomesContainer gap="1rem" direction="column">
               <Typography variant="h3">Outcomes</Typography>
               <List>
                 <List.Item>
@@ -125,7 +126,7 @@ export function Tete() {
                   showcase their skills and expertise.
                 </List.Item>
               </List>
-            </Stack>
+            </OutcomesContainer>
           </Stack>
           <Stack gap="2.5rem" direction="column">
             {/* KEYS ACTIVITIES */}
