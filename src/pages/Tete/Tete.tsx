@@ -12,17 +12,27 @@ import { Analysis, KeyActivities } from './components';
 import { UsabilityTesting } from './components/UsabilityTesting/UsabilityTesting';
 import { ProgressTracker } from '@/components/ProgressTracker';
 import { ProgressTrackerContainer } from '@/components/ProgressTracker/styles';
-
-const tableOfContent = {
-  problem: 'Problem',
-  activities: 'Key Activities',
-  persona: 'User Persona',
-  analysis: 'Website Analysis & Solutions',
-  wireframing: 'Wireframing',
-  nextSteps: 'Next Steps'
-};
+import { useMemo, useRef } from 'react';
 
 export function Tete() {
+  const problemRef = useRef<HTMLDivElement>(null);
+  const keyActivitiesRef = useRef<HTMLDivElement>(null);
+  const userPersonaRef = useRef<HTMLDivElement>(null);
+  const analysisRef = useRef<HTMLDivElement>(null);
+  const usabilityRef = useRef<HTMLDivElement>(null);
+  const nextStepsRef = useRef<HTMLDivElement>(null);
+
+  const tableOfContent = useMemo(
+    () => [
+      { title: 'Problem', ref: problemRef },
+      { title: 'Key Activities', ref: keyActivitiesRef },
+      { title: 'User Persona', ref: userPersonaRef },
+      { title: 'Website Analysis & Solutions', ref: analysisRef },
+      { title: 'Usability Testing', ref: usabilityRef },
+      { title: 'Next Steps', ref: nextStepsRef }
+    ],
+    []
+  );
   return (
     <Layout>
       <Header.Feature title={'Website Redesign'} />
@@ -34,16 +44,14 @@ export function Tete() {
             tools: 'Figma, InVision',
             methods: 'User Interviews, Competitive Analysis'
           }}
-          tableOfContent={Object.values(tableOfContent).map((item) => ({
-            title: item
-          }))}
+          tableOfContent={tableOfContent}
         />
         <CaseContainer>
           {/* PROBLEM */}
           <Stack gap="2rem" direction="column">
             {/* Problem */}
-            <Stack gap="1rem" direction="column">
-              <Typography variant="h3">{tableOfContent.problem}</Typography>
+            <Stack gap="1rem" direction="column" ref={problemRef}>
+              <Typography variant="h3">{tableOfContent[0].title}</Typography>
               <Typography>
                 Tete-A-Tete salon is a local hairsalon serving the Newton area
                 since 1999. The main purpose of having a website for Tete-A-Tete
@@ -115,17 +123,25 @@ export function Tete() {
           </Stack>
           <Stack gap="2.5rem" direction="column">
             {/* KEYS ACTIVITIES */}
-            <KeyActivities title={tableOfContent.activities} />
+            <KeyActivities
+              title={tableOfContent[1].title}
+              ref={keyActivitiesRef}
+            />
             {/* USER PERSONA */}
-            <UserPersona title={tableOfContent.persona} />
+            <UserPersona title={tableOfContent[2].title} ref={userPersonaRef} />
             {/* ANALYSIS */}
-            <Analysis title={tableOfContent.analysis} />
+            <Analysis title={tableOfContent[3].title} ref={analysisRef} />
             {/* USABILITY TESTING */}
-            <UsabilityTesting title={'Usability Testing'} />
+            <UsabilityTesting
+              title={tableOfContent[4].title}
+              ref={usabilityRef}
+            />
             <Typography variant="h1" sx={{ margin: 'auto' }}>
               Outcomes
             </Typography>
-            <Typography variant="h3">Next Steps</Typography>
+            <div ref={nextStepsRef}>
+              <Typography variant="h3">Next Steps</Typography>
+            </div>
             <List>
               <List.Item>
                 Keep up to date online appearance (Instagram and Facebook).

@@ -37,14 +37,20 @@ export const TableOfContentList = styled.ul(({ theme }) => ({
   margin: 0
 }));
 
-export const TableOfContentItem = styled.li(({ theme }) => ({
-  borderRadius: theme.utility.pxToRem(8),
-  color: theme.colors.primaryText,
-  fontSize: theme.utility.pxToRem(18),
-  fontWeight: 400,
-  lineHeight: theme.utility.pxToRem(24),
-  padding: `${theme.utility.pxToRem(8)} ${theme.utility.pxToRem(16)}`
-}));
+export const TableOfContentItem = styled.li<{ $isActive?: boolean }>(
+  ({ theme, $isActive }) => ({
+    borderRadius: theme.utility.pxToRem(8),
+    color: theme.colors.primaryText,
+    fontSize: theme.utility.pxToRem(18),
+    lineHeight: theme.utility.pxToRem(24),
+    padding: `${theme.utility.pxToRem(8)} ${theme.utility.pxToRem(16)}`,
+
+    backgroundColor: $isActive ? '#F7EFFF' : 'transparent',
+    border: $isActive ? `1px solid ${theme.colors.primary}` : 'none',
+    cursor: 'pointer',
+    fontWeight: $isActive ? 600 : 400
+  })
+);
 
 export const ProgressTrackerContainer = styled.div(({ theme }) => ({
   display: 'flex',
