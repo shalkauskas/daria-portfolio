@@ -55,7 +55,6 @@ export const TableOfContentItem = styled.li<{ $isActive?: boolean }>(
 export const ProgressTrackerContainer = styled.div(({ theme }) => ({
   display: 'flex',
   flexDirection: 'row',
-  gap: theme.utility.pxToRem(24),
   overflow: 'hidden',
   height: `calc(100vh - ${theme.utility.pxToRem(68)})`
 }));

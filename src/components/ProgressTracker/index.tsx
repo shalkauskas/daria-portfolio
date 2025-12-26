@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Stack, Typography } from '..';
 import {
+  ProgressTrackerContainer,
   ProgressTrackerWrapper,
   ProjectOverviewGrid,
   ProjectOverviewTitle,
@@ -93,3 +94,4 @@ export function ProgressTracker({ overview, tableOfContent }: Props) {
     </ProgressTrackerWrapper>
   );
 }
+ProgressTracker.Container = ProgressTrackerContainer;
