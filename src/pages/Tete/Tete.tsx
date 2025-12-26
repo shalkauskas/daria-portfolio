@@ -1,4 +1,5 @@
 import {
+  Button,
   CaseContainer,
   Header,
   Layout,
@@ -35,7 +36,12 @@ export function Tete() {
   );
   return (
     <Layout>
-      <Header.Feature title={'Website Redesign'} />
+      <Header.Feature title={'Website Redesign'}>
+        <Button
+          onClick={() => window.open('https://teteatetesalon.com/', '_blank')}>
+          VISIT WEBSITE
+        </Button>
+      </Header.Feature>
       <ProgressTrackerContainer>
         <ProgressTracker
           overview={{
