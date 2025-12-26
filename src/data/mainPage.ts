@@ -1,4 +1,3 @@
-import nassanDesktop from '@/assets/nassans/nassans.webp';
 import teteDesktop from '@/assets/tete/tete-a-tete.webp';
 import userReseach from '@/assets/userResearch/user_research_main_page.png';
 import likertScaleDesktop from '@/assets/likertScale/likertScale_desktop_main_page.png';
@@ -34,18 +33,7 @@ export const workProjects = [
     mobile: likertScaleMobile,
     link: ROUTES.likertScale
   },
-  {
-    title: 'Nassan’s Place Website redesign',
-    info: [
-      'Improved site architecture based on user needs.',
-      'Enhanced usability and accessibility.',
-      'Added more prominent CTA button that boosts user’s engagement.',
-      'Reorganized resources to help users easier to scan and find information relevant to their needs.'
-    ],
-    desktop: nassanDesktop,
-    mobile: likertScaleMobile,
-    link: ''
-  },
+
   {
     title: 'Tete-a-Tete salon Website Redesign',
     info: [
