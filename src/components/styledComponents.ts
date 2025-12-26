@@ -5,16 +5,19 @@ export const Title = styled(StyledH1)({
   textAlign: 'center',
   margin: '2rem 0'
 });
-export const Image = styled.img({
-  height: '100%',
-  width: '100%'
-});
+
 export const Stack = styled('div', {
-  shouldForwardProp: (prop) => !['direction', 'gap'].includes(prop)
-})<{ direction?: 'row' | 'column'; gap?: string }>(
-  ({ direction = 'row', gap }) => ({
-    display: 'flex',
-    flexDirection: direction,
-    gap
-  })
-);
+  shouldForwardProp: (prop) =>
+    !['direction', 'gap', 'justifyContent', 'alignItems'].includes(prop)
+})<{
+  direction?: 'row' | 'column';
+  gap?: string;
+  justifyContent?: string;
+  alignItems?: string;
+}>(({ direction = 'row', gap, justifyContent, alignItems }) => ({
+  display: 'flex',
+  flexDirection: direction,
+  gap,
+  justifyContent,
+  alignItems
+}));

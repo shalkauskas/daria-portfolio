@@ -1,6 +1,6 @@
 import { CSSInterpolation } from '@emotion/serialize';
 
-import { Image } from '../styledComponents';
+import { Image } from '../Image';
 import { ButtonBase, ButtonRound } from './styles';
 
 type Props = {

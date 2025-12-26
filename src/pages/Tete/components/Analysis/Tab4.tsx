@@ -1,5 +1,6 @@
 import { Image, List, Stack, Tabs } from '@/components';
 import webprob4 from '@/pages/Tete/assets/webprob4.png';
+import sol4 from '@/pages/Tete/assets/sol4.png';
 
 export function Tab4() {
   return (
@@ -34,7 +35,7 @@ export function Tab4() {
               of paragraph bigger.
             </List.Item>
           </List>
-          <img src="https://placehold.co/990x715" />
+          <Image src={sol4} />
         </Tabs.ContentLayout>
       </Tabs.Content>
     </Tabs>

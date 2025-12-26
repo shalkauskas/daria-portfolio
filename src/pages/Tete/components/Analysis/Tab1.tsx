@@ -1,4 +1,6 @@
-import { Image, List, Tabs } from '@/components';
+import { Image, List, Stack, Tabs } from '@/components';
+import sol1 from '@/pages/Tete/assets/sol1.png';
+import userflow from '@/pages/Tete/assets/userflow.png';
 import webprob1 from '@/pages/Tete/assets/webprob1.png';
 
 export function Tab1() {
@@ -36,8 +38,10 @@ export function Tab1() {
               questions our user might have.
             </List.Item>
           </List>
-          <img src="https://placehold.co/787x80" />
-          <img src="https://placehold.co/990x663" />
+          <Stack direction="column" gap="1.5rem" alignItems="center">
+            <Image src={userflow} style={{ maxWidth: '787px' }} />
+            <Image src={sol1} />
+          </Stack>
         </Tabs.ContentLayout>
       </Tabs.Content>
     </Tabs>

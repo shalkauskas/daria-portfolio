@@ -1,5 +1,8 @@
-import { Image, List, Stack, Tabs } from '@/components';
+import { Image, List, Tabs, Typography } from '@/components';
 import webprob2 from '@/pages/Tete/assets/webprob2.png';
+import sitemap from '@/pages/Tete/assets/sitemap.png';
+import sol2 from '@/pages/Tete/assets/sol2.png';
+import { ImageGrid } from './styles';
 
 export function Tab2() {
   return (
@@ -35,10 +38,17 @@ export function Tab2() {
             </List.Item>
             <List.Item>Use simple and clear words for navigation.</List.Item>
           </List>
-          <Stack gap="2rem">
-            <img src="https://placehold.co/479x392" />
-            <img src="https://placehold.co/479x349" />
-          </Stack>
+          <ImageGrid>
+            <Image
+              src={sitemap}
+              height="257px"
+              width="479px"
+              containerStyle={{ margin: 'auto' }}
+            />
+            <Image src={sol2} />
+            <Typography>Click to enlarge</Typography>
+            <Typography>Click to enlarge</Typography>
+          </ImageGrid>
         </Tabs.ContentLayout>
       </Tabs.Content>
     </Tabs>

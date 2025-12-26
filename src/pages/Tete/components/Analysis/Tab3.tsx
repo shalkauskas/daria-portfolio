@@ -1,5 +1,6 @@
-import { Image, List, Stack, Tabs } from '@/components';
+import { Image, List, Tabs } from '@/components';
 import webprob3 from '@/pages/Tete/assets/webprob3.png';
+import sol3 from '@/pages/Tete/assets/sol3.png';
 
 export function Tab3() {
   return (
@@ -36,7 +37,7 @@ export function Tab3() {
             <List.Item>Use price ranges whenever it is possible.</List.Item>
             <List.Item>Make pictures responsive.</List.Item>
           </List>
-          <img src="https://placehold.co/990x751" />
+          <Image src={sol3} />
         </Tabs.ContentLayout>
       </Tabs.Content>
     </Tabs>
