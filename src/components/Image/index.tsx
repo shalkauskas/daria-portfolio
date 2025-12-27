@@ -10,6 +10,7 @@ type Props = {
   height?: string;
   alt?: string;
   canEnlarge?: boolean;
+  objectFit?: 'contain' | 'cover' | 'fill' | 'none' | 'scale-down';
 };
 
 export function Image({
@@ -19,7 +20,7 @@ export function Image({
   width = 'auto',
   height = 'auto',
   alt = '',
-
+  objectFit = 'fill',
   canEnlarge = false
 }: Props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +43,8 @@ export function Image({
           src={src}
           style={{
             ...style,
-            cursor: canEnlarge ? 'pointer' : 'default'
+            cursor: canEnlarge ? 'pointer' : 'default',
+            objectFit: objectFit
           }}
           alt={alt}
           height={'100%'}

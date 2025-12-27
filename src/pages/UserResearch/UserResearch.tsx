@@ -3,6 +3,7 @@ import {
   Header,
   Image,
   Layout,
+  List,
   ProgressTracker,
   Stack,
   StepTitle,
@@ -12,7 +13,28 @@ import {
 } from '@/components';
 import { ImageContainer } from '../LikertScale/components';
 import { useMemo, useRef } from 'react';
+import { DataSolutions } from './components/DataSolutions';
+
 import header from '@/pages/UserResearch/assets/header.png';
+import surveys from '@/pages/UserResearch/assets/surveys.jpg';
+import q1 from '@/pages/UserResearch/assets/q1.png';
+import q2 from '@/pages/UserResearch/assets/q2.png';
+import q3 from '@/pages/UserResearch/assets/q3.png';
+import q4 from '@/pages/UserResearch/assets/q4.png';
+import q5 from '@/pages/UserResearch/assets/q5.png';
+import Chart1 from '@/pages/UserResearch/assets/chart1.png';
+import Chart2 from '@/pages/UserResearch/assets/chart2.png';
+import Chart3 from '@/pages/UserResearch/assets/chart3.png';
+import data1 from '@/pages/UserResearch/assets/data1.png';
+import data2 from '@/pages/UserResearch/assets/data2.png';
+
+import {
+  BorderBox,
+  BorderBoxContent,
+  SurveyBorderBox,
+  SurveyBorderBoxContent
+} from './styles';
+
 export function UserResearch() {
   const problemRef = useRef<HTMLDivElement>(null);
   const surveysRef = useRef<HTMLDivElement>(null);
@@ -64,17 +86,35 @@ export function UserResearch() {
               solve the right problems and make informed decisions while
               prioritizing feature enhancements.
             </Typography>
-            <img
-              src="https://placehold.co/1037x112"
-              style={{
-                margin: '40px 0'
-              }}
-            />
+            <DataSolutions />
           </div>
           <div ref={surveysRef}>
             <Title>{tableOfContent[1].title}</Title>
             <Stack direction="column" gap="1.5rem">
-              <img src="https://placehold.co/1037x281" />
+              <BorderBox>
+                <Image src={surveys} height="281px" objectFit="cover" />
+                <BorderBoxContent>
+                  <Typography variant="subtitle18">Objectives</Typography>
+                  <List type="ol">
+                    <List.Item>
+                      Collect information on the usage of features.
+                    </List.Item>
+                    <List.Item>
+                      Measure difficulty of the product features.
+                    </List.Item>
+                    <List.Item>
+                      Create an opportunity for responders to provide
+                      qualitative data.
+                    </List.Item>
+                    <List.Item>
+                      Get an insight on the overall customer satisfaction.
+                    </List.Item>
+                    <List.Item>
+                      Recruit participants for user interviews.
+                    </List.Item>
+                  </List>
+                </BorderBoxContent>
+              </BorderBox>
               <Stack direction="column" gap="1.5rem">
                 <StepTitle no={1}>Send Surveys</StepTitle>
                 <Typography>
@@ -84,7 +124,20 @@ export function UserResearch() {
                   nail each one of our objectives.
                 </Typography>
               </Stack>
-              <img src="https://placehold.co/1037x629" />
+              <SurveyBorderBox>
+                <Typography variant="subtitle18">Survey Questions</Typography>
+                <SurveyBorderBoxContent>
+                  <Stack direction="column" justifyContent="space-evenly">
+                    <Image src={q1} />
+                    <Image src={q2} />
+                  </Stack>
+                  <Stack direction="column">
+                    <Image src={q3} />
+                    <Image src={q4} />
+                    <Image src={q5} />
+                  </Stack>
+                </SurveyBorderBoxContent>
+              </SurveyBorderBox>
               <Stack direction="column" gap="1.5rem">
                 <StepTitle no={2}>Analyze Quantitative Data</StepTitle>
                 <Typography>
@@ -98,7 +151,30 @@ export function UserResearch() {
                   findings.
                 </Typography>
               </Stack>
-              <img src="https://placehold.co/1037x460" />
+              <div css={{ position: 'relative', height: '460px' }}>
+                <Image
+                  src={Chart1}
+                  height="341px"
+                  canEnlarge
+                  containerStyle={{ position: 'absolute', top: 0, left: 0 }}
+                />
+                <Image
+                  canEnlarge
+                  src={Chart2}
+                  height="281px"
+                  containerStyle={{
+                    position: 'absolute',
+                    top: '30%',
+                    left: '30%'
+                  }}
+                />
+                <Image
+                  canEnlarge
+                  src={Chart3}
+                  height="344px"
+                  containerStyle={{ position: 'absolute', top: 0, right: 0 }}
+                />
+              </div>
               <Stack direction="column" gap="1.5rem">
                 <StepTitle no={3}>Analyze Qualitative Data</StepTitle>
                 <Typography>
@@ -114,8 +190,20 @@ export function UserResearch() {
                 </Typography>
               </Stack>
               <ImageContainer>
-                <img src="https://placehold.co/500x319" />
-                <img src="https://placehold.co/500x319" />
+                <Image
+                  src={data1}
+                  height="319px"
+                  width="500px"
+                  objectFit="cover"
+                  canEnlarge
+                />
+                <Image
+                  src={data2}
+                  height="319px"
+                  width="500px"
+                  objectFit="cover"
+                  canEnlarge
+                />
               </ImageContainer>
             </Stack>
           </div>
