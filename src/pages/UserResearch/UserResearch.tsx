@@ -27,13 +27,20 @@ import Chart2 from '@/pages/UserResearch/assets/chart2.png';
 import Chart3 from '@/pages/UserResearch/assets/chart3.png';
 import data1 from '@/pages/UserResearch/assets/data1.png';
 import data2 from '@/pages/UserResearch/assets/data2.png';
-
+import inter1 from '@/pages/UserResearch/assets/inter1.png';
+import inter2 from '@/pages/UserResearch/assets/inter2.png';
+import f1 from '@/pages/UserResearch/assets/f1.png';
+import f2 from '@/pages/UserResearch/assets/f2.png';
+import f3 from '@/pages/UserResearch/assets/f3.png';
+import f4 from '@/pages/UserResearch/assets/f4.png';
+import f5 from '@/pages/UserResearch/assets/f5.png';
 import {
   BorderBox,
   BorderBoxContent,
   SurveyBorderBox,
   SurveyBorderBoxContent
 } from './styles';
+import { InterviewPreparation } from './components/InterviewPreparation';
 
 export function UserResearch() {
   const problemRef = useRef<HTMLDivElement>(null);
@@ -68,6 +75,7 @@ export function UserResearch() {
           header={
             <Image
               src={header}
+              objectFit="cover"
               height="200px"
               containerStyle={{ marginBottom: '2rem' }}
             />
@@ -193,14 +201,12 @@ export function UserResearch() {
                 <Image
                   src={data1}
                   height="319px"
-                  width="500px"
                   objectFit="cover"
                   canEnlarge
                 />
                 <Image
                   src={data2}
                   height="319px"
-                  width="500px"
                   objectFit="cover"
                   canEnlarge
                 />
@@ -223,7 +229,7 @@ export function UserResearch() {
                 interact with the product and provide information beyond our
                 objectives.
               </Typography>
-              <img src="https://placehold.co/1037x497" />
+              <InterviewPreparation />
               <StepTitle no={2}>Conduct Interviews</StepTitle>
               <Typography>
                 10 interviews got scheduled over the course of 3 weeks. Each
@@ -240,8 +246,8 @@ export function UserResearch() {
                 answers by the areas of the product that we were focusing on.
               </Typography>
               <ImageContainer>
-                <img src="https://placehold.co/500x300" />
-                <img src="https://placehold.co/500x300" />
+                <Image src={inter1} canEnlarge />
+                <Image src={inter2} canEnlarge />
               </ImageContainer>
               <StepTitle no={3}>Synthesize Findings</StepTitle>
               <Typography>
@@ -255,7 +261,13 @@ export function UserResearch() {
                 changed in comparison to the survey findings and one My Account
                 area got substituted with Demographic Reports.
               </Typography>
-              <img src="https://placehold.co/1036x275" />
+              <Stack>
+                <Image src={f1} canEnlarge objectFit="scale-down" />
+                <Image src={f2} canEnlarge objectFit="scale-down" />
+                <Image src={f3} canEnlarge objectFit="scale-down" />
+                <Image src={f4} canEnlarge objectFit="scale-down" />
+                <Image src={f5} canEnlarge objectFit="scale-down" />
+              </Stack>
             </Stack>
           </div>
           {/*  -------- OUTCOMES -------- */}

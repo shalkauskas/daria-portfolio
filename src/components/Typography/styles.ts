@@ -8,6 +8,7 @@ const shared = (theme: Theme) => ({
 
 export const StyledH1 = styled.h1(({ theme }) => ({
   ...shared(theme),
+  color: '#383D45',
   fontSize: theme.utility.pxToRem(32),
   fontWeight: 600,
   lineHeight: theme.utility.pxToRem(48)
