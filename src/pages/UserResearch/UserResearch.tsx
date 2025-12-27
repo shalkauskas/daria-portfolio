@@ -37,6 +37,7 @@ import f5 from '@/pages/UserResearch/assets/f5.png';
 import {
   BorderBox,
   BorderBoxContent,
+  QuantitativeDataContainer,
   SurveyBorderBox,
   SurveyBorderBoxContent
 } from './styles';
@@ -159,30 +160,11 @@ export function UserResearch() {
                   findings.
                 </Typography>
               </Stack>
-              <div css={{ position: 'relative', height: '460px' }}>
-                <Image
-                  src={Chart1}
-                  height="341px"
-                  canEnlarge
-                  containerStyle={{ position: 'absolute', top: 0, left: 0 }}
-                />
-                <Image
-                  canEnlarge
-                  src={Chart2}
-                  height="281px"
-                  containerStyle={{
-                    position: 'absolute',
-                    top: '30%',
-                    left: '30%'
-                  }}
-                />
-                <Image
-                  canEnlarge
-                  src={Chart3}
-                  height="344px"
-                  containerStyle={{ position: 'absolute', top: 0, right: 0 }}
-                />
-              </div>
+              <QuantitativeDataContainer>
+                <Image src={Chart1} height="341px" canEnlarge />
+                <Image canEnlarge src={Chart2} height="281px" />
+                <Image canEnlarge src={Chart3} height="344px" />
+              </QuantitativeDataContainer>
               <Stack direction="column" gap="1.5rem">
                 <StepTitle no={3}>Analyze Qualitative Data</StepTitle>
                 <Typography>
@@ -261,12 +243,40 @@ export function UserResearch() {
                 changed in comparison to the survey findings and one My Account
                 area got substituted with Demographic Reports.
               </Typography>
-              <Stack>
-                <Image src={f1} canEnlarge objectFit="scale-down" />
-                <Image src={f2} canEnlarge objectFit="scale-down" />
-                <Image src={f3} canEnlarge objectFit="scale-down" />
-                <Image src={f4} canEnlarge objectFit="scale-down" />
-                <Image src={f5} canEnlarge objectFit="scale-down" />
+              <Stack
+                css={{
+                  '@media (max-width: 1024px)': { flexDirection: 'column' }
+                }}>
+                <Image
+                  src={f1}
+                  canEnlarge
+                  objectFit="scale-down"
+                  height="300px"
+                />
+                <Image
+                  src={f2}
+                  canEnlarge
+                  objectFit="scale-down"
+                  height="300px"
+                />
+                <Image
+                  src={f3}
+                  canEnlarge
+                  objectFit="scale-down"
+                  height="300px"
+                />
+                <Image
+                  src={f4}
+                  canEnlarge
+                  objectFit="scale-down"
+                  height="300px"
+                />
+                <Image
+                  src={f5}
+                  canEnlarge
+                  objectFit="scale-down"
+                  height="300px"
+                />
               </Stack>
             </Stack>
           </div>

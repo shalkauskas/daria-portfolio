@@ -1,4 +1,8 @@
 import { Typography } from '@/components';
+import {
+  ImageContainerContent,
+  ImageContainer as ImageContainerStyled
+} from './styles';
 
 type Props = {
   children: React.ReactNode;
@@ -6,23 +10,9 @@ type Props = {
 };
 export function ImageContainer({ children, subtitle }: Props) {
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-evenly',
-        gap: '1rem',
-        maxWidth: '100vw'
-      }}>
+    <ImageContainerStyled>
       {subtitle && <Typography variant="subtitle18">{subtitle}</Typography>}
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          gap: '1.5rem'
-        }}>
-        {children}
-      </div>
-    </div>
+      <ImageContainerContent>{children}</ImageContainerContent>
+    </ImageContainerStyled>
   );
 }

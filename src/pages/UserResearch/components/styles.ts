@@ -7,7 +7,12 @@ export const DataSolutionsContainer = styled.div(({ theme }) => ({
   columnGap: theme.utility.pxToRem(20),
   justifyContent: 'center',
   alignItems: 'center',
-  margin: theme.utility.pxToRem(40)
+  margin: theme.utility.pxToRem(40),
+
+  '@media (max-width: 1024px)': {
+    gridTemplateColumns: '1fr',
+    gridTemplateRows: '1fr 0.2fr 1fr 0.2fr 0.5fr'
+  }
 }));
 
 export const DataSolutionsItem = styled.div({
@@ -37,7 +42,18 @@ export const InterviewPreparationContainer = styled.div(({ theme }) => ({
   '& > *:nth-of-type(2)': { gridArea: 'area2' },
   '& > *:nth-of-type(3)': { gridArea: 'area3' },
   '& > *:nth-of-type(4)': { gridArea: 'area4' },
-  '& > *:nth-of-type(5)': { gridArea: 'area5' }
+  '& > *:nth-of-type(5)': { gridArea: 'area5' },
+
+  '@media (max-width: 1024px)': {
+    gridTemplateColumns: '1fr',
+    gridTemplateAreas: `
+      "area1"
+      "area2"
+      "area3"
+      "area4"
+      "area5"
+    `
+  }
 }));
 
 export const Title = styled(Typography)(({ theme }) => ({

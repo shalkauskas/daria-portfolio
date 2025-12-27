@@ -6,7 +6,11 @@ export const ProgressTrackerWrapper = styled.div(({ theme }) => ({
   boxShadow: `0 0.25rem ${theme.utility.pxToRem(10)} 0.5rem ${theme.colors.black1} inset`,
   borderRight: `1px solid ${theme.colors.grey1}`,
   minWidth: theme.utility.pxToRem(300),
-  maxWidth: theme.utility.pxToRem(400)
+  maxWidth: theme.utility.pxToRem(400),
+
+  '@media (max-width: 1100px)': {
+    display: 'none'
+  }
 }));
 
 export const ProjectOverviewTitle = styled.p(({ theme }) => ({
