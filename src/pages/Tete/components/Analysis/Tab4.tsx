@@ -20,7 +20,7 @@ export function Tab4() {
             </List.Item>
             <List.Item>The size of text in paragraphs is too small.</List.Item>
           </List>
-          <Image src={webprob4} />
+          <Image src={webprob4} canEnlarge />
         </Tabs.ContentLayout>
       </Tabs.Content>
       <Tabs.Content value="solutions">
@@ -35,7 +35,7 @@ export function Tab4() {
               of paragraph bigger.
             </List.Item>
           </List>
-          <Image src={sol4} />
+          <Image src={sol4} canEnlarge />
         </Tabs.ContentLayout>
       </Tabs.Content>
     </Tabs>

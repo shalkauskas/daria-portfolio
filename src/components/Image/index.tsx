@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { Overlay, ModalContent, EnlargedImage, CloseButton } from './styles';
 
 type Props = {
+  className?: string;
   containerStyle?: React.CSSProperties;
   src?: string;
   style?: React.CSSProperties;
@@ -14,6 +15,7 @@ type Props = {
 };
 
 export function Image({
+  className,
   containerStyle,
   src,
   style,
@@ -38,7 +40,10 @@ export function Image({
 
   return (
     <>
-      <div style={containerStyle} css={{ height: height, width: width }}>
+      <div
+        className={className}
+        style={containerStyle}
+        css={{ height: height, width: width }}>
         <img
           src={src}
           style={{

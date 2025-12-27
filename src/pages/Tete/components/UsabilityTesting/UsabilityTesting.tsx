@@ -12,6 +12,7 @@ import test6 from '@/pages/Tete/assets/test6.png';
 import test7 from '@/pages/Tete/assets/test7.png';
 import test8 from '@/pages/Tete/assets/test8.png';
 import test9 from '@/pages/Tete/assets/test9.png';
+import { ArrowImage } from './styles';
 type Props = {
   title: string;
 };
@@ -31,7 +32,15 @@ export const UsabilityTesting = forwardRef<HTMLDivElement, Props>(
           turned out to be the most user friendly and fits well both desktop and
           mobile versions.
         </Typography>
-        <Stack css={{ justifyContent: 'space-between' }}>
+        <Stack
+          css={{
+            justifyContent: 'space-between',
+            '@media (max-width: 850px)': {
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '2.5rem'
+            }
+          }}>
           <Stack gap="0.5rem" alignItems="start">
             <Image src={cross} height="24px" />
             <Stack gap="1.5rem">
@@ -74,7 +83,7 @@ export const UsabilityTesting = forwardRef<HTMLDivElement, Props>(
           for users. As a result, I got rid of dots and made menu items
           clickable while still maintaining screens’ ability to slide.
         </Typography>
-        <Stack css={{ justifyContent: 'space-evenly' }}>
+        <Stack css={{ justifyContent: 'space-evenly', gap: '1rem' }}>
           <Image
             src={test5}
             height="417px"
@@ -101,7 +110,15 @@ export const UsabilityTesting = forwardRef<HTMLDivElement, Props>(
           logo I chose to make a transition from logo (initial state) to a text
           title.
         </Typography>
-        <Stack justifyContent="space-evenly">
+        <Stack
+          justifyContent="space-evenly"
+          css={{
+            '@media (max-width: 850px)': {
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '2.5rem'
+            }
+          }}>
           <Stack gap="0.5rem" alignItems="start">
             <Image src={cross} height="24px" />
             <Stack gap="1.5rem">
@@ -117,7 +134,7 @@ export const UsabilityTesting = forwardRef<HTMLDivElement, Props>(
                 canEnlarge
                 containerStyle={{ border: '1px solid #E2D7D2' }}
               />
-              <Image src={arrowright} height="30px" />
+              <ArrowImage src={arrowright} height="30px" />
             </Stack>
           </Stack>
           <Stack gap="0.5rem" alignItems="start">

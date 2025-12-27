@@ -22,7 +22,11 @@ export const PersonaGrid = styled.div(() => ({
   display: 'grid',
   gridTemplateColumns: '1fr 1fr',
   gap: '1rem',
-  padding: '1.5rem'
+  padding: '1.5rem',
+
+  '@media (max-width: 850px)': {
+    gridTemplateColumns: '1fr'
+  }
 }));
 
 export const PersonaFooter = styled.div(({ theme }) => ({
@@ -37,4 +41,10 @@ export const Row = styled.div(() => ({
   alignItems: 'center',
   display: 'grid',
   gridTemplateColumns: '2fr 3fr'
+}));
+
+export const PersonaWrapper = styled.div(({ theme }) => ({
+  gap: '2rem',
+  flexDirection: 'column',
+  alignItems: 'center'
 }));

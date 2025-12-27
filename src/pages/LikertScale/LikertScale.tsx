@@ -11,7 +11,7 @@ import {
   ViewNext
 } from '@/components';
 import { likertScaleContent, likertScaleTitles } from '@/data/likertScale';
-import { FlexContainer } from './styles';
+import { FlexContainer, GridContainer } from './styles';
 import { ImageContainer } from './components';
 import { useMemo, useRef } from 'react';
 import { ProgressTrackerContainer } from '@/components/ProgressTracker/styles';
@@ -109,10 +109,10 @@ export function LikertScale() {
             </Typography>
           </Stack>
           <ImageContainer subtitle="Google Docs">
-            <Image src={res1} />
+            <Image src={res1} canEnlarge />
             <Stack css={{ gap: '1.5rem' }}>
-              <Image src={res2} />
-              <Image src={res3} />
+              <Image src={res2} canEnlarge />
+              <Image src={res3} canEnlarge />
             </Stack>
           </ImageContainer>
           <Typography
@@ -126,8 +126,8 @@ export function LikertScale() {
             with the form
           </Typography>
           <ImageContainer subtitle="Survey Monkey">
-            <Image src={res4} />
-            <Image src={res5} />
+            <Image src={res4} canEnlarge />
+            <Image src={res5} canEnlarge />
           </ImageContainer>
           <Typography
             sx={{
@@ -152,8 +152,13 @@ export function LikertScale() {
             long.
           </Typography>
           <ImageContainer subtitle="JotForms">
-            <Image src={res6} height="328px" canEnlarge />
-            <Stack css={{ gap: '1.5rem' }}>
+            <Image
+              src={res6}
+              height="328px"
+              canEnlarge
+              objectFit="scale-down"
+            />
+            <Stack css={{ gap: '1.5rem', justifyContent: 'space-evenly' }}>
               <Image src={res7} height="328px" canEnlarge />
               <Image src={res8} height="328px" canEnlarge />
             </Stack>
@@ -173,7 +178,7 @@ export function LikertScale() {
             <StepTitle no={3}>
               {likertScaleTitles.tableOfContent.ideate}
             </StepTitle>
-            <div css={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr' }}>
+            <GridContainer>
               <Image src={ideate1} canEnlarge />
               <Typography sx={{ padding: '1rem' }}>
                 While I liked the Survey Monkey mobile solution that shows the
@@ -184,9 +189,16 @@ export function LikertScale() {
                 and add some unnecessary scrolling for a person filling out the
                 form.
               </Typography>
-            </div>
-            <div css={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr' }}>
-              <Typography sx={{ padding: '1rem' }}>
+            </GridContainer>
+            <GridContainer
+              css={{
+                gridTemplateColumns: '1.2fr 1fr'
+              }}>
+              <Typography
+                sx={{
+                  padding: '1rem',
+                  '@media (max-width: 1400px)': { order: 2 }
+                }}>
                 To solve this problem I came up with idea of hiding the answers
                 under accordions. I put each question into a card and shown the
                 answer options only when the card is selected. To save even more
@@ -198,8 +210,13 @@ export function LikertScale() {
                 form and check if everything is correct before submitting a
                 form.
               </Typography>
-              <Image src={ideate2} width="506px" canEnlarge />
-            </div>
+              <Image
+                src={ideate2}
+                width="506px"
+                canEnlarge
+                containerStyle={{ margin: 'auto' }}
+              />
+            </GridContainer>
           </FlexContainer>
           <Stack
             css={{ flexDirection: 'column', gap: '1.5rem' }}

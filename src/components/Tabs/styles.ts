@@ -8,8 +8,7 @@ export const TabsContainer = styled.div(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   gap: '1rem',
-  padding: '1.5rem',
-  width: '100%'
+  padding: '1.5rem'
 }));
 
 export const TabContentLayout = styled.div(({ theme }) => ({

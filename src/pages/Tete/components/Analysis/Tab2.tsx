@@ -26,7 +26,7 @@ export function Tab2() {
               fully explain what this page is about.
             </List.Item>
           </List>
-          <Image src={webprob2} />
+          <Image src={webprob2} canEnlarge />
         </Tabs.ContentLayout>
       </Tabs.Content>
       <Tabs.Content value="solutions">

@@ -4,6 +4,7 @@ import {
   PersonaContainer,
   PersonaFooter,
   PersonaGrid,
+  PersonaWrapper,
   Row
 } from './styles';
 import { personaBio, personaCards } from '@/data/tete';
@@ -19,11 +20,7 @@ type Props = {
 export const UserPersona = forwardRef<HTMLDivElement, Props>(
   ({ title }, ref) => {
     return (
-      <Stack
-        gap="2rem"
-        direction="column"
-        css={{ alignItems: 'center' }}
-        ref={ref}>
+      <PersonaWrapper ref={ref}>
         <Typography variant="h1">{title}</Typography>
         <PersonaContainer>
           <GradientContainer>
@@ -36,7 +33,7 @@ export const UserPersona = forwardRef<HTMLDivElement, Props>(
             </Typography>
           </GradientContainer>
           <PersonaGrid>
-            <Image src={tinaJones} />
+            <Image src={tinaJones} objectFit="cover" />
             <Stack direction="column" gap="1.5rem">
               <Typography variant="h4">
                 “Picking a new stylist is a very intimate process”.
@@ -103,7 +100,7 @@ export const UserPersona = forwardRef<HTMLDivElement, Props>(
             </Typography>
           </PersonaFooter>
         </PersonaContainer>
-      </Stack>
+      </PersonaWrapper>
     );
   }
 );

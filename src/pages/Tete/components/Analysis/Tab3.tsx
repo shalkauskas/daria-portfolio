@@ -24,7 +24,7 @@ export function Tab3() {
               Small pictures look funny on a desktop version.
             </List.Item>
           </List>
-          <Image src={webprob3} />
+          <Image src={webprob3} canEnlarge />
         </Tabs.ContentLayout>
       </Tabs.Content>
       <Tabs.Content value="solutions">
@@ -37,7 +37,7 @@ export function Tab3() {
             <List.Item>Use price ranges whenever it is possible.</List.Item>
             <List.Item>Make pictures responsive.</List.Item>
           </List>
-          <Image src={sol3} />
+          <Image src={sol3} canEnlarge />
         </Tabs.ContentLayout>
       </Tabs.Content>
     </Tabs>

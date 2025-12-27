@@ -22,7 +22,7 @@ export function Tab1() {
               layout.
             </List.Item>
           </List>
-          <Image src={webprob1} />
+          <Image src={webprob1} canEnlarge />
         </Tabs.ContentLayout>
       </Tabs.Content>
       <Tabs.Content value="solutions">
@@ -39,8 +39,8 @@ export function Tab1() {
             </List.Item>
           </List>
           <Stack direction="column" gap="1.5rem" alignItems="center">
-            <Image src={userflow} style={{ maxWidth: '787px' }} />
-            <Image src={sol1} />
+            <Image src={userflow} style={{ maxWidth: '787px' }} canEnlarge />
+            <Image src={sol1} canEnlarge />
           </Stack>
         </Tabs.ContentLayout>
       </Tabs.Content>
