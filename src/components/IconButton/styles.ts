@@ -10,7 +10,8 @@ const baseButton = {
   padding: '0.5rem',
 
   '&:hover *': {
-    cursor: 'pointer'
+    cursor: 'pointer',
+    opacity: 0.8
   }
 };
 

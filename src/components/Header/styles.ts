@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { IconButton } from '../IconButton/IconButton';
+
 export const HeaderContainer = styled.header(({ theme }) => ({
   display: 'flex',
   background: theme.colors.white,
@@ -47,20 +48,37 @@ export const MenuIcon = styled(IconButton)(({ theme }) => ({
   }
 }));
 
-export const MenuContainer = styled.div(({ theme }) => ({
+export const DrawerWrapper = styled.div<{ isOpen?: boolean }>(({ isOpen }) => ({
   position: 'fixed',
   top: 0,
   left: 0,
-  width: '80vw',
-  height: '100%',
-  background: theme.colors.primary,
-  textAlign: 'center',
+  width: '100vw',
+  height: '100vh',
   zIndex: 20,
-
-  a: {
-    color: theme.colors.white
-  }
+  display: 'flex',
+  pointerEvents: isOpen ? 'auto' : 'none'
 }));
+
+export const MenuContainer = styled.div<{ isOpen?: boolean }>(
+  ({ theme, isOpen }) => ({
+    width: '80vw',
+    height: '100%',
+    background: theme.colors.primary,
+    textAlign: 'center',
+    overflowY: 'auto',
+    transform: isOpen ? 'translateX(0)' : 'translateX(-100%)',
+    transition: 'transform 0.2s ease-in-out',
+
+    a: {
+      color: theme.colors.white,
+
+      '&:hover': {
+        color: theme.colors.white,
+        opacity: 0.8
+      }
+    }
+  })
+);
 
 export const MenuHeader = styled.div(({ theme }) => ({
   display: 'flex',
@@ -70,13 +88,12 @@ export const MenuHeader = styled.div(({ theme }) => ({
   padding: theme.utility.pxToRem(32)
 }));
 
-export const Backdrop = styled.div(({ theme }) => ({
-  position: 'fixed',
-  cursor: 'pointer',
-  top: 0,
-  right: 0,
-  width: '20vw',
+export const Backdrop = styled.div<{ isOpen?: boolean }>(({ isOpen }) => ({
+  flex: 1,
   height: '100%',
   background: 'rgba(0, 0, 0, 0.5)',
-  zIndex: 20
+  cursor: 'pointer',
+  opacity: isOpen ? 1 : 0,
+  transition: isOpen ? 'opacity 0.2s ease-in-out' : 'none',
+  transitionDelay: isOpen ? '0.2s' : '0s' // Delay appearance until slide finishes
 }));

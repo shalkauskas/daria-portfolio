@@ -21,12 +21,11 @@ export function Header({
 
   return (
     <>
-      {isMenuOpen && (
-        <Menu
-          activeSection={activeSection}
-          onClose={() => setIsMenuOpen(false)}
-        />
-      )}
+      <Menu
+        activeSection={activeSection}
+        onClose={() => setIsMenuOpen(false)}
+        isOpen={isMenuOpen}
+      />
       <HeaderContainer>
         <LogoContainer>
           <Logo
