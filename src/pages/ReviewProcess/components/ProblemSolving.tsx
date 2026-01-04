@@ -1,4 +1,7 @@
 import { Stack, StepTitle, Title, Typography } from '@/components';
+import { Tab1 } from './Tab1';
+import { Tab2 } from './Tab2';
+import { Tab3 } from './Tab3';
 
 export function ProblemSolving() {
   return (
@@ -13,12 +16,15 @@ export function ProblemSolving() {
       <StepTitle no={1} title="Problem">
         Navigation and Summary
       </StepTitle>
+      <Tab1 />
       <StepTitle no={2} title="Problem">
         Form Runtime
       </StepTitle>
+      <Tab2 />
       <StepTitle no={3} title="Problem">
         Letters of Recommendations
       </StepTitle>
+      <Tab3 />
     </Stack>
   );
 }
