@@ -1,4 +1,4 @@
-import { Image, List, Stack, Tabs } from '@/components';
+import { Image, List, Tabs } from '@/components';
 import webprob4 from '@/pages/Tete/assets/webprob4.png';
 import sol4 from '@/pages/Tete/assets/sol4.png';
 

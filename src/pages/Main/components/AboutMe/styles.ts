@@ -8,10 +8,12 @@ export const ButtonsContainer = styled.div(() => ({
     justifyContent: 'space-between'
   }
 }));
+
 export const ButtonsSocialContainer = styled.div(() => ({
   display: 'flex',
   gap: '0.75rem'
 }));
+
 export const ContentWrapper = styled.div(({ theme }) => ({
   alignItems: 'center',
   display: 'flex',
@@ -24,17 +26,19 @@ export const ContentWrapper = styled.div(({ theme }) => ({
     gap: '1rem'
   }
 }));
+
 export const Text = styled.p(({ theme }) => ({
   fontSize: theme.utility.pxToRem(20),
   lineHeight: '2rem'
 }));
-export const TextContainer = styled.div(({ theme }) => ({
+
+export const TextContainer = styled.div({
   alignItems: 'center',
   display: 'flex',
   flexDirection: 'column',
   gap: '2rem',
   margin: 'auto'
-}));
+});
 
 export const Wrapper = styled.div(({ theme }) => ({
   alignItems: 'center',

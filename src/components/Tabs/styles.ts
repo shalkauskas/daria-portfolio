@@ -11,8 +11,8 @@ export const TabsContainer = styled.div(({ theme }) => ({
   padding: '1.5rem'
 }));
 
-export const TabContentLayout = styled.div(({ theme }) => ({
+export const TabContentLayout = styled.div({
   display: 'flex',
   flexDirection: 'column',
   gap: '1.5rem'
-}));
+});

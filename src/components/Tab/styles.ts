@@ -7,7 +7,7 @@ export const TabContainer = styled.span<{ $isActive?: boolean }>(
     lineHeight: '1.5rem',
     fontWeight: 600,
 
-    '> a': {
+    '> a, p': {
       color: $isActive ? theme.colors.primary : 'inherit',
       cursor: 'pointer',
       textDecoration: $isActive ? 'underline' : 'none',

@@ -4,7 +4,6 @@ import {
   PersonaContainer,
   PersonaFooter,
   PersonaGrid,
-  PersonaWrapper,
   Row
 } from './styles';
 import { personaBio, personaCards } from '@/data/tete';
@@ -20,7 +19,7 @@ type Props = {
 export const UserPersona = forwardRef<HTMLDivElement, Props>(
   ({ title }, ref) => {
     return (
-      <PersonaWrapper ref={ref}>
+      <div ref={ref}>
         <Typography variant="h1">{title}</Typography>
         <PersonaContainer>
           <GradientContainer>
@@ -100,7 +99,7 @@ export const UserPersona = forwardRef<HTMLDivElement, Props>(
             </Typography>
           </PersonaFooter>
         </PersonaContainer>
-      </PersonaWrapper>
+      </div>
     );
   }
 );

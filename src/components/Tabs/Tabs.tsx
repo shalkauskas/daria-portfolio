@@ -41,9 +41,7 @@ export function Tabs({ children, tabs, variant = 'default', sx }: TabsProps) {
       </Stack>
       {children.map((child) =>
         isValidElement(child) && child.props.value === activeTab
-          ? cloneElement(child, {
-              ...child.props
-            })
+          ? cloneElement(child, { key: child.props.value, ...child.props })
           : null
       )}
     </Container>
@@ -53,5 +51,5 @@ Tabs.Content = TabContent;
 Tabs.ContentLayout = TabContentLayout;
 
 function TabContent({ children, value }: TabContentProps) {
-  return <div aria-value={value}>{children}</div>;
+  return <div data-value={value}>{children}</div>;
 }

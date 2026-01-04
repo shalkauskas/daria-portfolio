@@ -42,7 +42,7 @@ export const SurveyBorderBoxContent = styled.div(({ theme }) => ({
   }
 }));
 
-export const QuantitativeDataContainer = styled.div(({ theme }) => ({
+export const QuantitativeDataContainer = styled.div({
   position: 'relative',
   height: '460px',
 
@@ -97,4 +97,4 @@ export const QuantitativeDataContainer = styled.div(({ theme }) => ({
       }
     }
   }
-}));
+});

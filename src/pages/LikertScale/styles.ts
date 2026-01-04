@@ -7,7 +7,7 @@ export const FlexContainer = styled.div(({ theme }) => ({
   marginBottom: '2rem'
 }));
 
-export const GridContainer = styled.div(({ theme }) => ({
+export const GridContainer = styled.div(() => ({
   display: 'grid',
   gridTemplateColumns: '1fr 1.2fr',
 

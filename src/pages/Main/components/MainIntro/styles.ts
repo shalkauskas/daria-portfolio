@@ -15,14 +15,16 @@ export const Wrapper = styled.div(({ theme }) => ({
     padding: `${theme.utility.pxToRem(32)} 1rem ${theme.utility.pxToRem(50)}`
   }
 }));
-export const TextContainer = styled.div(({ theme }) => ({
+
+export const TextContainer = styled.div({
   alignItems: 'center',
   display: 'flex',
   flexDirection: 'column',
   gap: '2rem',
   margin: 'auto',
   zIndex: 1
-}));
+});
+
 export const ImageContainer = styled.div(({ theme }) => ({
   display: 'flex',
   flexShrink: 0,
@@ -30,18 +32,22 @@ export const ImageContainer = styled.div(({ theme }) => ({
   width: theme.utility.pxToRem(380),
   zIndex: 1
 }));
+
 export const Title = styled.h1(({ theme }) => ({
   fontSize: '2.5rem',
   color: theme.colors.purple4
 }));
+
 export const Statement = styled.h3({
   fontSize: '2rem',
   textAlign: 'center'
 });
+
 export const Description = styled.h6(({ theme }) => ({
   fontSize: '1.5rem',
   lineHeight: theme.utility.pxToRem(36)
 }));
+
 export const Circle1 = styled.div(({ theme }) => ({
   backgroundColor: '#F1EDFC',
   borderRadius: '100%',
@@ -52,6 +58,7 @@ export const Circle1 = styled.div(({ theme }) => ({
   right: '42%',
   width: theme.utility.pxToRem(354)
 }));
+
 export const Circle2 = styled.div(({ theme }) => ({
   backgroundColor: theme.colors.purple1,
   borderRadius: '100%',
@@ -62,6 +69,7 @@ export const Circle2 = styled.div(({ theme }) => ({
   right: '25%',
   width: theme.utility.pxToRem(240)
 }));
+
 export const Circle3 = styled.div(({ theme }) => ({
   backgroundColor: '#BBA9E8',
   borderRadius: '100%',

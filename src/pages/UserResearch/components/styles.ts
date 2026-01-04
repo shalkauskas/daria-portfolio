@@ -30,7 +30,7 @@ export const StyledTypography = styled(Typography)(({ theme }) => ({
   textAlign: 'center'
 }));
 
-export const InterviewPreparationContainer = styled.div(({ theme }) => ({
+export const InterviewPreparationContainer = styled.div({
   display: 'grid',
   gridTemplateColumns: '1fr 1fr 1fr',
   gridTemplateAreas: `
@@ -54,7 +54,7 @@ export const InterviewPreparationContainer = styled.div(({ theme }) => ({
       "area5"
     `
   }
-}));
+});
 
 export const Title = styled(Typography)(({ theme }) => ({
   '& > span': {

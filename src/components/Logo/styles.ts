@@ -11,7 +11,7 @@ export const LogoContainer = styled.div(({ theme }) => ({
   border: `${theme.utility.pxToRem(3)} solid currentColor`
 }));
 
-export const LogoText = styled.span(({ theme }) => ({
+export const LogoText = styled.span(() => ({
   display: 'flex',
   fontFamily: '"Agbalumo", serif;',
   fontSize: '1.5rem',

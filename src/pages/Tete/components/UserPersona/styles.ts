@@ -42,9 +42,3 @@ export const Row = styled.div(() => ({
   display: 'grid',
   gridTemplateColumns: '2fr 3fr'
 }));
-
-export const PersonaWrapper = styled.div(({ theme }) => ({
-  gap: '2rem',
-  flexDirection: 'column',
-  alignItems: 'center'
-}));

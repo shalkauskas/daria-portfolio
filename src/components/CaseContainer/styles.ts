@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.div(({ theme }) => ({
+export const Container = styled.div(() => ({
   overflow: 'auto',
   width: '100%'
 }));

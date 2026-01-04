@@ -35,7 +35,7 @@ export const ProjectOverviewGrid = styled.div(({ theme }) => ({
   rowGap: theme.utility.pxToRem(8)
 }));
 
-export const TableOfContentList = styled.ul(({ theme }) => ({
+export const TableOfContentList = styled.ul(() => ({
   listStyle: 'none',
   padding: 0,
   margin: 0
