@@ -13,52 +13,78 @@ export const ProgressTrackerWrapper = styled.div(({ theme }) => ({
   }
 }));
 
-export const ProjectOverviewTitle = styled.p(({ theme }) => ({
-  color: theme.colors.secondaryText,
-  fontSize: theme.utility.pxToRem(14),
-  fontWeight: 700,
-  lineHeight: theme.utility.pxToRem(24)
+export const ProgressTrackerMobileWrapper = styled.div(({ theme }) => ({
+  position: 'fixed',
+  bottom: 0,
+  left: 0,
+  right: 0,
+  backgroundColor: 'white',
+  zIndex: 1000,
+  display: 'none',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  padding: theme.utility.pxToRem(16),
+  boxShadow: `0px -2px 24px 0px rgba(0, 0, 0, 0.25)`,
+
+  '@media (max-width: 1100px)': {
+    display: 'flex'
+  }
 }));
-
-export const ProjectOverviewValue = styled.p(({ theme }) => ({
-  color: theme.colors.primaryText,
-  fontFamily: '"Open Sans", serif;',
-  fontSize: theme.utility.pxToRem(16),
-  fontWeight: 600,
-  lineHeight: theme.utility.pxToRem(24)
-}));
-
-export const ProjectOverviewGrid = styled.div(({ theme }) => ({
-  display: 'grid',
-  gridTemplateColumns: '1fr 2fr',
-  columnGap: theme.utility.pxToRem(20),
-  rowGap: theme.utility.pxToRem(8)
-}));
-
-export const TableOfContentList = styled.ul(() => ({
-  listStyle: 'none',
-  padding: 0,
-  margin: 0
-}));
-
-export const TableOfContentItem = styled.li<{ $isActive?: boolean }>(
-  ({ theme, $isActive }) => ({
-    borderRadius: theme.utility.pxToRem(8),
-    color: theme.colors.primaryText,
-    fontSize: theme.utility.pxToRem(18),
-    lineHeight: theme.utility.pxToRem(24),
-    padding: `${theme.utility.pxToRem(8)} ${theme.utility.pxToRem(16)}`,
-
-    backgroundColor: $isActive ? '#F7EFFF' : 'transparent',
-    border: $isActive ? `1px solid ${theme.colors.primary}` : 'none',
-    cursor: 'pointer',
-    fontWeight: $isActive ? 600 : 400
-  })
-);
 
 export const ProgressTrackerContainer = styled.div(({ theme }) => ({
   display: 'flex',
   flexDirection: 'row',
   overflow: 'hidden',
   height: `calc(100vh - ${theme.utility.pxToRem(68)})`
+}));
+
+export const OverlayBackdrop = styled.div({
+  position: 'fixed',
+  top: 0,
+  left: 0,
+  width: '100%',
+  height: '100%',
+  backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  zIndex: 1000,
+  '@media (min-width: 1101px)': {
+    display: 'none'
+  }
+});
+
+export const OverlayContainer = styled.div<{ $isOpen: boolean }>(
+  ({ theme, $isOpen }) => ({
+    position: 'fixed',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: '90vh',
+    backgroundColor: 'white',
+    zIndex: 1001,
+    borderTopLeftRadius: theme.utility.pxToRem(16),
+    borderTopRightRadius: theme.utility.pxToRem(16),
+    boxShadow: '0px -4px 24px rgba(0, 0, 0, 0.15)',
+    display: 'flex',
+    flexDirection: 'column',
+    transform: $isOpen ? 'translateY(0)' : 'translateY(100%)',
+    transition: 'transform 0.3s ease-in-out',
+
+    '@media (min-width: 1101px)': {
+      display: 'none'
+    }
+  })
+);
+
+export const OverlayHeader = styled.div(({ theme }) => ({
+  display: 'flex',
+  borderBottom: `1px solid ${theme.colors.grey1}`,
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  padding: theme.utility.pxToRem(16)
+}));
+
+export const OverlayContent = styled.div(({ theme }) => ({
+  backgroundColor: '#EBEFF6',
+  flex: 1,
+  overflowY: 'auto',
+  padding: theme.utility.pxToRem(16)
 }));

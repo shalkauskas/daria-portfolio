@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { Stack, Typography } from '..';
+import { Button, IconButton, Stack, Typography } from '@/components';
 import {
+  OverlayBackdrop,
+  OverlayContainer,
+  OverlayContent,
+  OverlayHeader,
   ProgressTrackerContainer,
-  ProgressTrackerWrapper,
-  ProjectOverviewGrid,
-  ProjectOverviewTitle,
-  ProjectOverviewValue,
-  TableOfContentItem,
-  TableOfContentList
+  ProgressTrackerMobileWrapper,
+  ProgressTrackerWrapper
 } from './styles';
+import { CloseIcon } from './components/CloseIcon';
+import { Overview } from './components/Overview';
+import { Content } from './components/Content';
 
 type Props = {
   overview: {
@@ -25,6 +28,9 @@ type Props = {
 
 export function ProgressTracker({ overview, tableOfContent }: Props) {
   const [activeTitle, setActiveTitle] = useState<string>('');
+  const [mobileOverlayType, setMobileOverlayType] = useState<
+    'overview' | 'content' | null
+  >(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -55,43 +61,56 @@ export function ProgressTracker({ overview, tableOfContent }: Props) {
     return () => observer.disconnect();
   }, [tableOfContent]);
 
-  const handleScroll = (ref?: React.RefObject<HTMLElement>) => {
-    if (ref?.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
+  function handleClose() {
+    setMobileOverlayType(null);
+  }
 
   return (
-    <ProgressTrackerWrapper>
-      <Stack gap="2rem" direction="column">
-        <Typography variant="subtitle18">PROJECT OVERVIEW</Typography>
-        <ProjectOverviewGrid>
-          <ProjectOverviewTitle>TIMELINE</ProjectOverviewTitle>
-          <ProjectOverviewValue>{overview.timeline}</ProjectOverviewValue>
+    <>
+      <ProgressTrackerWrapper>
+        <Stack gap="2rem" direction="column">
+          <Typography variant="subtitle18">PROJECT OVERVIEW</Typography>
+          <Overview overview={overview} />
+          <Typography variant="subtitle18">TABLE OF CONTENT</Typography>
+          <Content
+            tableOfContent={tableOfContent}
+            activeTitle={activeTitle}
+            handleClose={handleClose}
+          />
+        </Stack>
+      </ProgressTrackerWrapper>
+      <ProgressTrackerMobileWrapper>
+        <Button
+          variant="secondary"
+          onClick={() => setMobileOverlayType('overview')}>
+          Overview
+        </Button>
+        <Button onClick={() => setMobileOverlayType('content')}>Content</Button>
+      </ProgressTrackerMobileWrapper>
+      {mobileOverlayType && <OverlayBackdrop onClick={handleClose} />}
+      <OverlayContainer $isOpen={!!mobileOverlayType}>
+        <OverlayHeader>
+          <Typography variant="subtitle18">
+            {mobileOverlayType === 'overview'
+              ? 'Project Overview'
+              : 'Table of Content'}
+          </Typography>
+          <IconButton icon={<CloseIcon />} onClick={handleClose} />
+        </OverlayHeader>
 
-          <ProjectOverviewTitle>TEAMS</ProjectOverviewTitle>
-          <ProjectOverviewValue>{overview.teams}</ProjectOverviewValue>
-
-          <ProjectOverviewTitle>TOOLS</ProjectOverviewTitle>
-          <ProjectOverviewValue>{overview.tools}</ProjectOverviewValue>
-
-          <ProjectOverviewTitle>METHODS</ProjectOverviewTitle>
-          <ProjectOverviewValue>{overview.methods}</ProjectOverviewValue>
-        </ProjectOverviewGrid>
-        <Typography variant="subtitle18">TABLE OF CONTENT</Typography>
-        <TableOfContentList>
-          {tableOfContent.map((item) => (
-            <TableOfContentItem
-              key={item.title}
-              as="li"
-              $isActive={activeTitle === item.title}
-              onClick={() => handleScroll(item.ref)}>
-              {item.title}
-            </TableOfContentItem>
-          ))}
-        </TableOfContentList>
-      </Stack>
-    </ProgressTrackerWrapper>
+        <OverlayContent>
+          {mobileOverlayType === 'overview' ? (
+            <Overview overview={overview} />
+          ) : (
+            <Content
+              tableOfContent={tableOfContent}
+              activeTitle={activeTitle}
+              handleClose={handleClose}
+            />
+          )}
+        </OverlayContent>
+      </OverlayContainer>
+    </>
   );
 }
 ProgressTracker.Container = ProgressTrackerContainer;

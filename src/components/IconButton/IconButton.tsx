@@ -1,9 +1,10 @@
 import { ButtonBase, ButtonRound } from './styles';
+import { CSSInterpolation } from '@emotion/serialize';
 
 type Props = {
   className?: string;
-  css?: React.CSSProperties;
-  icon: string;
+  css?: CSSInterpolation;
+  icon: string | React.ReactNode;
   onClick?: () => void;
   variant?: 'base' | 'round';
 };
@@ -22,8 +23,8 @@ export function IconButton({
   const ButtonWrapper = variantMap[variant];
 
   return (
-    <ButtonWrapper className={className} onClick={onClick} style={css}>
-      <img src={icon} alt="icon" />
+    <ButtonWrapper className={className} onClick={onClick} css={css}>
+      {typeof icon === 'string' ? <img src={icon} alt="icon" /> : icon}
     </ButtonWrapper>
   );
 }
