@@ -1,6 +1,6 @@
 import { Image, Stack, StepTitle, Title, Typography } from '@/components';
 import drawer from '@/pages/ReviewProcess/assets/drawer.png';
-
+import iteration2 from '@/pages/ReviewProcess/assets/iteration2.png';
 export function Design() {
   return (
     <Stack gap="2rem" direction="column">
@@ -16,7 +16,9 @@ export function Design() {
         them as they speak up to the main challenge that we were to trying solve
         – application navigation.
       </Typography>
-      <StepTitle no={1}>Drawer Menu</StepTitle>
+      <StepTitle no={1} title="Iteration">
+        Drawer Menu
+      </StepTitle>
       <Image
         src={drawer}
         canEnlarge
@@ -31,8 +33,14 @@ export function Design() {
         concern was discoverability. Users wanted to have the options always
         visible on a screen.
       </Typography>
-      <StepTitle no={2}>Collapsible Left Panel</StepTitle>
-      {/* <Image src={tab} canEnlarge containerStyle={{ maxWidth: '800px', margin: '0 auto' }} /> */}
+      <StepTitle no={2} title="Iteration">
+        Collapsible Left Panel
+      </StepTitle>
+      <Image
+        src={iteration2}
+        canEnlarge
+        containerStyle={{ maxWidth: '800px', margin: '0 auto' }}
+      />
       <Typography>
         To have all the options and additional navigational mechanisms always
         visible, we tried to keep the menu but made it collapsible and limited
