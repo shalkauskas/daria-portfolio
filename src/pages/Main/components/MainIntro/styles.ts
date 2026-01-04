@@ -7,7 +7,12 @@ export const Wrapper = styled.div(({ theme }) => ({
   margin: 'auto',
   maxWidth: theme.utility.pxToRem(1280),
   padding: `${theme.utility.pxToRem(200)} 1rem ${theme.utility.pxToRem(250)}`,
-  position: 'relative'
+  position: 'relative',
+
+  '@media (max-width: 1024px)': {
+    flexDirection: 'column',
+    gap: theme.utility.pxToRem(48)
+  }
 }));
 export const TextContainer = styled.div(({ theme }) => ({
   alignItems: 'center',

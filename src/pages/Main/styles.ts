@@ -9,5 +9,9 @@ export const WorkList = styled.div(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   gap: '3rem',
-  padding: `0 ${theme.utility.pxToRem(80)}`
+  padding: `0 ${theme.utility.pxToRem(80)}`,
+
+  '@media (max-width: 800px)': {
+    padding: '0 2rem'
+  }
 }));

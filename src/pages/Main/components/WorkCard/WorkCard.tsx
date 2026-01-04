@@ -1,18 +1,17 @@
-import { Button, Image, Typography } from '@/components';
+import { Button, Image, List, Typography } from '@/components';
 
-import { CardWrapper, ImageContainer, InfoContainer, ListItem } from './styles';
-import { Images } from './Images';
+import { CardWrapper, InfoContainer } from './styles';
 import { useNavigate } from 'react-router';
+import { workProjects } from '@/data/mainPage';
+import { theme } from '@/shared/theme';
 
-type Props = {
-  desktop?: string;
-  mobile?: string;
-  index: number;
-  info?: string[];
-  title: string;
-  link?: string;
-};
-export function WorkCard({ desktop, title, info, mobile, link, index }: Props) {
+export function WorkCard({
+  title,
+  info,
+  image,
+  link,
+  index
+}: (typeof workProjects)[number] & { index: number }) {
   const navigate = useNavigate();
 
   function handleLearnMoreClick() {
@@ -20,28 +19,27 @@ export function WorkCard({ desktop, title, info, mobile, link, index }: Props) {
     navigate(link);
   }
   return (
-    <CardWrapper
-      css={{
-        flexDirection: index % 2 ? 'row-reverse' : 'row'
-      }}>
-      <ImageContainer
-        css={(theme) => ({
-          backgroundColor: index % 2 ? theme.colors.blue1 : theme.colors.purple5
-        })}>
-        {desktop && mobile ? (
-          <Images desktop={desktop} mobile={mobile} />
-        ) : (
-          <Image src={desktop || mobile} />
-        )}
-      </ImageContainer>
+    <CardWrapper $index={index}>
+      {image && (
+        <Image
+          objectFit="scale-down"
+          src={image}
+          containerStyle={{
+            height: 'auto',
+            padding: '2rem',
+            backgroundColor:
+              index % 2 ? theme.colors.blue1 : theme.colors.purple5
+          }}
+        />
+      )}
       <InfoContainer>
         <Typography variant="h2">{title}</Typography>
         {info && (
-          <ul>
+          <List>
             {info.map((item, index) => (
-              <ListItem key={index}>{item}</ListItem>
+              <List.Item key={index}>{item}</List.Item>
             ))}
-          </ul>
+          </List>
         )}
         <Button variant="secondary" onClick={() => handleLearnMoreClick()}>
           LEARN MORE

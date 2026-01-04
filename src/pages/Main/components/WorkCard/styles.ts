@@ -1,30 +1,24 @@
 import styled from '@emotion/styled';
 
-export const CardWrapper = styled.div(({ theme }) => ({
-  backgroundColor: theme.colors.white,
-  border: `1px solid ${theme.colors.grey1}`,
-  borderRadius: '1rem',
-  boxShadow: `0 0.25rem ${theme.utility.pxToRem(4)} -1px rgba(12, 12, 13, 0.05), 0 0.25rem ${theme.utility.pxToRem(4)} -1px rgba(12, 12, 13, 0.1)`,
-  display: 'flex',
-  height: theme.utility.pxToRem(400),
-  width: theme.utility.pxToRem(1280),
-  maxWidth: theme.utility.pxToRem(1280),
-  overflow: 'hidden'
-}));
+export const CardWrapper = styled.div<{ $index: number }>(
+  ({ theme, $index }) => ({
+    flexDirection: $index % 2 ? 'row-reverse' : 'row',
+    backgroundColor: theme.colors.white,
+    border: `1px solid ${theme.colors.grey1}`,
+    borderRadius: '1rem',
+    boxShadow: `0 0.25rem ${theme.utility.pxToRem(4)} -1px rgba(12, 12, 13, 0.05), 0 0.25rem ${theme.utility.pxToRem(4)} -1px rgba(12, 12, 13, 0.1)`,
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
+    height: theme.utility.pxToRem(400),
+    maxWidth: theme.utility.pxToRem(1280),
+    overflow: 'hidden',
 
-export const ImageContainer = styled.div({
-  flex: 1,
-  padding: '2rem'
-});
-
-// Images ***
-export const ImagesContainer = styled.div({
-  position: 'absolute'
-});
-export const ImagesWrapperContainer = styled.div({
-  position: 'relative'
-});
-// ******
+    '@media (max-width: 1324px)': {
+      gridTemplateColumns: '1fr',
+      height: '100%'
+    }
+  })
+);
 
 export const InfoContainer = styled.div({
   display: 'flex',
@@ -32,11 +26,6 @@ export const InfoContainer = styled.div({
   flex: 1,
   gap: '1rem',
   padding: '2rem'
-});
-
-export const ListItem = styled.li({
-  fontSize: '1.25rem',
-  lineHeight: '2rem'
 });
 
 export const Title = styled.h5({

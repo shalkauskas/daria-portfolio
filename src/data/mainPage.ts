@@ -2,6 +2,7 @@ import teteDesktop from '@/pages/Tete/assets/tete-a-tete.webp';
 import userReseach from '@/assets/userResearch/user_research_main_page.png';
 import likertScaleDesktop from '@/assets/likertScale/likertScale_desktop_main_page.png';
 import likertScaleMobile from '@/assets/likertScale/likertScale_mobile_main_page.png';
+import redesignDesktop from '@/pages/ReviewProcess/assets/redesign_main.png';
 import { ROUTES } from '@/navigation/routes';
 
 export const intro = {
@@ -14,6 +15,16 @@ export const intro = {
 
 export const workProjects = [
   {
+    title: 'Application Review Process Redesign',
+    info: [
+      'Enabled users to find the information more efficiently by changing the navigation and adding mechanisms such as search and bookmarks.',
+      'Minimized white space and scrolling by showing condensed view of the form.',
+      'Reduced the total time reviewer spends on a single application by 30%'
+    ],
+    link: ROUTES.redesign,
+    image: redesignDesktop
+  },
+  {
     title: 'User Research',
     info: [
       'Gathered quantitative and qualitative data on the metrics like usage of features, difficulty of features and overall customer satisfaction with the product.',
@@ -21,16 +32,15 @@ export const workProjects = [
       'Synthesized the data and put together the prioritized list of must-have changes and nice-to-have enhancements.'
     ],
     link: ROUTES.userResearch,
-    desktop: userReseach
+    image: userReseach
   },
   {
     title: 'Likert Scale Group UX',
     info: [
       'Designed a solution that provides more focused experience, allows users to easily validate their answers by scanning through the page and requires minimum scrolling.',
-      'Saved 50% of development and QA time for the company as the same component solves the problems for both mobile and desktop screen sizes. '
+      'Saved 50% of development and QA time for the company as the same component solves the problems for both mobile and image screen sizes. '
     ],
-    desktop: likertScaleDesktop,
-    mobile: likertScaleMobile,
+    image: likertScaleDesktop,
     link: ROUTES.likertScale
   },
 
@@ -41,8 +51,7 @@ export const workProjects = [
       'The redesigned website offers more digestible price lists as well as user-oriented information.'
     ],
     link: ROUTES.tete,
-    desktop: teteDesktop,
-    mobile: likertScaleMobile
+    image: teteDesktop
   }
 ];
 

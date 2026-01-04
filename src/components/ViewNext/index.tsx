@@ -24,7 +24,7 @@ function Card({ index, project }: Props) {
         css={(theme) => ({
           backgroundColor: index % 2 ? theme.colors.blue1 : theme.colors.purple5
         })}>
-        <Image src={project.desktop} />
+        <Image src={project.image} />
       </TopContainer>
       <BottomContainer>
         <Typography variant="h4">{project.title}</Typography>
