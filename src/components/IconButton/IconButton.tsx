@@ -1,4 +1,3 @@
-import { Image } from '../Image';
 import { ButtonBase, ButtonRound } from './styles';
 
 type Props = {
@@ -24,7 +23,7 @@ export function IconButton({
 
   return (
     <ButtonWrapper className={className} onClick={onClick} style={css}>
-      <Image src={icon} />
+      <img src={icon} alt="icon" />
     </ButtonWrapper>
   );
 }

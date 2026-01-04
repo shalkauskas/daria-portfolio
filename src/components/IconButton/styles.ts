@@ -7,7 +7,11 @@ const baseButton = {
   flexShrink: 0,
   cursor: 'pointer',
   display: 'flex',
-  padding: '0.5rem'
+  padding: '0.5rem',
+
+  '&:hover *': {
+    cursor: 'pointer'
+  }
 };
 
 export const ButtonBase = styled.button(() => ({ ...baseButton }));
