@@ -11,6 +11,7 @@ import { ProgressTrackerContainer } from '@/components/ProgressTracker/styles';
 import { useMemo, useRef } from 'react';
 import { OutcomesContainer } from '../Tete/styles';
 import { Research } from './components/Research';
+import { Design } from './components/Design';
 
 export function ReviewProcess() {
   const introRef = useRef<HTMLDivElement>(null);
@@ -75,6 +76,7 @@ export function ReviewProcess() {
             </OutcomesContainer>
           </Stack>
           <Research />
+          <Design />
         </CaseContainer>
       </ProgressTrackerContainer>
     </Layout>
