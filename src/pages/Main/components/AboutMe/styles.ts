@@ -1,11 +1,14 @@
 import styled from '@emotion/styled';
 
-export const ButtonsContainer = styled.div(({ theme }) => ({
+export const ButtonsContainer = styled.div(() => ({
   display: 'flex',
   gap: '1.5rem',
-  width: '100%'
+  width: '100%',
+  '@media (max-width: 1024px)': {
+    justifyContent: 'space-between'
+  }
 }));
-export const ButtonsSocialContainer = styled.div(({ theme }) => ({
+export const ButtonsSocialContainer = styled.div(() => ({
   display: 'flex',
   gap: '0.75rem'
 }));
@@ -32,12 +35,7 @@ export const TextContainer = styled.div(({ theme }) => ({
   gap: '2rem',
   margin: 'auto'
 }));
-export const ImageContainer = styled.div(({ theme }) => ({
-  display: 'flex',
-  flexShrink: 0,
-  height: theme.utility.pxToRem(480),
-  width: theme.utility.pxToRem(480)
-}));
+
 export const Wrapper = styled.div(({ theme }) => ({
   alignItems: 'center',
   backgroundImage: `url(src/pages/Main/components/AboutMe/bgVector.svg), linear-gradient(to bottom, transparent 70%, ${theme.colors.purpleBgAboutMe} 30%)`,
@@ -50,6 +48,7 @@ export const Wrapper = styled.div(({ theme }) => ({
   padding: theme.utility.pxToRem(80),
 
   '@media (max-width: 1400px)': {
-    backgroundPositionY: '70%'
+    backgroundPositionY: '70%',
+    padding: theme.utility.pxToRem(32)
   }
 }));

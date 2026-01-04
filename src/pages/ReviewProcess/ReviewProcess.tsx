@@ -1,6 +1,7 @@
 import {
   CaseContainer,
   Header,
+  Image,
   Layout,
   List,
   ProgressTracker,
@@ -15,6 +16,7 @@ import { OutcomesContainer } from '../Tete/styles';
 import { Research } from './components/Research';
 import { Design } from './components/Design';
 import { ProblemSolving } from './components/ProblemSolving';
+import intro from '@/pages/ReviewProcess/assets/intro.png';
 
 export function ReviewProcess() {
   const introRef = useRef<HTMLDivElement>(null);
@@ -48,6 +50,11 @@ export function ReviewProcess() {
         />
         <CaseContainer>
           <Stack gap="2rem" direction="column" ref={introRef}>
+            <Image
+              src={intro}
+              css={{ maxWidth: '787px' }}
+              containerStyle={{ margin: 'auto' }}
+            />
             <Stack gap="1rem" direction="column">
               <Typography variant="h3">Problem</Typography>
               <Typography>

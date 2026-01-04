@@ -3,7 +3,6 @@ import { aboutMe, gmail, linkedIn } from '@/assets/main';
 import { links } from '@/data/mainPage';
 
 import {
-  ImageContainer,
   TextContainer,
   ContentWrapper,
   Wrapper,
@@ -27,9 +26,7 @@ export function AboutMe() {
     <Wrapper>
       <Typography variant="h1">About Me</Typography>
       <ContentWrapper>
-        <ImageContainer>
-          <Image src={aboutMe} />
-        </ImageContainer>
+        <Image src={aboutMe} css={{ maxWidth: '480px' }} />
         <TextContainer>
           <Text>
             I am a multilingual UX/UI designer with a passion for understanding

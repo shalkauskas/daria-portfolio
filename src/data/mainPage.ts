@@ -1,8 +1,7 @@
-import teteDesktop from '@/pages/Tete/assets/tete-a-tete.webp';
-import userReseach from '@/assets/userResearch/user_research_main_page.png';
-import likertScaleDesktop from '@/assets/likertScale/likertScale_desktop_main_page.png';
-import likertScaleMobile from '@/assets/likertScale/likertScale_mobile_main_page.png';
-import redesignDesktop from '@/pages/ReviewProcess/assets/redesign_main.png';
+import teteDesktop from '@/pages/Tete/assets/tetemain.png';
+import userReseach from '@/pages/UserResearch/assets/user_research_main_page.png';
+import redesign from '@/pages/ReviewProcess/assets/intro.png';
+import likertmain from '@/pages/LikertScale/assets/likertmain.png';
 import { ROUTES } from '@/navigation/routes';
 
 export const intro = {
@@ -22,7 +21,7 @@ export const workProjects = [
       'Reduced the total time reviewer spends on a single application by 30%'
     ],
     link: ROUTES.redesign,
-    image: redesignDesktop
+    image: redesign
   },
   {
     title: 'User Research',
@@ -40,7 +39,7 @@ export const workProjects = [
       'Designed a solution that provides more focused experience, allows users to easily validate their answers by scanning through the page and requires minimum scrolling.',
       'Saved 50% of development and QA time for the company as the same component solves the problems for both mobile and image screen sizes. '
     ],
-    image: likertScaleDesktop,
+    image: likertmain,
     link: ROUTES.likertScale
   },
 

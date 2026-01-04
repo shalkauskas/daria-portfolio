@@ -10,7 +10,7 @@ export function Tab({ children, isActive, onClick, size = 'medium' }: Props) {
   return (
     <TabContainer
       onClick={onClick}
-      isActive={isActive}
+      $isActive={isActive}
       css={(t) => ({
         fontSize:
           size === 'medium' ? t.utility.pxToRem(24) : t.utility.pxToRem(18)

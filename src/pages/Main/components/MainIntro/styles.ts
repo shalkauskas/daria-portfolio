@@ -10,8 +10,9 @@ export const Wrapper = styled.div(({ theme }) => ({
   position: 'relative',
 
   '@media (max-width: 1024px)': {
-    flexDirection: 'column',
-    gap: theme.utility.pxToRem(48)
+    flexDirection: 'column-reverse',
+    gap: theme.utility.pxToRem(48),
+    padding: `${theme.utility.pxToRem(32)} 1rem ${theme.utility.pxToRem(50)}`
   }
 }));
 export const TextContainer = styled.div(({ theme }) => ({
