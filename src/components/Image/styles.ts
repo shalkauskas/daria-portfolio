@@ -45,3 +45,4 @@ export const CloseButton = styled.button`
     color: #ccc;
   }
 `;
+

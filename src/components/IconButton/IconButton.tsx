@@ -24,7 +24,11 @@ export function IconButton({
 
   return (
     <ButtonWrapper className={className} onClick={onClick} css={css}>
-      {typeof icon === 'string' ? <img src={icon} alt="icon" /> : icon}
+      {typeof icon === 'string' ? (
+        <img src={icon} alt="icon" height="24" width="24" />
+      ) : (
+        icon
+      )}
     </ButtonWrapper>
   );
 }

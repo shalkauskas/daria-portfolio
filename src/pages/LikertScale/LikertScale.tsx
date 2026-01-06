@@ -212,9 +212,8 @@ export function LikertScale() {
               </Typography>
               <Image
                 src={ideate2}
-                width="506px"
                 canEnlarge
-                containerStyle={{ margin: 'auto' }}
+                containerStyle={{ margin: 'auto', maxWidth: '506px' }}
               />
             </GridContainer>
           </FlexContainer>

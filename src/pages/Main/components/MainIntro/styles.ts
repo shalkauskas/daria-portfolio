@@ -30,7 +30,13 @@ export const ImageContainer = styled.div(({ theme }) => ({
   flexShrink: 0,
   height: theme.utility.pxToRem(380),
   width: theme.utility.pxToRem(380),
-  zIndex: 1
+  zIndex: 1,
+
+  '@media (max-width: 1024px)': {
+    height: theme.utility.pxToRem(200),
+    transform: 'translateX(40%)',
+    width: theme.utility.pxToRem(200)
+  }
 }));
 
 export const Title = styled.h1(({ theme }) => ({
@@ -56,7 +62,12 @@ export const Circle1 = styled.div(({ theme }) => ({
   height: theme.utility.pxToRem(354),
   position: 'absolute',
   right: '42%',
-  width: theme.utility.pxToRem(354)
+  width: theme.utility.pxToRem(354),
+
+  '@media (max-width: 1024px)': {
+    right: '8%',
+    bottom: '22%'
+  }
 }));
 
 export const Circle2 = styled.div(({ theme }) => ({
@@ -67,7 +78,14 @@ export const Circle2 = styled.div(({ theme }) => ({
   height: theme.utility.pxToRem(240),
   position: 'absolute',
   right: '25%',
-  width: theme.utility.pxToRem(240)
+  width: theme.utility.pxToRem(240),
+
+  '@media (max-width: 1024px)': {
+    right: '60%',
+    top: '15%',
+    height: theme.utility.pxToRem(150),
+    width: theme.utility.pxToRem(150)
+  }
 }));
 
 export const Circle3 = styled.div(({ theme }) => ({
@@ -78,5 +96,12 @@ export const Circle3 = styled.div(({ theme }) => ({
   height: theme.utility.pxToRem(120),
   position: 'absolute',
   right: '29%',
-  width: theme.utility.pxToRem(120)
+  width: theme.utility.pxToRem(120),
+
+  '@media (max-width: 1024px)': {
+    left: '25%',
+    top: '2%',
+    height: theme.utility.pxToRem(80),
+    width: theme.utility.pxToRem(80)
+  }
 }));

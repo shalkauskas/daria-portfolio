@@ -85,7 +85,7 @@ export const MenuHeader = styled.div(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'space-between',
   gap: '0.5rem',
-  padding: theme.utility.pxToRem(32)
+  padding: `${theme.utility.pxToRem(12)} ${theme.utility.pxToRem(16)}`
 }));
 
 export const Backdrop = styled.div<{ isOpen?: boolean }>(({ isOpen }) => ({

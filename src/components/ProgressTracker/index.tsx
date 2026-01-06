@@ -68,7 +68,7 @@ export function ProgressTracker({ overview, tableOfContent }: Props) {
   return (
     <>
       <ProgressTrackerWrapper>
-        <Stack gap="2rem" direction="column">
+        <Stack gap="1rem" direction="column">
           <Typography variant="subtitle18">PROJECT OVERVIEW</Typography>
           <Overview overview={overview} />
           <Typography variant="subtitle18">TABLE OF CONTENT</Typography>
@@ -90,7 +90,7 @@ export function ProgressTracker({ overview, tableOfContent }: Props) {
       {mobileOverlayType && <OverlayBackdrop onClick={handleClose} />}
       <OverlayContainer $isOpen={!!mobileOverlayType}>
         <OverlayHeader>
-          <Typography variant="subtitle18">
+          <Typography variant="subtitle18" css={{ fontSize: '24px' }}>
             {mobileOverlayType === 'overview'
               ? 'Project Overview'
               : 'Table of Content'}

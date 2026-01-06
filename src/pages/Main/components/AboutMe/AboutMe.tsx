@@ -47,6 +47,7 @@ export function AboutMe() {
           </Text>
           <ButtonsContainer>
             <Button
+              size="large"
               onClick={handleResume}
               sx={{
                 fontSize: '1.2rem'

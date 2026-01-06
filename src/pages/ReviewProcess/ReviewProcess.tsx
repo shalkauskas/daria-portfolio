@@ -86,49 +86,57 @@ export function ReviewProcess() {
             </OutcomesContainer>
           </Stack>
           <div ref={researchRef}>
+            <Title>Research</Title>
             <Research />
           </div>
           <div ref={designIterationsRef}>
+            <Title>Design & Iterations </Title>
             <Design />
           </div>
           <div ref={problemSolvingRef}>
+            <Title>Problem Solving</Title>
             <ProblemSolving />
           </div>
-          <Stack gap="2rem" direction="column" ref={outcomesRef}>
+          <Stack direction="column" ref={outcomesRef}>
             <Title>Outcomes</Title>
-            <Stack gap="1rem" direction="column">
-              <Typography variant="h3">Key Takeaways</Typography>
-              <Typography>
-                Feedback from both external and internal teams played a crucial
-                role in shaping a great user experience. Collaboration across
-                departments—such as product, design, engineering, and
-                support—allowed us to identify pain points, streamline features,
-                and align the experience with our overall vision. Insights from
-                users, clients, and partners gave us valuable perspective on
-                real-world usage, revealing opportunities for improvement we
-                might have otherwise missed. This two-way feedback loop enabled
-                us to iterate thoughtfully, prioritize meaningful updates, and
-                ultimately deliver a product that is intuitive, reliable, and
-                aligned with user needs.
-              </Typography>
+            <Stack gap="2.5rem" direction="column">
+              <Stack gap="2rem" direction="column">
+                <Stack gap="1rem" direction="column">
+                  <Typography variant="h3">Key Takeaways</Typography>
+                  <Typography>
+                    Feedback from both external and internal teams played a
+                    crucial role in shaping a great user experience.
+                    Collaboration across departments—such as product, design,
+                    engineering, and support—allowed us to identify pain points,
+                    streamline features, and align the experience with our
+                    overall vision. Insights from users, clients, and partners
+                    gave us valuable perspective on real-world usage, revealing
+                    opportunities for improvement we might have otherwise
+                    missed. This two-way feedback loop enabled us to iterate
+                    thoughtfully, prioritize meaningful updates, and ultimately
+                    deliver a product that is intuitive, reliable, and aligned
+                    with user needs.
+                  </Typography>
+                </Stack>
+                <Stack gap="1rem" direction="column">
+                  <Typography variant="h3">Next Steps</Typography>
+                  <List>
+                    <List.Item>
+                      Use monitoring tool such as Clarity for tracking the key
+                      metrics
+                    </List.Item>
+                    <List.Item>
+                      Get qualitative feedback on the customer satisfaction via
+                      surveys
+                    </List.Item>
+                    <List.Item>
+                      Enhance the experience by introducing AI-powered features
+                    </List.Item>
+                  </List>
+                </Stack>
+              </Stack>
+              <ViewNext />
             </Stack>
-            <Stack gap="1rem" direction="column">
-              <Typography variant="h3">Next Steps</Typography>
-              <List>
-                <List.Item>
-                  Use monitoring tool such as Clarity for tracking the key
-                  metrics
-                </List.Item>
-                <List.Item>
-                  Get qualitative feedback on the customer satisfaction via
-                  surveys
-                </List.Item>
-                <List.Item>
-                  Enhance the experience by introducing AI-powered features
-                </List.Item>
-              </List>
-            </Stack>
-            <ViewNext />
           </Stack>
         </CaseContainer>
       </ProgressTrackerContainer>

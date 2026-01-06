@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 export const ButtonsContainer = styled.div(() => ({
+  alignItems: 'center',
   display: 'flex',
   gap: '1.5rem',
   width: '100%',
@@ -10,6 +11,7 @@ export const ButtonsContainer = styled.div(() => ({
 }));
 
 export const ButtonsSocialContainer = styled.div(() => ({
+  alignItems: 'center',
   display: 'flex',
   gap: '0.75rem'
 }));
