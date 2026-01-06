@@ -1,4 +1,4 @@
-import { Image, Stack, StepTitle, Title, Typography } from '@/components';
+import { Image, Stack, StepTitle, Typography } from '@/components';
 import drawer from '@/pages/ReviewProcess/assets/drawer.png';
 import iteration2 from '@/pages/ReviewProcess/assets/iteration2.png';
 export function Design() {
