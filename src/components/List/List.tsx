@@ -1,16 +1,19 @@
 import { Typography } from '../Typography/Typography';
+import { StyledOl, StyledUl } from './styles';
 
 export function List({
   children,
-  type = 'ul'
+  type = 'ul',
+  boldMarker = false
 }: {
   children: React.ReactNode;
   type?: 'ul' | 'ol';
+  boldMarker?: boolean;
 }) {
   return type === 'ul' ? (
-    <ul style={{ marginLeft: '1rem' }}>{children}</ul>
+    <StyledUl $boldMarker={boldMarker}>{children}</StyledUl>
   ) : (
-    <ol style={{ marginLeft: '1rem' }}>{children}</ol>
+    <StyledOl $boldMarker={boldMarker}>{children}</StyledOl>
   );
 }
 

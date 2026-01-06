@@ -89,11 +89,9 @@ export function LikertScale() {
                 {likertScaleTitles.tableOfContent.define}
               </StepTitle>
               <Typography>{likertScaleContent.define1}</Typography>
-              <List type="ol">
+              <List type="ol" boldMarker>
                 {likertScaleContent.defineList.map((item, i) => (
-                  <List.Item key={i}>
-                    <Typography>{item}</Typography>
-                  </List.Item>
+                  <List.Item key={i}>{item}</List.Item>
                 ))}
               </List>
               <Typography>{likertScaleContent.define2}</Typography>
