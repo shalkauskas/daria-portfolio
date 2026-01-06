@@ -1,4 +1,4 @@
-import { Image, List, Stack, Typography } from '@/components';
+import { Image, List, Stack, Title, Typography } from '@/components';
 import {
   PersonaCard,
   PersonaContainer,
@@ -20,7 +20,7 @@ export const UserPersona = forwardRef<HTMLDivElement, Props>(
   ({ title }, ref) => {
     return (
       <div ref={ref}>
-        <Typography variant="h1">{title}</Typography>
+        <Title>{title}</Title>
         <PersonaContainer>
           <GradientContainer>
             <Typography

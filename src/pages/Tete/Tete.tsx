@@ -6,6 +6,7 @@ import {
   Layout,
   List,
   Stack,
+  Title,
   Typography,
   ViewNext
 } from '@/components';
@@ -64,7 +65,7 @@ export function Tete() {
             mobile={<Image src={mobile} height="364px" width="200px" />}
           />
           {/* PROBLEM */}
-          <Stack gap="2rem" direction="column">
+          <Stack gap="2rem" direction="column" css={{ marginBottom: '2.5rem' }}>
             {/* Problem */}
             <Stack gap="1rem" direction="column" ref={problemRef}>
               <Typography variant="h3">{tableOfContent[0].title}</Typography>
@@ -137,37 +138,35 @@ export function Tete() {
               </List>
             </OutcomesContainer>
           </Stack>
-          <Stack gap="2.5rem" direction="column">
-            {/* KEYS ACTIVITIES */}
-            <KeyActivities
-              title={tableOfContent[1].title}
-              ref={keyActivitiesRef}
-            />
-            {/* USER PERSONA */}
-            <UserPersona title={tableOfContent[2].title} ref={userPersonaRef} />
-            {/* ANALYSIS */}
-            <Analysis title={tableOfContent[3].title} ref={analysisRef} />
-            {/* USABILITY TESTING */}
-            <UsabilityTesting
-              title={tableOfContent[4].title}
-              ref={usabilityRef}
-            />
-            <Typography variant="h1" sx={{ margin: 'auto' }}>
-              Outcomes
-            </Typography>
-            <div ref={nextStepsRef}>
+          {/* KEYS ACTIVITIES */}
+          <KeyActivities
+            title={tableOfContent[1].title}
+            ref={keyActivitiesRef}
+          />
+          {/* USER PERSONA */}
+          <UserPersona title={tableOfContent[2].title} ref={userPersonaRef} />
+          {/* ANALYSIS */}
+          <Analysis title={tableOfContent[3].title} ref={analysisRef} />
+          {/* USABILITY TESTING */}
+          <UsabilityTesting
+            title={tableOfContent[4].title}
+            ref={usabilityRef}
+          />
+          <Title>Outcomes</Title>
+          <Stack direction="column" gap="2.5rem">
+            <Stack direction="column" gap="1rem" ref={nextStepsRef}>
               <Typography variant="h3">Next Steps</Typography>
-            </div>
-            <List>
-              <List.Item>
-                Keep up to date online appearance (Instagram and Facebook).
-              </List.Item>
-              <List.Item>Add online booking feature.</List.Item>
-              <List.Item>
-                Launch new marketing campaigns via Constant Contact.
-              </List.Item>
-              <List.Item>Collaborate with Groupon.</List.Item>
-            </List>
+              <List>
+                <List.Item>
+                  Keep up to date online appearance (Instagram and Facebook).
+                </List.Item>
+                <List.Item>Add online booking feature.</List.Item>
+                <List.Item>
+                  Launch new marketing campaigns via Constant Contact.
+                </List.Item>
+                <List.Item>Collaborate with Groupon.</List.Item>
+              </List>
+            </Stack>
             <ViewNext />
           </Stack>
         </CaseContainer>
