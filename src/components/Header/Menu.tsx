@@ -9,9 +9,10 @@ import {
 } from './styles';
 import { ValueOf } from '@/models';
 import { Stack } from '../styledComponents';
-import { Logo } from '../Logo/Logo';
 import { IconButton } from '../IconButton/IconButton';
 import closeIcon from './close.svg';
+import { Image } from '../Image';
+import logowhite from '@/components/Header/logowhite.svg';
 
 export function Menu({
   activeSection,
@@ -28,16 +29,25 @@ export function Menu({
         <Stack direction="column" gap="2rem">
           <MenuHeader>
             <Stack direction="row" gap="0.5rem" alignItems="center">
-              <Logo
-                css={(theme) => ({
-                  color: theme.colors.white
-                })}
-              />
-              <HeaderTitle css={(t) => ({ color: t.colors.white })}>
+              <Image src={logowhite} alt="logo" height="56px" width="56px" />
+              <HeaderTitle
+                css={(t) => ({
+                  color: t.colors.white,
+                  fontSize: t.utility.pxToRem(24),
+                  textAlign: 'left'
+                })}>
                 Daria Khuidakova
               </HeaderTitle>
             </Stack>
-            <IconButton icon={closeIcon} onClick={onClose} />
+            <IconButton
+              icon={closeIcon}
+              onClick={onClose}
+              css={{
+                height: '32px',
+                width: '32px',
+                marginBottom: 'auto'
+              }}
+            />
           </MenuHeader>
 
           <Tab isActive={activeSection === sections.INTRO} onClick={onClose}>

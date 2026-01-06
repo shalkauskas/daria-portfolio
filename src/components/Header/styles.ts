@@ -32,7 +32,7 @@ export const NavContainer = styled.div(() => ({
 }));
 
 export const LogoContainer = styled.div(() => ({
-  alignItems: 'center',
+  alignItems: 'baseline',
   display: 'flex',
   gap: '0.75rem'
 }));
@@ -40,7 +40,7 @@ export const LogoContainer = styled.div(() => ({
 export const MenuIcon = styled(IconButton)(({ theme }) => ({
   display: 'none',
   '@media (max-width: 1024px)': {
-    display: 'block'
+    display: 'flex'
   },
 
   '& > div': {

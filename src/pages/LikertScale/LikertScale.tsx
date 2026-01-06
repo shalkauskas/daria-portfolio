@@ -3,6 +3,7 @@ import {
   Header,
   Image,
   Layout,
+  List,
   Preview,
   Stack,
   StepTitle,
@@ -11,7 +12,7 @@ import {
   ViewNext
 } from '@/components';
 import { likertScaleContent, likertScaleTitles } from '@/data/likertScale';
-import { FlexContainer, GridContainer } from './styles';
+import { GridContainer } from './styles';
 import { ImageContainer } from './components';
 import { useMemo, useRef } from 'react';
 import { ProgressTrackerContainer } from '@/components/ProgressTracker/styles';
@@ -82,37 +83,35 @@ export function LikertScale() {
             </Typography>
           </div>
           <Title>UX Process</Title>
-          <FlexContainer ref={defineRef}>
-            <StepTitle no={1}>
-              {likertScaleTitles.tableOfContent.define}
-            </StepTitle>
-            <Typography>{likertScaleContent.define1}</Typography>
-            <ol style={{ marginLeft: '1rem' }}>
-              {likertScaleContent.defineList.map((item, i) => (
-                <li key={i} style={{ fontWeight: 700 }}>
-                  <Typography>{item}</Typography>
-                </li>
-              ))}
-            </ol>
-            <Typography>{likertScaleContent.define2}</Typography>
-            <Typography>{likertScaleContent.define3}</Typography>
-          </FlexContainer>
-          <Stack direction="column" gap="1.5rem" ref={researchRef}>
-            <StepTitle no={2}>
-              {likertScaleTitles.tableOfContent.research}
-            </StepTitle>
-            <Typography
-              sx={{
-                marginBottom: '1.5rem'
-              }}>
-              {likertScaleContent.research1}
-            </Typography>
+          <Stack direction="column" gap="2rem" css={{ marginBottom: '1.5rem' }}>
+            <Stack direction="column" gap="1rem" ref={defineRef}>
+              <StepTitle no={1}>
+                {likertScaleTitles.tableOfContent.define}
+              </StepTitle>
+              <Typography>{likertScaleContent.define1}</Typography>
+              <List type="ol">
+                {likertScaleContent.defineList.map((item, i) => (
+                  <List.Item key={i}>
+                    <Typography>{item}</Typography>
+                  </List.Item>
+                ))}
+              </List>
+              <Typography>{likertScaleContent.define2}</Typography>
+              <Typography>{likertScaleContent.define3}</Typography>
+            </Stack>
+            <Stack direction="column" gap="1rem" ref={researchRef}>
+              <StepTitle no={2}>
+                {likertScaleTitles.tableOfContent.research}
+              </StepTitle>
+              <Typography>{likertScaleContent.research1}</Typography>
+            </Stack>
           </Stack>
+
           <ImageContainer subtitle="Google Docs">
-            <Image src={res1} canEnlarge />
+            <Image src={res1} canEnlarge objectFit="cover" />
             <Stack css={{ gap: '1.5rem' }}>
-              <Image src={res2} canEnlarge />
-              <Image src={res3} canEnlarge />
+              <Image src={res2} canEnlarge objectFit="cover" />
+              <Image src={res3} canEnlarge objectFit="cover" />
             </Stack>
           </ImageContainer>
           <Typography
@@ -153,19 +152,31 @@ export function LikertScale() {
           </Typography>
           <ImageContainer subtitle="JotForms">
             <Image
-              src={res6}
-              height="328px"
-              canEnlarge
               objectFit="scale-down"
+              src={res6}
+              canEnlarge
+              containerStyle={{ maxHeight: '328px' }}
             />
-            <Stack css={{ gap: '1.5rem', justifyContent: 'space-evenly' }}>
-              <Image src={res7} height="328px" canEnlarge />
-              <Image src={res8} height="328px" canEnlarge />
+            <Stack
+              css={{
+                gap: '1.5rem',
+                justifyContent: 'space-evenly'
+              }}>
+              <Image
+                src={res7}
+                canEnlarge
+                containerStyle={{ maxHeight: '328px' }}
+              />
+              <Image
+                src={res8}
+                canEnlarge
+                containerStyle={{ maxHeight: '328px' }}
+              />
             </Stack>
           </ImageContainer>
           <Typography
             sx={{
-              margin: '1rem 0 1.5rem'
+              margin: '1rem 0 2rem'
             }}>
             <strong>Cons: </strong>
             On desktop, long questions make cells very tall. Column headers are
@@ -174,7 +185,8 @@ export function LikertScale() {
             and answers and make sure they are making selection at the correct
             row.
           </Typography>
-          <FlexContainer ref={ideateRef}>
+
+          <Stack direction="column" gap="1rem" ref={ideateRef}>
             <StepTitle no={3}>
               {likertScaleTitles.tableOfContent.ideate}
             </StepTitle>
@@ -216,9 +228,9 @@ export function LikertScale() {
                 containerStyle={{ margin: 'auto', maxWidth: '506px' }}
               />
             </GridContainer>
-          </FlexContainer>
+          </Stack>
           <Stack
-            css={{ flexDirection: 'column', gap: '1.5rem' }}
+            css={{ flexDirection: 'column', gap: '1rem' }}
             ref={iterateRef}>
             <StepTitle no={4}>
               {likertScaleTitles.tableOfContent.iterate}
@@ -257,7 +269,11 @@ export function LikertScale() {
             </Typography>
           </Stack>
           <Title>{likertScaleTitles.tableOfContent.outcomes}</Title>
-          <Stack ref={outcomesRef} direction="column" gap="1rem">
+          <Stack
+            ref={outcomesRef}
+            direction="column"
+            gap="1rem"
+            css={{ marginBottom: '2.5rem' }}>
             <Typography variant="h3">Conclusions</Typography>
             <Typography>
               This project taught us that even established patterns need to be
@@ -271,8 +287,8 @@ export function LikertScale() {
               better experience for users resulted in another successful
               release.
             </Typography>
-            <ViewNext />
           </Stack>
+          <ViewNext />
         </CaseContainer>
       </ProgressTrackerContainer>
     </Layout>

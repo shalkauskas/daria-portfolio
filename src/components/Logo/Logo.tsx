@@ -1,5 +1,7 @@
 import { Interpolation, Theme } from '@emotion/react';
-import { LogoContainer, LogoText } from './styles';
+import { LogoContainer } from './styles';
+import { Image } from '../Image';
+import logopurple from './logopurple.svg';
 
 export function Logo({
   css,
@@ -10,7 +12,7 @@ export function Logo({
 }) {
   return (
     <LogoContainer css={css} className={className}>
-      <LogoText>DK</LogoText>
+      <Image src={logopurple} alt="logo" />
     </LogoContainer>
   );
 }

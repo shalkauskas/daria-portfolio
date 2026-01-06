@@ -13,7 +13,6 @@ export const OutcomesContainer = styled(Stack)(({ theme }) => ({
   gap: '1rem',
   flexDirection: 'column',
   padding: `${theme.utility.pxToRem(20)} ${theme.utility.pxToRem(25)}`,
-  marginBottom: theme.utility.pxToRem(40),
 
   '& h3, li': {
     color: theme.colors.white
