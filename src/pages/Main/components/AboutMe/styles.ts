@@ -44,7 +44,7 @@ export const TextContainer = styled.div({
 
 export const Wrapper = styled.div(({ theme }) => ({
   alignItems: 'center',
-  backgroundImage: `url(src/pages/Main/components/AboutMe/bgVector.svg), linear-gradient(to bottom, transparent 70%, ${theme.colors.purpleBgAboutMe} 30%)`,
+  backgroundImage: `url(/bgVector.svg), linear-gradient(to bottom, transparent 70%, ${theme.colors.purpleBgAboutMe} 30%)`,
   backgroundPositionY: '60%',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'contain',
