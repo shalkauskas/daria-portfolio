@@ -14,6 +14,7 @@ import {
   PersonaScenarioText
 } from './styles';
 import { Image } from '@/components';
+import { Fragment } from 'react';
 
 type PersonaProps = {
   personaBio: { title: string; value: string }[];
@@ -37,7 +38,7 @@ export function Persona({
   return (
     <PersonaContainer>
       <PersonaTopRow>
-        <Stack gap="1rem" alignItems="center">
+        <Stack gap="1.5rem" alignItems="center">
           <Image
             containerStyle={{ flexShrink: 0 }}
             src={personaImage}
@@ -47,10 +48,10 @@ export function Persona({
           />
           <PersonaBioGrid>
             {personaBio.map(({ title, value }) => (
-              <>
+              <Fragment key={title}>
                 <PersonBioTitle>{title}</PersonBioTitle>
                 <PersonBioValue>{value}</PersonBioValue>
-              </>
+              </Fragment>
             ))}
           </PersonaBioGrid>
         </Stack>
@@ -60,24 +61,22 @@ export function Persona({
         </PersonScenarioBox>
       </PersonaTopRow>
       <PersonaBottomRow>
-        <Stack gap="1rem" direction="column">
-          <PersonaBottomRowItem>
-            <PersonaListItemTitle>GOALS</PersonaListItemTitle>
-            <List>
-              {personaGoals.map((value) => (
-                <PersonaListItemText key={value}>{value}</PersonaListItemText>
-              ))}
-            </List>
-          </PersonaBottomRowItem>
-          <PersonaBottomRowItem>
-            <PersonaListItemTitle>PAIN POINTS</PersonaListItemTitle>
-            <List>
-              {personaPainPoints.map((value) => (
-                <PersonaListItemText key={value}>{value}</PersonaListItemText>
-              ))}
-            </List>
-          </PersonaBottomRowItem>
-        </Stack>
+        <PersonaBottomRowItem>
+          <PersonaListItemTitle>GOALS</PersonaListItemTitle>
+          <List>
+            {personaGoals.map((value) => (
+              <PersonaListItemText key={value}>{value}</PersonaListItemText>
+            ))}
+          </List>
+        </PersonaBottomRowItem>
+        <PersonaBottomRowItem>
+          <PersonaListItemTitle>PAIN POINTS</PersonaListItemTitle>
+          <List>
+            {personaPainPoints.map((value) => (
+              <PersonaListItemText key={value}>{value}</PersonaListItemText>
+            ))}
+          </List>
+        </PersonaBottomRowItem>
         <PersonaBottomRowItem>
           <PersonaListItemTitle>TASKS & RESPONSIBILITIES</PersonaListItemTitle>
           <List>

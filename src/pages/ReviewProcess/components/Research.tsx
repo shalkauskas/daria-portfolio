@@ -1,14 +1,8 @@
 import { List, Stack, StepTitle, Typography } from '@/components';
 import { Persona } from './Persona';
-import {
-  persona1Bio,
-  persona1Goals,
-  persona1Needs,
-  persona1PainPoints,
-  persona1Scenario,
-  persona1TasksAndResponsibilities
-} from './data';
+import { persona1, persona2 } from './data';
 import persona1Image from '@/pages/ReviewProcess/assets/persona1.png';
+import persona2Image from '@/pages/ReviewProcess/assets/persona2.png';
 
 export function Research() {
   return (
@@ -25,13 +19,22 @@ export function Research() {
           Please view the summary of both personas below.
         </Typography>
         <Persona
-          personaBio={persona1Bio}
+          personaBio={persona1.bio}
           personaImage={persona1Image}
-          personaScenario={persona1Scenario}
-          personaGoals={persona1Goals}
-          personaPainPoints={persona1PainPoints}
-          personaTasksAndResponsibilities={persona1TasksAndResponsibilities}
-          personaNeeds={persona1Needs}
+          personaScenario={persona1.scenario}
+          personaGoals={persona1.goals}
+          personaPainPoints={persona1.painPoints}
+          personaTasksAndResponsibilities={persona1.tasksAndResponsibilities}
+          personaNeeds={persona1.needs}
+        />
+        <Persona
+          personaBio={persona2.bio}
+          personaImage={persona2Image}
+          personaScenario={persona2.scenario}
+          personaGoals={persona2.goals}
+          personaPainPoints={persona2.painPoints}
+          personaTasksAndResponsibilities={persona2.tasksAndResponsibilities}
+          personaNeeds={persona2.needs}
         />
       </Stack>
       <Stack gap="1rem" direction="column">
