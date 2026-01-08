@@ -55,7 +55,8 @@ export const workProjects = [
 ];
 
 export const links = {
-  gmail: 'https://www.linkedin.com/in/daria-in-ux/',
-  linkedIn: 'mailto:hudechka22@gmail.com?subject=portfolio',
-  resume: ''
+  gmail: 'mailto:daria.khudiakova22@gmail.com?subject=portfolio',
+  linkedIn: 'https://www.linkedin.com/in/daria-in-ux/',
+  resume:
+    'https://s3.us-east-2.amazonaws.com/daria-in-design.com/Daria_Khudiakova_resume.pdf'
 };
