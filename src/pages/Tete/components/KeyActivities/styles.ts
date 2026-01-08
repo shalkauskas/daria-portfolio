@@ -4,7 +4,11 @@ export const ActivityGrid = styled.div(({ theme }) => ({
   display: 'grid',
   gap: '0.5rem',
   gridTemplateColumns: '2fr 3fr',
-  maxWidth: theme.utility.pxToRem(1200)
+  maxWidth: theme.utility.pxToRem(1200),
+
+  '@media (max-width: 1024px)': {
+    gridTemplateColumns: '1fr'
+  }
 }));
 
 export const ActivityBoxSmall = styled.div(({ theme }) => ({

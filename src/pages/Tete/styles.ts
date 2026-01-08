@@ -4,16 +4,31 @@ import styled from '@emotion/styled';
 export const PreviewOverlayContainer = styled.div({
   position: 'relative',
   display: 'inline-block',
-  overflow: 'hidden'
+  overflow: 'hidden',
+
+  '@media (max-width: 700px)': {
+    '& img': {
+      height: '400px',
+      width: '375px'
+    }
+  }
 });
 
 export const CenteredVideo = styled.video({
   position: 'absolute',
   borderRadius: '8px',
+  objectFit: 'scale-down',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -61%)',
-  zIndex: 1
+  zIndex: 1,
+
+  '@media (max-width: 700px)': {
+    borderRadius: '4px',
+    transform: 'translate(-50%, -50%)',
+    height: '162px',
+    width: '275px'
+  }
 });
 
 export const GradientContainer = styled.div(({ theme }) => ({
@@ -50,6 +65,10 @@ export const OutcomesContainer = styled(Stack)(({ theme }) => ({
     top: 0,
     width: '100vw',
     background: `linear-gradient(to right, ${theme.colors.primaryButtonHover} 0%, #8459BC 100%)`,
-    zIndex: -1
+    zIndex: -1,
+
+    '@media (max-width: 1024px)': {
+      left: 0
+    }
   }
 }));

@@ -67,7 +67,7 @@ export function Tete() {
           <Preview
             desktop={
               <PreviewOverlayContainer>
-                <Image src={desktop} height="364px" />
+                <Image src={desktop} height="364px" objectFit="scale-down" />
                 <CenteredVideo
                   controls
                   src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-desktop.mp4"
