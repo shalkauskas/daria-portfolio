@@ -1,4 +1,14 @@
 import { List, Stack, StepTitle, Typography } from '@/components';
+import { Persona } from './Persona';
+import {
+  persona1Bio,
+  persona1Goals,
+  persona1Needs,
+  persona1PainPoints,
+  persona1Scenario,
+  persona1TasksAndResponsibilities
+} from './data';
+import persona1Image from '@/pages/ReviewProcess/assets/persona1.png';
 
 export function Research() {
   return (
@@ -14,7 +24,15 @@ export function Research() {
           process as well as major tasks and pain points for these personas.
           Please view the summary of both personas below.
         </Typography>
-        {/* TODO: Add personas */}
+        <Persona
+          personaBio={persona1Bio}
+          personaImage={persona1Image}
+          personaScenario={persona1Scenario}
+          personaGoals={persona1Goals}
+          personaPainPoints={persona1PainPoints}
+          personaTasksAndResponsibilities={persona1TasksAndResponsibilities}
+          personaNeeds={persona1Needs}
+        />
       </Stack>
       <Stack gap="1rem" direction="column">
         <StepTitle no={2}>Define & Ideate</StepTitle>

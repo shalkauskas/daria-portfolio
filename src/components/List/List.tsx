@@ -1,3 +1,4 @@
+import { CSSInterpolation } from '@emotion/serialize';
 import { Typography } from '../Typography/Typography';
 import { StyledOl, StyledUl } from './styles';
 
@@ -17,8 +18,18 @@ export function List({
   );
 }
 
-function ListItem({ children }: { children: React.ReactNode }) {
-  return <Typography as="li">{children}</Typography>;
+function ListItem({
+  children,
+  css
+}: {
+  children: React.ReactNode;
+  css?: CSSInterpolation;
+}) {
+  return (
+    <Typography as="li" sx={css}>
+      {children}
+    </Typography>
+  );
 }
 
 List.Item = ListItem;
