@@ -1,7 +1,7 @@
-import teteDesktop from '@/pages/Tete/assets/tetemain.png';
-import userReseach from '@/pages/UserResearch/assets/user_research_main_page.png';
-import redesign from '@/pages/ReviewProcess/assets/intro.png';
-import likertmain from '@/pages/LikertScale/assets/likertmain.png';
+import teteDesktop from '@/pages/Tete/assets/tetemain.webp';
+import userReseach from '@/pages/UserResearch/assets/user_research_main_page.webp';
+import redesign from '@/pages/ReviewProcess/assets/intro.webp';
+import likertmain from '@/pages/LikertScale/assets/likertmain.webp';
 import { ROUTES } from '@/navigation/routes';
 
 export const intro = {

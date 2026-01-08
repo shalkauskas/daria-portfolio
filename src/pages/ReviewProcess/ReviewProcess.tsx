@@ -16,7 +16,7 @@ import { OutcomesContainer } from '../Tete/styles';
 import { Research } from './components/Research';
 import { Design } from './components/Design';
 import { ProblemSolving } from './components/ProblemSolving';
-import intro from '@/pages/ReviewProcess/assets/intro.png';
+import intro from '@/pages/ReviewProcess/assets/intro.webp';
 
 export function ReviewProcess() {
   const introRef = useRef<HTMLDivElement>(null);

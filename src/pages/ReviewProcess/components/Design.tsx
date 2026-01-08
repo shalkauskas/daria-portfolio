@@ -1,6 +1,6 @@
 import { Image, Stack, StepTitle, Typography } from '@/components';
-import drawer from '@/pages/ReviewProcess/assets/drawer.png';
-import iteration2 from '@/pages/ReviewProcess/assets/iteration2.png';
+import drawer from '@/pages/ReviewProcess/assets/drawer.webp';
+import iteration2 from '@/pages/ReviewProcess/assets/iteration2.webp';
 export function Design() {
   return (
     <Stack gap="2rem" direction="column">

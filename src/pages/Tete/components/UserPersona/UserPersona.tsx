@@ -10,7 +10,7 @@ import { personaBio, personaCards } from '@/data/tete';
 import { theme } from '@/shared/theme';
 import { GradientContainer } from '../../styles';
 import { forwardRef } from 'react';
-import tinaJones from '@/pages/Tete/assets/tina.png';
+import tinaJones from '@/pages/Tete/assets/tina.webp';
 
 type Props = {
   title: string;

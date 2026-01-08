@@ -1,7 +1,7 @@
 import { Image, List, Tabs } from '@/components';
 
-import tab2after from '@/pages/ReviewProcess/assets/tab2after.png';
-import tab2before from '@/pages/ReviewProcess/assets/tab2before.png';
+import tab2after from '@/pages/ReviewProcess/assets/tab2after.webp';
+import tab2before from '@/pages/ReviewProcess/assets/tab2before.webp';
 
 export function Tab2() {
   return (

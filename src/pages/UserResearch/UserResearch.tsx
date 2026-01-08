@@ -15,25 +15,25 @@ import { ImageContainer } from '../LikertScale/components';
 import { useMemo, useRef } from 'react';
 import { DataSolutions } from './components/DataSolutions';
 
-import header from '@/pages/UserResearch/assets/header.png';
+import header from '@/pages/UserResearch/assets/header.webp';
 import surveys from '@/pages/UserResearch/assets/surveys.jpg';
-import q1 from '@/pages/UserResearch/assets/q1.png';
-import q2 from '@/pages/UserResearch/assets/q2.png';
-import q3 from '@/pages/UserResearch/assets/q3.png';
-import q4 from '@/pages/UserResearch/assets/q4.png';
-import q5 from '@/pages/UserResearch/assets/q5.png';
-import Chart1 from '@/pages/UserResearch/assets/Chart1.png';
-import Chart2 from '@/pages/UserResearch/assets/Chart2.png';
-import Chart3 from '@/pages/UserResearch/assets/Chart3.png';
-import data1 from '@/pages/UserResearch/assets/data1.png';
-import data2 from '@/pages/UserResearch/assets/data2.png';
-import inter1 from '@/pages/UserResearch/assets/inter1.png';
-import inter2 from '@/pages/UserResearch/assets/inter2.png';
-import f1 from '@/pages/UserResearch/assets/f1.png';
-import f2 from '@/pages/UserResearch/assets/f2.png';
-import f3 from '@/pages/UserResearch/assets/f3.png';
-import f4 from '@/pages/UserResearch/assets/f4.png';
-import f5 from '@/pages/UserResearch/assets/f5.png';
+import q1 from '@/pages/UserResearch/assets/q1.webp';
+import q2 from '@/pages/UserResearch/assets/q2.webp';
+import q3 from '@/pages/UserResearch/assets/q3.webp';
+import q4 from '@/pages/UserResearch/assets/q4.webp';
+import q5 from '@/pages/UserResearch/assets/q5.webp';
+import Chart1 from '@/pages/UserResearch/assets/Chart1.webp';
+import Chart2 from '@/pages/UserResearch/assets/Chart2.webp';
+import Chart3 from '@/pages/UserResearch/assets/Chart3.webp';
+import data1 from '@/pages/UserResearch/assets/data1.webp';
+import data2 from '@/pages/UserResearch/assets/data2.webp';
+import inter1 from '@/pages/UserResearch/assets/inter1.webp';
+import inter2 from '@/pages/UserResearch/assets/inter2.webp';
+import f1 from '@/pages/UserResearch/assets/f1.webp';
+import f2 from '@/pages/UserResearch/assets/f2.webp';
+import f3 from '@/pages/UserResearch/assets/f3.webp';
+import f4 from '@/pages/UserResearch/assets/f4.webp';
+import f5 from '@/pages/UserResearch/assets/f5.webp';
 import {
   BorderBox,
   BorderBoxContent,

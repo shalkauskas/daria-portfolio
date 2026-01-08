@@ -20,7 +20,7 @@ import { useMemo, useRef } from 'react';
 import { OutcomesContainer } from './styles';
 
 import desktop from '@/pages/Tete/assets/tete-a-tete.webp';
-import mobile from '@/pages/Tete/assets/mobile.png';
+import mobile from '@/pages/Tete/assets/mobile.webp';
 
 export function Tete() {
   const problemRef = useRef<HTMLDivElement>(null);

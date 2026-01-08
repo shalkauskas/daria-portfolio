@@ -1,8 +1,8 @@
 import { List, Stack, StepTitle, Typography } from '@/components';
 import { Persona } from './Persona';
 import { persona1, persona2 } from './data';
-import persona1Image from '@/pages/ReviewProcess/assets/persona1.png';
-import persona2Image from '@/pages/ReviewProcess/assets/persona2.png';
+import persona1Image from '@/pages/ReviewProcess/assets/persona1.webp';
+import persona2Image from '@/pages/ReviewProcess/assets/persona2.webp';
 
 export function Research() {
   return (

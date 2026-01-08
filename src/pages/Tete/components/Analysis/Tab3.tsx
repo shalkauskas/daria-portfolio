@@ -1,6 +1,6 @@
 import { Image, List, Tabs } from '@/components';
-import webprob3 from '@/pages/Tete/assets/webprob3.png';
-import sol3 from '@/pages/Tete/assets/sol3.png';
+import webprob3 from '@/pages/Tete/assets/webprob3.webp';
+import sol3 from '@/pages/Tete/assets/sol3.webp';
 
 export function Tab3() {
   return (

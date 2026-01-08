@@ -18,10 +18,10 @@ import { useMemo, useRef } from 'react';
 import { ProgressTrackerContainer } from '@/components/ProgressTracker/styles';
 import { ProgressTracker } from '@/components/ProgressTracker';
 
-import res1 from '@/pages/LikertScale/assets/res1.png';
-import res2 from '@/pages/LikertScale/assets/res2.png';
-import res3 from '@/pages/LikertScale/assets/res3.png';
-import res4 from '@/pages/LikertScale/assets/res4.png';
+import res1 from '@/pages/LikertScale/assets/res1.webp';
+import res2 from '@/pages/LikertScale/assets/res2.webp';
+import res3 from '@/pages/LikertScale/assets/res3.webp';
+import res4 from '@/pages/LikertScale/assets/res4.webp';
 import res5 from '@/pages/LikertScale/assets/res5.webp';
 import res6 from '@/pages/LikertScale/assets/res6.webp';
 import res7 from '@/pages/LikertScale/assets/res7.webp';

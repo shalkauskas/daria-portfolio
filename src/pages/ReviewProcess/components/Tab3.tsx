@@ -1,8 +1,8 @@
 import { Image, List, Stack, Tabs } from '@/components';
 
-import tab3after1 from '@/pages/ReviewProcess/assets/tab3after1.png';
-import tab3after2 from '@/pages/ReviewProcess/assets/tab3after2.png';
-import tab3before from '@/pages/ReviewProcess/assets/tab3before.png';
+import tab3after1 from '@/pages/ReviewProcess/assets/tab3after1.webp';
+import tab3after2 from '@/pages/ReviewProcess/assets/tab3after2.webp';
+import tab3before from '@/pages/ReviewProcess/assets/tab3before.webp';
 
 export function Tab3() {
   return (

@@ -1,7 +1,7 @@
 import { Image, List, Tabs, Typography } from '@/components';
-import webprob2 from '@/pages/Tete/assets/webprob2.png';
-import sitemap from '@/pages/Tete/assets/sitemap.png';
-import sol2 from '@/pages/Tete/assets/sol2.png';
+import webprob2 from '@/pages/Tete/assets/webprob2.webp';
+import sitemap from '@/pages/Tete/assets/sitemap.webp';
+import sol2 from '@/pages/Tete/assets/sol2.webp';
 import { ImageGrid } from './styles';
 
 export function Tab2() {

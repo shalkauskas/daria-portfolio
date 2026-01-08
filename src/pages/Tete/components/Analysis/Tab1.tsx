@@ -1,7 +1,7 @@
 import { Image, List, Stack, Tabs } from '@/components';
-import sol1 from '@/pages/Tete/assets/sol1.png';
-import userflow from '@/pages/Tete/assets/userflow.png';
-import webprob1 from '@/pages/Tete/assets/webprob1.png';
+import sol1 from '@/pages/Tete/assets/sol1.webp';
+import userflow from '@/pages/Tete/assets/userflow.webp';
+import webprob1 from '@/pages/Tete/assets/webprob1.webp';
 
 export function Tab1() {
   return (
