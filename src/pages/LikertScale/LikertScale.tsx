@@ -106,10 +106,25 @@ export function LikertScale() {
           </Stack>
 
           <ImageContainer subtitle="Google Docs">
-            <Image src={res1} canEnlarge objectFit="cover" />
+            <Image
+              src={res1}
+              canEnlarge
+              objectFit="cover"
+              containerStyle={{ margin: '-12px' }}
+            />
             <Stack css={{ gap: '1.5rem' }}>
-              <Image src={res2} canEnlarge objectFit="cover" />
-              <Image src={res3} canEnlarge objectFit="cover" />
+              <Image
+                src={res2}
+                canEnlarge
+                objectFit="cover"
+                containerStyle={{ margin: '-12px' }}
+              />
+              <Image
+                src={res3}
+                canEnlarge
+                objectFit="cover"
+                containerStyle={{ margin: '-12px' }}
+              />
             </Stack>
           </ImageContainer>
           <Typography
@@ -123,8 +138,8 @@ export function LikertScale() {
             with the form
           </Typography>
           <ImageContainer subtitle="Survey Monkey">
-            <Image src={res4} canEnlarge />
-            <Image src={res5} canEnlarge />
+            <Image src={res4} canEnlarge containerStyle={{ margin: '-16px' }} />
+            <Image src={res5} canEnlarge containerStyle={{ margin: '-16px' }} />
           </ImageContainer>
           <Typography
             sx={{
@@ -153,7 +168,7 @@ export function LikertScale() {
               objectFit="scale-down"
               src={res6}
               canEnlarge
-              containerStyle={{ maxHeight: '328px' }}
+              containerStyle={{ maxHeight: '500px', margin: '-16px' }}
             />
             <Stack
               css={{
@@ -163,12 +178,12 @@ export function LikertScale() {
               <Image
                 src={res7}
                 canEnlarge
-                containerStyle={{ maxHeight: '328px' }}
+                containerStyle={{ maxHeight: '500px', margin: '-16px' }}
               />
               <Image
                 src={res8}
                 canEnlarge
-                containerStyle={{ maxHeight: '328px' }}
+                containerStyle={{ maxHeight: '500px', margin: '-16px' }}
               />
             </Stack>
           </ImageContainer>

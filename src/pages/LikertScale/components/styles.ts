@@ -13,6 +13,10 @@ export const ImageContainerContent = styled.div({
   justifyContent: 'space-between',
   gap: '1.5rem',
   '@media (max-width: 850px)': {
-    flexDirection: 'column'
+    flexDirection: 'column',
+
+    '& > div': {
+      margin: '16px !important'
+    }
   }
 });

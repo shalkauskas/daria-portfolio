@@ -1,4 +1,4 @@
-import { FormattedText, List, Stack } from '@/components';
+import { FormattedText, List } from '@/components';
 import {
   PersonaContainer,
   PersonaBioGrid,

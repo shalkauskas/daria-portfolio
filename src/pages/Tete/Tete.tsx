@@ -136,6 +136,7 @@ export function Tete() {
                   showcase their skills and expertise.
                 </List.Item>
               </List>
+              <div />
             </OutcomesContainer>
           </Stack>
           {/* KEYS ACTIVITIES */}

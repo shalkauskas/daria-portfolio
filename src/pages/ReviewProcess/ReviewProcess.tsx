@@ -82,6 +82,7 @@ export function ReviewProcess() {
                   100% customer satisfaction resulted in a better client
                   retention.
                 </List.Item>
+                <div />
               </List>
             </OutcomesContainer>
           </Stack>

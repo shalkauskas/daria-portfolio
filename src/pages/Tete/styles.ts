@@ -8,13 +8,33 @@ export const GradientContainer = styled.div(({ theme }) => ({
 }));
 
 export const OutcomesContainer = styled(Stack)(({ theme }) => ({
-  background: `linear-gradient(to right, ${theme.colors.primaryButtonHover} 0%, #8459BC 100%)`,
-  border: `1px solid ${theme.colors.grey1}`,
+  position: 'relative',
+  borderTop: `1px solid ${theme.colors.grey1}`,
+  borderBottom: `1px solid ${theme.colors.grey1}`,
   gap: '1rem',
   flexDirection: 'column',
   padding: `${theme.utility.pxToRem(20)} ${theme.utility.pxToRem(25)}`,
+  width: `calc(100% + ${theme.utility.pxToRem(48)})`,
+  marginLeft: theme.utility.pxToRem(-24),
+  boxSizing: 'border-box',
+
+  '@media (max-width: 1024px)': {
+    width: `calc(100% + ${theme.utility.pxToRem(32)})`,
+    marginLeft: theme.utility.pxToRem(-16)
+  },
 
   '& h3, li': {
     color: theme.colors.white
+  },
+
+  '& div': {
+    position: 'absolute',
+    bottom: 0,
+    left: '-25%',
+    right: 0,
+    top: 0,
+    width: '100vw',
+    background: `linear-gradient(to right, ${theme.colors.primaryButtonHover} 0%, #8459BC 100%)`,
+    zIndex: -1
   }
 }));
