@@ -75,10 +75,10 @@ const persona1Goals = [
 ];
 
 const persona2Goals = [
-  'Efficiency: Jennifer aims to reduce the time spent reviewing each application.',
-  'Fair Evaluation: She wants to make unbiased, objective decisions based on qualifications, not personal bias or first impressions.',
-  'Collaborative Feedback: She seeks to share insights with her colleagues to ensure the best candidate selection.',
-  'Clear Communication: Ensure that the review process is transparent'
+  '**Efficiency:** Jennifer aims to reduce the time spent reviewing each application.',
+  '**Fair Evaluation:** She wants to make unbiased, objective decisions based on qualifications, not personal bias or first impressions.',
+  '**Collaborative Feedback:** She seeks to share insights with her colleagues to ensure the best candidate selection.',
+  '**Clear Communication:** Ensure that the review process is transparent'
 ];
 
 const persona1PainPoints = [
@@ -97,12 +97,12 @@ const persona2PainPoints = [
 ];
 
 const persona1TasksAndResponsibilities = [
-  'Review Applications: Evaluate academic records, personal statements, recommendation letters, and other documents.',
-  "Assess Fit for the Program: Determine how well an applicant's experience, background, and values align with the residency program's mission.",
-  'Collaborate with Faculty: Discuss and gather feedback from other faculty members about applicants.',
-  'Interview Selection: Coordinate interviews, prepare interview panels, and ensure smooth logistics.',
-  'Track Progress: Keep a record of application statuses, interview results, and final decisions for each candidate.',
-  'Report and Communication: Provide regular updates to the institution and communicate outcomes to applicants.'
+  '**Review Applications:** Evaluate academic records, personal statements, recommendation letters, and other documents.',
+  "**Assess Fit for the Program:** Determine how well an applicant's experience, background, and values align with the residency program's mission.",
+  '**Collaborate with Faculty:** Discuss and gather feedback from other faculty members about applicants.',
+  '**Interview Selection:** Coordinate interviews, prepare interview panels, and ensure smooth logistics.',
+  '**Track Progress:** Keep a record of application statuses, interview results, and final decisions for each candidate.',
+  '**Report and Communication:** Provide regular updates to the institution and communicate outcomes to applicants.'
 ];
 
 const persona2TasksAndResponsibilities = [
@@ -114,19 +114,19 @@ const persona2TasksAndResponsibilities = [
 ];
 
 const persona1Needs = [
-  'Centralized Platform: A single place where she can view all applications, track progress, and collaborate with faculty in real-time.',
-  'Intuitive Interface: Tools that simplify data entry and offer easy-to-understand reports and summaries.',
-  'Automated Workflows: Features like automated ranking or shortlisting based on predefined criteria to help streamline the decision-making process.',
-  'Real-Time Collaboration: A way to easily share notes and feedback with faculty members and track ongoing discussions about each applicant.',
-  'Improved Candidate Insights: Tools that offer data-driven insights or scoring rubrics to reduce subjectivity in the selection process.'
+  '**Centralized Platform:** A single place where she can view all applications, track progress, and collaborate with faculty in real-time.',
+  '**Intuitive Interface:** Tools that simplify data entry and offer easy-to-understand reports and summaries.',
+  '**Automated Workflows:** Features like automated ranking or shortlisting based on predefined criteria to help streamline the decision-making process.',
+  '**Real-Time Collaboration:** A way to easily share notes and feedback with faculty members and track ongoing discussions about each applicant.',
+  '**Improved Candidate Insights:** Tools that offer data-driven insights or scoring rubrics to reduce subjectivity in the selection process.'
 ];
 
 const persona2Needs = [
-  'Streamlined Process: A more efficient digital platform that helps her prioritize and track applications.',
-  'Automated Sorting/Filtering Tools: Tools that can quickly filter applicants based on basic qualifications (e.g., test scores, GPA) or previous clinical experiences.',
-  'Annotation and Collaboration Features: Ability to make quick notes or highlights on applications and share these with other reviewers.',
-  'Clear, Customizable Evaluation Criteria: A standardized rubric for evaluations that aligns with program goals but allows for flexibility to highlight individual strengths.',
-  'Consistency and Fairness: An interface that helps to ensure no one application is overlooked or unfairly prioritized.'
+  '**Streamlined Process:** A more efficient digital platform that helps her prioritize and track applications.',
+  '**Automated Sorting/Filtering Tools:** Tools that can quickly filter applicants based on basic qualifications (e.g., test scores, GPA) or previous clinical experiences.',
+  '**Annotation and Collaboration Features:** Ability to make quick notes or highlights on applications and share these with other reviewers.',
+  '**Clear, Customizable Evaluation Criteria:** A standardized rubric for evaluations that aligns with program goals but allows for flexibility to highlight individual strengths.',
+  '**Consistency and Fairness:** An interface that helps to ensure no one application is overlooked or unfairly prioritized.'
 ];
 
 export const persona1 = {

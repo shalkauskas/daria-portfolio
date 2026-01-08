@@ -1,4 +1,4 @@
-import { List, Stack } from '@/components';
+import { FormattedText, List, Stack } from '@/components';
 import {
   PersonaContainer,
   PersonaBioGrid,
@@ -65,7 +65,9 @@ export function Persona({
           <PersonaListItemTitle>GOALS</PersonaListItemTitle>
           <List>
             {personaGoals.map((value) => (
-              <PersonaListItemText key={value}>{value}</PersonaListItemText>
+              <PersonaListItemText key={value}>
+                <FormattedText>{value}</FormattedText>
+              </PersonaListItemText>
             ))}
           </List>
         </PersonaBottomRowItem>
@@ -73,7 +75,9 @@ export function Persona({
           <PersonaListItemTitle>PAIN POINTS</PersonaListItemTitle>
           <List>
             {personaPainPoints.map((value) => (
-              <PersonaListItemText key={value}>{value}</PersonaListItemText>
+              <PersonaListItemText key={value}>
+                <FormattedText>{value}</FormattedText>
+              </PersonaListItemText>
             ))}
           </List>
         </PersonaBottomRowItem>
@@ -82,7 +86,7 @@ export function Persona({
           <List>
             {personaTasksAndResponsibilities.map((value) => (
               <PersonaListItemText key={value} css={{ margin: '0.5rem 0' }}>
-                {value}
+                <FormattedText>{value}</FormattedText>
               </PersonaListItemText>
             ))}
           </List>
@@ -92,7 +96,7 @@ export function Persona({
           <List>
             {personaNeeds.map((value) => (
               <PersonaListItemText key={value} css={{ margin: '0.5rem 0' }}>
-                {value}
+                <FormattedText>{value}</FormattedText>
               </PersonaListItemText>
             ))}
           </List>

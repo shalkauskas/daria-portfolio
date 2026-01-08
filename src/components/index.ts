@@ -1,5 +1,6 @@
 export * from './Button/Button';
 export * from './CaseContainer/CaseContainer';
+export * from './FormattedText/FormattedText';
 export * from './Header/Header';
 export * from './IconButton/IconButton';
 export * from './Image';
