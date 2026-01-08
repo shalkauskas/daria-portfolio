@@ -11,7 +11,7 @@ export const WorkList = styled.div(({ theme }) => ({
   gap: '3rem',
   padding: `0 ${theme.utility.pxToRem(80)}`,
 
-  '@media (max-width: 800px)': {
-    padding: '0 2rem'
+  '@media (max-width: 1024px)': {
+    padding: '0 1rem'
   }
 }));

@@ -35,7 +35,11 @@ export const ProgressTrackerContainer = styled.div(({ theme }) => ({
   display: 'flex',
   flexDirection: 'row',
   overflow: 'hidden',
-  height: `calc(100vh - ${theme.utility.pxToRem(68)})`
+  height: `calc(100vh - ${theme.utility.pxToRem(68)})`,
+
+  '@media (max-width: 1101px)': {
+    height: `100%`
+  }
 }));
 
 export const OverlayBackdrop = styled.div({

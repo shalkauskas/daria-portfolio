@@ -22,6 +22,20 @@ export const PersonaTopRow = styled.div(({ theme }) => ({
     gridTemplateColumns: '1fr',
     background:
       'linear-gradient(135deg, #4F1B93 0%, #8459BC 160px, transparent 15%)'
+  },
+
+  '@media (max-width: 800px)': {
+    padding: `${theme.utility.pxToRem(20)} ${theme.utility.pxToRem(16)} ${theme.utility.pxToRem(16)} ${theme.utility.pxToRem(16)}`
+  }
+}));
+
+export const PersonaImageAndBioContainer = styled.div(({ theme }) => ({
+  display: 'flex',
+  gap: theme.utility.pxToRem(24),
+  alignItems: 'center',
+
+  '@media (max-width: 600px)': {
+    flexDirection: 'column'
   }
 }));
 
@@ -71,7 +85,8 @@ export const PersonaBottomRow = styled.div(({ theme }) => ({
   },
 
   '@media (max-width: 800px)': {
-    gridTemplateColumns: '1fr'
+    gridTemplateColumns: '1fr',
+    padding: `${theme.utility.pxToRem(20)} ${theme.utility.pxToRem(16)} ${theme.utility.pxToRem(16)} ${theme.utility.pxToRem(16)}`
   }
 }));
 

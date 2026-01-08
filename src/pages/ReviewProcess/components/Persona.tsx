@@ -11,7 +11,8 @@ import {
   PersonaListItemText,
   PersonaListItemTitle,
   PersonaBottomRowItemTitle,
-  PersonaScenarioText
+  PersonaScenarioText,
+  PersonaImageAndBioContainer
 } from './styles';
 import { Image } from '@/components';
 import { Fragment } from 'react';
@@ -38,7 +39,7 @@ export function Persona({
   return (
     <PersonaContainer>
       <PersonaTopRow>
-        <Stack gap="1.5rem" alignItems="center">
+        <PersonaImageAndBioContainer>
           <Image
             containerStyle={{ flexShrink: 0 }}
             src={personaImage}
@@ -54,7 +55,7 @@ export function Persona({
               </Fragment>
             ))}
           </PersonaBioGrid>
-        </Stack>
+        </PersonaImageAndBioContainer>
         <PersonScenarioBox>
           <PersonaBottomRowItemTitle>SCENARIO</PersonaBottomRowItemTitle>
           <PersonaScenarioText>{personaScenario}</PersonaScenarioText>
