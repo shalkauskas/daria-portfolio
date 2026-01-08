@@ -20,11 +20,12 @@ import { useMemo, useRef } from 'react';
 import {
   OutcomesContainer,
   PreviewOverlayContainer,
-  CenteredVideo
+  CenteredDesktopVideo,
+  CenteredMobileVideo
 } from './styles';
 
 import desktop from '@/pages/Tete/assets/desktop.png';
-import mobile from '@/pages/Tete/assets/mobile.webp';
+import mobile from '@/pages/Tete/assets/phone.png';
 
 export function Tete() {
   const problemRef = useRef<HTMLDivElement>(null);
@@ -68,7 +69,7 @@ export function Tete() {
             desktop={
               <PreviewOverlayContainer>
                 <Image src={desktop} height="364px" objectFit="scale-down" />
-                <CenteredVideo
+                <CenteredDesktopVideo
                   controls
                   src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-desktop.mp4"
                   height="290px"
@@ -78,12 +79,10 @@ export function Tete() {
             }
             mobile={
               <PreviewOverlayContainer>
-                <Image src={mobile} height="364px" width="200px" />
-                <CenteredVideo
+                <Image src={mobile} height="375px" width="375px" />
+                <CenteredMobileVideo
                   controls
                   src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-mobile.mp4"
-                  height="364px"
-                  width="200px"
                 />
               </PreviewOverlayContainer>
             }

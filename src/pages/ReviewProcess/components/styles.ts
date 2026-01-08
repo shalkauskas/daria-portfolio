@@ -47,38 +47,38 @@ export const PersonaBottomRow = styled.div(({ theme }) => ({
   gap: '1rem',
   padding: `${theme.utility.pxToRem(23)} ${theme.utility.pxToRem(34)}`,
 
-  '& > *:nth-child(1)': {
+  '& > *:nth-of-type(1)': {
     gridColumn: 1,
     gridRow: 1
   },
-  '& > *:nth-child(2)': {
+  '& > *:nth-of-type(2)': {
     gridColumn: 1,
     gridRow: 2
   },
-  '& > *:nth-child(3)': {
+  '& > *:nth-of-type(3)': {
     gridColumn: 2,
     gridRow: '1 / 3'
   },
-  '& > *:nth-child(4)': {
+  '& > *:nth-of-type(4)': {
     gridColumn: 3,
     gridRow: '1 / 3'
   },
 
   '@media (max-width: 1400px)': {
     gridTemplateColumns: '1fr 1fr',
-    '& > *:nth-child(1)': {
+    '& > *:nth-of-type(1)': {
       gridColumn: 'auto',
       gridRow: 'auto'
     },
-    '& > *:nth-child(2)': {
+    '& > *:nth-of-type(2)': {
       gridColumn: 'auto',
       gridRow: 'auto'
     },
-    '& > *:nth-child(3)': {
+    '& > *:nth-of-type(3)': {
       gridColumn: 'auto',
       gridRow: 'auto'
     },
-    '& > *:nth-child(4)': {
+    '& > *:nth-of-type(4)': {
       gridColumn: 'auto',
       gridRow: 'auto'
     }

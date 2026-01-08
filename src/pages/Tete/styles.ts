@@ -14,7 +14,7 @@ export const PreviewOverlayContainer = styled.div({
   }
 });
 
-export const CenteredVideo = styled.video({
+export const CenteredDesktopVideo = styled.video({
   position: 'absolute',
   borderRadius: '8px',
   objectFit: 'scale-down',
@@ -22,6 +22,25 @@ export const CenteredVideo = styled.video({
   left: '50%',
   transform: 'translate(-50%, -61%)',
   zIndex: 1,
+
+  '@media (max-width: 700px)': {
+    borderRadius: '4px',
+    transform: 'translate(-50%, -50%)',
+    height: '162px',
+    width: '275px'
+  }
+});
+
+export const CenteredMobileVideo = styled.video({
+  position: 'absolute',
+  borderRadius: '12px',
+  objectFit: 'scale-down',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -58%)',
+  zIndex: 1,
+  height: '275px',
+  width: '145px',
 
   '@media (max-width: 700px)': {
     borderRadius: '4px',
@@ -67,7 +86,7 @@ export const OutcomesContainer = styled(Stack)(({ theme }) => ({
     background: `linear-gradient(to right, ${theme.colors.primaryButtonHover} 0%, #8459BC 100%)`,
     zIndex: -1,
 
-    '@media (max-width: 1024px)': {
+    '@media (max-width: 1124px)': {
       left: 0
     }
   }

@@ -16,7 +16,8 @@ import { OutcomesContainer } from '../Tete/styles';
 import { Research } from './components/Research';
 import { Design } from './components/Design';
 import { ProblemSolving } from './components/ProblemSolving';
-import intro from '@/pages/ReviewProcess/assets/intro.webp';
+import desktop from '@/pages/Tete/assets/desktop.png';
+import { CenteredDesktopVideo, PreviewOverlayContainer } from './styles';
 
 export function ReviewProcess() {
   const introRef = useRef<HTMLDivElement>(null);
@@ -50,11 +51,20 @@ export function ReviewProcess() {
         />
         <CaseContainer>
           <Stack gap="2rem" direction="column" ref={introRef}>
-            <Image
-              src={intro}
-              css={{ maxWidth: '787px' }}
-              containerStyle={{ margin: 'auto' }}
-            />
+            <PreviewOverlayContainer>
+              <Image
+                src={desktop}
+                height="364px"
+                objectFit="scale-down"
+                containerStyle={{ textAlign: 'center' }}
+              />
+              <CenteredDesktopVideo
+                controls
+                src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/applicationReview.mov"
+                height="290px"
+                width="490px"
+              />
+            </PreviewOverlayContainer>
             <Stack gap="1rem" direction="column">
               <Typography variant="h3">Problem</Typography>
               <Typography>
@@ -82,8 +92,8 @@ export function ReviewProcess() {
                   100% customer satisfaction resulted in a better client
                   retention.
                 </List.Item>
-                <div />
               </List>
+              <div />
             </OutcomesContainer>
           </Stack>
           <div ref={researchRef}>
