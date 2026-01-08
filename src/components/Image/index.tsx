@@ -26,6 +26,7 @@ export function Image({
   canEnlarge = false
 }: Props) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const handleClick = () => {
     if (canEnlarge) setIsOpen(true);
@@ -36,6 +37,10 @@ export function Image({
     setIsOpen(false);
   };
 
+  const handleLoad = () => {
+    setIsLoaded(true);
+  };
+
   if (!src) return null;
 
   return (
@@ -43,18 +48,26 @@ export function Image({
       <div
         className={className}
         style={containerStyle}
-        css={{ height: height, width: width }}>
+        css={{
+          height: height,
+          width: width,
+          backgroundColor: isLoaded ? 'transparent' : '#f0f0f0',
+          transition: 'background-color 0.3s ease'
+        }}>
         <img
           src={src}
           style={{
             ...style,
             cursor: canEnlarge ? 'pointer' : 'default',
-            objectFit: objectFit
+            objectFit: objectFit,
+            opacity: isLoaded ? 1 : 0,
+            transition: 'opacity 0.3s ease'
           }}
           alt={alt}
           height={'100%'}
           width={'100%'}
           onClick={handleClick}
+          onLoad={handleLoad}
         />
       </div>
       {isOpen &&
