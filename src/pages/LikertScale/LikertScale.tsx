@@ -12,7 +12,12 @@ import {
   ViewNext
 } from '@/components';
 import { likertScaleContent, likertScaleTitles } from '@/data/likertScale';
-import { GridContainer } from './styles';
+import {
+  CenteredDesktopVideo,
+  CenteredMobileVideo,
+  GridContainer,
+  PreviewOverlayContainer
+} from './styles';
 import { ImageContainer } from './components';
 import { useMemo, useRef } from 'react';
 import { ProgressTrackerContainer } from '@/components/ProgressTracker/styles';
@@ -31,6 +36,9 @@ import ideate2 from '@/pages/LikertScale/assets/ideate2.webp';
 import iterate1 from '@/pages/LikertScale/assets/iterate1.webp';
 import iterate2 from '@/pages/LikertScale/assets/iterate2.webp';
 import desktop from '@/pages/LikertScale/assets/desktop.webp';
+
+import mobile from '@/pages/Tete/assets/phone.png';
+
 export function LikertScale() {
   const problemRef = useRef<HTMLDivElement>(null);
   const defineRef = useRef<HTMLDivElement>(null);
@@ -68,8 +76,26 @@ export function LikertScale() {
         <CaseContainer>
           <div ref={problemRef}>
             <Preview
-              desktop={<Image src={desktop} height="364px" />}
-              mobile={<Image src={desktop} height="364px" />}
+              desktop={
+                <PreviewOverlayContainer>
+                  <Image src={desktop} height="364px" objectFit="scale-down" />
+                  <CenteredDesktopVideo
+                    controls
+                    src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/likertScaleDesktop.mov"
+                    height="290px"
+                    width="451px"
+                  />
+                </PreviewOverlayContainer>
+              }
+              mobile={
+                <PreviewOverlayContainer>
+                  <Image src={mobile} height="375px" width="375px" />
+                  <CenteredMobileVideo
+                    controls
+                    src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/likertScaleMobile.mov"
+                  />
+                </PreviewOverlayContainer>
+              }
             />
 
             <Typography variant="h3" sx={{ marginBottom: '1rem' }}>
