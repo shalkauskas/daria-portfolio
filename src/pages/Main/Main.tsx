@@ -6,11 +6,11 @@ import { useElementOnScreen } from '@/hooks';
 import { sections } from './constants';
 
 const workOptions = {
-  threshold: 0.1
+  threshold: 0.3
 };
 
 const aboutOptions = {
-  threshold: 0.4
+  threshold: 0.1
 };
 
 export function Main() {
