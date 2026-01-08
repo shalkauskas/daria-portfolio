@@ -33,20 +33,20 @@ export const CenteredDesktopVideo = styled.video({
 
 export const CenteredMobileVideo = styled.video({
   position: 'absolute',
-  borderRadius: '12px',
-  objectFit: 'scale-down',
+  borderRadius: '18px',
+  objectFit: 'cover',
   top: '50%',
   left: '50%',
-  transform: 'translate(-50%, -58%)',
+  transform: 'translate(-50%, -50%)',
   zIndex: 1,
-  height: '275px',
+  height: '314px',
   width: '145px',
 
   '@media (max-width: 700px)': {
-    borderRadius: '4px',
-    transform: 'translate(-50%, -50%)',
-    height: '162px',
-    width: '275px'
+    borderRadius: '20px',
+    transform: 'translate(-50%, -46%)',
+    height: '336px',
+    width: '146px'
   }
 });
 

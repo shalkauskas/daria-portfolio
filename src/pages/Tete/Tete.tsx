@@ -102,7 +102,11 @@ export function Tete() {
               </Typography>
             </Stack>
             {/* Benchmark &  Solutions*/}
-            <Stack gap="1.5rem">
+            <Stack
+              gap="1.5rem"
+              css={{
+                '@media (max-width: 800px)': { flexDirection: 'column' }
+              }}>
               <Stack direction="column" css={{ flex: '1 1 50%' }}>
                 <Typography variant="h3" sx={{ marginBottom: '1rem' }}>
                   Benchmark criteria
