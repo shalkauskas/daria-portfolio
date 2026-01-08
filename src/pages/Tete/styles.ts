@@ -1,6 +1,21 @@
 import { Stack } from '@/components';
 import styled from '@emotion/styled';
 
+export const PreviewOverlayContainer = styled.div({
+  position: 'relative',
+  display: 'inline-block',
+  overflow: 'hidden'
+});
+
+export const CenteredVideo = styled.video({
+  position: 'absolute',
+  borderRadius: '8px',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -61%)',
+  zIndex: 1
+});
+
 export const GradientContainer = styled.div(({ theme }) => ({
   background: `linear-gradient(to right, ${theme.colors.primaryButtonHover} 0%, #8459BC 100%)`,
   boxSizing: 'border-box',

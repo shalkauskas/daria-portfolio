@@ -17,9 +17,13 @@ import { UsabilityTesting } from './components/UsabilityTesting/UsabilityTesting
 import { ProgressTracker, Preview } from '@/components';
 import { ProgressTrackerContainer } from '@/components/ProgressTracker/styles';
 import { useMemo, useRef } from 'react';
-import { OutcomesContainer } from './styles';
+import {
+  OutcomesContainer,
+  PreviewOverlayContainer,
+  CenteredVideo
+} from './styles';
 
-import desktop from '@/pages/Tete/assets/tete-a-tete.webp';
+import desktop from '@/pages/Tete/assets/desktop.png';
 import mobile from '@/pages/Tete/assets/mobile.webp';
 
 export function Tete() {
@@ -61,8 +65,28 @@ export function Tete() {
         />
         <CaseContainer>
           <Preview
-            desktop={<Image src={desktop} height="364px" />}
-            mobile={<Image src={mobile} height="364px" width="200px" />}
+            desktop={
+              <PreviewOverlayContainer>
+                <Image src={desktop} height="364px" />
+                <CenteredVideo
+                  controls
+                  src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-desktop.mp4"
+                  height="290px"
+                  width="490px"
+                />
+              </PreviewOverlayContainer>
+            }
+            mobile={
+              <PreviewOverlayContainer>
+                <Image src={mobile} height="364px" width="200px" />
+                <CenteredVideo
+                  controls
+                  src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-mobile.mp4"
+                  height="364px"
+                  width="200px"
+                />
+              </PreviewOverlayContainer>
+            }
           />
           {/* PROBLEM */}
           <Stack gap="2rem" direction="column" css={{ marginBottom: '2.5rem' }}>
