@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { IconButton } from '../IconButton/IconButton';
 
-const CARD_WIDTH = 298;
+const CARD_WIDTH = 300;
 
 export const CardContainer = styled.div(({ theme }) => ({
   display: 'flex',
@@ -16,7 +16,9 @@ export const CardContainer = styled.div(({ theme }) => ({
 }));
 
 export const StyledIconButton = styled(IconButton)(({ theme }) => ({
+  alignItems: 'center',
   backgroundColor: theme.colors.primary,
+  justifyContent: 'center',
   padding: '0.6rem',
   height: theme.utility.pxToRem(40),
   width: theme.utility.pxToRem(40)
@@ -36,7 +38,6 @@ export const TopContainer = styled.div(({ theme }) => ({
 
 export const CarouselWrapper = styled.div({
   position: 'relative',
-  width: '100%',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center'
@@ -46,9 +47,11 @@ export const CarouselTrack = styled.div<{ $currentIndex: number }>(
   ({ $currentIndex }) => ({
     display: 'flex',
     gap: '1.5rem',
+    justifyContent: 'center',
     transition: 'transform 0.4s ease-in-out',
 
-    '@media (max-width: 768px)': {
+    '@media (max-width: 1400px)': {
+      justifyContent: 'flex-start',
       transform: `translateX(calc(-${$currentIndex} * (${CARD_WIDTH}px + 1.5rem)))`
     }
   })
@@ -57,9 +60,12 @@ export const CarouselTrack = styled.div<{ $currentIndex: number }>(
 export const CarouselViewport = styled.div({
   overflow: 'hidden',
   width: '100%',
+  display: 'flex',
+  justifyContent: 'center',
 
-  '@media (max-width: 768px)': {
-    width: `${CARD_WIDTH}px`
+  '@media (max-width: 1400px)': {
+    width: `${CARD_WIDTH}px`,
+    justifyContent: 'flex-start'
   }
 });
 
@@ -67,8 +73,8 @@ export const NavButton = styled.button(({ theme }) => ({
   position: 'absolute',
   top: '50%',
   transform: 'translateY(-50%)',
-  backgroundColor: theme.colors.secondaryText,
-  color: theme.colors.white,
+  backgroundColor: '#F7EFFF',
+  color: theme.colors.primaryText,
   border: `1px solid ${theme.colors.grey1}`,
   borderRadius: '50%',
   width: '40px',
@@ -92,15 +98,15 @@ export const NavButton = styled.button(({ theme }) => ({
     cursor: 'default'
   },
 
-  '@media (max-width: 768px)': {
+  '@media (max-width: 1400px)': {
     display: 'flex'
   }
 }));
 
 export const NavButtonLeft = styled(NavButton)({
-  left: '10px'
+  left: '-56px'
 });
 
 export const NavButtonRight = styled(NavButton)({
-  right: '10px'
+  right: '-56px'
 });
