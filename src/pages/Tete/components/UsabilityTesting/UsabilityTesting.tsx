@@ -88,19 +88,19 @@ export const UsabilityTesting = forwardRef<HTMLDivElement, Props>(
               clear for users. As a result, I got rid of dots and made menu
               items clickable while still maintaining screens’ ability to slide.
             </Typography>
-            <Stack css={{ justifyContent: 'space-evenly', gap: '1rem' }}>
-              <Image
-                src={test5}
-                height="417px"
-                canEnlarge
-                containerStyle={{ border: '1px solid #E2D7D2' }}
-              />
-              <Image
-                src={test6}
-                height="417px"
-                canEnlarge
-                containerStyle={{ border: '1px solid #E2D7D2' }}
-              />
+            <Stack
+              css={{
+                justifyContent: 'space-evenly',
+                gap: '1rem',
+                flexShrink: 0,
+                maxHeight: '417px',
+                '@media (max-width: 450px)': {
+                  flexDirection: 'column',
+                  maxHeight: 'none'
+                }
+              }}>
+              <Image src={test5} canEnlarge objectFit="contain" />
+              <Image src={test6} canEnlarge objectFit="contain" />
             </Stack>
           </Stack>
           {/* step */}
@@ -129,7 +129,11 @@ export const UsabilityTesting = forwardRef<HTMLDivElement, Props>(
               }}>
               <Stack gap="0.5rem" alignItems="start">
                 <Image src={cross} height="24px" />
-                <Stack gap="1.5rem">
+                <Stack
+                  gap="1.5rem"
+                  css={{
+                    '@media (max-width: 450px)': { flexDirection: 'column' }
+                  }}>
                   <Image
                     src={test7}
                     height="454px"
@@ -146,7 +150,7 @@ export const UsabilityTesting = forwardRef<HTMLDivElement, Props>(
                 </Stack>
               </Stack>
               <Stack gap="0.5rem" alignItems="start">
-                <Image src={checkmark} height="24px" />
+                <Image src={checkmark} height="24px" objectFit="scale-down" />
                 <Stack gap="1.5rem">
                   <Image
                     src={test9}
