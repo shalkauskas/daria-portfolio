@@ -78,13 +78,13 @@ export function Tete() {
               </PreviewOverlayContainer>
             }
             mobile={
-              <PreviewOverlayContainer>
-                <Image src={mobile} height="375px" width="375px" />
-                <CenteredMobileVideo
-                  controls
-                  src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteatete-mobile.mp4"
-                />
-              </PreviewOverlayContainer>
+              <video
+                css={{ borderRadius: '20px' }}
+                height="475px"
+                width="235px"
+                controls
+                src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/teteMobileNew.mov"
+              />
             }
           />
           {/* PROBLEM */}

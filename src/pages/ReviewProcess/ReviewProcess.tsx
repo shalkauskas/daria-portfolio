@@ -61,8 +61,6 @@ export function ReviewProcess() {
               <CenteredDesktopVideo
                 controls
                 src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/applicationReview.mov"
-                height="290px"
-                width="490px"
               />
             </PreviewOverlayContainer>
             <Stack gap="1rem" direction="column">

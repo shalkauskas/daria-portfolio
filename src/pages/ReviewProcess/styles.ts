@@ -15,12 +15,14 @@ export const PreviewOverlayContainer = styled.div({
 
 export const CenteredDesktopVideo = styled.video({
   position: 'absolute',
-  borderRadius: '8px',
-  objectFit: 'cover',
+  borderRadius: '6px',
+  objectFit: 'fill',
   top: '50%',
   left: '50%',
-  transform: 'translate(-50%, -61%)',
+  transform: 'translate(-50%, -60%)',
   zIndex: 1,
+  height: '290px',
+  width: '489px',
 
   '@media (max-width: 700px)': {
     borderRadius: '4px',
