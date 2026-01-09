@@ -101,7 +101,11 @@ export function UserResearch() {
             <Title>{tableOfContent[1].title}</Title>
             <Stack direction="column" gap="2rem">
               <BorderBox>
-                <Image src={surveys} objectFit="cover" />
+                <Image
+                  src={surveys}
+                  objectFit="cover"
+                  containerStyle={{ maxHeight: '320px' }}
+                />
                 <BorderBoxContent>
                   <Typography variant="subtitle18">Objectives</Typography>
                   <List type="ol">
@@ -161,9 +165,24 @@ export function UserResearch() {
                 </Typography>
               </Stack>
               <QuantitativeDataContainer>
-                <Image src={Chart1} height="341px" canEnlarge />
-                <Image canEnlarge src={Chart2} height="281px" />
-                <Image canEnlarge src={Chart3} height="344px" />
+                <Image
+                  src={Chart1}
+                  height="341px"
+                  canEnlarge
+                  objectFit="scale-down"
+                />
+                <Image
+                  canEnlarge
+                  src={Chart2}
+                  height="281px"
+                  objectFit="scale-down"
+                />
+                <Image
+                  canEnlarge
+                  src={Chart3}
+                  height="344px"
+                  objectFit="scale-down"
+                />
               </QuantitativeDataContainer>
               <Stack direction="column" gap="1rem">
                 <StepTitle no={3}>Analyze Qualitative Data</StepTitle>

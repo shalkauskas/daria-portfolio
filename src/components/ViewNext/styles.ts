@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { IconButton } from '../IconButton/IconButton';
 
 const CARD_WIDTH = 300;
+const CARD_WIDTH_MOBILE = 250;
 
 export const CardContainer = styled.div(({ theme }) => ({
   display: 'flex',
@@ -11,8 +12,12 @@ export const CardContainer = styled.div(({ theme }) => ({
   boxShadow:
     '0 0.25rem 0.25rem -1px rgba(12, 12, 13, 0.05), 0 0.25rem 0.25rem -1px rgba(12, 12, 13, 0.1)',
   overflow: 'hidden',
-  width: theme.utility.pxToRem(298),
-  flexShrink: 0
+  width: theme.utility.pxToRem(CARD_WIDTH - 2),
+  flexShrink: 0,
+
+  '@media (max-width: 400px)': {
+    width: theme.utility.pxToRem(CARD_WIDTH_MOBILE - 2)
+  }
 }));
 
 export const StyledIconButton = styled(IconButton)(({ theme }) => ({
@@ -28,7 +33,13 @@ export const BottomContainer = styled.div(({ theme }) => ({
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-  padding: theme.utility.pxToRem(16)
+  padding: theme.utility.pxToRem(16),
+
+  '@media (max-width: 400px)': {
+    h4: {
+      fontSize: theme.utility.pxToRem(16)
+    }
+  }
 }));
 
 export const TopContainer = styled.div(({ theme }) => ({
@@ -53,6 +64,11 @@ export const CarouselTrack = styled.div<{ $currentIndex: number }>(
     '@media (max-width: 1400px)': {
       justifyContent: 'flex-start',
       transform: `translateX(calc(-${$currentIndex} * (${CARD_WIDTH}px + 1.5rem)))`
+    },
+
+    '@media (max-width: 400px)': {
+      justifyContent: 'center',
+      transform: `translateX(calc(-${$currentIndex} * (${CARD_WIDTH_MOBILE}px + 1.5rem)))`
     }
   })
 );
@@ -66,6 +82,10 @@ export const CarouselViewport = styled.div({
   '@media (max-width: 1400px)': {
     width: `${CARD_WIDTH}px`,
     justifyContent: 'flex-start'
+  },
+
+  '@media (max-width: 400px)': {
+    width: `${CARD_WIDTH_MOBILE}px`
   }
 });
 
@@ -104,9 +124,9 @@ export const NavButton = styled.button(({ theme }) => ({
 }));
 
 export const NavButtonLeft = styled(NavButton)({
-  left: '-56px'
+  left: '-50px'
 });
 
 export const NavButtonRight = styled(NavButton)({
-  right: '-56px'
+  right: '-50px'
 });

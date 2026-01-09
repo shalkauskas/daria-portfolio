@@ -8,9 +8,8 @@ export const BorderBox = styled.div(({ theme }) => ({
   boxShadow: `0 0.25rem ${theme.utility.pxToRem(4)} -1px rgba(12, 12, 13, 0.05), 0 0.25rem ${theme.utility.pxToRem(4)} -1px rgba(12, 12, 13, 0.1)`,
   overflow: 'hidden',
   margin: '0 auto',
-  maxHeight: '300px',
 
-  '@media (max-width: 1024px)': {
+  '@media (max-width: 1275px)': {
     gridTemplateColumns: '1fr'
   }
 }));

@@ -4,6 +4,7 @@ import { PageContainer, WorkList } from './styles';
 import { Header, Layout, Typography } from '@/components';
 import { useElementOnScreen } from '@/hooks';
 import { sections } from './constants';
+import { useMemo } from 'react';
 
 const workOptions = {
   threshold: 0.3
@@ -24,19 +25,15 @@ export function Main() {
       options: aboutOptions
     });
 
-  function getActiveSection() {
-    if (isWorkVisible) {
-      return sections.WORK;
-    }
-    if (isAboutMeVisible) {
-      return sections.ABOUT;
-    }
+  const getActiveSection = useMemo(() => {
+    if (isWorkVisible) return sections.WORK;
+    if (isAboutMeVisible) return sections.ABOUT;
     return sections.INTRO;
-  }
+  }, [isWorkVisible, isAboutMeVisible]);
 
   return (
     <Layout>
-      <Header activeSection={getActiveSection()} />
+      <Header activeSection={getActiveSection} />
       <PageContainer>
         <MainIntro />
         <div ref={workRef}>
