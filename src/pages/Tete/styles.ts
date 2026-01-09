@@ -9,7 +9,15 @@ export const PreviewOverlayContainer = styled.div({
   '@media (max-width: 700px)': {
     '& img': {
       height: '400px',
-      width: '375px'
+      width: '375px',
+      maxWidth: '100%'
+    }
+  },
+
+  '@media (max-width: 375px)': {
+    '& img': {
+      height: 'auto',
+      width: '100%'
     }
   }
 });
@@ -28,6 +36,12 @@ export const CenteredDesktopVideo = styled.video({
     transform: 'translate(-50%, -50%)',
     height: '162px',
     width: '275px'
+  },
+
+  '@media (max-width: 375px)': {
+    transform: 'translate(-50%, -118%)',
+    width: '73%',
+    height: '155px'
   }
 });
 
@@ -47,6 +61,11 @@ export const CenteredMobileVideo = styled.video({
     transform: 'translate(-50%, -46%)',
     height: '336px',
     width: '146px'
+  },
+
+  '@media (max-width: 375px)': {
+    height: '280px',
+    width: '90%'
   }
 });
 

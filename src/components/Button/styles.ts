@@ -10,7 +10,12 @@ const button = {
   fontFamily: '"Open Sans", sans-serif',
   fontWeight: 700,
   fontSize: '1rem',
-  padding: '0.75rem 1.25rem'
+  padding: '0.75rem 1.25rem',
+
+  '@media (max-width: 450px)': {
+    fontSize: '0.875rem',
+    padding: '0.5rem 1rem'
+  }
 };
 
 export const ButtonContainer = styled.div({});

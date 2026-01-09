@@ -25,5 +25,11 @@ export const ButtonRound = styled.button(({ theme }) => ({
     '0 0.25rem 0.25rem -1px rgba(12, 12, 13, 0.05), 0 0.25rem 0.25rem -1px rgba(12, 12, 13, 0.1)',
   padding: '1rem',
   height: theme.utility.pxToRem(56),
-  width: theme.utility.pxToRem(56)
+  width: theme.utility.pxToRem(56),
+
+  '@media (max-width: 450px)': {
+    padding: '0.75rem',
+    height: theme.utility.pxToRem(48),
+    width: theme.utility.pxToRem(48)
+  }
 }));

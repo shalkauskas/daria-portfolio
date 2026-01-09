@@ -11,38 +11,68 @@ export const StyledH1 = styled.h1(({ theme }) => ({
   color: '#383D45',
   fontSize: theme.utility.pxToRem(32),
   fontWeight: 600,
-  lineHeight: theme.utility.pxToRem(48)
+  lineHeight: theme.utility.pxToRem(48),
+
+  '@media (max-width: 450px)': {
+    fontSize: theme.utility.pxToRem(24),
+    lineHeight: theme.utility.pxToRem(32)
+  }
 }));
 export const StyledH2 = styled.h2(({ theme }) => ({
   ...shared(theme),
   fontSize: theme.utility.pxToRem(28),
   fontWeight: 700,
-  lineHeight: theme.utility.pxToRem(36)
+  lineHeight: theme.utility.pxToRem(36),
+
+  '@media (max-width: 450px)': {
+    fontSize: theme.utility.pxToRem(24),
+    lineHeight: theme.utility.pxToRem(32)
+  }
 }));
 export const StyledH3 = styled.h3(({ theme }) => ({
   ...shared(theme),
   fontSize: theme.utility.pxToRem(24),
   fontWeight: 600,
-  lineHeight: theme.utility.pxToRem(36)
+  lineHeight: theme.utility.pxToRem(36),
+
+  '@media (max-width: 450px)': {
+    fontSize: theme.utility.pxToRem(20),
+    lineHeight: theme.utility.pxToRem(24)
+  }
 }));
 export const StyledH4 = styled.h4(({ theme }) => ({
   ...shared(theme),
   fontSize: theme.utility.pxToRem(22),
   fontWeight: 700,
-  lineHeight: theme.utility.pxToRem(28)
+  lineHeight: theme.utility.pxToRem(28),
+
+  '@media (max-width: 450px)': {
+    fontSize: theme.utility.pxToRem(18),
+    lineHeight: theme.utility.pxToRem(24)
+  }
 }));
 export const StyledBody18 = styled.p(({ theme }) => ({
   color: theme.colors.primaryText,
   fontFamily: '"Open Sans", serif;',
   fontSize: theme.utility.pxToRem(18),
   fontWeight: 400,
-  lineHeight: theme.utility.pxToRem(31)
+  lineHeight: theme.utility.pxToRem(31),
+
+  '@media (max-width: 450px)': {
+    fontSize: theme.utility.pxToRem(16),
+    lineHeight: theme.utility.pxToRem(24)
+  }
 }));
 export const StyledBody16 = styled.p(({ theme }) => ({
   ...shared(theme),
   fontSize: theme.utility.pxToRem(16),
   fontWeight: 400,
-  lineHeight: theme.utility.pxToRem(31)
+  lineHeight: theme.utility.pxToRem(31),
+
+  '@media (max-width: 450px)': {
+    fontSize: theme.utility.pxToRem(14),
+    lineHeight: theme.utility.pxToRem(20)
+  }
 }));
 export const Subtitle18 = styled.p(({ theme }) => ({
   ...shared(theme),

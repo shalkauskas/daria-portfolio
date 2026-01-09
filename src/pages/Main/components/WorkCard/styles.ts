@@ -30,7 +30,11 @@ export const InfoContainer = styled.div({
   flexDirection: 'column',
   flex: 1,
   gap: '1rem',
-  padding: '2rem'
+  padding: '2rem',
+
+  '@media (max-width: 450px)': {
+    padding: '1rem'
+  }
 });
 
 export const Title = styled.h5({

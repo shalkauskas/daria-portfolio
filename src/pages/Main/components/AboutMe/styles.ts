@@ -31,7 +31,12 @@ export const ContentWrapper = styled.div(({ theme }) => ({
 
 export const Text = styled.p(({ theme }) => ({
   fontSize: theme.utility.pxToRem(20),
-  lineHeight: '2rem'
+  lineHeight: '2rem',
+
+  '@media (max-width: 450px)': {
+    fontSize: theme.utility.pxToRem(16),
+    lineHeight: '1.8rem'
+  }
 }));
 
 export const TextContainer = styled.div({

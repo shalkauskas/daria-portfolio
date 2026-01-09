@@ -17,7 +17,12 @@ export default function PageHeader({
 
   return (
     <HeaderContainer>
-      <Stack style={{ justifyContent: 'space-between', width: '100%' }}>
+      <Stack
+        style={{
+          justifyContent: 'space-between',
+          width: '100%',
+          alignItems: 'center'
+        }}>
         <Stack
           gap="0.75rem"
           alignItems="center"

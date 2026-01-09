@@ -41,17 +41,30 @@ export const ImageContainer = styled.div(({ theme }) => ({
 
 export const Title = styled.h1(({ theme }) => ({
   fontSize: '2.5rem',
-  color: theme.colors.purple4
+  color: theme.colors.purple4,
+  '@media (max-width: 450px)': {
+    fontSize: '2rem',
+    lineHeight: '1.8rem'
+  }
 }));
 
 export const Statement = styled.h3({
   fontSize: '2rem',
-  textAlign: 'center'
+  textAlign: 'center',
+  '@media (max-width: 450px)': {
+    fontSize: '1.5rem',
+    lineHeight: '1.8rem'
+  }
 });
 
 export const Description = styled.h6(({ theme }) => ({
   fontSize: '1.5rem',
-  lineHeight: theme.utility.pxToRem(36)
+  lineHeight: theme.utility.pxToRem(36),
+
+  '@media (max-width: 450px)': {
+    fontSize: '1.25rem',
+    lineHeight: '1.8rem'
+  }
 }));
 
 export const Circle1 = styled.div(({ theme }) => ({
