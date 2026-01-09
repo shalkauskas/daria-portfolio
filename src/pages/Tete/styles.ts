@@ -6,6 +6,10 @@ export const PreviewOverlayContainer = styled.div({
   display: 'inline-block',
   overflow: 'hidden',
 
+  '& img': {
+    height: '364px'
+  },
+
   '@media (max-width: 700px)': {
     '& img': {
       height: '400px',
@@ -14,10 +18,10 @@ export const PreviewOverlayContainer = styled.div({
     }
   },
 
-  '@media (max-width: 375px)': {
+  '@media (max-width: 400px)': {
     '& img': {
-      height: 'auto',
-      width: '100%'
+      height: '200px',
+      width: '250px'
     }
   }
 });
@@ -33,15 +37,15 @@ export const CenteredDesktopVideo = styled.video({
 
   '@media (max-width: 700px)': {
     borderRadius: '4px',
-    transform: 'translate(-50%, -50%)',
+    transform: 'translate(-50%, -62%)',
     height: '162px',
     width: '275px'
   },
 
-  '@media (max-width: 375px)': {
-    transform: 'translate(-50%, -118%)',
-    width: '73%',
-    height: '155px'
+  '@media (max-width: 400px)': {
+    transform: 'translate(-50%, -63%)',
+    width: '184px',
+    height: '108px'
   }
 });
 
