@@ -27,7 +27,18 @@ export const StyledIconButton = styled(IconButton)(({ theme }) => ({
   justifyContent: 'center',
   padding: '0.6rem',
   height: theme.utility.pxToRem(40),
-  width: theme.utility.pxToRem(40)
+  width: theme.utility.pxToRem(40),
+
+  '@media (max-width: 400px)': {
+    padding: '0.5rem',
+    height: theme.utility.pxToRem(32),
+    width: theme.utility.pxToRem(32),
+
+    '& > img': {
+      height: theme.utility.pxToRem(18),
+      width: theme.utility.pxToRem(18)
+    }
+  }
 }));
 
 export const BottomContainer = styled.div(({ theme }) => ({
@@ -44,9 +55,14 @@ export const BottomContainer = styled.div(({ theme }) => ({
 }));
 
 export const TopContainer = styled.div(({ theme }) => ({
+  cursor: 'pointer',
   display: 'flex',
   padding: `${theme.utility.pxToRem(30)} ${theme.utility.pxToRem(50)}`,
-  height: theme.utility.pxToRem(120)
+  height: theme.utility.pxToRem(120),
+
+  '@media (max-width: 400px)': {
+    height: theme.utility.pxToRem(80)
+  }
 }));
 
 export const CarouselWrapper = styled.div({

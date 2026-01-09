@@ -21,7 +21,8 @@ export default function PageHeader({
         style={{
           justifyContent: 'space-between',
           width: '100%',
-          alignItems: 'center'
+          alignItems: 'center',
+          gap: '0.5rem'
         }}>
         <Stack
           gap="0.75rem"

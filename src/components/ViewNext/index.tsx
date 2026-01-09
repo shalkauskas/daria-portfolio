@@ -28,10 +28,11 @@ function Card({ index, project }: Props) {
   return (
     <CardContainer>
       <TopContainer
+        onClick={() => navigate(project.link)}
         css={(theme) => ({
           backgroundColor: index % 2 ? theme.colors.blue1 : theme.colors.purple5
         })}>
-        <Image src={project.image} />
+        <Image src={project.image} style={{ cursor: 'pointer' }} />
       </TopContainer>
       <BottomContainer>
         <Typography variant="h4">{project.title}</Typography>

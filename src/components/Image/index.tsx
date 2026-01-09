@@ -57,11 +57,11 @@ export function Image({
         <img
           src={src}
           style={{
-            ...style,
             cursor: canEnlarge ? 'pointer' : 'default',
             objectFit: objectFit,
             opacity: isLoaded ? 1 : 0,
-            transition: 'opacity 0.3s ease'
+            transition: 'opacity 0.3s ease',
+            ...style
           }}
           alt={alt}
           height={'100%'}
