@@ -1,6 +1,7 @@
 import { TableOfContentItem, TableOfContentList } from './styles';
 
-const HEADER_OFFSET = 80; // Offset for sticky header on mobile
+const MOBILE_HEADER_OFFSET = 100;
+const DESKTOP_HEADER_OFFSET = 20;
 
 type Props = {
   tableOfContent: {
@@ -16,10 +17,27 @@ export function Content({ tableOfContent, activeTitle, handleClose }: Props) {
       const isMobile = window.innerWidth <= 1100;
       if (isMobile) {
         const elementPosition = ref.current.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.scrollY - HEADER_OFFSET;
+        const offsetPosition =
+          elementPosition + window.scrollY - MOBILE_HEADER_OFFSET;
         window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
       } else {
-        ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // On desktop, scrolling happens inside the CaseContainer, not the window
+        const scrollableContainer = ref.current.closest(
+          '[data-scroll-container]'
+        );
+        if (scrollableContainer) {
+          const containerRect = scrollableContainer.getBoundingClientRect();
+          const elementRect = ref.current.getBoundingClientRect();
+          const offsetPosition =
+            elementRect.top -
+            containerRect.top +
+            scrollableContainer.scrollTop -
+            DESKTOP_HEADER_OFFSET;
+          scrollableContainer.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
       }
     }
   };

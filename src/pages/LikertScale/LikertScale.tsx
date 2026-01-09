@@ -202,12 +202,12 @@ export function LikertScale() {
               <Image
                 src={res7}
                 canEnlarge
-                containerStyle={{ maxHeight: '500px', margin: '-16px' }}
+                containerStyle={{ maxHeight: '500px', margin: '-4px' }}
               />
               <Image
                 src={res8}
                 canEnlarge
-                containerStyle={{ maxHeight: '500px', margin: '-16px' }}
+                containerStyle={{ maxHeight: '500px', margin: '-4px' }}
               />
             </Stack>
           </ImageContainer>

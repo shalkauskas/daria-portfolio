@@ -14,6 +14,7 @@ export const CardContainer = styled.div(({ theme }) => ({
   overflow: 'hidden',
   width: theme.utility.pxToRem(CARD_WIDTH - 2),
   flexShrink: 0,
+  justifyContent: 'space-between',
 
   '@media (max-width: 400px)': {
     width: theme.utility.pxToRem(CARD_WIDTH_MOBILE - 2)
@@ -44,7 +45,8 @@ export const BottomContainer = styled.div(({ theme }) => ({
 
 export const TopContainer = styled.div(({ theme }) => ({
   display: 'flex',
-  padding: `${theme.utility.pxToRem(30)} ${theme.utility.pxToRem(50)}`
+  padding: `${theme.utility.pxToRem(30)} ${theme.utility.pxToRem(50)}`,
+  height: theme.utility.pxToRem(120)
 }));
 
 export const CarouselWrapper = styled.div({

@@ -8,7 +8,7 @@ export function CaseContainer({
   header?: React.ReactNode;
 }) {
   return (
-    <Container>
+    <Container data-scroll-container>
       {header}
       <ContentWrapper>{children}</ContentWrapper>
     </Container>
