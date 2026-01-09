@@ -20,12 +20,10 @@ import { useMemo, useRef } from 'react';
 import {
   OutcomesContainer,
   PreviewOverlayContainer,
-  CenteredDesktopVideo,
-  CenteredMobileVideo
+  CenteredDesktopVideo
 } from './styles';
 
 import desktop from '@/pages/Tete/assets/desktop.png';
-import mobile from '@/pages/Tete/assets/phone.png';
 
 export function Tete() {
   const problemRef = useRef<HTMLDivElement>(null);

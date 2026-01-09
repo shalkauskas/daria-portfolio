@@ -82,8 +82,6 @@ export function LikertScale() {
                   <CenteredDesktopVideo
                     controls
                     src="https://s3.us-east-2.amazonaws.com/daria-in-design.com/video/likertScaleDesktop.mov"
-                    height="290px"
-                    width="451px"
                   />
                 </PreviewOverlayContainer>
               }

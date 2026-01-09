@@ -25,16 +25,18 @@ export const PreviewOverlayContainer = styled.div({
 export const CenteredDesktopVideo = styled.video({
   position: 'absolute',
   borderRadius: '8px',
-  objectFit: 'scale-down',
+  objectFit: 'fill',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -61%)',
   zIndex: 1,
+  height: '290px',
+  width: '451px',
 
   '@media (max-width: 700px)': {
     borderRadius: '4px',
-    transform: 'translate(-50%, -50%)',
-    height: '162px',
+    transform: 'translate(-50%, -51%)',
+    height: '175px',
     width: '275px'
   }
 });
@@ -42,7 +44,7 @@ export const CenteredDesktopVideo = styled.video({
 export const CenteredMobileVideo = styled.video({
   position: 'absolute',
   borderRadius: '20px',
-  objectFit: 'cover',
+  objectFit: 'fill',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
