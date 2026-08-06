@@ -1,0 +1,120 @@
+import styled from '@emotion/styled';
+
+export const Wrapper = styled.div(({ theme }) => ({
+  alignItems: 'center',
+  display: 'flex',
+  gap: theme.utility.pxToRem(88),
+  margin: 'auto',
+  maxWidth: theme.utility.pxToRem(1280),
+  padding: `${theme.utility.pxToRem(200)} 1rem ${theme.utility.pxToRem(250)}`,
+  position: 'relative',
+
+  '@media (max-width: 1024px)': {
+    flexDirection: 'column-reverse',
+    gap: theme.utility.pxToRem(48),
+    padding: `${theme.utility.pxToRem(32)} 1rem ${theme.utility.pxToRem(50)}`
+  }
+}));
+
+export const TextContainer = styled.div({
+  alignItems: 'center',
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '2rem',
+  margin: 'auto',
+  zIndex: 1
+});
+
+export const ImageContainer = styled.div(({ theme }) => ({
+  display: 'flex',
+  flexShrink: 0,
+  height: theme.utility.pxToRem(380),
+  width: theme.utility.pxToRem(380),
+  zIndex: 1,
+
+  '@media (max-width: 1024px)': {
+    height: theme.utility.pxToRem(200),
+    transform: 'translateX(40%)',
+    width: theme.utility.pxToRem(200)
+  }
+}));
+
+export const Title = styled.h1(({ theme }) => ({
+  fontSize: '2.5rem',
+  color: theme.colors.purple4,
+  '@media (max-width: 450px)': {
+    fontSize: '2rem',
+    lineHeight: '1.8rem'
+  }
+}));
+
+export const Statement = styled.h3({
+  fontSize: '2rem',
+  textAlign: 'center',
+  '@media (max-width: 450px)': {
+    fontSize: '1.5rem',
+    lineHeight: '1.8rem'
+  }
+});
+
+export const Description = styled.h6(({ theme }) => ({
+  fontSize: '1.5rem',
+  lineHeight: theme.utility.pxToRem(36),
+
+  '@media (max-width: 450px)': {
+    fontSize: '1.25rem',
+    lineHeight: '1.8rem'
+  }
+}));
+
+export const Circle1 = styled.div(({ theme }) => ({
+  backgroundColor: '#F1EDFC',
+  borderRadius: '100%',
+  bottom: '22%',
+  boxShadow: '0 0.25rem 0.25rem 0 rgba(217, 203, 253, 0.35)',
+  height: theme.utility.pxToRem(354),
+  position: 'absolute',
+  right: '42%',
+  width: theme.utility.pxToRem(354),
+
+  '@media (max-width: 1024px)': {
+    right: '8%',
+    bottom: '22%'
+  }
+}));
+
+export const Circle2 = styled.div(({ theme }) => ({
+  backgroundColor: theme.colors.purple1,
+  borderRadius: '100%',
+  bottom: '55%',
+  boxShadow: `0 0.25rem 0.25rem 0 ${theme.colors.purple1}`,
+  height: theme.utility.pxToRem(240),
+  position: 'absolute',
+  right: '25%',
+  width: theme.utility.pxToRem(240),
+
+  '@media (max-width: 1024px)': {
+    right: '60%',
+    top: '15%',
+    height: theme.utility.pxToRem(150),
+    width: theme.utility.pxToRem(150)
+  }
+}));
+
+export const Circle3 = styled.div(({ theme }) => ({
+  backgroundColor: '#BBA9E8',
+  borderRadius: '100%',
+  bottom: '28%',
+  boxShadow: `0 0.25rem 0.25rem 0 #E7DEFC`,
+  height: theme.utility.pxToRem(120),
+  position: 'absolute',
+  right: '29%',
+  width: theme.utility.pxToRem(120),
+
+  '@media (max-width: 1024px)': {
+    left: '25%',
+    top: '2%',
+    height: theme.utility.pxToRem(80),
+    width: theme.utility.pxToRem(80)
+  }
+}));
