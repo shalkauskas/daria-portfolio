@@ -102,15 +102,10 @@ export const OutcomesContainer = styled(Stack)(({ theme }) => ({
   '& div': {
     position: 'absolute',
     bottom: 0,
-    left: '-25%',
+    left: 0,
     right: 0,
     top: 0,
-    width: '100vw',
     background: `linear-gradient(to right, ${theme.colors.primaryButtonHover} 0%, #8459BC 100%)`,
-    zIndex: -1,
-
-    '@media (max-width: 1124px)': {
-      left: 0
-    }
+    zIndex: -1
   }
 }));

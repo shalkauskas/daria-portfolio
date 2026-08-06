@@ -87,6 +87,9 @@ video {
   font-family: 'Open Sans', sans-serif;
   scroll-behavior: smooth;
   vertical-align: baseline;
+}
+html,
+body {
   overscroll-behavior: none;
 }
 strong {
