@@ -76,8 +76,6 @@ export function UserResearch() {
           header={
             <Image
               src={header}
-              objectFit="cover"
-              height="200px"
               containerStyle={{ marginBottom: '2rem' }}
             />
           }>

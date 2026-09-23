@@ -68,8 +68,6 @@ export function AICaseStudy() {
           header={
             <Image
               src={hero}
-              objectFit="cover"
-              height="300px"
               containerStyle={{ marginBottom: '2rem' }}
             />
           }>
