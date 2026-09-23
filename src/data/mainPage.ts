@@ -2,7 +2,7 @@ import teteDesktop from '@/pages/Tete/assets/tetemain.webp';
 import userReseach from '@/pages/UserResearch/assets/user_research_main_page.webp';
 import redesign from '@/pages/ReviewProcess/assets/intro.webp';
 import likertmain from '@/pages/LikertScale/assets/likertmain.webp';
-import aiCaseStudy from '@/pages/AICaseStudy/assets/hero.webp';
+import aiCaseStudy from '@/pages/AICaseStudy/assets/ai_case_study_main_page.webp';
 import { ROUTES } from '@/navigation/routes';
 
 export const intro = {
