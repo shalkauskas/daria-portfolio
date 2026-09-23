@@ -1,5 +1,12 @@
 import { Route, Routes } from 'react-router';
-import { LikertScale, Main, Tete, UserResearch, ReviewProcess } from '@/pages';
+import {
+  AICaseStudy,
+  LikertScale,
+  Main,
+  Tete,
+  UserResearch,
+  ReviewProcess
+} from '@/pages';
 import { ROUTES } from './routes';
 import { ScrollToTop } from './ScrollToTop';
 
@@ -9,6 +16,7 @@ export function Routing() {
       <ScrollToTop />
       <Routes>
         <Route path={'/'} element={<Main />} />
+        <Route path={ROUTES.aiCaseStudy} element={<AICaseStudy />} />
         <Route path={ROUTES.likertScale} element={<LikertScale />} />
         <Route path={ROUTES.tete} element={<Tete />} />
         <Route path={ROUTES.userResearch} element={<UserResearch />} />

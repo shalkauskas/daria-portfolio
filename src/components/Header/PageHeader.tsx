@@ -30,7 +30,7 @@ export default function PageHeader({
           css={{
             padding: '0.25rem 0'
           }}>
-          <IconButton icon={arrowLeft} onClick={() => navigate(-1)} />
+          <IconButton icon={arrowLeft} onClick={() => navigate('/')} />
           <Typography variant="h2">{title}</Typography>
         </Stack>
         {children}

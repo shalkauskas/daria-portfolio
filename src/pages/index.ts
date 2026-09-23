@@ -1,3 +1,4 @@
+export * from './AICaseStudy/AICaseStudy';
 export * from './LikertScale/LikertScale';
 export * from './Main/Main';
 export * from './Tete/Tete';
