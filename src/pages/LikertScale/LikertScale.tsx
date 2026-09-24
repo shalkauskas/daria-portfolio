@@ -229,7 +229,7 @@ export function LikertScale() {
             </StepTitle>
             <GridContainer>
               <Image src={ideate1} canEnlarge />
-              <Typography sx={{ padding: '1rem' }}>
+              <Typography sx={{ padding: '1rem 0' }}>
                 While I liked the Survey Monkey mobile solution that shows the
                 likert scale group question as a form rather than a table, it
                 had a drawback of taking too much vertical space by repeating
@@ -245,7 +245,7 @@ export function LikertScale() {
               }}>
               <Typography
                 sx={{
-                  padding: '1rem',
+                  padding: '1rem 0',
                   '@media (max-width: 1400px)': { order: 2 }
                 }}>
                 To solve this problem I came up with idea of hiding the answers

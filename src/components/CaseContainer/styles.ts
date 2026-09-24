@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 export const Container = styled.div(({ theme }) => ({
   overflow: 'auto',
   width: '100%',
+  containerType: 'inline-size',
 
   '@media (max-width: 1110px)': {
     marginBottom: theme.utility.pxToRem(100)

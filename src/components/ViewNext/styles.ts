@@ -3,6 +3,9 @@ import { IconButton } from '../IconButton/IconButton';
 
 const CARD_WIDTH = 300;
 const CARD_WIDTH_MOBILE = 250;
+export const CARD_GAP = 24;
+export const NAV_BUTTON_SIZE = 40;
+export const NAV_BUTTON_GAP = 16;
 
 export const CardContainer = styled.div(({ theme }) => ({
   display: 'flex',
@@ -66,64 +69,45 @@ export const TopContainer = styled.div(({ theme }) => ({
 }));
 
 export const CarouselWrapper = styled.div({
-  position: 'relative',
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center'
-});
-
-export const CarouselTrack = styled.div<{ $currentIndex: number }>(
-  ({ $currentIndex }) => ({
-    display: 'flex',
-    gap: '1.5rem',
-    justifyContent: 'center',
-    transition: 'transform 0.4s ease-in-out',
-
-    '@media (max-width: 1400px)': {
-      justifyContent: 'flex-start',
-      transform: `translateX(calc(-${$currentIndex} * (${CARD_WIDTH}px + 1.5rem)))`
-    },
-
-    '@media (max-width: 400px)': {
-      justifyContent: 'center',
-      transform: `translateX(calc(-${$currentIndex} * (${CARD_WIDTH_MOBILE}px + 1.5rem)))`
-    }
-  })
-);
-
-export const CarouselViewport = styled.div({
-  overflow: 'hidden',
-  width: '100%',
-  display: 'flex',
   justifyContent: 'center',
-
-  '@media (max-width: 1400px)': {
-    width: `${CARD_WIDTH}px`,
-    justifyContent: 'flex-start'
-  },
+  gap: `${NAV_BUTTON_GAP}px`,
+  width: '100%',
 
   '@media (max-width: 400px)': {
-    width: `${CARD_WIDTH_MOBILE}px`
+    gap: '4px'
   }
 });
 
+export const CarouselTrack = styled.div<{ $offset: number }>(({ $offset }) => ({
+  display: 'flex',
+  gap: `${CARD_GAP}px`,
+  transition: 'transform 0.4s ease-in-out',
+  transform: `translateX(-${$offset}px)`
+}));
+
+export const CarouselViewport = styled.div<{ $width?: number }>(
+  ({ $width }) => ({
+    overflow: 'hidden',
+    width: $width ? `${$width}px` : '100%'
+  })
+);
+
 export const NavButton = styled.button(({ theme }) => ({
-  position: 'absolute',
-  top: '50%',
-  transform: 'translateY(-50%)',
   backgroundColor: '#F7EFFF',
   color: theme.colors.primaryText,
   border: `1px solid ${theme.colors.grey1}`,
   borderRadius: '50%',
-  width: '40px',
-  height: '40px',
-  display: 'none',
+  width: `${NAV_BUTTON_SIZE}px`,
+  height: `${NAV_BUTTON_SIZE}px`,
+  flexShrink: 0,
+  display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   cursor: 'pointer',
   boxShadow:
     '0 0.25rem 0.25rem -1px rgba(12, 12, 13, 0.05), 0 0.25rem 0.25rem -1px rgba(12, 12, 13, 0.1)',
-  zIndex: 10,
   transition: 'opacity 0.2s ease',
 
   '&:hover:not(:disabled)': {
@@ -134,17 +118,5 @@ export const NavButton = styled.button(({ theme }) => ({
     backgroundColor: '#E5E5EA',
     color: theme.colors.secondaryText,
     cursor: 'default'
-  },
-
-  '@media (max-width: 1400px)': {
-    display: 'flex'
   }
 }));
-
-export const NavButtonLeft = styled(NavButton)({
-  left: '-50px'
-});
-
-export const NavButtonRight = styled(NavButton)({
-  right: '-50px'
-});

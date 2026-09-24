@@ -36,9 +36,3 @@ export const InfoContainer = styled.div({
     padding: '1rem'
   }
 });
-
-export const Title = styled.h5({
-  fontSize: '1.625rem',
-  lineHeight: '2.25rem',
-  fontWeight: 700
-});

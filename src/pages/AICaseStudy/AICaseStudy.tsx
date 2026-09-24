@@ -66,12 +66,12 @@ export function AICaseStudy() {
         />
         <CaseContainer
           header={
-            <Image
-              src={hero}
-              containerStyle={{ marginBottom: '2rem' }}
-            />
-          }>
-          <div ref={introRef}>
+            <div ref={introRef}>
+              <Image src={hero} width="101%" />
+            </div>
+          }
+        >
+          <div>
             <Typography variant="h3" sx={{ marginBottom: '1rem' }}>
               Overview
             </Typography>
