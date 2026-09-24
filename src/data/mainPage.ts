@@ -2,6 +2,7 @@ import teteDesktop from '@/pages/Tete/assets/tetemain.webp';
 import userReseach from '@/pages/UserResearch/assets/user_research_main_page.webp';
 import redesign from '@/pages/ReviewProcess/assets/intro.webp';
 import likertmain from '@/pages/LikertScale/assets/likertmain.webp';
+import aiCaseStudy from '@/pages/AICaseStudy/assets/ai_case_study_main_page.webp';
 import { ROUTES } from '@/navigation/routes';
 
 export const intro = {
@@ -13,6 +14,16 @@ export const intro = {
 };
 
 export const workProjects = [
+  {
+    title: 'Designing AI-Powered Workflows',
+    info: [
+      'Integrated AI assistants, support chat, summaries, and voice input to cut repetitive work and speed up decisions.',
+      'Kept users in control with transparent, verifiable AI output: sources, timestamps, regeneration, and human review.',
+      'Applied AI across ideation, validation, and handoff, reducing handoff back-and-forth by 40%.'
+    ],
+    link: ROUTES.aiCaseStudy,
+    image: aiCaseStudy
+  },
   {
     title: 'Application Review Process Redesign',
     info: [

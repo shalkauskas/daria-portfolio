@@ -85,15 +85,11 @@ export const OutcomesContainer = styled(Stack)(({ theme }) => ({
   borderBottom: `1px solid ${theme.colors.grey1}`,
   gap: '1rem',
   flexDirection: 'column',
-  padding: `${theme.utility.pxToRem(20)} ${theme.utility.pxToRem(25)}`,
-  width: `calc(100% + ${theme.utility.pxToRem(48)})`,
-  marginLeft: theme.utility.pxToRem(-24),
+  paddingBlock: theme.utility.pxToRem(20),
+  paddingInline: 'calc(50cqw - 50%)',
+  width: '100cqw',
+  marginLeft: 'calc(50% - 50cqw)',
   boxSizing: 'border-box',
-
-  '@media (max-width: 1024px)': {
-    width: `calc(100% + ${theme.utility.pxToRem(32)})`,
-    marginLeft: theme.utility.pxToRem(-16)
-  },
 
   '& h3, li': {
     color: theme.colors.white
