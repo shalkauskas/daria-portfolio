@@ -6,6 +6,7 @@ const CARD_WIDTH_MOBILE = 250;
 export const CARD_GAP = 24;
 export const NAV_BUTTON_SIZE = 40;
 export const NAV_BUTTON_GAP = 16;
+export const CARD_WIDTH_VAR = '--view-next-card-width';
 
 export const CardContainer = styled.div(({ theme }) => ({
   display: 'flex',
@@ -15,12 +16,12 @@ export const CardContainer = styled.div(({ theme }) => ({
   boxShadow:
     '0 0.25rem 0.25rem -1px rgba(12, 12, 13, 0.05), 0 0.25rem 0.25rem -1px rgba(12, 12, 13, 0.1)',
   overflow: 'hidden',
-  width: theme.utility.pxToRem(CARD_WIDTH - 2),
+  width: `var(${CARD_WIDTH_VAR}, ${theme.utility.pxToRem(CARD_WIDTH - 2)})`,
   flexShrink: 0,
   justifyContent: 'space-between',
 
   '@media (max-width: 400px)': {
-    width: theme.utility.pxToRem(CARD_WIDTH_MOBILE - 2)
+    width: `var(${CARD_WIDTH_VAR}, ${theme.utility.pxToRem(CARD_WIDTH_MOBILE - 2)})`
   }
 }));
 

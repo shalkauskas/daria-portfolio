@@ -3,11 +3,11 @@ import { Typography } from '../Typography/Typography';
 import {
   BottomContainer,
   CARD_GAP,
+  CARD_WIDTH_VAR,
   CardContainer,
   CarouselTrack,
   CarouselViewport,
   CarouselWrapper,
-  NAV_BUTTON_GAP,
   NAV_BUTTON_SIZE,
   NavButton,
   StyledIconButton,
@@ -23,8 +23,6 @@ type Props = {
   index: number;
   project: (typeof workProjects)[number];
 };
-
-const NAV_SPACE = 2 * (NAV_BUTTON_SIZE + NAV_BUTTON_GAP);
 
 function Card({ index, project }: Props) {
   const navigate = useNavigate();
@@ -62,15 +60,34 @@ function useCarouselLayout(cardCount: number) {
     const measure = () => {
       const card = wrapper.querySelector<HTMLElement>('[data-carousel-card]');
       if (!card) return;
-      const step = card.offsetWidth + CARD_GAP;
+      wrapper.style.removeProperty(CARD_WIDTH_VAR);
+      const naturalCardWidth = card.offsetWidth;
       const availableWidth = wrapper.clientWidth;
-      const fitsAll = cardCount * step - CARD_GAP <= availableWidth;
-      const visibleCount = fitsAll
-        ? cardCount
-        : Math.max(
-            1,
-            Math.floor((availableWidth - NAV_SPACE + CARD_GAP) / step)
-          );
+      const fitsAll =
+        cardCount * (naturalCardWidth + CARD_GAP) - CARD_GAP <= availableWidth;
+      if (fitsAll) {
+        setLayout({
+          visibleCount: cardCount,
+          step: naturalCardWidth + CARD_GAP
+        });
+        return;
+      }
+      const navButtonGap = parseFloat(getComputedStyle(wrapper).columnGap) || 0;
+      const spaceForCards =
+        availableWidth - 2 * (NAV_BUTTON_SIZE + navButtonGap);
+      const cardWidth = Math.min(naturalCardWidth, spaceForCards);
+      if (cardWidth < naturalCardWidth) {
+        const borderWidth = card.offsetWidth - card.clientWidth;
+        wrapper.style.setProperty(
+          CARD_WIDTH_VAR,
+          `${cardWidth - borderWidth}px`
+        );
+      }
+      const step = cardWidth + CARD_GAP;
+      const visibleCount = Math.max(
+        1,
+        Math.floor((spaceForCards + CARD_GAP) / step)
+      );
       setLayout({ visibleCount, step });
     };
 
